@@ -1,0 +1,27 @@
+{
+    "name": "llaville/php-toolbox",
+    "description": "Helper to discover and install PHP extensions and/or tools",
+    "keywords": ["php", "pecl-extensions", "tools"],
+    "type": "project",
+    "require": {
+        "php": "^7.3|^8.0",
+        "symfony/config": "^4.4|^5.0",
+        "symfony/console": "^4.4|^5.0",
+        "symfony/dependency-injection": "^4.4|^5.0"
+    },
+    "bin": ["bin/devkit.php"],
+    "autoload": {
+        "psr-4": {
+            "Bartlett\\PHPToolbox\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurent Laville",
+            "email": "pear@laurent-laville.org",
+            "homepage": "https://github.com/llaville",
+            "role": "Lead"
+        }
+    ]
+}

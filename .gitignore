@@ -1,0 +1,9 @@
+Thumbs.db
+*.tgz
+*.zip
+*.phar
+*.log
+vendor/
+composer.lock
+.idea/
+.phpunit.result.cache
