@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "xhprof",
+            "summary": "The xhprof PHP Extension",
+            "website": "https://pecl.php.net/package/xhprof",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

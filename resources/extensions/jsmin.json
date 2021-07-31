@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "jsmin",
+            "summary": "The jsmin PHP Extension",
+            "website": "https://pecl.php.net/package/jsmin",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2", "exclude-php:8.0", "exclude-php:8.1"]
+        }
+    ]
+}

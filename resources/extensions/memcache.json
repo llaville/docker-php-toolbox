@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "memcache",
+            "summary": "The memcache PHP Extension",
+            "website": "https://pecl.php.net/package/memcache",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

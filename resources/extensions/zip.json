@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "zip",
+            "summary": "The zip PHP Extension",
+            "website": "https://pecl.php.net/package/zip",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

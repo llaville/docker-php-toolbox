@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "xmlrpc",
+            "summary": "The xmlrpc PHP Extension",
+            "website": "https://pecl.php.net/package/xmlrpc",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "imagick",
+            "summary": "The imagick PHP Extension",
+            "website": "https://pecl.php.net/package/imagick",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4"]
+        }
+    ]
+}

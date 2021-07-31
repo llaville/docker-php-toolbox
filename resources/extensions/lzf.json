@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "lzf",
+            "summary": "The lzf PHP Extension",
+            "website": "https://pecl.php.net/package/lzf",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

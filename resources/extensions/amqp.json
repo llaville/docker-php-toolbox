@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "amqp",
+            "summary": "The amqp PHP Extension",
+            "website": "https://pecl.php.net/package/amqp",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

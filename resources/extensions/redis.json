@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "redis",
+            "summary": "The redis PHP Extension",
+            "website": "https://pecl.php.net/package/redis",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

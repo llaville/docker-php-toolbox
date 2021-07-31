@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "igbinary",
+            "summary": "The igbinary PHP Extension",
+            "website": "https://pecl.php.net/package/igbinary",
+            "command": {
+                "pecl-install": {
+                    "5.2": "2.0.7"
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

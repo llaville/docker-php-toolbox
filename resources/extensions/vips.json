@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "vips",
+            "summary": "The vips PHP Extension",
+            "website": "https://pecl.php.net/package/vips",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6"]
+        }
+    ]
+}

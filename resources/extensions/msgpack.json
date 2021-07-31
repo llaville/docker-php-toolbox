@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "msgpack",
+            "summary": "The msgpack PHP Extension",
+            "website": "https://pecl.php.net/package/msgpack",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

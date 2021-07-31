@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "mongo",
+            "summary": "The mongo PHP Extension",
+            "website": "https://pecl.php.net/package/mongo",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:7.0", "exclude-php:7.1", "exclude-php:7.2", "exclude-php:7.3", "exclude-php:7.4", "exclude-php:8.0", "exclude-php:8.1"]
+        }
+    ]
+}

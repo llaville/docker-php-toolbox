@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "raphf",
+            "summary": "The raphf PHP Extension",
+            "website": "https://pecl.php.net/package/raphf",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

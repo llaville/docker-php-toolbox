@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "xdebug",
+            "summary": "The xdebug PHP Extension",
+            "website": "https://pecl.php.net/package/xdebug",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

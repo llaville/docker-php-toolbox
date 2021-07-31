@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "apcu",
+            "summary": "The apcu PHP Extension",
+            "website": "https://pecl.php.net/package/APCu",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2"]
+        }
+    ]
+}

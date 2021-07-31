@@ -5,9 +5,13 @@
     "type": "project",
     "require": {
         "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "doctrine/collections": "^1.6.5",
         "symfony/config": "^4.4|^5.0",
         "symfony/console": "^4.4|^5.0",
-        "symfony/dependency-injection": "^4.4|^5.0"
+        "symfony/dependency-injection": "^4.4|^5.0",
+        "symfony/finder": "^4.4|^5.0",
+        "symfony/process": "^4.4|^5.0"
     },
     "bin": ["bin/devkit.php"],
     "autoload": {
@@ -23,5 +27,10 @@
             "homepage": "https://github.com/llaville",
             "role": "Lead"
         }
-    ]
+    ],
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
 }

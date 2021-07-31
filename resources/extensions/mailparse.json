@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "mailparse",
+            "summary": "The mailparse PHP Extension",
+            "website": "https://pecl.php.net/package/mailparse",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:8.1"]
+        }
+    ]
+}

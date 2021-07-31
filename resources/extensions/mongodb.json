@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "mongodb",
+            "summary": "The mongodb PHP Extension",
+            "website": "https://pecl.php.net/package/mongodb",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2"]
+        }
+    ]
+}

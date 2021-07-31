@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "composer",
+            "summary": "Dependency Manager for PHP",
+            "website": "https://github.com/composer/composer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://getcomposer.org/composer-2.phar",
+                    "bin": "%target-dir%/composer-2"
+                }
+            },
+            "test": "composer list",
+            "tags": ["composer"]
+        }
+    ]
+}

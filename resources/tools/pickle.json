@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pickle",
+            "summary": "PHP Extension installer",
+            "website": "https://github.com/FriendsOfPHP/pickle",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/FriendsOfPHP/pickle/releases/latest/download/pickle.phar",
+                    "bin": "%target-dir%/pickle"
+                }
+            },
+            "test": "pickle list",
+            "tags": ["pickle"]
+        }
+    ]
+}

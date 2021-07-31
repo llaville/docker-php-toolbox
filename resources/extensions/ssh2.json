@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "ssh2",
+            "summary": "The ssh2 PHP Extension",
+            "website": "https://pecl.php.net/package/ssh2",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

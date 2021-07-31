@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "yaml",
+            "summary": "The yaml PHP Extension",
+            "website": "https://pecl.php.net/package/yaml",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2"]
+        }
+    ]
+}

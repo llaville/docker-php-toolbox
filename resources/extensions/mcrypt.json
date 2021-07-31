@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "mcrypt",
+            "summary": "The mcrypt PHP Extension",
+            "website": "https://pecl.php.net/package/mcrypt",
+            "command": {
+                "pecl-install": {
+                    "7.2": "1.0.1",
+                    "7.3": "1.0.2"
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "http",
+            "summary": "The http PHP Extension",
+            "website": "https://pecl.php.net/package/pecl_http",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

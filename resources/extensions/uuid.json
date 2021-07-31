@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "uuid",
+            "summary": "The uuid PHP Extension",
+            "website": "https://pecl.php.net/package/uuid",
+            "command": {
+                "pecl-install": {
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
