@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "box",
+            "summary": "Fast, zero config application bundler with PHARs",
+            "website": "https://github.com/box-project/box",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/box-project/box/releases/latest/download/box.phar",
+                    "bin": "%target-dir%/box"
+                }
+            },
+            "test": "",
+            "tags": ["box"]
+        }
+    ]
+}
