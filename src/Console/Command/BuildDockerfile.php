@@ -45,7 +45,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'PHP version. Should be either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1'
             )
             ->addOption(
-                'tools',
+                'resources',
                 null,
                 InputOption::VALUE_REQUIRED,
                 'Path(s) to the list of tools and extensions.',
@@ -96,10 +96,10 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $toolsPath = $input->getOption('tools');
-        if (!is_dir($toolsPath) || !is_readable($toolsPath)) {
+        $resourcesPath = $input->getOption('resources');
+        if (!is_dir($resourcesPath) || !is_readable($resourcesPath)) {
             $io->error(
-                sprintf('Resources path specified "%s" does not exists or is not readable.', $toolsPath)
+                sprintf('Resources path specified "%s" does not exists or is not readable.', $resourcesPath)
             );
             return self::FAILURE;
         }
@@ -118,7 +118,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::SUCCESS;
         }
 
-        $tools = (new Tools())->load($toolsPath);
+        $tools = (new Tools())->load($resourcesPath);
 
         if ('mods' === $suffix) {
             $buildVersion = $input->getOption('build-version');
@@ -134,7 +134,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             sprintf(
                 'The Dockerfile specified %s was updated with latest resources found in %s',
                 $dockerfilePath,
-                $toolsPath
+                $resourcesPath
             )
         );
 
