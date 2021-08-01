@@ -2,6 +2,7 @@
 
 namespace Bartlett\PHPToolbox\Collection;
 
+use Bartlett\PHPToolbox\Command\Factory;
 use Doctrine\Common\Collections\AbstractLazyCollection;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -48,7 +49,7 @@ final class Tools extends AbstractLazyCollection
                         $definition['summary'],
                         $definition['website'],
                         $definition['tags'] ?? [],
-                        $definition['command'],
+                        Factory::create($definition['command']),
                         $definition['test']
                     )
                 );

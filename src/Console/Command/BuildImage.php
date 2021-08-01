@@ -44,7 +44,7 @@ final class BuildImage extends Command implements CommandInterface
             )
             ->addOption(
                 'dockerfile',
-                null,
+                'f',
                 InputOption::VALUE_REQUIRED,
                 'Path to the Dockerfile',
                 './Dockerfiles/mods/Dockerfile'

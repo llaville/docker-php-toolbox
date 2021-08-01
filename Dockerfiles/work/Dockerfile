@@ -105,6 +105,10 @@ RUN set -eux \
 	&& (find /usr/local/sbin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true)
 
 ###
+### Install custom software
+###
+
+###
 ### Configure Bash
 ###
 RUN \

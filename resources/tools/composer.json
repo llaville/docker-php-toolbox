@@ -7,7 +7,7 @@
             "command": {
                 "phar-download": {
                     "phar": "https://getcomposer.org/composer-2.phar",
-                    "bin": "%target-dir%/composer-2"
+                    "bin": "%target-dir%/composer"
                 }
             },
             "test": "composer list",

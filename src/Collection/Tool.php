@@ -2,6 +2,8 @@
 
 namespace Bartlett\PHPToolbox\Collection;
 
+use Bartlett\PHPToolbox\Command\CommandInterface;
+
 /**
  * @since Release 1.0.0
  */
@@ -14,7 +16,7 @@ final class Tool
     private $testCommand;
     private $tags;
 
-    public function __construct(string $name, string $summary, string $website, array $tags, $command, $testCommand)
+    public function __construct(string $name, string $summary, string $website, array $tags, ?CommandInterface $command, $testCommand)
     {
         $this->name = $name;
         $this->summary = $summary;
@@ -39,7 +41,7 @@ final class Tool
         return $this->website;
     }
 
-    public function getCommand()
+    public function getCommand(): ?CommandInterface
     {
         return $this->command;
     }

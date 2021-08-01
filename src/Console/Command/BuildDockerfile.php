@@ -5,6 +5,8 @@ namespace Bartlett\PHPToolbox\Console\Command;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
+use Doctrine\Common\Collections\Collection;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -20,6 +22,7 @@ use function is_file;
 use function is_readable;
 use function preg_replace;
 use function sprintf;
+use function str_replace;
 use const PHP_EOL;
 
 /**
@@ -62,6 +65,19 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'Identify which part of image to build from the Dockerfile',
                 '2'
             )
+            ->addOption(
+                'target-dir',
+                null,
+                InputOption::VALUE_REQUIRED,
+                'To perform tools installation in other location than default directory',
+                '/usr/local/bin'
+            )
+            ->addOption(
+                'tag',
+                't',
+                InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
+                'Filter tools by tags.'
+            )
         ;
     }
 
@@ -97,21 +113,44 @@ final class BuildDockerfile extends Command implements CommandInterface
         }
 
         $suffix = basename(dirname($dockerfilePath));
-        if ('mods' !== $suffix) {
-            $io->warning('Only mods Dockerfile could be rebuild with this command.');
+        if (!in_array($suffix, ['mods', 'work'])) {
+            $io->warning('Only mods or work Dockerfile could be rebuild with this command.');
             return self::SUCCESS;
         }
 
         $tools = (new Tools())->load($toolsPath);
 
+        if ('mods' === $suffix) {
+            $buildVersion = $input->getOption('build-version');
+            $this->applyChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
+        }
+
+        if ('work' === $suffix) {
+            $targetDir = $input->getOption('target-dir');
+            $this->applyChangeOnWorkDockerfile($dockerfilePath, $tools, $targetDir);
+        }
+
+        $io->success(
+            sprintf(
+                'The Dockerfile specified %s was updated with latest resources found in %s',
+                $dockerfilePath,
+                $toolsPath
+            )
+        );
+
+        return self::SUCCESS;
+    }
+
+    private function applyChangeOnModsDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $buildVersion): void
+    {
         $extensionsList = $tools->filter(function(Tool $tool) use($phpVersion) {
             return
                 in_array('pecl-extensions', $tool->getTags(), true) &&
                 !in_array('exclude-php:'.$phpVersion, $tool->getTags(), true)
-            ;
+                ;
         });
 
-        $modulesInstallation = 'FROM builder as build-version-' . $input->getOption('build-version') . PHP_EOL;
+        $modulesInstallation = 'FROM builder as build-version-' . $buildVersion . PHP_EOL;
         foreach ($extensionsList as $extension) {
             /** @var Tool $extension */
             $modulesInstallation .= sprintf('RUN install-php-extensions %s', $extension->getName()) . PHP_EOL;
@@ -124,15 +163,28 @@ final class BuildDockerfile extends Command implements CommandInterface
             $dockerfile
         );
         file_put_contents($dockerfilePath, $dockerfile);
+    }
 
-        $io->success(
-            sprintf(
-                'The Dockerfile specified %s was updated with latest PHP modules found in %s',
-                $dockerfilePath,
-                $toolsPath
-            )
+    private function applyChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $targetDir): void
+    {
+        $toolsList = $tools->filter(function(Tool $tool) {
+            return !in_array('pecl-extensions', $tool->getTags(), true);
+        });
+
+        $softwareInstallation = 'RUN set -eux';
+        foreach ($toolsList as $tool) {
+            $commandLine = (string) $tool->getCommand();
+            $commandLine = str_replace('%target-dir%', $targetDir, $commandLine);
+            $softwareInstallation .= ' \\' . PHP_EOL . '    && ' . $commandLine;
+        }
+        $softwareInstallation .= PHP_EOL;
+
+        $dockerfile = file_get_contents($dockerfilePath);
+        $dockerfile = preg_replace(
+            '/(### Install custom software\n###\n\n)(.*?)(\n###\n)/smi',
+            '$1' . $softwareInstallation . PHP_EOL . '$2$3',
+            $dockerfile
         );
-
-        return self::SUCCESS;
+       file_put_contents($dockerfilePath, $dockerfile);
     }
 }
