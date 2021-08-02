@@ -85,7 +85,6 @@ RUN set -eux \
 		silversearcher-ag \
 		subversion \
 		sudo \
-		tig \
 		tree \
 		unzip \
 		vim \
