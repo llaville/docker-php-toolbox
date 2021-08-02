@@ -105,7 +105,16 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
+        $buildVersion = $input->getOption('build-version');
+
         $dockerfilePath = $input->getOption('dockerfile');
+        $suffix = basename(dirname($dockerfilePath));
+
+        if ('work' === $suffix && $buildVersion) {
+            // check if specialized Dockerfile version exists
+            $dockerfilePath .= '.' . $buildVersion;
+        }
+
         if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
             $io->error(
                 sprintf('Dockerfile specified "%s" does not exists or is not readable.', $dockerfilePath)
@@ -113,7 +122,6 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $suffix = basename(dirname($dockerfilePath));
         if (!in_array($suffix, ['mods', 'work'])) {
             $io->warning('Only mods or work Dockerfile could be rebuild with this command.');
             return self::SUCCESS;
@@ -122,7 +130,6 @@ final class BuildDockerfile extends Command implements CommandInterface
         $tools = (new Tools())->load($resourcesPath);
 
         if ('mods' === $suffix) {
-            $buildVersion = $input->getOption('build-version');
             $this->applyChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
         }
 
@@ -195,7 +202,7 @@ final class BuildDockerfile extends Command implements CommandInterface
         $dockerfile = file_get_contents($dockerfilePath);
         $dockerfile = preg_replace(
             '/(### Install custom software\n###\n\n)(.*?)(\n###\n)/smi',
-            '$1' . $softwareInstallation . PHP_EOL . '$2$3',
+            '$1' . $softwareInstallation  . '$2$3',
             $dockerfile
         );
        file_put_contents($dockerfilePath, $dockerfile);
