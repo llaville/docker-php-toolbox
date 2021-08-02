@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "graphviz",
+            "summary": "Graph Visualization Tools",
+            "website": "https://graphviz.org/",
+            "command": {
+                "sh": {
+                    "cmd": "graphviz",
+                    "package_manager": "apt"
+                }
+            },
+            "test": "",
+            "tags": ["graphviz"]
+        }
+    ]
+}
