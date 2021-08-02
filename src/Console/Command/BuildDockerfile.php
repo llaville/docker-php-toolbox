@@ -14,6 +14,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+use function array_intersect;
 use function file_get_contents;
 use function file_put_contents;
 use function in_array;
@@ -127,7 +128,8 @@ final class BuildDockerfile extends Command implements CommandInterface
 
         if ('work' === $suffix) {
             $targetDir = $input->getOption('target-dir');
-            $this->applyChangeOnWorkDockerfile($dockerfilePath, $tools, $targetDir);
+            $tags = $input->getOption('tag');
+            $this->applyChangeOnWorkDockerfile($dockerfilePath, $tools, $phpVersion, $targetDir, $tags);
         }
 
         $io->success(
@@ -165,10 +167,21 @@ final class BuildDockerfile extends Command implements CommandInterface
         file_put_contents($dockerfilePath, $dockerfile);
     }
 
-    private function applyChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $targetDir): void
+    private function applyChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $targetDir, array $tags): void
     {
-        $toolsList = $tools->filter(function(Tool $tool) {
-            return !in_array('pecl-extensions', $tool->getTags(), true);
+        $toolsList = $tools->filter(function(Tool $tool) use($phpVersion, $tags) {
+            $preFilter =
+                !in_array('pecl-extensions', $tool->getTags(), true) &&
+                !in_array('exclude-php:'.$phpVersion, $tool->getTags(), true)
+            ;
+            if (!$preFilter) {
+                return false;
+            }
+            if (!empty($tags)) {
+                $byTags = array_intersect($tool->getTags(), $tags);
+                return !empty($byTags);
+            }
+            return true;
         });
 
         $softwareInstallation = 'RUN set -eux';
