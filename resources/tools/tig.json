@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "tig",
+            "summary": "Text-mode interface for git",
+            "website": "https://github.com/jonas/tig",
+            "command": {
+                "sh": {
+                    "cmd": "tig",
+                    "package_manager": "apt"
+                }
+            },
+            "test": "",
+            "tags": ["git"]
+        }
+    ]
+}

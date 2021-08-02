@@ -18,7 +18,8 @@ final class Factory
         switch ($type) {
             case 'phar-download':
                 return new PharDownloadCommand($properties['phar'], $properties['bin']);
-                break;
+            case 'sh':
+                return new ShCommand($properties['cmd'], $properties['package_manager'] ?? '');
         }
 
         return null;
