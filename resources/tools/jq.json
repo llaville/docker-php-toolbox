@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "jq",
+            "summary": "Command-line JSON processor",
+            "website": "https://github.com/stedolan/jq",
+            "command": {
+                "sh": {
+                    "cmd": "jq",
+                    "package_manager": "apt"
+                }
+            },
+            "test": "",
+            "tags": ["jq"]
+        }
+    ]
+}

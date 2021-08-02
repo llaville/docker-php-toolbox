@@ -59,7 +59,6 @@ RUN set -eux \
 		hostname \
 		imagemagick \
 		iputils-ping \
-		jq \
 		less \
 		libc-dev \
 		libffi-dev \
@@ -105,6 +104,7 @@ RUN set -eux \
 ###
 ### Install custom software
 ###
+
 
 ###
 ### Configure Bash
