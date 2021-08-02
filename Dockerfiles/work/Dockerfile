@@ -57,7 +57,6 @@ RUN set -eux \
 		ghostscript \
 		gsfonts \
 		hostname \
-		htop \
 		imagemagick \
 		iputils-ping \
 		jq \
