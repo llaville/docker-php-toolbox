@@ -5,6 +5,7 @@ namespace Bartlett\PHPToolbox\Console\Command;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
+use Bartlett\PHPToolbox\Command\FileDownloadCommand;
 use Doctrine\Common\Collections\Collection;
 
 use Symfony\Component\Console\Command\Command;
@@ -21,9 +22,12 @@ use function in_array;
 use function is_dir;
 use function is_file;
 use function is_readable;
+use function php_uname;
 use function preg_replace;
 use function sprintf;
 use function str_replace;
+use function strpos;
+use function strtolower;
 use const PHP_EOL;
 
 /**
@@ -193,7 +197,15 @@ final class BuildDockerfile extends Command implements CommandInterface
 
         $softwareInstallation = 'RUN set -eux';
         foreach ($toolsList as $tool) {
-            $commandLine = (string) $tool->getCommand();
+            $command = $tool->getCommand();
+            $commandLine = (string) $command;
+            $os = php_uname('s');
+            $arch = php_uname('m');
+            if ($tool->getName() === 'mhsendmail') {
+                $os = strtolower($os);
+                $arch = strpos($arch, 'x86') === false ? $arch : '386';
+            }
+            $commandLine = str_replace(['%os%', '%arch%'], [$os, $arch], $commandLine);
             $commandLine = str_replace('%target-dir%', $targetDir, $commandLine);
             $softwareInstallation .= ' \\' . PHP_EOL . '    && ' . $commandLine;
         }

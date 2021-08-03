@@ -1,0 +1,20 @@
+{
+    "tools": [
+        {
+            "name": "mhsendmail",
+            "summary": "sendmail for MailHog",
+            "website": "https://github.com/BlueBambooStudios/mhsendmail",
+            "command": {
+                "file-download": {
+                    "url": "https://github.com/devilbox/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
+                    "target": "/tmp/mhsendmail_%os%_%arch%"
+                },
+                "sh" : {
+                    "cmd": "chmod +x /tmp/mhsendmail_%os%_%arch% && mv /tmp/mhsendmail_%os%_%arch% %target-dir%/mhsendmail"
+                }
+            },
+            "test": "",
+            "tags": ["sendmail"]
+        }
+    ]
+}
