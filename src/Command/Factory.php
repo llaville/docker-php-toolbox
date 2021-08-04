@@ -17,6 +17,13 @@ final class Factory
     {
         $makeCommand = function(string $type, array $properties): ?CommandInterface {
             switch ($type) {
+                case 'composer-install':
+                    return new ComposerInstallCommand(
+                        $properties['repository'],
+                        $properties['target-dir'],
+                        $properties['version'] ?? null,
+                        $properties['scripts']
+                    );
                 case 'file-download':
                     return new FileDownloadCommand($properties['url'], $properties['target']);
                 case 'phar-download':
