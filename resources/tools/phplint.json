@@ -1,7 +1,7 @@
 {
     "tools": [
         {
-            "name": "phplint-3",
+            "name": "phplint v3",
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "name": "phplint-2",
+            "name": "phplint v2",
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {

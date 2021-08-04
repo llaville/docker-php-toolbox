@@ -22,7 +22,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
 {
     "tools": [
         {
-            "name": "phplint-3",
+            "name": "phplint v3",
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {
@@ -44,7 +44,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
             ]
         },
         {
-            "name": "phplint-2",
+            "name": "phplint v2",
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {

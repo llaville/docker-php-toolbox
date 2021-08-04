@@ -83,7 +83,7 @@ final class UpdateReadme extends Command implements CommandInterface
         });
         $extensionsList = $extensionsList->map($formatSection);
 
-        $extensionsTable  = '| Name | Description | PHP 5.2 | PHP 5.3 | PHP 5.4 | PHP 5.5 | PHP 5.6 | PHP 7.0 | PHP 7.1 | PHP 7.2 | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 |' . PHP_EOL;
+        $extensionsTable  = '| Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |' . PHP_EOL;
         $extensionsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
         $extensionsTable .= implode(PHP_EOL, $extensionsList->toArray());
         $extensionsTable .= PHP_EOL;
