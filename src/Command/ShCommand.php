@@ -18,9 +18,9 @@ final class ShCommand implements CommandInterface
         if ('' === $packageManager) {
             $this->command = $command;
         } elseif ('apt' === $packageManager) {
-            $this->command = "DEBIAN_FRONTEND=noninteractive apt-get update -qq \\" . PHP_EOL
-                . "    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \\" . PHP_EOL
-                . "        " . $command;
+            $this->command = "DEBIAN_FRONTEND=noninteractive apt-get update -qq "
+                . " && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests"
+                . " " . $command;
         } else {
             throw new RuntimeException(sprintf('Package Manager "%s" is not supported', $packageManager));
         }

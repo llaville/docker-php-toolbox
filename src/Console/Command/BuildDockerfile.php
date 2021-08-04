@@ -5,7 +5,6 @@ namespace Bartlett\PHPToolbox\Console\Command;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
-use Bartlett\PHPToolbox\Command\FileDownloadCommand;
 use Doctrine\Common\Collections\Collection;
 
 use Symfony\Component\Console\Command\Command;
@@ -53,7 +52,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'resources',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Path(s) to the list of tools and extensions.',
+                'Path(s) to the list of tools and extensions',
                 './resources'
             )
             ->addOption(
@@ -81,7 +80,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'tag',
                 't',
                 InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
-                'Filter tools by tags.'
+                'Filter tools by tags'
             )
         ;
     }
@@ -195,7 +194,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             return true;
         });
 
-        $softwareInstallation = 'RUN set -eux';
+        $softwareInstallation = [];
         foreach ($toolsList as $tool) {
             $command = $tool->getCommand();
             $commandLine = (string) $command;
@@ -205,9 +204,10 @@ final class BuildDockerfile extends Command implements CommandInterface
             $arch = strpos($arch, 'x86') === false ? $arch : '386';
             $commandLine = str_replace(['%os%', '%arch%'], [$os, $arch], $commandLine);
             $commandLine = str_replace('%target-dir%', $targetDir, $commandLine);
-            $softwareInstallation .= ' \\' . PHP_EOL . '    && ' . $commandLine;
+            $softwareInstallation[] = 'RUN set -eux && ' . $commandLine;
         }
-        $softwareInstallation .= PHP_EOL;
+        $softwareInstallation = implode(PHP_EOL, $softwareInstallation);
+        $softwareInstallation = str_replace(' && ', ' \\' . PHP_EOL . '    && ', $softwareInstallation);
 
         $dockerfile = file_get_contents($dockerfilePath);
         $dockerfile = preg_replace(
