@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/mongo",
             "command": {
                 "pecl-install": {
+                    "module_name": "mongo",
                     "version": ""
                 }
             },

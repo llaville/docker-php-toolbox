@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/xhprof",
             "command": {
                 "pecl-install": {
+                    "module_name": "xhprof",
                     "version": ""
                 }
             },

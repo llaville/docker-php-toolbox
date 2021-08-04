@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/zip",
             "command": {
                 "pecl-install": {
+                    "module_name": "zip",
                     "version": ""
                 }
             },

@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/geoip",
             "command": {
                 "pecl-install": {
+                    "module_name": "geoip",
                     "version": ""
                 }
             },

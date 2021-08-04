@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/memcached",
             "command": {
                 "pecl-install": {
+                    "module_name": "memcached",
                     "version": ""
                 }
             },

@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/ast",
             "command": {
                 "pecl-install": {
+                    "module_name": "ast",
                     "version": ""
                 }
             },

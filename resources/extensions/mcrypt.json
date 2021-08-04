@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/mcrypt",
             "command": {
                 "pecl-install": {
+                    "module_name": "mcrypt",
                     "7.2": "1.0.1",
                     "7.3": "1.0.2"
                 }

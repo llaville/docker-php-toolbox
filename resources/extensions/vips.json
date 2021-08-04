@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/vips",
             "command": {
                 "pecl-install": {
+                    "module_name": "uuid",
                     "version": ""
                 }
             },

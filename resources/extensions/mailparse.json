@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/mailparse",
             "command": {
                 "pecl-install": {
+                    "module_name": "mailparse",
                     "version": ""
                 }
             },

@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/ssh2",
             "command": {
                 "pecl-install": {
+                    "module_name": "ssh2",
                     "version": ""
                 }
             },

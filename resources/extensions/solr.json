@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/solr",
             "command": {
                 "pecl-install": {
+                    "module_name": "solr",
                     "version": ""
                 }
             },

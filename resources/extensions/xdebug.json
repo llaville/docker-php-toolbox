@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/xdebug",
             "command": {
                 "pecl-install": {
+                    "module_name": "xdebug",
                     "version": ""
                 }
             },

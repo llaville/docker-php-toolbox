@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/lzf",
             "command": {
                 "pecl-install": {
+                    "module_name": "lzf",
                     "version": ""
                 }
             },

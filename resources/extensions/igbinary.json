@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/igbinary",
             "command": {
                 "pecl-install": {
+                    "module_name": "igbinary",
                     "5.2": "2.0.7"
                 }
             },

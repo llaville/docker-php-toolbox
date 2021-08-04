@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/stomp",
             "command": {
                 "pecl-install": {
+                    "module_name": "stomp",
                     "version": ""
                 }
             },

@@ -6,6 +6,7 @@
             "website": "https://pecl.php.net/package/oauth",
             "command": {
                 "pecl-install": {
+                    "module_name": "oauth",
                     "version": ""
                 }
             },
