@@ -59,7 +59,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'dockerfile',
                 'f',
                 InputOption::VALUE_REQUIRED,
-                'Path to the Dockerfile',
+                'Path to the Dockerfile template',
                 './Dockerfiles/mods/Dockerfile'
             )
             ->addOption(

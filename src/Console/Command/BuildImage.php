@@ -46,14 +46,14 @@ final class BuildImage extends Command implements CommandInterface
                 'dockerfile',
                 'f',
                 InputOption::VALUE_REQUIRED,
-                'Path to the Dockerfile',
+                'Path to the Dockerfile template',
                 './Dockerfiles/mods/Dockerfile'
             )
             ->addOption(
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Identify which part of image to build from the Dockerfile',
+                'Build version to identify the final Dockerfile from template',
                 '1'
             )
             ->addOption(
@@ -88,14 +88,17 @@ final class BuildImage extends Command implements CommandInterface
         }
 
         $dockerfilePath = $input->getOption('dockerfile');
+
+        $buildVersion = (string) $input->getOption('build-version');
+
+        // checks Dockerfile specialized version
+        $dockerfilePath .= '.' . $buildVersion;
         if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
             $io->error(
-                sprintf('Dockerfile specified "%s" does not exists or is not readable.', $dockerfilePath)
+                sprintf('Dockerfile build version "%s" does not exists or is not readable.', $dockerfilePath)
             );
             return self::FAILURE;
         }
-
-        $buildVersion = $input->getOption('build-version');
 
         $noCache = $input->getOption('no-cache');
 
