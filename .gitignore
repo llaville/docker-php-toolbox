@@ -7,3 +7,5 @@ vendor/
 composer.lock
 .idea/
 .phpunit.result.cache
+Dockerfiles/mods/Dockerfile.*
+Dockerfiles/work/Dockerfile.*
