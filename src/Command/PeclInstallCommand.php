@@ -12,7 +12,7 @@ final class PeclInstallCommand implements CommandInterface
     private $name;
     private $version;
 
-    public function __construct(string $name, string $version = '')
+    public function __construct(string $name, ?string $version = null)
     {
         $this->name = $name;
         $this->version = $version;
@@ -23,7 +23,7 @@ final class PeclInstallCommand implements CommandInterface
         return sprintf(
             'RUN install-php-extensions %s%s',
             $this->name,
-            (empty($this->version) ? '' : '-') . $this->version
+            (empty($this->version) ? '' : '-' . $this->version)
         );
     }
 }

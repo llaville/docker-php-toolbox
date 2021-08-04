@@ -66,8 +66,8 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Identify which part of image to build from the Dockerfile',
-                '2'
+                'Build version to identify the final Dockerfile from template',
+                '2',
             )
             ->addOption(
                 'target-dir',
@@ -108,52 +108,65 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $buildVersion = $input->getOption('build-version');
+        $buildVersion = (string) $input->getOption('build-version');
 
         $dockerfilePath = $input->getOption('dockerfile');
         $suffix = basename(dirname($dockerfilePath));
-
-        if ('work' === $suffix && $buildVersion) {
-            // check if specialized Dockerfile version exists
-            $dockerfilePath .= '.' . $buildVersion;
-        }
-
-        if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
-            $io->error(
-                sprintf('Dockerfile specified "%s" does not exists or is not readable.', $dockerfilePath)
-            );
-            return self::FAILURE;
-        }
 
         if (!in_array($suffix, ['mods', 'work'])) {
             $io->warning('Only mods or work Dockerfile could be rebuild with this command.');
             return self::SUCCESS;
         }
 
+        // checks Dockerfile template
+        if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
+            $io->error(
+                sprintf('Dockerfile template specified "%s" does not exists or is not readable.', $dockerfilePath)
+            );
+            return self::FAILURE;
+        }
+
+        // checks Dockerfile specialized version
+        $generatedDockerfilePath = $dockerfilePath . '.' . $buildVersion;
+        if (is_file($generatedDockerfilePath)) {
+            $io->warning(
+                sprintf('Dockerfile build version "%s" already exists.', $generatedDockerfilePath)
+            );
+            return self::FAILURE;
+        }
+
         $tools = (new Tools())->load($resourcesPath);
 
-        if ('mods' === $suffix) {
-            $this->applyChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
+        switch ($suffix) {
+            case 'mods':
+                $dockerfile = $this->getChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
+                break;
+            case 'work':
+                $targetDir = $input->getOption('target-dir');
+                $tags = $input->getOption('tag');
+                $dockerfile = $this->getChangeOnWorkDockerfile($dockerfilePath, $tools, $phpVersion, $targetDir, $tags);
+                break;
+            default:
+                $dockerfile = null;
         }
 
-        if ('work' === $suffix) {
-            $targetDir = $input->getOption('target-dir');
-            $tags = $input->getOption('tag');
-            $this->applyChangeOnWorkDockerfile($dockerfilePath, $tools, $phpVersion, $targetDir, $tags);
+        if ($dockerfile) {
+            file_put_contents($generatedDockerfilePath, $dockerfile);
+            $io->success(
+                sprintf(
+                    'The Dockerfile build version "%s" was generated with latest resources found in "%s"',
+                    $generatedDockerfilePath,
+                    $resourcesPath
+                )
+            );
+        } else {
+            $io->caution(sprintf('The Dockerfile build version "%s" was not modified', $generatedDockerfilePath));
         }
-
-        $io->success(
-            sprintf(
-                'The Dockerfile specified %s was updated with latest resources found in %s',
-                $dockerfilePath,
-                $resourcesPath
-            )
-        );
 
         return self::SUCCESS;
     }
 
-    private function applyChangeOnModsDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $buildVersion): void
+    private function getChangeOnModsDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $buildVersion): ?string
     {
         $extensionsList = $tools->filter(function(Tool $tool) use($phpVersion) {
             return
@@ -162,22 +175,23 @@ final class BuildDockerfile extends Command implements CommandInterface
                 ;
         });
 
-        $modulesInstallation = 'FROM builder as build-version-' . $buildVersion . PHP_EOL;
+        $modulesInstallation = ['FROM builder as build-version-' . $buildVersion];
         foreach ($extensionsList as $extension) {
-            /** @var Tool $extension */
-            $modulesInstallation .= sprintf('RUN install-php-extensions %s', $extension->getName()) . PHP_EOL;
+            $command = $extension->getCommand();
+            $modulesInstallation[] = (string) $command;
         }
+        $modulesInstallation = implode(PHP_EOL, $modulesInstallation);
 
         $dockerfile = file_get_contents($dockerfilePath);
-        $dockerfile = preg_replace(
-            '/(FROM builder as build-version-1\n)(.*?)(\n###\n)/smi',
-            '$1$2' . PHP_EOL . $modulesInstallation . '$3',
+
+        return preg_replace(
+            '/(FROM builder as build-version-1\n\n)(.*?)/smi',
+            '$1' . $modulesInstallation . PHP_EOL . '$2',
             $dockerfile
         );
-        file_put_contents($dockerfilePath, $dockerfile);
     }
 
-    private function applyChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $targetDir, array $tags): void
+    private function getChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $targetDir, array $tags): ?string
     {
         $toolsList = $tools->filter(function(Tool $tool) use($phpVersion, $tags) {
             $preFilter =
@@ -210,11 +224,11 @@ final class BuildDockerfile extends Command implements CommandInterface
         $softwareInstallation = str_replace(' && ', ' \\' . PHP_EOL . '    && ', $softwareInstallation);
 
         $dockerfile = file_get_contents($dockerfilePath);
-        $dockerfile = preg_replace(
+
+        return preg_replace(
             '/(### Install custom software\n###\n\n).*?(\n###\n)/smi',
             '$1' . $softwareInstallation  . '$2',
             $dockerfile
         );
-       file_put_contents($dockerfilePath, $dockerfile);
     }
 }

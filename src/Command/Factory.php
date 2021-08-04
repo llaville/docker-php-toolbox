@@ -26,6 +26,8 @@ final class Factory
                     );
                 case 'file-download':
                     return new FileDownloadCommand($properties['url'], $properties['target']);
+                case 'pecl-install':
+                    return new PeclInstallCommand($properties['module_name'], $properties['version'] ?? null);
                 case 'phar-download':
                     return new PharDownloadCommand($properties['phar'], $properties['bin']);
                 case 'sh':
