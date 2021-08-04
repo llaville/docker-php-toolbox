@@ -201,10 +201,8 @@ final class BuildDockerfile extends Command implements CommandInterface
             $commandLine = (string) $command;
             $os = php_uname('s');
             $arch = php_uname('m');
-            if ($tool->getName() === 'mhsendmail') {
-                $os = strtolower($os);
-                $arch = strpos($arch, 'x86') === false ? $arch : '386';
-            }
+            $os = strtolower($os);
+            $arch = strpos($arch, 'x86') === false ? $arch : '386';
             $commandLine = str_replace(['%os%', '%arch%'], [$os, $arch], $commandLine);
             $commandLine = str_replace('%target-dir%', $targetDir, $commandLine);
             $softwareInstallation .= ' \\' . PHP_EOL . '    && ' . $commandLine;
