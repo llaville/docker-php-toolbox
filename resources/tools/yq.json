@@ -1,0 +1,20 @@
+{
+    "tools": [
+        {
+            "name": "yq",
+            "summary": "Command-line YAML processor",
+            "website": "https://github.com/mikefarah/yq",
+            "command": {
+                "file-download": {
+                    "url": "https://github.com/mikefarah/yq/releases/latest/download/yq_%os%_%arch%",
+                    "target": "/tmp/yq_%os%_%arch%"
+                },
+                "sh" : {
+                    "cmd": "chmod +x /tmp/yq_%os%_%arch% && mv /tmp/yq_%os%_%arch% %target-dir%/yq"
+                }
+            },
+            "test": "",
+            "tags": ["yq"]
+        }
+    ]
+}
