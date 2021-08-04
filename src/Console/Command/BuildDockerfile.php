@@ -226,8 +226,8 @@ final class BuildDockerfile extends Command implements CommandInterface
         $dockerfile = file_get_contents($dockerfilePath);
 
         return preg_replace(
-            '/(### Install custom software\n###\n\n).*?(\n###\n)/smi',
-            '$1' . $softwareInstallation  . '$2',
+            '/(### Install custom software\n###\n\n)(.*?)/smi',
+            '$1' . $softwareInstallation  . PHP_EOL . '$2',
             $dockerfile
         );
     }
