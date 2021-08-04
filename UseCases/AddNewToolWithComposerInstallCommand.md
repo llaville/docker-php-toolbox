@@ -62,7 +62,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
             "tags": [
                 "phplint-2",
                 "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4",
-                "exclude-php:8.0", "exclude-php:8.1",
+                "exclude-php:8.0", "exclude-php:8.1"
             ]
         }
     ]
