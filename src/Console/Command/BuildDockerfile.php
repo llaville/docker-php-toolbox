@@ -111,12 +111,6 @@ final class BuildDockerfile extends Command implements CommandInterface
         $buildVersion = (string) $input->getOption('build-version');
 
         $dockerfilePath = $input->getOption('dockerfile');
-        $suffix = basename(dirname($dockerfilePath));
-
-        if (!in_array($suffix, ['mods', 'work'])) {
-            $io->warning('Only mods or work Dockerfile could be rebuild with this command.');
-            return self::SUCCESS;
-        }
 
         // checks Dockerfile template
         if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
@@ -137,6 +131,8 @@ final class BuildDockerfile extends Command implements CommandInterface
 
         $tools = (new Tools())->load($resourcesPath);
 
+        $suffix = basename(dirname($dockerfilePath));
+
         switch ($suffix) {
             case 'mods':
                 $dockerfile = $this->getChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
@@ -145,6 +141,10 @@ final class BuildDockerfile extends Command implements CommandInterface
                 $targetDir = $input->getOption('target-dir');
                 $tags = $input->getOption('tag');
                 $dockerfile = $this->getChangeOnWorkDockerfile($dockerfilePath, $tools, $phpVersion, $targetDir, $tags);
+                break;
+            case 'base':
+            case 'prod':
+                $dockerfile = file_get_contents($dockerfilePath);
                 break;
             default:
                 $dockerfile = null;
