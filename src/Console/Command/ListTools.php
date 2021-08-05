@@ -41,8 +41,14 @@ final class ListTools extends Command implements CommandInterface
                 'tools',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Path(s) to the list of tools and extensions.',
+                'Path(s) to the list of tools and extensions',
                 './resources'
+            )
+            ->addOption(
+                'tag',
+                't',
+                InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
+                'Filter tools by tags'
             )
         ;
     }
@@ -72,6 +78,8 @@ final class ListTools extends Command implements CommandInterface
 
         $tools = (new Tools())->load($toolsPath);
 
+        $tags = $input->getOption('tag');
+
         $transform = function (Tool $tool) {
             return [
                 $tool->getName(),
@@ -80,11 +88,19 @@ final class ListTools extends Command implements CommandInterface
             ];
         };
 
-        $toolsList = $tools->filter(function(Tool $tool) use($phpVersion) {
-            return
+        $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion, $tags) {
+            $preFilter =
                 !in_array('pecl-extensions', $tool->getTags(), true) &&
                 !in_array('exclude-php:'.$phpVersion, $tool->getTags(), true)
             ;
+            if (!$preFilter) {
+                return false;
+            }
+            if (!empty($tags)) {
+                $byTags = array_intersect($tool->getTags(), $tags);
+                return !empty($byTags);
+            }
+            return true;
         });
 
         $headers = ['Name', 'Description', 'Website'];
