@@ -23,6 +23,38 @@ inside the [official PHP Docker images](https://hub.docker.com/_/php/).
 This repository will provide you fully functional PHP-FPM Docker images in different flavours,
 versions and packed with different types of integrated PHP modules.
 
+## PHP-FPM Flavours
+
+Architecture is Devilbox compatible, but may be used for other Docker containers solution.
+
+#### Assembly
+
+The provided Docker images heavily rely on inheritance to guarantee is the smallest possible image size.
+Each of them provide a working PHP-FPM server, so you must decide what version works best for you.
+Look at the sketch below to get an overview about the two provided flavours and each of their different types.
+
+```shell
+        [PHP]            # Base FROM image (Official PHP-FPM image)
+          ^              #
+          |              #
+          |              #
+        [base]           # Introduces env variables and adjusts entrypoint
+          ^              #
+          |              #
+          |              #
+        [mods]           # Installs additional PHP modules
+          ^              # via pecl, git and other means
+          |              #
+          |              #
+        [prod]           # Devilbox flavour for production
+          ^              # (locales, postifx, socat and injectables)
+          |              # (custom modules and *.ini files)
+          |              #
+        [work]           # Devilbox flavour for local development
+                         # (includes backup and development tools)
+                         # (sudo, custom bash and tool configs)
+```
+
 ## Requirements
 
 * PHP 7.3 or greater
@@ -33,9 +65,139 @@ versions and packed with different types of integrated PHP modules.
 The recommended way to install this project is [through composer](http://getcomposer.org).
 If you don't know yet what is composer, have a look [on introduction](http://getcomposer.org/doc/00-intro.md).
 
-```bash
-composer require bartlett/docker-php-toolbox
+```shell
+$ composer require bartlett/docker-php-toolbox
 ```
+
+## Usage
+
+In each following commands, replace `<php_version>` by either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
+
+### Build Dockerfiles
+
+For all builds we suggest passing the `--build-version` (`-B`) option to choose suffix of your generated Dockerfile.
+
+**TIP** Even if argument is free, we suggest using a build version that allow to identify quickly
+contents of Dockerfile generated.
+
+**NOTE** If you want to see real-time docker process running, don't forget to activate verbose level 3 (`-vvv`) on each command.
+
+#### Base images
+
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 -vvv 7.4
+```
+
+#### Mods images
+
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/mods/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
+```
+
+#### Prod images
+
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/prod/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/prod/Dockerfile -B 8100 8.1
+```
+
+#### Work images
+
+By default, tools are installed in the `/usr/local/bin` directory.
+To perform installation in another location, pass the `--target-dir` option.
+
+To limit some tools to the generated Dockerfile, multiple `--tag` options can be passed.
+
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv --target-dir /usr/bin --tag composer --tag tig 7.3
+```
+
+### List available extensions
+
+```shell
+$ bin/tookit.php list:extensions <php_version>
+```
+To get list of compatible extensions for a PHP platform.
+For example:
+```shell
+$ bin/tookit.php list:extensions 8.1
+
+List available extensions for PHP 8.1
+=====================================
+
+ ----------- ----------------------------- ----------------------------------------
+  Name        Description                   Website
+ ----------- ----------------------------- ----------------------------------------
+  amqp        The amqp PHP Extension        https://pecl.php.net/package/amqp
+  apcu        The apcu PHP Extension        https://pecl.php.net/package/APCu
+  ast         The ast PHP Extension         https://pecl.php.net/package/ast
+  http        The http PHP Extension        https://pecl.php.net/package/pecl_http
+  igbinary    The igbinary PHP Extension    https://pecl.php.net/package/igbinary
+  imagick     The imagick PHP Extension     https://pecl.php.net/package/imagick
+  lzf         The lzf PHP Extension         https://pecl.php.net/package/lzf
+  mcrypt      The mcrypt PHP Extension      https://pecl.php.net/package/mcrypt
+  memcache    The memcache PHP Extension    https://pecl.php.net/package/memcache
+  memcached   The memcached PHP Extension   https://pecl.php.net/package/memcached
+  msgpack     The msgpack PHP Extension     https://pecl.php.net/package/msgpack
+  oauth       The oauth PHP Extension       https://pecl.php.net/package/oauth
+  raphf       The raphf PHP Extension       https://pecl.php.net/package/raphf
+  redis       The redis PHP Extension       https://pecl.php.net/package/redis
+  solr        The solr PHP Extension        https://pecl.php.net/package/solr
+  ssh2        The ssh2 PHP Extension        https://pecl.php.net/package/ssh2
+  uuid        The uuid PHP Extension        https://pecl.php.net/package/uuid
+  vips        The vips PHP Extension        https://pecl.php.net/package/vips
+  xdebug      The xdebug PHP Extension      https://pecl.php.net/package/xdebug
+  xhprof      The xhprof PHP Extension      https://pecl.php.net/package/xhprof
+  xmldiff     The xmldiff PHP Extension     https://pecl.php.net/package/xmldiff
+  zip         The zip PHP Extension         https://pecl.php.net/package/zip
+ ----------- ----------------------------- ----------------------------------------
+
+ ! [NOTE] 22 extensions available. The pre-installed PHP extensions are excluded from this list.
+ ```
+
+### List available extensions
+
+```shell
+$ bin/tookit.php list:tools <php_version>
+```
+To get list of compatible tools for a PHP platform.
+
+#### Filter tools by tags
+
+To limit some tools from the listing, multiple `--tag` options can be added.
+For example:
+```shell
+$ bin/tookit.php list:tools 7.4 --tag composer --tag phpunit
+
+List available tools for PHP 7.4
+================================
+
+ ----------- ---------------------------------------------- ----------------------------------------------
+  Name        Description                                    Website
+ ----------- ---------------------------------------------- ----------------------------------------------
+  composer    Dependency Manager for PHP                     https://github.com/composer/composer
+  phpunit 8   The PHP Unit Testing framework (8.x version)   https://github.com/sebastianbergmann/phpunit
+  phpunit 9   The PHP Unit Testing framework (9.x version)   https://github.com/sebastianbergmann/phpunit
+ ----------- ---------------------------------------------- ----------------------------------------------
+
+ ! [NOTE] 3 tools available.
+```
+
 ## Available extensions
 
 | Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |
@@ -96,4 +258,6 @@ composer require bartlett/docker-php-toolbox
 
 ## Credits
 
-Thanks to jakzal PHP [Toolbox](https://github.com/jakzal/toolbox/) project that help me to build this architecture.
+Thanks to :
+* cytopia for its Devilbox's [PHP-FPM Docker](https://github.com/devilbox/docker-php-fpm) Images
+* jakzal PHP [Toolbox](https://github.com/jakzal/toolbox/) project that help me to build this architecture.
