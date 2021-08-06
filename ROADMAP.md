@@ -124,32 +124,34 @@
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| awesome-ci |  | &#x2705; | &#x274C; |
+| awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | composer | [Dependency Manager for PHP](https://github.com/composer/composer) | &#x2705; | &#x2705; |
-| deployer |  | &#x2705; | &#x274C; |
-| drupalconsole |  | &#x2705; | &#x274C; |
+| deployer | [A deployment tool written in PHP](https://github.com/deployphp/deployer) | &#x2705; | &#x274C; |
+| drupalconsole | [The Drupal CLI](https://github.com/hechoendrupal/drupal-console) | &#x2705; | &#x274C; |
 | drush 7 |  | &#x2705; | &#x274C; |
 | drush 8 |  | &#x2705; | &#x274C; |
 | drush 9 |  | &#x2705; | &#x274C; |
-| git |  | &#x2705; | &#x2705; |
-| gitflow |  | &#x2705; | &#x274C; |
+| git | [Git is a free and open source distributed version control system](https://git-scm.com/) | &#x2705; | &#x2705; |
+| gitflow | [Git extensions to provide high-level repository operations](https://github.com/nvie/gitflow) | &#x2705; | &#x274C; |
 | graphviz | [Graph Visualization Tools](https://graphviz.org/) | &#x2705; | &#x2705; |
-| homebrew |  | &#x2705; | &#x274C; |
+| homebrew | [The missing package manager for macOS or Linux](https://github.com/Homebrew/brew) | &#x2705; | &#x274C; |
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; |
-| laravel |  | &#x2705; | &#x274C; |
-| linkcheck |  | &#x2705; | &#x274C; |
+| jsonlint | [A JSON parser and validator for CLI](https://github.com/zaach/jsonlint) | &#x2705; | &#x274C; |
+| laravel | [The Laravel application installer](https://github.com/laravel/installer) | &#x2705; | &#x274C; |
+| linkcheck | [URLs checker](https://github.com/cytopia/linkcheck) | &#x2705; | &#x274C; |
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; |
-| mysqldumpsecure |  | &#x2705; | &#x274C; |
-| nvm |  | &#x2705; | &#x274C; |
+| mysqldumpsecure | [Encrypted mysqldump script with compression](https://github.com/cytopia/mysqldump-secure) | &#x2705; | &#x274C; |
+| nvm | [Node Version Manager](https://github.com/nvm-sh/nvm) | &#x2705; | &#x274C; |
 | phalcon-devtools | [Phalcon Developer Tools](https://github.com/phalcon/phalcon-devtools) | &#x2705; | &#x274C; |
-| phpcs |  | &#x2705; | &#x274C; |
-| phpcbf |  | &#x2705; | &#x274C; |
-| php-cs-fixer |  | &#x2705; | &#x274C; |
+| photon-installer | [Photon CMS Installer](https://github.com/photoncms/installer) | &#x2705; | &#x274C; |
+| phpcs | [Detects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x274C; |
+| phpcbf | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x274C; |
+| php-cs-fixer | [PHP Coding Standards Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x274C; |
 | phplint v2 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phplint v3 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
-| phpmd |  | &#x2705; | &#x274C; |
+| phpmd | [Find problems in PHP code](https://github.com/phpmd/phpmd) | &#x2705; | &#x274C; |
 | phpunit 5 | [The PHP Unit Testing framework (5.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x274C; |
 | phpunit 7 | [The PHP Unit Testing framework (7.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; |
 | phpunit 8 | [The PHP Unit Testing framework (8.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; |
@@ -157,9 +159,11 @@
 | pickle | [PHP Extension installer](https://github.com/FriendsOfPHP/pickle) | &#x274C; | &#x2705; |
 | pip v2 | [The Python package installer (2.x version)](https://github.com/pypa/pip) | &#x2705; | &#x2705; |
 | pip v3 | [The Python package installer (3.x version)](https://github.com/pypa/pip) | &#x2705; | &#x2705; |
+| stylelint | [Styles linter](https://github.com/stylelint/stylelint) | &#x2705; | &#x274C; |
 | symfony-cli | [Symfony CLI](https://github.com/symfony/cli) | &#x2705; | &#x274C; |
+| symfony-installer | [The Symfony Installer](https://github.com/symfony/symfony-installer) | &#x2705; | &#x274C; |
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; |
 | wp-cli | [WP-CLI framework](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x274C; |
-| wkhtmltopdf |  | &#x2705; | &#x274C; |
-| yamllint | [YAML linter](https://github.com/adrienverge/yamllint) | &#x2705; | &#x274C; |
+| wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
+| yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x274C; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
