@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "uopz",
+            "summary": "The uopz PHP Extension",
+            "website": "https://pecl.php.net/package/uopz",
+            "command": {
+                "pecl-install": {
+                    "module_name": "uopz",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:8.1"]
+        }
+    ]
+}
