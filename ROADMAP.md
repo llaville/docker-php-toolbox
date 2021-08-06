@@ -1,6 +1,14 @@
 # Roadmap
 
+Current status reflect the contents of the master branch of this repository.
+
 ## PHP modules compare
+
+**Legend**:
+
+* &#x2705; available in project
+* &#x274C; not available in project
+* &#x2714; always enabled and cannot be disabled
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
@@ -121,6 +129,11 @@
 | zlib | The zlib PHP Extension | &#x2714; | &#x2714; |
 
 ## Tools compare
+
+**Legend**:
+
+* &#x2705; available in project
+* &#x274C; not available in project
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
