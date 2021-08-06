@@ -80,8 +80,6 @@ For all builds we suggest passing the `--build-version` (`-B`) option to choose 
 **TIP** Even if argument is free, we suggest using a build version that allow to identify quickly
 contents of Dockerfile generated.
 
-**NOTE** If you want to see real-time docker process running, don't forget to activate verbose level 3 (`-vvv`) on each command.
-
 #### Base images
 
 ```shell
@@ -89,7 +87,7 @@ $ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B <build_ve
 ```
 For example:
 ```shell
-$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 -vvv 7.4
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 7.4
 ```
 
 #### Mods images
@@ -124,7 +122,53 @@ $ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B <build_ve
 ```
 For example:
 ```shell
-$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv --target-dir /usr/bin --tag composer --tag tig 7.3
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B 7329 --target-dir /usr/bin --tag composer --tag tig 7.3
+```
+
+### Build Images
+
+Proceed with the same build identification as used in the `build:dockerfile` command, passing the `--build-version` (`-B`) option.
+
+**NOTE** If you want to see real-time docker long process running, don't forget to activate verbose level 3 (`-vvv`) on each command.
+
+#### Base images
+
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B 7422 -vvv 7.4
+```
+
+#### Mods images
+
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/mods/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
+```
+
+#### Prod images
+
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/prod/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/prod/Dockerfile -B 8100 8.1
+```
+
+#### Work images
+
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B <build_version> <php_version>
+```
+For example:
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv 7.3
 ```
 
 ### List available extensions
