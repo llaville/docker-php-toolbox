@@ -1,0 +1,30 @@
+{
+    "tools": [
+        {
+            "name": "pip v3",
+            "summary": "The Python package installer (3.x version)",
+            "website": "https://github.com/pypa/pip",
+            "command": {
+                "sh": {
+                    "cmd": "python3-pip",
+                    "package_manager": "apt"
+                }
+            },
+            "test": "",
+            "tags": ["pip", "python3"]
+        },
+        {
+            "name": "pip v2",
+            "summary": "The Python package installer (2.x version)",
+            "website": "https://github.com/pypa/pip",
+            "command": {
+                "sh": {
+                    "cmd": "python-pip",
+                    "package_manager": "apt"
+                }
+            },
+            "test": "",
+            "tags": ["pip", "python2"]
+        }
+    ]
+}
