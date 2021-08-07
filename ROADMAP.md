@@ -26,7 +26,7 @@ Current status reflect the contents of the master branch of this repository.
 | date | The date PHP Extension | &#x2714; | &#x2714; |
 | dba    | The dba PHP Extension | &#x2705; | &#x2705; |
 | dom   | The dom PHP Extension | &#x2714; | &#x2714; |
-| enchant | The enchant PHP Extension | &#x2705; | &#x274C; |
+| enchant | The enchant PHP Extension | &#x2705; | &#x2705; |
 | ereg   | The ereg PHP Extension | &#x2714; | &#x2714; |
 | exif   | The exif PHP Extension | &#x2705; | &#x274C; |
 | ffi    | The FFI PHP Extension | &#x2714; | &#x274C; |
