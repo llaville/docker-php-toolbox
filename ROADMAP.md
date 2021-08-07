@@ -67,7 +67,7 @@ Current status reflect the contents of the master branch of this repository.
 | oci8 | [The oci8 PHP Extension](https://pecl.php.net/package/oci8) | &#x2705; | &#x2705; |
 | opcache | [The opcache PHP Extension](https://github.com/php/php-src/tree/master/Zend) | &#x2705; | &#x2705; |
 | openssl | [The openssl PHP Extension](https://github.com/php/php-src/tree/master/ext/openssl) | &#x2714; | &#x2714; |
-| pcntl | [The pcntl PHP Extension](https://github.com/php/php-src/tree/master/ext/pcntl) | &#x2705; | &#x274C; |
+| pcntl | [The pcntl PHP Extension](https://github.com/php/php-src/tree/master/ext/pcntl) | &#x2705; | &#x2705; |
 | pcre | [The pcre PHP Extension](https://github.com/php/php-src/tree/master/ext/pcre) | &#x2714; | &#x2714; |
 | pdo | [The pdo PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo) | &#x2714; | &#x2714; |
 | pdo_dblib | [The pdo_dblib PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_dblib) | &#x2705; | &#x274C; |

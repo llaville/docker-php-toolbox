@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pcntl",
+            "summary": "The pcntl PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pcntl",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pcntl",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
