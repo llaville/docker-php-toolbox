@@ -29,7 +29,7 @@ Current status reflect the contents of the master branch of this repository.
 | enchant | The enchant PHP Extension | &#x2705; | &#x2705; |
 | ereg   | The ereg PHP Extension | &#x2714; | &#x2714; |
 | exif   | The exif PHP Extension | &#x2705; | &#x2705; |
-| ffi    | The FFI PHP Extension | &#x2714; | &#x274C; |
+| ffi    | The FFI PHP Extension | &#x2714; | &#x2714; |
 | fileinfo | The fileinfo PHP Extension | &#x2714; | &#x2714; |
 | filter | The filter PHP Extension | &#x2714; | &#x2714; |
 | ftp    | The ftp PHP Extension | &#x2714; | &#x2714; |
