@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "gettext",
+            "summary": "The gettext PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/gettext",
+            "command": {
+                "pecl-install": {
+                    "module_name": "gettext",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
