@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "gd",
+            "summary": "The gd PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/gd",
+            "command": {
+                "pecl-install": {
+                    "module_name": "gd",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

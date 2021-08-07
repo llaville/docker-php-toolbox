@@ -33,7 +33,7 @@ Current status reflect the contents of the master branch of this repository.
 | fileinfo | The fileinfo PHP Extension | &#x2714; | &#x2714; |
 | filter | The filter PHP Extension | &#x2714; | &#x2714; |
 | ftp    | The ftp PHP Extension | &#x2714; | &#x2714; |
-| gd      | The gd PHP Extension | &#x2705; | &#x274C; |
+| gd      | The gd PHP Extension | &#x2705; | &#x2705; |
 | geoip | [The geoip PHP Extension](https://pecl.php.net/package/geoip) | &#x274C; | &#x2705; |
 | gettext | The gettext PHP Extension | &#x2705; | &#x274C; |
 | gmp     | The gmp PHP Extension | &#x2705; | &#x274C; |
