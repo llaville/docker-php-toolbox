@@ -16,7 +16,7 @@ Current status reflect the contents of the master branch of this repository.
 | apc | The apc PHP Extension | &#x2705; | &#x274C; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; |
 | ast | [The ast PHP Extension](https://pecl.php.net/package/ast)    | &#x274C; | &#x2705; |
-| bcmath | The bcmath PHP Extension | &#x2705; | &#x274C; |
+| bcmath | The bcmath PHP Extension | &#x2705; | &#x2705; |
 | blackfire | The blackfire probe Extension | &#x2705; | &#x274C; |
 | bz2    | The bz2 PHP Extension | &#x2705; | &#x274C; |
 | calendar | The calendar PHP Extension | &#x2705; | &#x274C; |

@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "bcmath",
+            "summary": "The bcmath PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/bcmath",
+            "command": {
+                "pecl-install": {
+                    "module_name": "bcmath",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
