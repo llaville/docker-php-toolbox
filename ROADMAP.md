@@ -71,7 +71,7 @@ Current status reflect the contents of the master branch of this repository.
 | pcre | [The pcre PHP Extension](https://github.com/php/php-src/tree/master/ext/pcre) | &#x2714; | &#x2714; |
 | pdo | [The pdo PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo) | &#x2714; | &#x2714; |
 | pdo_dblib | [The pdo_dblib PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_dblib) | &#x2705; | &#x274C; |
-| pdo_firebird | [The pdo_firebird PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_firebird) | &#x2705; | &#x274C; |
+| pdo_firebird | [The pdo_firebird PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_firebird) | &#x2705; | &#x2705; |
 | pdo_mysql | [The pdo_mysql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_mysql) | &#x2705; | &#x274C; |
 | pdo_oci | [The pdo_oci PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_oci) | &#x2705; | &#x274C; |
 | pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x274C; |

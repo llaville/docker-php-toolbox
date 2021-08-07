@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pdo_firebird",
+            "summary": "The pdo_firebird PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pdo_firebird",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pdo_firebird",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
