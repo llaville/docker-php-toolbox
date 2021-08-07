@@ -1,5 +1,5 @@
 {
-    "name": "llaville/php-toolbox",
+    "name": "bartlett/docker-php-toolbox",
     "description": "Helper to discover and install PHP extensions and/or tools",
     "keywords": ["php", "pecl-extensions", "tools"],
     "type": "project",
@@ -13,7 +13,7 @@
         "symfony/finder": "^4.4|^5.0",
         "symfony/process": "^4.4|^5.0"
     },
-    "bin": ["bin/devkit.php"],
+    "bin": ["bin/toolkit.php"],
     "autoload": {
         "psr-4": {
             "Bartlett\\PHPToolbox\\": "src"
