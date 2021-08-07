@@ -48,7 +48,7 @@ Current status reflect the contents of the master branch of this repository.
 | ioncube | [Loader for ionCube Secured Files](https://www.ioncube.com/loaders.php) | &#x2705; | &#x2705; |
 | jsmin | [The jsmin PHP Extension](https://pecl.php.net/package/jsmin) | &#x274C; | &#x2705; |
 | json   | [The json PHP Extension](https://github.com/php/php-src/tree/master/ext/json) | &#x2714; | &#x2714; |
-| ldap | The ldap PHP Extension | &#x2705; | &#x274C; |
+| ldap | [The ldap PHP Extension](https://github.com/php/php-src/tree/master/ext/ldap) | &#x2705; | &#x2705; |
 | libxml   | The libxml PHP Extension | &#x2714; | &#x2714; |
 | lzf | [The lzf PHP Extension](https://pecl.php.net/package/lzf) | &#x274C; | &#x2705; |
 | mailparse | [The mailparse PHP Extension](https://pecl.php.net/package/mailparse) | &#x274C; | &#x2705; |
