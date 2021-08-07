@@ -242,6 +242,11 @@ List available tools for PHP 7.4
  ! [NOTE] 3 tools available.
 ```
 
+## Examples
+
+Want to learn more, around real examples.
+Please have a look on [UseCases](https://github.com/llaville/docker-php-toolbox/tree/master/UseCases) directory.
+
 ## Available extensions
 
 | Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |
