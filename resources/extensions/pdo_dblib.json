@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pdo_dblib",
+            "summary": "The pdo_dblib PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pdo_dblib",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pdo_dblib",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:8.1"]
+        }
+    ]
+}
