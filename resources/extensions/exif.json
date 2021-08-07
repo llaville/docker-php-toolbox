@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "exif",
+            "summary": "The exif PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/exif",
+            "command": {
+                "pecl-install": {
+                    "module_name": "exif",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
