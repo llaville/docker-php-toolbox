@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "mysqli",
+            "summary": "The mysqli PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/mysqli",
+            "command": {
+                "pecl-install": {
+                    "module_name": "mysqli",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
