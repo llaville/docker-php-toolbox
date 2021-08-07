@@ -77,7 +77,7 @@ Current status reflect the contents of the master branch of this repository.
 | pdo_odbc | [The pdo_odbc PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_odbc) | &#x274C; | &#x2705; |
 | pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x2705; |
 | pdo_sqlite | [The pdo_sqlite PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_sqlite) | &#x2714; | &#x2714; |
-| pdo_sqlsrv | [The pdo_sqlsrv PHP Extension](https://pecl.php.net/package/pdo_sqlsrv) | &#x2705; | &#x274C; |
+| pdo_sqlsrv | [The pdo_sqlsrv PHP Extension](https://pecl.php.net/package/pdo_sqlsrv) | &#x2705; | &#x2705; |
 | pgsql | [The pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pgsql) | &#x2705; | &#x274C; |
 | phalcon | [The phalcon PHP Extension](https://pecl.php.net/package/phalcon) | &#x2705; | &#x274C; |
 | phar | [The phar PHP Extension](https://github.com/php/php-src/tree/master/ext/phar) | &#x2714; | &#x2714; |

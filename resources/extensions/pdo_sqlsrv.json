@@ -1,0 +1,20 @@
+{
+    "tools": [
+        {
+            "name": "pdo_sqlsrv",
+            "summary": "The pdo_sqlsrv PHP Extension",
+            "website": "https://pecl.php.net/package/pdo_sqlsrv",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pdo_sqlsrv",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": [
+                "pecl-extensions",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6"
+            ]
+        }
+    ]
+}
