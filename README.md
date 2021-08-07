@@ -89,6 +89,10 @@ For example:
 ```shell
 $ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 7.4
 ```
+Or with specialized dockerfile:
+```shell
+$ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-81 -B 8100 8.1
+```
 
 #### Mods images
 
@@ -139,6 +143,10 @@ $ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B <build_version
 For example:
 ```shell
 $ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B 7422 -vvv 7.4
+```
+Or with specialized dockerfile:
+```shell
+$ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile-81 -B 8100 -vvv 8.1
 ```
 
 #### Mods images
