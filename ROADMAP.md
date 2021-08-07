@@ -75,7 +75,7 @@ Current status reflect the contents of the master branch of this repository.
 | pdo_mysql | [The pdo_mysql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_mysql) | &#x2705; | &#x2705; |
 | pdo_oci | [The pdo_oci PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_oci) | &#x2705; | &#x2705; |
 | pdo_odbc | [The pdo_odbc PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_odbc) | &#x274C; | &#x2705; |
-| pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x274C; |
+| pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x2705; |
 | pdo_sqlite | [The pdo_sqlite PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_sqlite) | &#x2714; | &#x2714; |
 | pdo_sqlsrv | [The pdo_sqlsrv PHP Extension](https://pecl.php.net/package/pdo_sqlsrv) | &#x2705; | &#x274C; |
 | pgsql | [The pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pgsql) | &#x2705; | &#x274C; |
