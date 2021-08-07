@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "intl",
+            "summary": "The intl PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/intl",
+            "command": {
+                "pecl-install": {
+                    "module_name": "intl",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
