@@ -1,0 +1,20 @@
+{
+    "tools": [
+        {
+            "name": "pdo_oci",
+            "summary": "The pdo_oci PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pdo_oci",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pdo_oci",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": [
+                "pecl-extensions",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6"
+            ]
+        }
+    ]
+}

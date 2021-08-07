@@ -73,7 +73,7 @@ Current status reflect the contents of the master branch of this repository.
 | pdo_dblib | [The pdo_dblib PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_dblib) | &#x2705; | &#x2705; |
 | pdo_firebird | [The pdo_firebird PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_firebird) | &#x2705; | &#x2705; |
 | pdo_mysql | [The pdo_mysql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_mysql) | &#x2705; | &#x2705; |
-| pdo_oci | [The pdo_oci PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_oci) | &#x2705; | &#x274C; |
+| pdo_oci | [The pdo_oci PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_oci) | &#x2705; | &#x2705; |
 | pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x274C; |
 | pdo_sqlite | [The pdo_sqlite PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_sqlite) | &#x2714; | &#x2714; |
 | pdo_sqlsrv | [The pdo_sqlsrv PHP Extension](https://pecl.php.net/package/pdo_sqlsrv) | &#x2705; | &#x274C; |
