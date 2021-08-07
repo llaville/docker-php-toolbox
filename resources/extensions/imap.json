@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "imap",
+            "summary": "The imap PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/imap",
+            "command": {
+                "pecl-install": {
+                    "module_name": "imap",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

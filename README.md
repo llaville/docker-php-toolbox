@@ -275,6 +275,7 @@ Please have a look on [UseCases](https://github.com/llaville/docker-php-toolbox/
 | http | [The http PHP Extension](https://pecl.php.net/package/pecl_http) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | igbinary | [The igbinary PHP Extension](https://pecl.php.net/package/igbinary) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| imap | [The imap PHP Extension](https://github.com/php/php-src/tree/master/ext/imap) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | jsmin | [The jsmin PHP Extension](https://pecl.php.net/package/jsmin) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; |
 | lzf | [The lzf PHP Extension](https://pecl.php.net/package/lzf) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | mailparse | [The mailparse PHP Extension](https://pecl.php.net/package/mailparse) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |

@@ -42,7 +42,7 @@ Current status reflect the contents of the master branch of this repository.
 | iconv   | The iconv PHP Extension | &#x2714; | &#x2714; |
 | igbinary | [The igbinary PHP Extension](https://pecl.php.net/package/igbinary) | &#x2705; | &#x2705; |
 | imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x2705; |
-| imap   | The imap PHP Extension | &#x2705; | &#x274C; |
+| imap   | The imap PHP Extension | &#x2705; | &#x2705; |
 | interbase   | The interbase PHP Extension | &#x2705; | &#x274C; |
 | intl   | The intl PHP Extension | &#x2705; | &#x274C; |
 | ioncube | The ioncube PHP Extension | &#x2705; | &#x274C; |
