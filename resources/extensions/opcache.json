@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "opcache",
+            "summary": "The opcache PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/Zend",
+            "command": {
+                "pecl-install": {
+                    "module_name": "opcache",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
