@@ -43,7 +43,7 @@ Current status reflect the contents of the master branch of this repository.
 | igbinary | [The igbinary PHP Extension](https://pecl.php.net/package/igbinary) | &#x2705; | &#x2705; |
 | imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x2705; |
 | imap   | The imap PHP Extension | &#x2705; | &#x2705; |
-| interbase   | The interbase PHP Extension | &#x2705; | &#x274C; |
+| interbase   | [The interbase PHP Extension](https://github.com/php/php-src/tree/PHP-7.3/ext/interbase) | &#x2705; | &#x2705; |
 | intl   | The intl PHP Extension | &#x2705; | &#x274C; |
 | ioncube | The ioncube PHP Extension | &#x2705; | &#x274C; |
 | jsmin | [The jsmin PHP Extension](https://pecl.php.net/package/jsmin) | &#x274C; | &#x2705; |
