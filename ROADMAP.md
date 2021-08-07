@@ -36,7 +36,7 @@ Current status reflect the contents of the master branch of this repository.
 | gd      | The gd PHP Extension | &#x2705; | &#x2705; |
 | geoip | [The geoip PHP Extension](https://pecl.php.net/package/geoip) | &#x274C; | &#x2705; |
 | gettext | The gettext PHP Extension | &#x2705; | &#x2705; |
-| gmp     | The gmp PHP Extension | &#x2705; | &#x274C; |
+| gmp     | The gmp PHP Extension | &#x2705; | &#x2705; |
 | hash    | The hash PHP Extension | &#x2714; | &#x2714; |
 | http | [The http PHP Extension](https://pecl.php.net/package/pecl_http) | &#x274C; | &#x2705; |
 | iconv   | The iconv PHP Extension | &#x2714; | &#x2714; |

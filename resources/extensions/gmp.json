@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "gmp",
+            "summary": "The gmp PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/gmp",
+            "command": {
+                "pecl-install": {
+                    "module_name": "gmp",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2"]
+        }
+    ]
+}
