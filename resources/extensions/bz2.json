@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "bz2",
+            "summary": "The bz2 PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/bz2",
+            "command": {
+                "pecl-install": {
+                    "module_name": "bz2",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
