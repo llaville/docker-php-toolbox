@@ -64,7 +64,7 @@ Current status reflect the contents of the master branch of this repository.
 | mysqli | [The mysqli PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqli) | &#x2705; | &#x2705; |
 | mysqlnd | [The mysqlnd PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqlnd) | &#x2714; | &#x2714; |
 | oauth | [The oauth PHP Extension](https://pecl.php.net/package/oauth) | &#x2705; | &#x2705; |
-| oci8 | [The oci8 PHP Extension](https://pecl.php.net/package/oci8) | &#x2705; | &#x274C; |
+| oci8 | [The oci8 PHP Extension](https://pecl.php.net/package/oci8) | &#x2705; | &#x2705; |
 | opcache | [The opcache PHP Extension](https://github.com/php/php-src/tree/master/Zend) | &#x2705; | &#x2705; |
 | openssl | [The openssl PHP Extension](https://github.com/php/php-src/tree/master/ext/openssl) | &#x2714; | &#x2714; |
 | pcntl | [The pcntl PHP Extension](https://github.com/php/php-src/tree/master/ext/pcntl) | &#x2705; | &#x274C; |

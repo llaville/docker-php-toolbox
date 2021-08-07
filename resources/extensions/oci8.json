@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "oci8",
+            "summary": "The oci8 PHP Extension",
+            "website": "https://pecl.php.net/package/oci8",
+            "command": {
+                "pecl-install": {
+                    "module_name": "oci8",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions", "exclude-php:5.2"]
+        }
+    ]
+}
