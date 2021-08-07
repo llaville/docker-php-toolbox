@@ -60,7 +60,7 @@ Current status reflect the contents of the master branch of this repository.
 | mongo | [The mongo PHP Extension](https://pecl.php.net/package/mongo) | &#x2705; | &#x2705; |
 | mongodb | [The mongodb PHP Extension](https://pecl.php.net/package/mongodb) | &#x2705; | &#x2705; |
 | msgpack | [The msgpack PHP Extension](https://pecl.php.net/package/msgpack) | &#x2705; | &#x2705; |
-| mysql | [The mysql PHP Extension](https://pecl.php.net/package/mysql) | &#x2705; | &#x274C; |
+| mysql | [The mysql PHP Extension](https://pecl.php.net/package/mysql) | &#x2705; | &#x2705; |
 | mysqli | [The mysqli PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqli) | &#x2705; | &#x274C; |
 | mysqlnd | [The mysqlnd PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqlnd) | &#x2714; | &#x2714; |
 | oauth | [The oauth PHP Extension](https://pecl.php.net/package/oauth) | &#x2705; | &#x2705; |
