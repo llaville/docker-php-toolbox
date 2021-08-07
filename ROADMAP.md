@@ -24,7 +24,7 @@ Current status reflect the contents of the master branch of this repository.
 | ctype | The ctype PHP Extension | &#x2714; | &#x2714; |
 | curl | The curl PHP Extension | &#x2714; | &#x2714; |
 | date | The date PHP Extension | &#x2714; | &#x2714; |
-| dba    | The dba PHP Extension | &#x2705; | &#x274C; |
+| dba    | The dba PHP Extension | &#x2705; | &#x2705; |
 | dom   | The dom PHP Extension | &#x2714; | &#x2714; |
 | enchant | The enchant PHP Extension | &#x2705; | &#x274C; |
 | ereg   | The ereg PHP Extension | &#x2714; | &#x2714; |

@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "dba",
+            "summary": "The dba PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/dba",
+            "command": {
+                "pecl-install": {
+                    "module_name": "dba",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
