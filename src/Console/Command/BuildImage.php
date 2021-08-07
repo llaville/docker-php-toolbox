@@ -62,6 +62,13 @@ final class BuildImage extends Command implements CommandInterface
                 InputOption::VALUE_NONE,
                 'Do not use cache when building the image'
             )
+            ->addOption(
+                'vendor',
+                null,
+                InputOption::VALUE_REQUIRED,
+                'Vendor name to prefix Docker images',
+                'local'
+            )
         ;
     }
 
@@ -123,7 +130,7 @@ final class BuildImage extends Command implements CommandInterface
             }
         }
 
-        $commonTag = 'local/php-fpm:' . $phpVersion;
+        $commonTag = $input->getOption('vendor') . '/php-fpm:' . $phpVersion;
 
         if ('base' === $suffix) {
             $tag = $commonTag . '-base';
