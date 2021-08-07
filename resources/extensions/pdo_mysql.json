@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pdo_mysql",
+            "summary": "The pdo_mysql PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pdo_mysql",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pdo_mysql",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
