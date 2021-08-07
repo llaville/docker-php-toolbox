@@ -47,7 +47,7 @@ Look at the sketch below to get an overview about the two provided flavours and 
           |              #
           |              #
         [prod]           # Devilbox flavour for production
-          ^              # (locales, postifx, socat and injectables)
+          ^              # (locales, postfix, socat and injectables)
           |              # (custom modules and *.ini files)
           |              #
         [work]           # Devilbox flavour for local development
