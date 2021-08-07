@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "calendar",
+            "summary": "The calendar PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/calendar",
+            "command": {
+                "pecl-install": {
+                    "module_name": "calendar",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

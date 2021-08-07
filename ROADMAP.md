@@ -19,7 +19,7 @@ Current status reflect the contents of the master branch of this repository.
 | bcmath | The bcmath PHP Extension | &#x2705; | &#x2705; |
 | blackfire | The blackfire probe Extension | &#x2705; | &#x274C; |
 | bz2    | The bz2 PHP Extension | &#x2705; | &#x2705; |
-| calendar | The calendar PHP Extension | &#x2705; | &#x274C; |
+| calendar | The calendar PHP Extension | &#x2705; | &#x2705; |
 | Core | The Core PHP Extension | &#x2714; | &#x2714; |
 | ctype | The ctype PHP Extension | &#x2714; | &#x2714; |
 | curl | The curl PHP Extension | &#x2714; | &#x2714; |
