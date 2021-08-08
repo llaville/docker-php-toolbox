@@ -125,7 +125,7 @@ Current status reflect the contents of the master branch of this repository.
 | xmlrpc | [The xmlrpc PHP Extension](https://pecl.php.net/package/xmlrpc) | &#x2705; | &#x2705; |
 | xmlwriter | [The xmlwriter PHP Extension](https://github.com/php/php-src/tree/master/ext/xmlwriter) | &#x2714; | &#x2714; |
 | yaml | [The yaml PHP Extension](https://pecl.php.net/package/yaml) | &#x2705; | &#x2705; |
-| xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x274C; |
+| xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; |
 | zip | [The zip PHP Extension](https://pecl.php.net/package/zip) | &#x274C; | &#x2705; |
 | zlib | [The zlib PHP Extension](https://github.com/php/php-src/tree/master/ext/zlib) | &#x2714; | &#x2714; |
 

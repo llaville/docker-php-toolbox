@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "xsl",
+            "summary": "The xsl PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/xsl",
+            "command": {
+                "pecl-install": {
+                    "module_name": "xsl",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
