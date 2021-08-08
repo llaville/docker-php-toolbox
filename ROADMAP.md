@@ -100,7 +100,7 @@ Current status reflect the contents of the master branch of this repository.
 | solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; |
 | spl | [The spl PHP Extension](https://github.com/php/php-src/tree/master/ext/spl) | &#x2714; | &#x2714; |
 | sqlite | [The sqlite PHP Extension](https://pecl.php.net/package/SQLite) | &#x2714; | &#x274C; |
-| sqlsrv | [The sqlsrv PHP Extension](https://pecl.php.net/package/sqlsrv) | &#x2705; | &#x274C; |
+| sqlsrv | [The sqlsrv PHP Extension](https://pecl.php.net/package/sqlsrv) | &#x2705; | &#x2705; |
 | sqlite3 | [The sqlite3 PHP Extension](https://github.com/php/php-src/tree/master/ext/sqlite3) | &#x2714; | &#x2714; |
 | ssh2 | [The ssh2 PHP Extension](https://pecl.php.net/package/ssh2) | &#x2705; | &#x2705; |
 | standard | [The standard PHP Extension](https://github.com/php/php-src/tree/master/ext/standard) | &#x2714; | &#x2714; |
