@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "phpstan",
+            "summary": "PHP Static Analysis Tool",
+            "website": "https://github.com/phpstan/phpstan",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/phpstan/phpstan/releases/latest/download/phpstan.phar",
+                    "bin": "%target-dir%/phpstan"
+                }
+            },
+            "test": "",
+            "tags": ["phpstan"]
+        }
+    ]
+}

@@ -167,6 +167,7 @@ Current status reflect the contents of the master branch of this repository.
 | phplint v2 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phplint v3 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phpmd | [Find problems in PHP code](https://github.com/phpmd/phpmd) | &#x2705; | &#x274C; |
+| phpstan | [PHP Static Analysis Tool](https://github.com/phpstan/phpstan) | &#x274C; | &#x2705; |
 | phpunit 5 | [The PHP Unit Testing framework (5.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x274C; |
 | phpunit 7 | [The PHP Unit Testing framework (7.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; |
 | phpunit 8 | [The PHP Unit Testing framework (8.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; |
