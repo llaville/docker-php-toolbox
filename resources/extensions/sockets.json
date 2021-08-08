@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "sockets",
+            "summary": "The sockets PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/sockets",
+            "command": {
+                "pecl-install": {
+                    "module_name": "sockets",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
