@@ -55,6 +55,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 **Tools**
 
 - [support to phpstan tool](https://github.com/llaville/docker-php-toolbox/commit/0bb7ac4f8e8112372d94bebdf474777e54e0063a)
+- [support to phpunit 6.x versions](https://github.com/llaville/docker-php-toolbox/commit/5b1c19fd4d1bfbca680872dc9ccb7b2bf5a701f6)
 
 ## [1.0.0alpha1] - 2021-08-07
 
