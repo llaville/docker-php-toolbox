@@ -107,7 +107,7 @@ Current status reflect the contents of the master branch of this repository.
 | stomp | [The stomp PHP Extension](https://pecl.php.net/package/stomp) | &#x274C; | &#x2705; |
 | swoole | [The swoole PHP Extension](https://pecl.php.net/package/swoole) | &#x2705; | &#x2705; |
 | sysvmsg | [The sysvmsg PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvmsg) | &#x2705; | &#x2705; |
-| sysvsem | [The sysvsem PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvsem) | &#x2705; | &#x274C; |
+| sysvsem | [The sysvsem PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvsem) | &#x2705; | &#x2705; |
 | sysvshm | [The sysvshm PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvshm) | &#x2705; | &#x274C; |
 | tidy | [The tidy PHP Extension](https://github.com/php/php-src/tree/master/ext/tidy) | &#x2705; | &#x274C; |
 | tokenizer | [The tokenizer PHP Extension](https://github.com/php/php-src/tree/master/ext/tokenizer) | &#x2714; | &#x2714; |

@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "sysvsem",
+            "summary": "The sysvsem PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/sysvsem",
+            "command": {
+                "pecl-install": {
+                    "module_name": "sysvsem",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
