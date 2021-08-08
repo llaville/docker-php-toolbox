@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "sysvshm",
+            "summary": "The sysvshm PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/sysvshm",
+            "command": {
+                "pecl-install": {
+                    "module_name": "sysvshm",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
