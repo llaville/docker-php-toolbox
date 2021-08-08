@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "yar",
+            "summary": "The yar PHP Extension",
+            "website": "https://pecl.php.net/package/yar",
+            "command": {
+                "pecl-install": {
+                    "module_name": "yar",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
