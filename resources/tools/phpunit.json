@@ -69,6 +69,24 @@
                 "exclude-php:7.3", "exclude-php:7.4",
                 "exclude-php:8.0", "exclude-php:8.1"
             ]
+        },
+        {
+            "name": "phpunit 5",
+            "summary": "The PHP Unit Testing framework (5.x version)",
+            "website": "https://github.com/sebastianbergmann/phpunit",
+            "command": {
+                "phar-download": {
+                    "phar": "https://phar.phpunit.de/phpunit-5.phar",
+                    "bin": "%target-dir%/phpunit"
+                }
+            },
+            "test": "",
+            "tags": [
+                "phpunit", "phpunit-5",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5",
+                "exclude-php:7.2", "exclude-php:7.3", "exclude-php:7.4",
+                "exclude-php:8.0", "exclude-php:8.1"
+            ]
         }
     ]
 }
