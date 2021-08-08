@@ -94,7 +94,7 @@ Current status reflect the contents of the master branch of this repository.
 | shmop | [The shmop PHP Extension](https://github.com/php/php-src/tree/master/ext/shmop) | &#x2705; | &#x2705; |
 | simplexml | [The simplexml PHP Extension](https://github.com/php/php-src/tree/master/ext/simplexml) | &#x2714; | &#x2714; |
 | snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x2705; |
-| soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x274C; |
+| soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x2705; |
 | sockets | [The sockets PHP Extension](https://github.com/php/php-src/tree/master/ext/sockets) | &#x2705; | &#x274C; |
 | sodium | [The sodium PHP Extension](https://github.com/php/php-src/tree/master/ext/sodium) | &#x2714; | &#x2714; |
 | solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; |

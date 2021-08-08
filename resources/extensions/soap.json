@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "soap",
+            "summary": "The soap PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/soap",
+            "command": {
+                "pecl-install": {
+                    "module_name": "soap",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
