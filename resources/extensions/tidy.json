@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "tidy",
+            "summary": "The tidy PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/tidy",
+            "command": {
+                "pecl-install": {
+                    "module_name": "tidy",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
