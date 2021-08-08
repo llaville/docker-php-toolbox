@@ -93,7 +93,7 @@ Current status reflect the contents of the master branch of this repository.
 | session | [The session PHP Extension](https://github.com/php/php-src/tree/master/ext/session) | &#x2714; | &#x2714; |
 | shmop | [The shmop PHP Extension](https://github.com/php/php-src/tree/master/ext/shmop) | &#x2705; | &#x2705; |
 | simplexml | [The simplexml PHP Extension](https://github.com/php/php-src/tree/master/ext/simplexml) | &#x2714; | &#x2714; |
-| snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x274C; |
+| snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x2705; |
 | soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x274C; |
 | sockets | [The sockets PHP Extension](https://github.com/php/php-src/tree/master/ext/sockets) | &#x2705; | &#x274C; |
 | sodium | [The sodium PHP Extension](https://github.com/php/php-src/tree/master/ext/sodium) | &#x2714; | &#x2714; |

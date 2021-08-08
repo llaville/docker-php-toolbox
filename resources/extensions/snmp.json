@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "snmp",
+            "summary": "The snmp PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/snmp",
+            "command": {
+                "pecl-install": {
+                    "module_name": "snmp",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
