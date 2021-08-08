@@ -182,12 +182,12 @@ bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv 7.3
 ### List available extensions
 
 ```shell
-$ bin/tookit.php list:extensions <php_version>
+bin/toolkit.php list:extensions <php_version>
 ```
 To get list of compatible extensions for a PHP platform.
 For example:
 ```shell
-$ bin/tookit.php list:extensions 8.1
+bin/toolkit.php list:extensions 8.1
 
 List available extensions for PHP 8.1
 =====================================
@@ -225,7 +225,7 @@ List available extensions for PHP 8.1
 ### List available extensions
 
 ```shell
-$ bin/tookit.php list:tools <php_version>
+bin/toolkit.php list:tools <php_version>
 ```
 To get list of compatible tools for a PHP platform.
 
@@ -234,7 +234,7 @@ To get list of compatible tools for a PHP platform.
 To limit some tools from the listing, multiple `--tag` options can be added.
 For example:
 ```shell
-$ bin/tookit.php list:tools 7.4 --tag composer --tag phpunit
+bin/toolkit.php list:tools 7.4 --tag composer --tag phpunit
 
 List available tools for PHP 7.4
 ================================
