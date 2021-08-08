@@ -1,0 +1,21 @@
+{
+    "tools": [
+        {
+            "name": "swoole",
+            "summary": "The swoole PHP Extension",
+            "website": "https://pecl.php.net/package/swoole",
+            "command": {
+                "pecl-install": {
+                    "module_name": "swoole",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": [
+                "pecl-extensions",
+                "exclude-php:5.2",
+                "exclude-php:8.1"
+            ]
+        }
+    ]
+}
