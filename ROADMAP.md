@@ -91,7 +91,7 @@ Current status reflect the contents of the master branch of this repository.
 | redis | [The redis PHP Extension](https://pecl.php.net/package/redis) | &#x2705; | &#x2705; |
 | reflection | [The reflection PHP Extension](https://github.com/php/php-src/tree/master/ext/reflection) | &#x2714; | &#x2714; |
 | session | [The session PHP Extension](https://github.com/php/php-src/tree/master/ext/session) | &#x2714; | &#x2714; |
-| shmop | [The shmop PHP Extension](https://github.com/php/php-src/tree/master/ext/shmop) | &#x2705; | &#x274C; |
+| shmop | [The shmop PHP Extension](https://github.com/php/php-src/tree/master/ext/shmop) | &#x2705; | &#x2705; |
 | simplexml | [The simplexml PHP Extension](https://github.com/php/php-src/tree/master/ext/simplexml) | &#x2714; | &#x2714; |
 | snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x274C; |
 | soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x274C; |
