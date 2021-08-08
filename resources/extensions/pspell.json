@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "pspell",
+            "summary": "The pspell PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/pspell",
+            "command": {
+                "pecl-install": {
+                    "module_name": "pspell",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}

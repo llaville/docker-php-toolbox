@@ -82,7 +82,7 @@ Current status reflect the contents of the master branch of this repository.
 | phalcon | [The phalcon PHP Extension](https://pecl.php.net/package/phalcon) | &#x2705; | &#x274C; |
 | phar | [The phar PHP Extension](https://github.com/php/php-src/tree/master/ext/phar) | &#x2714; | &#x2714; |
 | posix | [The posix PHP Extension](https://github.com/php/php-src/tree/master/ext/posix) | &#x2714; | &#x2714; |
-| pspell | [The pspell PHP Extension](https://github.com/php/php-src/tree/master/ext/pspell) | &#x2705; | &#x274C; |
+| pspell | [The pspell PHP Extension](https://github.com/php/php-src/tree/master/ext/pspell) | &#x2705; | &#x2705; |
 | psr | [The psr PHP Extension](https://pecl.php.net/package/psr) | &#x2705; | &#x274C; |
 | raphf | [The raphf PHP Extension](https://pecl.php.net/package/raphf) | &#x274C; | &#x2705; |
 | rdkafka | [The rdkafka PHP Extension](https://pecl.php.net/package/rdkafka) | &#x2705; | &#x2705; |
