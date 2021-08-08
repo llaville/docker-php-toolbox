@@ -317,6 +317,7 @@ Please have a look on [UseCases](https://github.com/llaville/docker-php-toolbox/
 | ssh2 | [The ssh2 PHP Extension](https://pecl.php.net/package/ssh2) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | stomp | [The stomp PHP Extension](https://pecl.php.net/package/stomp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; |
 | swoole | [The swoole PHP Extension](https://pecl.php.net/package/swoole) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| sysvmsg | [The sysvmsg PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvmsg) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | uopz | [The uopz PHP Extension](https://pecl.php.net/package/uopz) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | uploadprogress | [The uploadprogress PHP Extension](https://pecl.php.net/package/uploadprogress) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; |
 | uuid | [The uuid PHP Extension](https://pecl.php.net/package/uuid) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
