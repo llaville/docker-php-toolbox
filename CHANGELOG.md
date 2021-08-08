@@ -8,6 +8,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - `CHANGELOG.md` file to follow changes to this project
+
+**Extensions**
+
 - [support to bcmath extension](https://github.com/llaville/docker-php-toolbox/commit/c814392e5705b1752bd4de0ee144ed30948a3942)
 - [support to bz2 extension](https://github.com/llaville/docker-php-toolbox/commit/0c39ea2c42145769f8c98530306424827fcae963)
 - [support to calendar extension](https://github.com/llaville/docker-php-toolbox/commit/0dda6731d51bdee701abdc1cb1c728a500475797)
@@ -48,6 +51,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [support to tidy extension](https://github.com/llaville/docker-php-toolbox/commit/4cb31324cb640b8d3900525790dabfc9125cf0fa)
 - [support to xsl extension](https://github.com/llaville/docker-php-toolbox/commit/c2aa2f87b7016300ae98486dc7b0c64abd6d0a9f)
 - [support to yar extension](https://github.com/llaville/docker-php-toolbox/commit/c9a2220f9cb7fcad5e4c5fecd8aaaa8d2f14a66c)
+
+**Tools**
+
+- [support to phpstan tool](https://github.com/llaville/docker-php-toolbox/commit/0bb7ac4f8e8112372d94bebdf474777e54e0063a)
 
 ## [1.0.0alpha1] - 2021-08-07
 
