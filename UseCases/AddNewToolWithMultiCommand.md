@@ -27,7 +27,7 @@ add a new JSON file (i.e: `mhsendmail.json`, but you are free to use whatever yo
             "website": "https://github.com/BlueBambooStudios/mhsendmail",
             "command": {
                 "file-download": {
-                    "url": "https://github.com/devilbox/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
+                    "url": "https://github.com/BlueBambooStudios/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
                     "target": "/tmp/mhsendmail_%os%_%arch%"
                 },
                 "sh" : {
