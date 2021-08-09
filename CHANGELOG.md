@@ -54,6 +54,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 **Tools**
 
+- [support to deployer](https://github.com/llaville/docker-php-toolbox/commit/83e2e8810766d7b0822057906350d38f83b5f165)
 - [support to phpstan tool](https://github.com/llaville/docker-php-toolbox/commit/0bb7ac4f8e8112372d94bebdf474777e54e0063a)
 - [support to phpunit 6.x versions](https://github.com/llaville/docker-php-toolbox/commit/5b1c19fd4d1bfbca680872dc9ccb7b2bf5a701f6)
 - [support to phpunit 5.x versions](https://github.com/llaville/docker-php-toolbox/commit/295691407291e9567a7bdeea0e80fc0ce0fcfb7a)
