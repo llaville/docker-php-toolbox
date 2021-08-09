@@ -142,7 +142,7 @@ Current status reflect the contents of the master branch of this repository.
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | composer | [Dependency Manager for PHP](https://github.com/composer/composer) | &#x2705; | &#x2705; |
-| deployer | [A deployment tool written in PHP](https://github.com/deployphp/deployer) | &#x2705; | &#x274C; |
+| deployer | [A deployment tool written in PHP](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; |
 | drupalconsole | [The Drupal CLI](https://github.com/hechoendrupal/drupal-console) | &#x2705; | &#x274C; |
 | drush 7 |  | &#x2705; | &#x274C; |
 | drush 8 |  | &#x2705; | &#x274C; |

@@ -1,0 +1,87 @@
+{
+    "tools": [
+        {
+            "name": "deployer 6",
+            "summary": "A deployment tool for PHP (6.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "test": "",
+            "tags": [
+                "deployer", "deployer-6",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:7.0", "exclude-php:7.1"
+            ]
+        },
+        {
+            "name": "deployer 5",
+            "summary": "A deployment tool for PHP (5.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/releases/v5.1.3/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "test": "",
+            "tags": [
+                "deployer", "deployer-5",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:7.1", "exclude-php:7.2", "exclude-php:7.3", "exclude-php:7.4",
+                "exclude-php:8.0", "exclude-php:8.1"
+            ]
+        },
+        {
+            "name": "deployer 4",
+            "summary": "A deployment tool for PHP (4.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/releases/v4.3.4/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "test": "",
+            "tags": [
+                "deployer", "deployer-4",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5"
+            ]
+        },
+        {
+            "name": "deployer 3",
+            "summary": "A deployment tool for PHP (3.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/releases/v3.3.0/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "test": "",
+            "tags": [
+                "deployer", "deployer-3",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4"
+            ]
+        },
+        {
+            "name": "deployer 2",
+            "summary": "A deployment tool for PHP (2.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/releases/v2.0.5/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "test": "",
+            "tags": [
+                "deployer", "deployer-2",
+                "exclude-php:5.2", "exclude-php:5.3"
+            ]
+        }
+    ]
+}
