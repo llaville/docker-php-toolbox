@@ -7,7 +7,7 @@ FROM local/php-fpm:${PHP_VERSION}-base as base
 FROM base as builder
 MAINTAINER "llaville" <pear@laurent-laville.org>
 
-ARG DOCKER_PHP_EXTENSION_INSTALLER=1.2.52
+ARG DOCKER_PHP_EXTENSION_INSTALLER=1.2.55
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/download/${DOCKER_PHP_EXTENSION_INSTALLER}/install-php-extensions /usr/local/bin/
 RUN chmod uga+x /usr/local/bin/install-php-extensions
 
