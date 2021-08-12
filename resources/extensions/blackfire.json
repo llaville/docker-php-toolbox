@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "blackfire",
+            "summary": "The blackfire probe Extension",
+            "website": "https://www.blackfire.io/",
+            "command": {
+                "pecl-install": {
+                    "module_name": "blackfire",
+                    "version": ""
+                }
+            },
+            "test": "",
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
