@@ -1,0 +1,33 @@
+{
+    "tools": [
+        {
+            "name": "phpcbf 3",
+            "summary": "Automatically corrects coding standard violations",
+            "website": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/latest/download/phpcbf.phar",
+                    "bin": "%target-dir%/phpcbf"
+                }
+            },
+            "test": "",
+            "tags": [
+                "phpcbf",
+                "exclude-php:5.2", "exclude-php:5.3"
+            ]
+        },
+        {
+            "name": "phpcbf 2",
+            "summary": "Automatically corrects coding standard violations",
+            "website": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.9.0/phpcbf.phar",
+                    "bin": "%target-dir%/phpcbf"
+                }
+            },
+            "test": "",
+            "tags": ["phpcbf"]
+        }
+    ]
+}
