@@ -62,6 +62,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [support to phpunit 5.x versions](https://github.com/llaville/docker-php-toolbox/commit/295691407291e9567a7bdeea0e80fc0ce0fcfb7a)
 - [support to phpunit 4.x versions](https://github.com/llaville/docker-php-toolbox/commit/5593304209bf493e16b5edea7e0067f5eebd6780)
 
+### Changed
+
+Make Dockerfile process is now optimized (quick build) to avoid invalidate cache when not necessary (when `no-cache` option is not specified)
+
 ## [1.0.0alpha1] - 2021-08-07
 
 ### Added

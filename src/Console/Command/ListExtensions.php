@@ -70,7 +70,7 @@ final class ListExtensions extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $tools = (new Tools())->load($toolsPath);
+        $tools = (new Tools())->load($toolsPath)->sortByName();
 
         $transform = function (Tool $tool) {
             return [

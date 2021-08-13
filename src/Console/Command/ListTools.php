@@ -77,7 +77,7 @@ final class ListTools extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $tools = (new Tools())->load($toolsPath);
+        $tools = (new Tools())->load($toolsPath)->sortByName();
 
         $tags = $input->getOption('tag');
 

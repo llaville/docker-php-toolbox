@@ -10,6 +10,7 @@ use Doctrine\Common\Collections\Collection;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
+use Exception;
 use RuntimeException;
 use function is_array;
 use function iterator_to_array;
@@ -26,6 +27,7 @@ final class Tools extends AbstractLazyCollection
     /**
      * @param string $dirs
      * @return Collection
+     * @throws Exception
      */
     public function load(string $dirs): Collection
     {
@@ -38,6 +40,7 @@ final class Tools extends AbstractLazyCollection
             ->exclude($exclude)
             ->name('*.json')
             ->depth('== 1')
+            ->sortByModifiedTime()
         ;
 
         foreach ($finder as $resource) {
@@ -56,6 +59,15 @@ final class Tools extends AbstractLazyCollection
             }
         }
 
+        return $this;
+    }
+
+    /**
+     * @return Collection
+     * @throws Exception
+     */
+    public function sortByName(): Collection
+    {
         // https://coderwall.com/p/mfsssa/sorting-doctrine-arraycollection
         $iterator = $this->getIterator();
 
@@ -65,6 +77,7 @@ final class Tools extends AbstractLazyCollection
         });
 
         $this->collection = new ArrayCollection(iterator_to_array($iterator));
+
         return $this;
     }
 

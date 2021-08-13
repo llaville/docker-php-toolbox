@@ -56,7 +56,7 @@ final class UpdateReadme extends Command implements CommandInterface
         $toolsPath = $input->getOption('tools');
         $readmePath = $input->getOption('readme');
 
-        $tools = (new Tools())->load($toolsPath);
+        $tools = (new Tools())->load($toolsPath)->sortByName();
 
         $formatSection = function (Tool $tool) {
             return sprintf('| %s | [%s](%s) | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |',
