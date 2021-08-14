@@ -64,7 +64,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-Make Dockerfile process is now optimized (quick build) to avoid invalidate cache when not necessary (when `no-cache` option is not specified)
+- [33967d7](https://github.com/llaville/docker-php-toolbox/commit/33967d777f0cabe9ea4859f17528d07ca411f253)
+: Make Dockerfile process is now optimized (quick build) to avoid invalidate cache when not necessary (when `no-cache` option is not specified)
 
 ## [1.0.0alpha1] - 2021-08-07
 
