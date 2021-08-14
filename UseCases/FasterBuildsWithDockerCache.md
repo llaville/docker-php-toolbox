@@ -42,3 +42,6 @@ Other tips to use cache as much as possible (already implemented since 1.0 alpha
 * [Faster CI Builds with Docker Layer Caching and BuildKit](https://testdriven.io/blog/faster-ci-builds-with-docker-cache/)
 * [Docker BuildKit: faster builds, new features, and now it’s stable](https://pythonspeed.com/articles/docker-buildkit/)
 * [Advanced Dockerfiles: Faster Builds and Smaller Images Using BuildKit and Multistage Builds](https://www.docker.com/blog/advanced-dockerfiles-faster-builds-and-smaller-images-using-buildkit-and-multistage-builds/)
+* [Build images with BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/)
+* [Dockerfile frontend syntaxes](https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md) with BuildKit
+* [Can php-extension-installer keep apt repo cache and downloaded packages?](https://github.com/mlocati/docker-php-extension-installer/issues/418)
