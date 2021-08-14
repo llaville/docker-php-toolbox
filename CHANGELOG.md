@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - `CHANGELOG.md` file to follow changes to this project
+- Display timing and memory usage information with `profile` option on `build:image` command
 
 **Extensions**
 

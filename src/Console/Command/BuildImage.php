@@ -13,6 +13,7 @@ use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 
 use LogicException;
+use Symfony\Component\Stopwatch\Stopwatch;
 use function basename;
 use function dirname;
 use function file_get_contents;
@@ -68,6 +69,12 @@ final class BuildImage extends Command implements CommandInterface
                 InputOption::VALUE_REQUIRED,
                 'Vendor name to prefix Docker images',
                 'local'
+            )
+            ->addOption(
+                'profile',
+                null,
+                InputOption::VALUE_NONE,
+                'Display timing and memory usage information'
             )
         ;
     }

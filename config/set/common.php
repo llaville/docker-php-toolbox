@@ -3,14 +3,19 @@
 use Bartlett\PHPToolbox\Console\Application;
 use Bartlett\PHPToolbox\Console\ApplicationInterface;
 use Bartlett\PHPToolbox\Console\Command\FactoryCommandLoader;
+use Bartlett\PHPToolbox\Console\Input\Input;
+use Bartlett\PHPToolbox\Console\Output\Output;
+use Bartlett\PHPToolbox\Event\EventDispatcher;
+use Bartlett\PHPToolbox\Event\ProfileEventSubscriber;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
-use Symfony\Component\Console\Input\Input;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\Output;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Stopwatch\Stopwatch;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_iterator;
 
@@ -31,6 +36,11 @@ return static function (ContainerConfigurator $containerConfigurator): void
     $services->set(InputInterface::class, Input::class);
     $services->set(OutputInterface::class, Output::class);
 
+    $services->set(Stopwatch::class);
+
+    $services->set(EventSubscriberInterface::class,  ProfileEventSubscriber::class);
+    $services->set(EventDispatcherInterface::class, EventDispatcher::class);
+
     // @link https://symfony.com/doc/current/console/lazy_commands.html#factorycommandloader
     $services->set(CommandLoaderInterface::class, FactoryCommandLoader::class)
         ->arg('$commands', tagged_iterator('console.command'))
@@ -39,6 +49,7 @@ return static function (ContainerConfigurator $containerConfigurator): void
     $services->set(ApplicationInterface::class, Application::class)
         ->call('setContainer', [service(ContainerInterface::class)])
         ->call('setCommandLoader', [service(CommandLoaderInterface::class)])
+        ->call('setDispatcher', [service(EventDispatcherInterface::class)])
         // for bin file
         ->public()
     ;
