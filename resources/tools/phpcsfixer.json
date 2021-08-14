@@ -1,0 +1,42 @@
+{
+    "tools": [
+        {
+            "name": "php-cs-fixer 3",
+            "summary": "PHP Coding Standards Fixer (3.x versions)",
+            "website": "https://github.com/FriendsOfPHP/PHP-CS-Fixer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/latest/download/php-cs-fixer.phar",
+                    "bin": "%target-dir%/php-cs-fixer-3"
+                },
+                "sh": {
+                    "cmd": "ln -sf %target-dir%/php-cs-fixer-3 %target-dir%/php-cs-fixer"
+                }
+            },
+            "test": "",
+            "tags": [
+                "php-cs-fixer", "php-cs-fixer-3",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:8.1"
+            ]
+        },
+        {
+            "name": "php-cs-fixer 2",
+            "summary": "PHP Coding Standards Fixer (2.x versions)",
+            "website": "https://github.com/FriendsOfPHP/PHP-CS-Fixer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.19.1/php-cs-fixer.phar",
+                    "bin": "%target-dir%/php-cs-fixer-2"
+                }
+            },
+            "test": "",
+            "tags": [
+                "php-cs-fixer", "php-cs-fixer-2",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5",
+                "exclude-php:8.1"
+            ]
+        }
+    ]
+}
