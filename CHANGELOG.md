@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 **Tools**
 
 - [support to php-cs-fixer](https://github.com/llaville/docker-php-toolbox/commit/bf1f35529f0cf8490864e421ea805e9371d9d7cb)
+- [support to phpdd](https://github.com/llaville/docker-php-toolbox/commit/916f0df46a6d6c893b08b29682e9cfabe916095c)
 
 ## [1.0.0alpha2] - 2021-08-14
 
