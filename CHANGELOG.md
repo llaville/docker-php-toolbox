@@ -5,6 +5,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+**Tools**
+
+- [support to php-cs-fixer](https://github.com/llaville/docker-php-toolbox/commit/bf1f35529f0cf8490864e421ea805e9371d9d7cb)
+
 ## [1.0.0alpha2] - 2021-08-14
 
 Second prototype version with following contents (+40 extensions, +5 tools):
