@@ -164,6 +164,7 @@ Current status reflect the contents of the master branch of this repository.
 | phpcs | [Detects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; |
 | phpcbf | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; |
 | php-cs-fixer | [PHP Coding Standards Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; |
+| phpdd | [PHP Deprecation Detector](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x274C; | &#x2705; |
 | phplint v2 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phplint v3 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phpmd | [Find problems in PHP code](https://github.com/phpmd/phpmd) | &#x2705; | &#x274C; |

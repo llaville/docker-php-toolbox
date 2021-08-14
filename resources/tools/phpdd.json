@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "phpdd",
+            "summary": "Finds usage of deprecated features",
+            "website": "https://github.com/wapmorgan/PhpDeprecationDetector",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/wapmorgan/PhpDeprecationDetector/releases/download/2.0.25/phpdd-2.0.25.phar",
+                    "bin": "%target-dir%/phpdd"
+                }
+            },
+            "test": "",
+            "tags": ["phpdd", "exclude-php:5.2", "exclude-php:5.3"]
+        }
+    ]
+}
