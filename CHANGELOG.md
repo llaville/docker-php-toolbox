@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [support to php-cs-fixer](https://github.com/llaville/docker-php-toolbox/commit/bf1f35529f0cf8490864e421ea805e9371d9d7cb)
 - [support to phpbench](https://github.com/llaville/docker-php-toolbox/commit/bc9497f8bcf08bb402c391c6f9dcf9e61c9185f3)
 - [support to phpdd](https://github.com/llaville/docker-php-toolbox/commit/916f0df46a6d6c893b08b29682e9cfabe916095c)
+- [support to phpdoc](https://github.com/llaville/docker-php-toolbox/commit/9bfa83d472182c83b3f54d6eeda03bd169a235f5)
 - [support to psalm](https://github.com/llaville/docker-php-toolbox/commit/6476c7d863ae59aedd743a15aa16305c754eb074)
 - [support to yamllint](https://github.com/llaville/docker-php-toolbox/commit/320aec8ea05bf79e7aaf9ee6d77a513266ec4dbf)
 
