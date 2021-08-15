@@ -30,6 +30,8 @@ final class Factory
                     return new PeclInstallCommand($properties['module_name'], $properties['version'] ?? null);
                 case 'phar-download':
                     return new PharDownloadCommand($properties['phar'], $properties['bin']);
+                case 'pip-install':
+                    return new PipInstallCommand($properties['requirement'], $properties['pip-version'] ?? 3);
                 case 'sh':
                     return new ShCommand($properties['cmd'], $properties['package_manager'] ?? '');
             }

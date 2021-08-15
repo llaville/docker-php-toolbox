@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- new specialized command (`pip-install`) to install pip (python) package
+
 **Tools**
 
 - [support to cachetool](https://github.com/llaville/docker-php-toolbox/commit/0e610c0565dc68838522bdd05222f8135e1d8d12)
