@@ -1,0 +1,22 @@
+{
+    "tools": [
+        {
+            "name": "phpdoc",
+            "summary": "Documentation Generator for PHP",
+            "website": "https://github.com/phpdocumentor/phpdocumentor",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/phpdocumentor/phpdocumentor/releases/latest/download/phpDocumentor.phar",
+                    "bin": "%target-dir%/phpdoc"
+                }
+            },
+            "test": "",
+            "tags": [
+                "phpdoc",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:7.0", "exclude-php:7.1",
+                "exclude-php:8.1"
+            ]
+        }
+    ]
+}
