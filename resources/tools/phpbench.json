@@ -1,0 +1,22 @@
+{
+    "tools": [
+        {
+            "name": "phpbench",
+            "summary": "PHP Benchmarking framework",
+            "website": "https://github.com/phpbench/phpbench",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/phpbench/phpbench/releases/latest/download/phpbench.phar",
+                    "bin": "%target-dir%/phpbench"
+                }
+            },
+            "test": "",
+            "tags": [
+                "phpbench",
+                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:7.0", "exclude-php:7.1",
+                "exclude-php:8.1"
+            ]
+        }
+    ]
+}
