@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "psalm",
+            "summary": "Finds errors in PHP applications",
+            "website": "https://github.com/vimeo/psalm",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/vimeo/psalm/releases/latest/download/psalm.phar",
+                    "bin": "%target-dir%/psalm"
+                }
+            },
+            "test": "",
+            "tags": ["psalm"]
+        }
+    ]
+}
