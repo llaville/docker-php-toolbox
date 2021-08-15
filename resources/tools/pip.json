@@ -6,7 +6,7 @@
             "website": "https://github.com/pypa/pip",
             "command": {
                 "sh": {
-                    "cmd": "python3-pip",
+                    "cmd": "python3-pip python3-wheel",
                     "package_manager": "apt"
                 }
             },
@@ -19,7 +19,7 @@
             "website": "https://github.com/pypa/pip",
             "command": {
                 "sh": {
-                    "cmd": "python-pip",
+                    "cmd": "python-pip python-wheel",
                     "package_manager": "apt"
                 }
             },
