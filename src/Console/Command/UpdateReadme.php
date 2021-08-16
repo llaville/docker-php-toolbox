@@ -10,11 +10,13 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+use function count;
 use function file_get_contents;
 use function file_put_contents;
 use function implode;
 use function preg_replace;
 use function sprintf;
+use function vsprintf;
 use const PHP_EOL;
 
 /**
@@ -81,20 +83,42 @@ final class UpdateReadme extends Command implements CommandInterface
         $extensionsList = $tools->filter(function(Tool $tool) {
             return in_array('pecl-extensions', $tool->getTags(), true);
         });
+
+        $totalAvailable = [$extensionsList->count()];
+        $phpVersions = ['5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'];
+
+        foreach ($phpVersions as $phpVersion) {
+            $totalAvailable[] = count($extensionsList->filter(function(Tool $tool) use($phpVersion) {
+                return !in_array('exclude-php:'. $phpVersion, $tool->getTags());
+            }));
+        }
+
         $extensionsList = $extensionsList->map($formatSection);
 
         $extensionsTable  = '| Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |' . PHP_EOL;
         $extensionsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $extensionsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $extensionsTable .= PHP_EOL;
         $extensionsTable .= implode(PHP_EOL, $extensionsList->toArray());
         $extensionsTable .= PHP_EOL;
 
         $toolsList = $tools->filter(function(Tool $tool) {
             return !in_array('pecl-extensions', $tool->getTags(), true);
         });
+
+        $totalAvailable = [$toolsList->count()];
+        foreach ($phpVersions as $phpVersion) {
+            $totalAvailable[] = count($toolsList->filter(function(Tool $tool) use($phpVersion) {
+                return !in_array('exclude-php:'. $phpVersion, $tool->getTags());
+            }));
+        }
+
         $toolsList = $toolsList->map($formatSection);
 
         $toolsTable  = '| Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |' . PHP_EOL;
         $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $toolsTable .= PHP_EOL;
         $toolsTable .= implode(PHP_EOL, $toolsList->toArray());
         $toolsTable .= PHP_EOL;
 
