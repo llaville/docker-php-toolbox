@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 **Tools**
 
 - [support to cachetool](https://github.com/llaville/docker-php-toolbox/commit/0e610c0565dc68838522bdd05222f8135e1d8d12)
+- [support to phive](https://github.com/llaville/docker-php-toolbox/commit/a659bedb11b119096d22b7ca5d8278b78c56257b)
 - [support to php-cs-fixer](https://github.com/llaville/docker-php-toolbox/commit/bf1f35529f0cf8490864e421ea805e9371d9d7cb)
 - [support to phpbench](https://github.com/llaville/docker-php-toolbox/commit/bc9497f8bcf08bb402c391c6f9dcf9e61c9185f3)
 - [support to phpdd](https://github.com/llaville/docker-php-toolbox/commit/916f0df46a6d6c893b08b29682e9cfabe916095c)
