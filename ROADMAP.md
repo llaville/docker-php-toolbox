@@ -129,6 +129,7 @@ Current status reflect the contents of the master branch of this repository.
 | xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; |
 | zip | [The zip PHP Extension](https://pecl.php.net/package/zip) | &#x2705; | &#x2705; |
 | zlib | [The zlib PHP Extension](https://github.com/php/php-src/tree/master/ext/zlib) | &#x2714; | &#x2714; |
+| | Total <span col=2> | 103 | 114 |
 
 ## Tools compare
 
@@ -191,3 +192,4 @@ Current status reflect the contents of the master branch of this repository.
 | wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
 | yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
+| | Total <span col=2> | 39 | 32 |
