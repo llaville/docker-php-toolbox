@@ -18,14 +18,11 @@ final class Factory
         $makeCommand = function(string $type, array $properties): ?CommandInterface {
             switch ($type) {
                 case 'composer-install':
-                    return new ComposerInstallCommand(
-                        $properties['repository'],
-                        $properties['target-dir'],
-                        $properties['version'] ?? null,
-                        $properties['scripts']
-                    );
+                    return new ComposerInstallCommand($properties);
                 case 'file-download':
                     return new FileDownloadCommand($properties['url'], $properties['target']);
+                case 'git-install';
+                    return new GitInstallCommand($properties);
                 case 'pecl-install':
                     return new PeclInstallCommand($properties['module_name'], $properties['version'] ?? null);
                 case 'phar-download':

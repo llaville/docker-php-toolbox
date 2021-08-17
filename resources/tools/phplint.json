@@ -5,12 +5,12 @@
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {
-                "composer-install": {
+                "git-install": {
                     "repository": "https://github.com/overtrue/phplint.git",
                     "target-dir": "/usr/local/src/phplint",
-                    "version": "8.0",
-                    "scripts": false
+                    "version": "8.0"
                 },
+                "composer-install": {},
                 "sh": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
@@ -27,12 +27,12 @@
             "summary": "Checks PHP file syntax",
             "website": "https://github.com/overtrue/phplint",
             "command": {
-                "composer-install": {
+                "git-install": {
                     "repository": "https://github.com/overtrue/phplint.git",
                     "target-dir": "/usr/local/src/phplint",
-                    "version": "7.4",
-                    "scripts": false
+                    "version": "7.4"
                 },
+                "composer-install": {},
                 "sh": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
