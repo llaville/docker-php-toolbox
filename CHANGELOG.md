@@ -7,6 +7,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- new specialized command (`git-install`) to install source code from a GIT repository
 - new specialized command (`pip-install`) to install pip (python) package
 
 **Tools**
