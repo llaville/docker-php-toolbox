@@ -3,7 +3,7 @@
 namespace Bartlett\PHPToolbox\Command;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class FileDownloadCommand implements CommandInterface
 {

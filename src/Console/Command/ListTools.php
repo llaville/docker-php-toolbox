@@ -20,7 +20,7 @@ use function is_readable;
 use function sprintf;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class ListTools extends Command implements CommandInterface
 {

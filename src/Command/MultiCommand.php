@@ -8,7 +8,7 @@ use InvalidArgumentException;
 use function implode;
 
 /** set command
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class MultiCommand implements CommandInterface
 {

@@ -30,7 +30,7 @@ use function strtolower;
 use const PHP_EOL;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class BuildDockerfile extends Command implements CommandInterface
 {

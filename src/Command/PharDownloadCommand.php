@@ -5,7 +5,7 @@ namespace Bartlett\PHPToolbox\Command;
 use function sprintf;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class PharDownloadCommand implements CommandInterface
 {

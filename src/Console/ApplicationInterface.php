@@ -6,7 +6,7 @@ use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 interface ApplicationInterface extends ContainerAwareInterface
 {

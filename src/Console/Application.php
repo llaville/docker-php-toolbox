@@ -6,7 +6,7 @@ use Symfony\Component\Console\Application as SymfonyApplication;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class Application extends SymfonyApplication implements ApplicationInterface
 {

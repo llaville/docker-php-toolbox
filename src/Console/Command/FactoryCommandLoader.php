@@ -9,7 +9,7 @@ use function get_class;
 use function in_array;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 class FactoryCommandLoader extends SymfonyFactoryCommandLoader
 {

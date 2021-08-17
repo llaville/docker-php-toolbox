@@ -20,7 +20,7 @@ use function strcasecmp;
 
 /**
  * @phpstan-extends AbstractLazyCollection<string, array>
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class Tools extends AbstractLazyCollection
 {

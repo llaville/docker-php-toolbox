@@ -25,7 +25,7 @@ use function preg_match_all;
 use function sprintf;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class BuildImage extends Command implements CommandInterface
 {

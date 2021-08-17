@@ -20,7 +20,7 @@ use function vsprintf;
 use const PHP_EOL;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class UpdateReadme extends Command implements CommandInterface
 {

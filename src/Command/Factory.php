@@ -9,7 +9,7 @@ use function current;
 use function key;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class Factory
 {

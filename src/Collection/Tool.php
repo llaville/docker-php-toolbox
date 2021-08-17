@@ -5,7 +5,7 @@ namespace Bartlett\PHPToolbox\Collection;
 use Bartlett\PHPToolbox\Command\CommandInterface;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class Tool
 {

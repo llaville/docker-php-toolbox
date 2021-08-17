@@ -5,7 +5,7 @@ namespace Bartlett\PHPToolbox\Console\Command;
 /**
  * Console command contract.
  *
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 interface CommandInterface
 {

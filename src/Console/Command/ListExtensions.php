@@ -19,7 +19,7 @@ use function is_readable;
 use function sprintf;
 
 /**
- * @since Release 1.0.0
+ * @since Release 1.0.0alpha1
  */
 final class ListExtensions extends Command implements CommandInterface
 {
