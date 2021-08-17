@@ -12,6 +12,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
+| | Total available | 103 | 114 |
 | amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; |
 | apc | [The apc PHP Extension](https://pecl.php.net/package/APC) | &#x2705; | &#x274C; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; |
@@ -129,7 +130,6 @@ Current status reflect the contents of the master branch of this repository.
 | xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; |
 | zip | [The zip PHP Extension](https://pecl.php.net/package/zip) | &#x2705; | &#x2705; |
 | zlib | [The zlib PHP Extension](https://github.com/php/php-src/tree/master/ext/zlib) | &#x2714; | &#x2714; |
-| | Total available | 103 | 114 |
 
 ## Tools compare
 
@@ -140,6 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
+| | Total available | 39 | 32 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -192,4 +193,3 @@ Current status reflect the contents of the master branch of this repository.
 | wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
 | yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
-| | Total available | 39 | 32 |
