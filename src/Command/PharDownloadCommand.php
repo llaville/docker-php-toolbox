@@ -12,10 +12,13 @@ final class PharDownloadCommand implements CommandInterface
     private $phar;
     private $bin;
 
-    public function __construct(string $phar, string $bin)
+    /**
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(array $properties)
     {
-        $this->phar = $phar;
-        $this->bin = $bin;
+        $this->phar = $properties['phar'];
+        $this->bin = $properties['bin'];
     }
 
     public function __toString(): string

@@ -4,7 +4,6 @@ namespace Bartlett\PHPToolbox\Command;
 
 use RuntimeException;
 use function sprintf;
-use const PHP_EOL;
 
 /**
  * @since Release 1.0.0alpha1
@@ -13,8 +12,14 @@ final class ShCommand implements CommandInterface
 {
     private $command;
 
-    public function __construct(string $command, string $packageManager)
+    /**
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(array $properties)
     {
+        $command = $properties['cmd'];
+        $packageManager = $properties['package_manager'] ?? '';
+
         if ('' === $packageManager) {
             $this->command = $command;
         } elseif ('apt' === $packageManager) {

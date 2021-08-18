@@ -12,10 +12,13 @@ final class PeclInstallCommand implements CommandInterface
     private $name;
     private $version;
 
-    public function __construct(string $name, ?string $version = null)
+    /**
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(array $properties)
     {
-        $this->name = $name;
-        $this->version = $version;
+        $this->name = $properties['module_name'];
+        $this->version = $properties['version'] ?? null;
     }
 
     public function __toString(): string

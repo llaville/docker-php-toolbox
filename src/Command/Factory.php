@@ -20,17 +20,17 @@ final class Factory
                 case 'composer-install':
                     return new ComposerInstallCommand($properties);
                 case 'file-download':
-                    return new FileDownloadCommand($properties['url'], $properties['target']);
+                    return new FileDownloadCommand($properties);
                 case 'git-install';
                     return new GitInstallCommand($properties);
                 case 'pecl-install':
-                    return new PeclInstallCommand($properties['module_name'], $properties['version'] ?? null);
+                    return new PeclInstallCommand($properties);
                 case 'phar-download':
-                    return new PharDownloadCommand($properties['phar'], $properties['bin']);
+                    return new PharDownloadCommand($properties);
                 case 'pip-install':
-                    return new PipInstallCommand($properties['requirement'], $properties['pip-version'] ?? 3);
+                    return new PipInstallCommand($properties);
                 case 'sh':
-                    return new ShCommand($properties['cmd'], $properties['package_manager'] ?? '');
+                    return new ShCommand($properties);
             }
 
             return null;

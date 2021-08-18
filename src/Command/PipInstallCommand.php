@@ -12,10 +12,13 @@ final class PipInstallCommand implements CommandInterface
     private $pipVersion;
     private $requirement;
 
-    public function __construct(string $requirement, int $pipVersion)
+    /**
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(array $properties)
     {
-        $this->requirement = $requirement;
-        $this->pipVersion = $pipVersion;
+        $this->requirement = $properties['requirement'];
+        $this->pipVersion = $properties['pip-version'] ?? 3;
     }
 
     public function __toString(): string

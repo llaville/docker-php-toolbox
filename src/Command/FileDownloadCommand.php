@@ -10,10 +10,13 @@ final class FileDownloadCommand implements CommandInterface
     private $url;
     private $target;
 
-    public function __construct(string $url, string $target)
+    /**
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(array $properties)
     {
-        $this->url = $url;
-        $this->target = $target;
+        $this->url = $properties['url'];
+        $this->target = $properties['target'];
     }
 
     public function __toString(): string
