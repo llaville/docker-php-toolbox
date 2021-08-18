@@ -1,0 +1,31 @@
+{
+    "tools": [
+        {
+            "name": "nvm",
+            "summary": "Node Version Manager",
+            "website": "https://github.com/nvm-sh/nvm",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/nvm-sh/nvm",
+                    "target-dir": "/opt/nvm",
+                    "abbreviate": "0",
+                    "match": "v[0-9]*"
+                },
+                "shell": {
+                    "cmd": [
+                        "{ echo 'export NVM_DIR=\"/opt/nvm\"'; echo '[ -s \"$NVM_DIR/nvm.sh\" ]",
+                        "\\. \"$NVM_DIR/nvm.sh\"  # This loads nvm'; echo '[ -s \"$NVM_DIR/bash_completion\" ]",
+                        "\\. \"$NVM_DIR/bash_completion\"  # This loads nvm bash_completion'; } >> /home/${MY_USER}/${BASH_PROFILE}",
+                        "chown -R ${MY_USER}:${MY_GROUP} /opt/nvm",
+                        "su -c '. /opt/nvm/nvm.sh; nvm install node' ${MY_USER}",
+                        "su -c '. /opt/nvm/nvm.sh; nvm install --lts' ${MY_USER}",
+                        "su -c '. /opt/nvm/nvm.sh; nvm use node' ${MY_USER}",
+                        "ln -sf /opt/nvm/nvm.sh /usr/local/bin/nvm"
+                    ]
+                }
+            },
+            "test": "command -v nvm",
+            "tags": ["nvm"]
+        }
+    ]
+}

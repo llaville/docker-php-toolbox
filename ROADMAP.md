@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 32 |
+| | Total available | 39 | 33 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -161,7 +161,7 @@ Current status reflect the contents of the master branch of this repository.
 | linkcheck | [URLs checker](https://github.com/cytopia/linkcheck) | &#x2705; | &#x274C; |
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; |
 | mysqldumpsecure | [Encrypted mysqldump script with compression](https://github.com/cytopia/mysqldump-secure) | &#x2705; | &#x274C; |
-| nvm | [Node Version Manager](https://github.com/nvm-sh/nvm) | &#x2705; | &#x274C; |
+| nvm | [Node Version Manager](https://github.com/nvm-sh/nvm) | &#x2705; | &#x2705; |
 | phalcon-devtools | [Phalcon Developer Tools](https://github.com/phalcon/phalcon-devtools) | &#x2705; | &#x274C; |
 | photon-installer | [Photon CMS Installer](https://github.com/photoncms/installer) | &#x2705; | &#x274C; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x274C; | &#x2705; |
