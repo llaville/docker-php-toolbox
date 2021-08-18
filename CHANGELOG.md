@@ -21,6 +21,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [support to psalm](https://github.com/llaville/docker-php-toolbox/commit/6476c7d863ae59aedd743a15aa16305c754eb074)
 - [support to yamllint](https://github.com/llaville/docker-php-toolbox/commit/320aec8ea05bf79e7aaf9ee6d77a513266ec4dbf)
 
+### Changed
+
+- [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
+
 ## [1.0.0alpha2] - 2021-08-14
 
 Second prototype version with following contents (+40 extensions, +5 tools):
