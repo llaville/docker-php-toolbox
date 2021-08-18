@@ -5,7 +5,7 @@
             "summary": "Text-mode interface for git",
             "website": "https://github.com/jonas/tig",
             "command": {
-                "sh": {
+                "shell": {
                     "cmd": "tig",
                     "package_manager": "apt"
                 }

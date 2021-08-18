@@ -29,8 +29,8 @@ final class Factory
                     return new PharDownloadCommand($properties);
                 case 'pip-install':
                     return new PipInstallCommand($properties);
-                case 'sh':
-                    return new ShCommand($properties);
+                case 'shell':
+                    return new ShellCommand($properties);
             }
 
             return null;

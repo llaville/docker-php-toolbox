@@ -5,7 +5,7 @@
             "summary": "Graph Visualization Tools",
             "website": "https://graphviz.org/",
             "command": {
-                "sh": {
+                "shell": {
                     "cmd": "graphviz",
                     "package_manager": "apt"
                 }

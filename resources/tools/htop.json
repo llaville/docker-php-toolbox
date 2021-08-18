@@ -5,7 +5,7 @@
             "summary": "Interactive process viewer",
             "website": "https://github.com/htop-dev/htop",
             "command": {
-                "sh": {
+                "shell": {
                     "cmd": "htop",
                     "package_manager": "apt"
                 }

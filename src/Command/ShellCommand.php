@@ -2,13 +2,17 @@
 
 namespace Bartlett\PHPToolbox\Command;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 use RuntimeException;
+use function implode;
+use function is_array;
 use function sprintf;
 
 /**
- * @since Release 1.0.0alpha1
+ * @since Release 1.0.0-alpha.3
  */
-final class ShCommand implements CommandInterface
+final class ShellCommand implements CommandInterface
 {
     private $command;
 
@@ -20,7 +24,13 @@ final class ShCommand implements CommandInterface
         $command = $properties['cmd'];
         $packageManager = $properties['package_manager'] ?? '';
 
-        if ('' === $packageManager) {
+        if (is_array($command)) {
+            $collection = new ArrayCollection();
+            foreach ($command as $cmd) {
+                $collection->add(Factory::create(['shell' => ['cmd' => $cmd]]));
+            }
+            $this->command = implode(' && ', $collection->toArray());
+        } elseif ('' === $packageManager) {
             $this->command = $command;
         } elseif ('apt' === $packageManager) {
             $this->command = "DEBIAN_FRONTEND=noninteractive apt-get update -qq "

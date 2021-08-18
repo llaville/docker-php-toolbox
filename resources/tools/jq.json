@@ -5,7 +5,7 @@
             "summary": "Command-line JSON processor",
             "website": "https://github.com/stedolan/jq",
             "command": {
-                "sh": {
+                "shell": {
                     "cmd": "jq",
                     "package_manager": "apt"
                 }

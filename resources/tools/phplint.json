@@ -11,7 +11,7 @@
                     "version": "8.0"
                 },
                 "composer-install": {},
-                "sh": {
+                "shell": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },
@@ -33,7 +33,7 @@
                     "version": "7.4"
                 },
                 "composer-install": {},
-                "sh": {
+                "shell": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },

@@ -9,7 +9,7 @@
                     "phar": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/latest/download/php-cs-fixer.phar",
                     "bin": "%target-dir%/php-cs-fixer-3"
                 },
-                "sh": {
+                "shell": {
                     "cmd": "ln -sf %target-dir%/php-cs-fixer-3 %target-dir%/php-cs-fixer"
                 }
             },
