@@ -26,6 +26,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
 
+[Mega-linter](https://github.com/nvuillam/mega-linter) helps us to fix some errors
+- [a1fda9e](https://github.com/llaville/docker-php-toolbox/commit/a1fda9e2a3a330e177f4c9b9a3e189ad2516fcea)
+: make shell files executable
+- [9b4f938](https://github.com/llaville/docker-php-toolbox/commit/9b4f9385de264b152a3b74ab45df09541c239db5)
+: The MAINTAINER instruction is deprecated as of Docker 1.13 (see 'org.opencontainers.image.authors' label)
+- [5dd4047](https://github.com/llaville/docker-php-toolbox/commit/5dd4047b5b2ed94164b6449f91848ef55da950e0)
+: fix hadolint DL3046 warning
+- [194f6c2](https://github.com/llaville/docker-php-toolbox/commit/194f6c2c4952c1ba08b09eb2c5be344c2a8c782a)
+: fix hadolint DL4006 warning
+
 ## [1.0.0alpha2] - 2021-08-14
 
 Second prototype version with following contents (+40 extensions, +5 tools):
