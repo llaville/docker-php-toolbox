@@ -33,7 +33,7 @@ ENV MY_USER="devilbox" \
 ###
 RUN set -eux \
 	&& groupadd -g ${MY_GID} -r ${MY_GROUP} \
-	&& useradd -u ${MY_UID} -m -s /bin/bash -g ${MY_GROUP} ${MY_USER}
+	&& useradd -u ${MY_UID} -m -s /bin/bash -g ${MY_GROUP} -l ${MY_USER}
 
 ###
 ### Upgrade (install ps)
