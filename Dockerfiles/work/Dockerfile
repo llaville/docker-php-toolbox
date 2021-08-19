@@ -2,7 +2,6 @@
 ARG PHP_VERSION=8.0
 
 FROM local/php-fpm:${PHP_VERSION}-prod
-MAINTAINER "llaville" <pear@laurent-laville.org>
 
 ###
 ### Labels

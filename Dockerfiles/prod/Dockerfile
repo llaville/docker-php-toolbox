@@ -2,7 +2,6 @@
 ARG PHP_VERSION=8.0
 
 FROM local/php-fpm:${PHP_VERSION}-mods
-MAINTAINER "llaville" <pear@laurent-laville.org>
 
 ###
 ### Labels
