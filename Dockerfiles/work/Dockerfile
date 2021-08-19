@@ -28,6 +28,7 @@ ENV BASH_PROFILE=".bashrc"
 ###
 ### Install Common Tools
 ###
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN set -eux \
 	&& DEBIAN_FRONTEND=noninteractive apt-get update -qq \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
