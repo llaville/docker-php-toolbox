@@ -111,8 +111,8 @@ RUN set -eux \
 ###
 RUN \
     { \
-        echo 'PATH="${PATH}:${HOME}/.composer/vendor/bin"'; \
-        echo 'PATH="${PATH}:/usr/local/bin:/usr/local/sbin"'; \
+        echo "PATH=\"${PATH}:${HOME}/.composer/vendor/bin\""; \
+        echo "PATH=\"${PATH}:/usr/local/bin:/usr/local/sbin\""; \
         echo "export PATH"; \
         echo ". /etc/bash-devilbox"; \
         echo "if [ -d /etc/bashrc-devilbox.d/ ]; then"; \
