@@ -1,14 +1,14 @@
 # Faster builds with Docker cache
 
-### What you'll learn ?
+## What you'll learn ?
 
 - What tip we used to make version 1.0.0alpha2 faster than 1.0.0alpha1
 
-### Audience
+## Audience
 
 Developers, DevOps engineers, and Contributors with PHP and Docker skill.
 
-### Step 1 - explains the Docker caching mechanisms
+## Step 1 - explains the Docker caching mechanisms
 
 The [first alpha version](https://github.com/llaville/docker-php-toolbox/releases/tag/1.0.0alpha1) of prototype
 uses benefits of [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/#to-enable-buildkit-builds)
@@ -25,7 +25,7 @@ Docker caches each layer as an image is built, and each layer will only be re-bu
 if it or the layer above it has changed since the last build.
 So, you can significantly speed up builds with Docker cache if you don't change layer order.
 
-### Step 2 - explains alpha2 PHP changes
+## Step 2 - explains alpha2 PHP changes
 
 Once a new extension is added, the new corresponding layer (`RUN install-php-extensions <ext_name>`) is appended to command stack
 rather than inserting in alphabetic order.
@@ -35,7 +35,7 @@ The alphabetic order is only applied on `list:tools` , `list:extensions`, and `u
 while `build:dockerfile` command use only the Symfony Finder order results, return by `load()` method.
 See commit [33967d7](https://github.com/llaville/docker-php-toolbox/commit/33967d777f0cabe9ea4859f17528d07ca411f253) for details of change.
 
-### Step 3 - learn more about faster builds
+## Step 3 - learn more about faster builds
 
 Other tips to use cache as much as possible (already implemented since 1.0 alpha1) are explained very well in following articles :
 

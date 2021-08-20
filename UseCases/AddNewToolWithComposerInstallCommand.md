@@ -1,11 +1,11 @@
-## How to add a new tool with composer install command lines
+# How to add a new tool with composer install command lines
 
-### What you'll learn ?
+## What you'll learn ?
 
 - define a new tool in JSON format that will be installed by composer install
 - update your `Dockerfile` work image to install the new tool
 
-### Audience
+## Audience
 
 Developers, DevOps engineers, and Contributors with PHP/JSON (and Docker) skill.
 
@@ -13,7 +13,7 @@ Developers, DevOps engineers, and Contributors with PHP/JSON (and Docker) skill.
 
 To follow this course, we will add the [phplint](https://github.com/overtrue/phplint) project as new tool into your PHP container.
 
-### Step 1 - define the new tool
+## Step 1 - define the new tool
 
 In your favorite `resources` directory that should have at least two sub-directories (`extensions` and `tools`),
 add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you want as filename), with following contents:
@@ -78,7 +78,7 @@ and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/Shell
 By default, tools are installed in the `/usr/local/bin` directory.
 To perform an installation in another location, don't forget to add the `%target-dir%` placeholder, to be able to replace it at runtime.
 
-### Step 2 - (re)build the work Dockerfile
+## Step 2 - (re)build the work Dockerfile
 
 Before to rebuild the docker work image, you should update the work Dockerfile.
 It can be done by running the following command:
@@ -103,7 +103,7 @@ bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile --resources /h
 Beware, if you plan to use this Toolbox for another target than the Devilbox project, don't forget to identify the right templates
 of your Dockerfiles with the `f` or `dockerfile` option.
 
-### Step 3 - (re)build the work Docker image
+## Step 3 - (re)build the work Docker image
 
 You are now ready to build the Docker work corresponding image with the following command:
 ```bash
