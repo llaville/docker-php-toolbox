@@ -30,76 +30,76 @@ ENV BASH_PROFILE=".bashrc"
 ###
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN set -eux \
-	&& DEBIAN_FRONTEND=noninteractive apt-get update -qq \
-	&& DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
-	&& DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \
-		apt-transport-https \
-		ca-certificates \
-		curl \
-		dirmngr \
-		gnupg \
-		ack-grep \
-		aspell \
-		autoconf \
-		automake \
-		bash-completion \
-		binutils \
-		build-essential \
-		bzip2 \
-		certbot \
-		coreutils \
-		dnsutils \
-		dos2unix \
-		file \
-		gawk \
-		gcc \
-		git \
-		ghostscript \
-		gsfonts \
-		hostname \
-		imagemagick \
-		iputils-ping \
-		less \
-		libc-dev \
-		libffi-dev \
-		libssl-dev \
-		libyaml-dev \
-		locales \
-		make \
-		moreutils \
-		mariadb-client \
-		mupdf \
-		mupdf-tools \
-		nano \
-		net-tools \
-		netcat \
-		openssh-client \
-		patch \
-		patchelf \
-		postgresql-client \
-		redis-tools \
-		rsync \
-		shellcheck \
-		silversearcher-ag \
-		subversion \
-		sudo \
-		tree \
-		unzip \
-		vim \
-		w3m \
-		wget \
-		whois \
-		xz-utils \
-		yarn \
-		zip \
-		zlib1g-dev \
-		zsh \
-	&& DEBIAN_FRONTEND=noninteractive apt-get purge -qq -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false apt-utils \
-	&& rm -rf /var/lib/apt/lists/* \
-	\
-	&& (find /usr/local/bin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
-	&& (find /usr/local/lib -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
-	&& (find /usr/local/sbin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true)
+    && DEBIAN_FRONTEND=noninteractive apt-get update -qq \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        dirmngr \
+        gnupg \
+        ack-grep \
+        aspell \
+        autoconf \
+        automake \
+        bash-completion \
+        binutils \
+        build-essential \
+        bzip2 \
+        certbot \
+        coreutils \
+        dnsutils \
+        dos2unix \
+        file \
+        gawk \
+        gcc \
+        git \
+        ghostscript \
+        gsfonts \
+        hostname \
+        imagemagick \
+        iputils-ping \
+        less \
+        libc-dev \
+        libffi-dev \
+        libssl-dev \
+        libyaml-dev \
+        locales \
+        make \
+        moreutils \
+        mariadb-client \
+        mupdf \
+        mupdf-tools \
+        nano \
+        net-tools \
+        netcat \
+        openssh-client \
+        patch \
+        patchelf \
+        postgresql-client \
+        redis-tools \
+        rsync \
+        shellcheck \
+        silversearcher-ag \
+        subversion \
+        sudo \
+        tree \
+        unzip \
+        vim \
+        w3m \
+        wget \
+        whois \
+        xz-utils \
+        yarn \
+        zip \
+        zlib1g-dev \
+        zsh \
+    && DEBIAN_FRONTEND=noninteractive apt-get purge -qq -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false apt-utils \
+    && rm -rf /var/lib/apt/lists/* \
+    \
+    && (find /usr/local/bin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
+    && (find /usr/local/lib -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
+    && (find /usr/local/sbin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true)
 
 ###
 ### Install custom software
@@ -110,21 +110,21 @@ RUN set -eux \
 ### Configure Bash
 ###
 RUN \
-	{ \
-		echo 'PATH="${PATH}:${HOME}/.composer/vendor/bin"'; \
-		echo 'PATH="${PATH}:/usr/local/bin:/usr/local/sbin"'; \
-		echo "export PATH"; \
-		echo ". /etc/bash-devilbox"; \
-		echo "if [ -d /etc/bashrc-devilbox.d/ ]; then"; \
-		echo "    for f in /etc/bashrc-devilbox.d/*.sh ; do"; \
-		echo "        if [ -r \"\${f}\" ]; then"; \
-		echo "            . \"\${f}\""; \
-		echo "        fi"; \
-		echo "    done"; \
-		echo "    unset f"; \
-		echo "fi"; \
-	} | tee -a /home/${MY_USER}/${BASH_PROFILE} /root/${BASH_PROFILE} \
-	&& chown ${MY_USER}:${MY_GROUP} /home/${MY_USER}/${BASH_PROFILE}
+    { \
+        echo 'PATH="${PATH}:${HOME}/.composer/vendor/bin"'; \
+        echo 'PATH="${PATH}:/usr/local/bin:/usr/local/sbin"'; \
+        echo "export PATH"; \
+        echo ". /etc/bash-devilbox"; \
+        echo "if [ -d /etc/bashrc-devilbox.d/ ]; then"; \
+        echo "    for f in /etc/bashrc-devilbox.d/*.sh ; do"; \
+        echo "        if [ -r \"\${f}\" ]; then"; \
+        echo "            . \"\${f}\""; \
+        echo "        fi"; \
+        echo "    done"; \
+        echo "    unset f"; \
+        echo "fi"; \
+    } | tee -a /home/${MY_USER}/${BASH_PROFILE} /root/${BASH_PROFILE} \
+    && chown ${MY_USER}:${MY_GROUP} /home/${MY_USER}/${BASH_PROFILE}
 
 ###
 ### Copy artifacts

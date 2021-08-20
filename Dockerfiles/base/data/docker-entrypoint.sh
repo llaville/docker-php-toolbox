@@ -24,8 +24,8 @@ CONFIG_DIR="/docker-entrypoint.d"
 ###
 init="$( find "${CONFIG_DIR}" -name '*.sh' -type f | sort -u )"
 for f in ${init}; do
-	# shellcheck disable=SC1090
-	. "${f}"
+    # shellcheck disable=SC1090
+    . "${f}"
 done
 
 

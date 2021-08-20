@@ -25,28 +25,28 @@ LABEL "org.opencontainers.image.description"="PHP-FPM ${PHP_VERSION}-prod"
 ###
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN set -eux \
-	&& DEBIAN_FRONTEND=noninteractive apt-get update -qq \
-	&& DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
-	&& DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \
-		locales-all \
-		postfix \
-		postfix-pcre \
-		cron \
-		rsyslog \
-		socat \
-		supervisor \
-	&& DEBIAN_FRONTEND=noninteractive apt-get purge -qq -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false apt-utils \
-	&& rm -rf /var/lib/apt/lists/* \
-	\
-	&& rm -rf /etc/supervisor* \
-	&& mkdir -p /var/log/supervisor \
-	&& mkdir -p /etc/supervisor/conf.d \
-	&& mkdir -p /etc/supervisor/custom.d \
-	&& chown devilbox:devilbox /etc/supervisor/custom.d \
-	\
-	&& (find /usr/local/bin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
-	&& (find /usr/local/lib -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
-	&& (find /usr/local/sbin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true)
+    && DEBIAN_FRONTEND=noninteractive apt-get update -qq \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \
+        locales-all \
+        postfix \
+        postfix-pcre \
+        cron \
+        rsyslog \
+        socat \
+        supervisor \
+    && DEBIAN_FRONTEND=noninteractive apt-get purge -qq -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false apt-utils \
+    && rm -rf /var/lib/apt/lists/* \
+    \
+    && rm -rf /etc/supervisor* \
+    && mkdir -p /var/log/supervisor \
+    && mkdir -p /etc/supervisor/conf.d \
+    && mkdir -p /etc/supervisor/custom.d \
+    && chown devilbox:devilbox /etc/supervisor/custom.d \
+    \
+    && (find /usr/local/bin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
+    && (find /usr/local/lib -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true) \
+    && (find /usr/local/sbin -type f -print0 | xargs -n1 -0 strip --strip-all -p 2>/dev/null || true)
 
 ###
 ### Copy artifacts

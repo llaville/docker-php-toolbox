@@ -30,16 +30,16 @@ MAILPID="/var/spool/postfix/pid/master.pid"
 ### Sanity checks
 ###
 if ! command -v pidof >/dev/null 2>&1; then
-	echo "pidof is required for cleaning up tail command."
-	exit 1
+    echo "pidof is required for cleaning up tail command."
+    exit 1
 fi
 
 # Give rsyslogd some time to start up
 sleep 2
 
 if ! pidof rsyslogd >/dev/null 2>&1; then
-	echo "rsyslogd is not running, but required for mail logging."
-	exit 1
+    echo "rsyslogd is not running, but required for mail logging."
+    exit 1
 fi
 
 # force new copy of hosts there (otherwise links could be outdated)
@@ -77,8 +77,8 @@ sleep 3
 ### Wait for kill signales
 ###
 while kill -0 "$(cat "${MAILPID}")" >/dev/null 2>&1; do
-	# Check every second
-	sleep 1
+    # Check every second
+    sleep 1
 done
 
 

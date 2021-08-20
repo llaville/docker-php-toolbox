@@ -49,8 +49,8 @@ DVL_SUPERVISOR_CONFD="/etc/supervisor/conf.d"
 ###
 init="$( find "${DVL_CONFIG_DIR}" -name '*.sh' -type f | sort -u )"
 for f in ${init}; do
-	# shellcheck disable=SC1090
-	. "${f}"
+    # shellcheck disable=SC1090
+    . "${f}"
 done
 
 
@@ -83,7 +83,7 @@ set_timezone "TIMEZONE" "${DVL_PHP_INI_DIR}" "${DEBUG_LEVEL}"
 ### PHP-FPM 5.2 and PHP-FPM 5.3 Env variables fix
 ###
 if php -v 2>/dev/null | grep -Eoq '^PHP[[:space:]]5\.(2|3)'; then
-	set_env_php_fpm "/usr/local/etc/php-fpm.d/env.conf"
+    set_env_php_fpm "/usr/local/etc/php-fpm.d/env.conf"
 fi
 
 
@@ -91,24 +91,24 @@ fi
 ### Set Logging
 ###
 set_docker_logs \
-	"DOCKER_LOGS" \
-	"${DVL_FPM_LOG_DIR}" \
-	"${DVL_PHP_FPM_CONF_LOGFILE}" \
-	"${DVL_PHP_INI_CONF_LOGFILE}" \
-	"${MY_USER}" \
-	"${MY_GROUP}" \
-	"${DEBUG_LEVEL}"
+    "DOCKER_LOGS" \
+    "${DVL_FPM_LOG_DIR}" \
+    "${DVL_PHP_FPM_CONF_LOGFILE}" \
+    "${DVL_PHP_INI_CONF_LOGFILE}" \
+    "${MY_USER}" \
+    "${MY_GROUP}" \
+    "${DEBUG_LEVEL}"
 
 
 ###
 ### Setup postfix
 ###
 if is_docker_logs_enabled "DOCKER_LOGS" >/dev/null; then
-	# PHP mail function should log to stderr
-	set_postfix "ENABLE_MAIL" "${MY_USER}" "${MY_GROUP}" "${DVL_PHP_INI_DIR}" "/proc/self/fd/2" "1" "${DEBUG_LEVEL}"
+    # PHP mail function should log to stderr
+    set_postfix "ENABLE_MAIL" "${MY_USER}" "${MY_GROUP}" "${DVL_PHP_INI_DIR}" "/proc/self/fd/2" "1" "${DEBUG_LEVEL}"
 else
-	# PHP mail function should log to file
-	set_postfix "ENABLE_MAIL" "${MY_USER}" "${MY_GROUP}" "${DVL_PHP_INI_DIR}" "${DVL_PHP_MAIL_LOG}" "0" "${DEBUG_LEVEL}"
+    # PHP mail function should log to file
+    set_postfix "ENABLE_MAIL" "${MY_USER}" "${MY_GROUP}" "${DVL_PHP_INI_DIR}" "${DVL_PHP_MAIL_LOG}" "0" "${DEBUG_LEVEL}"
 fi
 
 
@@ -116,7 +116,7 @@ fi
 ### Validate socat port forwards
 ###
 if ! port_forward_validate "FORWARD_PORTS_TO_LOCALHOST" "${DEBUG_LEVEL}"; then
-	exit 1
+    exit 1
 fi
 
 
@@ -124,14 +124,14 @@ fi
 ### Supervisor: socat
 ###
 for line in $( port_forward_get_lines "FORWARD_PORTS_TO_LOCALHOST" ); do
-	lport="$( port_forward_get_lport "${line}" )"
-	rhost="$( port_forward_get_rhost "${line}" )"
-	rport="$( port_forward_get_rport "${line}" )"
-	supervisor_add_service \
-		"socat-${lport}-${rhost}-${rport}" \
-		"/usr/bin/socat tcp-listen:${lport},reuseaddr,fork tcp:${rhost}:${rport}" \
-		"${DVL_SUPERVISOR_CONFD}" \
-		"${DEBUG_LEVEL}"
+    lport="$( port_forward_get_lport "${line}" )"
+    rhost="$( port_forward_get_rhost "${line}" )"
+    rport="$( port_forward_get_rport "${line}" )"
+    supervisor_add_service \
+        "socat-${lport}-${rhost}-${rport}" \
+        "/usr/bin/socat tcp-listen:${lport},reuseaddr,fork tcp:${rhost}:${rport}" \
+        "${DVL_SUPERVISOR_CONFD}" \
+        "${DEBUG_LEVEL}"
 done
 
 
@@ -139,8 +139,8 @@ done
 ### Supervisor: rsyslogd & postfix
 ###
 if [ "$( env_get "ENABLE_MAIL" )" = "1" ] || [ "$( env_get "ENABLE_MAIL" )" = "2" ]; then
-	supervisor_add_service "rsyslogd" "/usr/sbin/rsyslogd -n"      "${DVL_SUPERVISOR_CONFD}" "${DEBUG_LEVEL}" "1"
-	supervisor_add_service "postfix"  "/usr/local/sbin/postfix.sh" "${DVL_SUPERVISOR_CONFD}" "${DEBUG_LEVEL}"
+    supervisor_add_service "rsyslogd" "/usr/sbin/rsyslogd -n"      "${DVL_SUPERVISOR_CONFD}" "${DEBUG_LEVEL}" "1"
+    supervisor_add_service "postfix"  "/usr/local/sbin/postfix.sh" "${DVL_SUPERVISOR_CONFD}" "${DEBUG_LEVEL}"
 fi
 
 
@@ -160,9 +160,9 @@ copy_ini_files "${DVL_PHP_CUST_INI_DIR}" "${DVL_PHP_INI_DIR}" "${DEBUG_LEVEL}"
 ### Copy custom PHP-FPM *.conf files
 ###
 if [ "${PHP_VERSION}" = "5.2" ]; then
-	copy_fpm_5_2_conf_file "${DVL_PHP_CUST_FPM_DIR}/php-fpm.xml" "${DEBUG_LEVEL}"
+    copy_fpm_5_2_conf_file "${DVL_PHP_CUST_FPM_DIR}/php-fpm.xml" "${DEBUG_LEVEL}"
 else
-	copy_fpm_files "${DVL_PHP_CUST_FPM_DIR}" "${DVL_PHP_FPM_DIR}" "${DEBUG_LEVEL}"
+    copy_fpm_files "${DVL_PHP_CUST_FPM_DIR}" "${DVL_PHP_FPM_DIR}" "${DEBUG_LEVEL}"
 fi
 
 
