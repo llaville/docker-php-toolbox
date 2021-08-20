@@ -27,7 +27,7 @@ versions and packed with different types of integrated PHP modules.
 
 Architecture is Devilbox compatible, but may be used for other Docker containers solution.
 
-#### Assembly
+### Assembly
 
 The provided Docker images heavily rely on inheritance to guarantee is the smallest possible image size.
 Each of them provide a working PHP-FPM server, so you must decide what version works best for you.
