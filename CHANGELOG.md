@@ -41,8 +41,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [1.0.0alpha2] - 2021-08-14
 
 Second prototype version with following contents (+40 extensions, +5 tools):
-
-https://github.com/llaville/docker-php-toolbox/blob/3d4408aab3ff0af7e6f9b9d0fce7b1261d5ae103/ROADMAP.md
+[new ROADMAP](https://github.com/llaville/docker-php-toolbox/blob/3d4408aab3ff0af7e6f9b9d0fce7b1261d5ae103/ROADMAP.md)
 
 ### Added
 
@@ -113,8 +112,7 @@ https://github.com/llaville/docker-php-toolbox/blob/3d4408aab3ff0af7e6f9b9d0fce7
 ### Added
 
 First prototype version with following contents:
-
-https://github.com/llaville/docker-php-toolbox/blob/e3159c67983107b525270f4770ef8483dd065312/ROADMAP.md
+[ROADMAP]([https://github.com/llaville/docker-php-toolbox/blob/e3159c67983107b525270f4770ef8483dd065312/ROADMAP.md)
 
 [unreleased]: https://github.com/llaville/docker-php-toolbox/compare/1.0.0alpha2...HEAD
 [1.0.0alpha2]: https://github.com/llaville/docker-php-toolbox/compare/1.0.0alpha1...1.0.0alpha2
