@@ -35,6 +35,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 : fix hadolint DL3046 warning
 - [194f6c2](https://github.com/llaville/docker-php-toolbox/commit/194f6c2c4952c1ba08b09eb2c5be344c2a8c782a)
 : fix hadolint DL4006 warning
+- [7f02acb](https://github.com/llaville/docker-php-toolbox/commit/7f02acbdbf17e62b39f5c641f0ebb23036530eeb)
+: fix hadolint SC2086 info
 
 ## [1.0.0alpha2] - 2021-08-14
 
