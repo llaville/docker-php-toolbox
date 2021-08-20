@@ -32,7 +32,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
                     "version": "8.0",
                     "scripts": false
                 },
-                "sh": {
+                "shell": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },
@@ -54,7 +54,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
                     "version": "7.4",
                     "scripts": false
                 },
-                "sh": {
+                "shell": {
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },
@@ -73,7 +73,7 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 Here, we decide to install **phplint** with composer
 This is done with `composer-install` and `sh` specialized commands.
 See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ComposerInstallCommand.php
-and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShCommand.php
+and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php
 
 By default, tools are installed in the `/usr/local/bin` directory.
 To perform an installation in another location, don't forget to add the `%target-dir%` placeholder, to be able to replace it at runtime.

@@ -30,7 +30,7 @@ add a new JSON file (i.e: `mhsendmail.json`, but you are free to use whatever yo
                     "url": "https://github.com/BlueBambooStudios/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
                     "target": "/tmp/mhsendmail_%os%_%arch%"
                 },
-                "sh" : {
+                "shell" : {
                     "cmd": "chmod +x /tmp/mhsendmail_%os%_%arch% && mv /tmp/mhsendmail_%os%_%arch% %target-dir%/mhsendmail"
                 }
             },
@@ -51,7 +51,7 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 Here, we decide to install **mhsendmail** by downloading corresponding OS asset of your platform.
 This is done with `file-download` and `sh` specialized commands.
 See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/FileDownloadCommand.php
-and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShCommand.php
+and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php
 
 Don't forget to add the `%os%`, `%arch%` and `%target-dir%` placeholders, that will be replaced at runtime.
 (i.e: `%os%` => linux, `%arch%` => 386, `%target-dir%` => /usr/local/bin)

@@ -26,7 +26,7 @@ add a new JSON file (i.e: `tig.json`, but you are free to use whatever you want 
             "summary": "Text-mode interface for git",
             "website": "https://github.com/jonas/tig",
             "command": {
-                "sh": {
+                "shell": {
                     "cmd": "tig",
                     "package_manager": "apt"
                 }
@@ -41,7 +41,7 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 
 Here, we decide to install the **tig** package with [APT](https://en.wikipedia.org/wiki/APT_(software))
 This is done with `sh` specialized command.
-See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShCommand.php
+See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php
 
 ### Step 2 - (re)build the work Dockerfile
 
