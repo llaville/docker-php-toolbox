@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -30,22 +29,22 @@ supervisor_add_service() {
     log "info" "Enabling '${name}' to be started by supervisord" "${debug}"
     # Add services
     {
-        echo "[program:${name}]";
-        echo "command = ${command}";
+        echo "[program:${name}]"
+        echo "command = ${command}"
 
         if [ -n "${priority}" ]; then
-            echo "priority = ${priority}";
+            echo "priority = ${priority}"
         fi
 
-        echo "autostart               = true";
-        echo "autorestart             = true";
+        echo "autostart               = true"
+        echo "autorestart             = true"
 
-        echo "stdout_logfile          = /dev/stdout";
-        echo "stdout_logfile_maxbytes = 0";
-        echo "stdout_events_enabled   = true";
+        echo "stdout_logfile          = /dev/stdout"
+        echo "stdout_logfile_maxbytes = 0"
+        echo "stdout_events_enabled   = true"
 
-        echo "stderr_logfile          = /dev/stderr";
-        echo "stderr_logfile_maxbytes = 0";
-        echo "stderr_events_enabled   = true";
-    } > "${confd}/${name}.conf"
+        echo "stderr_logfile          = /dev/stderr"
+        echo "stderr_logfile_maxbytes = 0"
+        echo "stderr_events_enabled   = true"
+    } >"${confd}/${name}.conf"
 }

@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -20,7 +19,7 @@ disable_modules() {
     if ! env_set "${mod_varname}"; then
         log "info" "\$${mod_varname} not set. Not disabling any PHP modules." "${debug}"
     else
-        mods="$( env_get "${mod_varname}" )"
+        mods="$(env_get "${mod_varname}")"
 
         if [ -z "${mods}" ]; then
             log "info" "\$${mod_varname} set, but empty. Not disabling any PHP modules." "${debug}"
@@ -30,19 +29,19 @@ disable_modules() {
         log "info" "Disabling the following PHP modules: ${mods}" "${debug}"
 
         while read -r mod; do
-            mod="$( echo "${mod}" | xargs )" # trim
+            mod="$(echo "${mod}" | xargs)" # trim
 
             # Find all config files that enable that module
-            files="$( grep -Er "^(zend_)?extension.*(=|/)${mod}(\\.so)?\$" "${cfg_path}" || true )"
+            files="$(grep -Er "^(zend_)?extension.*(=|/)${mod}(\\.so)?\$" "${cfg_path}" || true)"
 
             if [ -n "${files}" ]; then
                 while read -r f; do
                     # Get filename
-                    f="$( echo "${f}" | awk -F':' '{ print $1 }' )"
+                    f="$(echo "${f}" | awk -F':' '{ print $1 }')"
                     # Remove file
                     run "rm ${f}" "${debug}"
-                done <<< "${files}"
+                done <<<"${files}"
             fi
-        done <<< "$( echo "${mods}" | tr ',' '\n' )"
+        done <<<"$(echo "${mods}" | tr ',' '\n')"
     fi
 }

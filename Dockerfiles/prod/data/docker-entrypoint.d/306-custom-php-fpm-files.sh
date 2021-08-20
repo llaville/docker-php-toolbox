@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -20,13 +19,13 @@ copy_fpm_files() {
     if [ ! -d "${fpm_src}" ]; then
         run "mkdir -p ${fpm_src}" "${debug}"
     fi
-    fpm_files="$( find "${fpm_src}" -type f -iname '*.conf' )"
+    fpm_files="$(find "${fpm_src}" -type f -iname '*.conf')"
 
     # loop over them line by line
     IFS='
     '
     for fpm_f in ${fpm_files}; do
-        fpm_name="$( basename "${fpm_f}" )"
+        fpm_name="$(basename "${fpm_f}")"
         log "info" "PHP-FPM.conf: ${fpm_name} -> ${fpm_dst}/yyy-devilbox-user-runtime-${fpm_name}" "${debug}"
         run "cp ${fpm_f} ${fpm_dst}/yyy-devilbox-user-runtime-${fpm_name}" "${debug}"
     done
@@ -48,7 +47,6 @@ copy_fpm_5_2_conf_file() {
         run "cp ${fpm_src} ${fpm_dst}" "${debug}"
     fi
 }
-
 
 ############################################################
 # Sanity Checks

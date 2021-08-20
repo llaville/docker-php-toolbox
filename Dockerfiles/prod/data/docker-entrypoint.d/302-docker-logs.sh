@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Helper Functions
 ############################################################
@@ -17,10 +16,10 @@ _log_to_dockerlogs() {
         echo "error_log = /proc/self/fd/2"
         echo "[www]"
         echo "access.log = /proc/self/fd/2"
-    } > "${php_fpm_conf}"
+    } >"${php_fpm_conf}"
     {
         echo "error_log = /proc/self/fd/2"
-    } > "${php_ini_conf}"
+    } >"${php_ini_conf}"
 }
 
 _log_to_files() {
@@ -48,12 +47,11 @@ _log_to_files() {
         echo "error_log = ${log_dir}/php-fpm.error"
         echo "[www]"
         echo "access.log = ${log_dir}/php-fpm.access"
-    } > "${php_fpm_conf}"
+    } >"${php_fpm_conf}"
     {
         echo "error_log = ${log_dir}/php-fpm.error"
-    } > "${php_ini_conf}"
+    } >"${php_ini_conf}"
 }
-
 
 ############################################################
 # Functions
@@ -65,7 +63,7 @@ _log_to_files() {
 is_docker_logs_enabled() {
     local env_varname="${1}"
     if env_set "${env_varname}"; then
-        docker_logs="$( env_get "${env_varname}" )"
+        docker_logs="$(env_get "${env_varname}")"
         if [ "${docker_logs}" = "1" ]; then
             # Use docker logs
             echo "1"
@@ -77,7 +75,6 @@ is_docker_logs_enabled() {
     echo "0"
     return 1
 }
-
 
 ###
 ### Change PHP-FPM logging (file or docker logs)
@@ -98,7 +95,7 @@ set_docker_logs() {
         log "info" "Logging to docker logs (stdout and stderr)." "${debug}"
         _log_to_dockerlogs "${php_fpm_conf}" "${php_ini_conf}"
     else
-        docker_logs="$( env_get "${env_varname}" )"
+        docker_logs="$(env_get "${env_varname}")"
 
         # Disable docker logs and log to files
         if [ "${docker_logs}" = "0" ]; then

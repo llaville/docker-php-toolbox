@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -28,7 +27,7 @@ set_timezone() {
         log "info" "Setting PHP: timezone=UTC" "${debug}"
         run "echo 'date.timezone = UTC' > ${php_ini_file}" "${debug}"
     else
-        timezone="$( env_get "${env_varname}" )"
+        timezone="$(env_get "${env_varname}")"
         if [ -f "/usr/share/zoneinfo/${timezone}" ]; then
             # Unix Time
             log "info" "Setting container timezone to: ${timezone}" "${debug}"

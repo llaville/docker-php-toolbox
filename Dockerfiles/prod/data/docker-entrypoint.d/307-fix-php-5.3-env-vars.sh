@@ -4,7 +4,6 @@
 # This is a hacky shell script to create:
 #   env[NAME]='VALUE' entries for PHP FPM config out of all current env vars
 
-
 # Check if an environment variable is valid
 # for PHP-FPM config and if yes return it
 _get_env_php_fpm() {
@@ -17,7 +16,7 @@ _get_env_php_fpm() {
     fi
 
     # Empty variables are not supported by PHP-FPM config syntax
-    env="$( printenv "${name}" )"
+    env="$(printenv "${name}")"
     if [ -z "${env}" ]; then
         return 1
     fi
@@ -35,13 +34,13 @@ set_env_php_fpm() {
     local config="${1}"
 
     # Clear file
-    echo "[www]" > "${config}"
+    echo "[www]" >"${config}"
 
     # Append env variables
     for name in $(printenv | awk -F'=' '{print $1}'); do
 
         if _get_env_php_fpm "${name}" >/dev/null 2>&1; then
-            echo "env[${name}]='$( _get_env_php_fpm "${name}" )'" >> "${config}"
+            echo "env[${name}]='$(_get_env_php_fpm "${name}")'" >>"${config}"
         fi
     done
 }

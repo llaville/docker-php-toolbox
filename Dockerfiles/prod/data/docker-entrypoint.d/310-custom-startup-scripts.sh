@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -19,13 +18,13 @@ execute_custom_scripts() {
     if [ ! -d "${script_dir}" ]; then
         run "mkdir -p ${script_dir}" "${debug}"
     fi
-    script_files="$( find -L "${script_dir}" -type f -iname '*.sh' | sort -n )"
+    script_files="$(find -L "${script_dir}" -type f -iname '*.sh' | sort -n)"
 
     # loop over them line by line
     IFS='
     '
     for script_f in ${script_files}; do
-        script_name="$( basename "${script_f}" )"
+        script_name="$(basename "${script_f}")"
         log "info" "Executing custom startup script: ${script_name}" "${debug}"
         if ! bash "${script_f}"; then
             log "err" "Failed to execute script" "${debug}"
@@ -33,7 +32,6 @@ execute_custom_scripts() {
         fi
     done
 }
-
 
 ############################################################
 # Sanity Checks

@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Helper Functions
 ############################################################
@@ -22,16 +21,16 @@ _isip() {
     fi
 
     # Get each octet
-    o1="$( echo "${1}" | awk -F'.' '{print $1}' )"
-    o2="$( echo "${1}" | awk -F'.' '{print $2}' )"
-    o3="$( echo "${1}" | awk -F'.' '{print $3}' )"
-    o4="$( echo "${1}" | awk -F'.' '{print $4}' )"
+    o1="$(echo "${1}" | awk -F'.' '{print $1}')"
+    o2="$(echo "${1}" | awk -F'.' '{print $2}')"
+    o3="$(echo "${1}" | awk -F'.' '{print $3}')"
+    o4="$(echo "${1}" | awk -F'.' '{print $4}')"
 
     # Cannot start with 0 and all must be below 256
-    if [ "${o1}" -lt "1" ] || \
-        [ "${o1}" -gt "255" ] || \
-        [ "${o2}" -gt "255" ] || \
-        [ "${o3}" -gt "255" ] || \
+    if [ "${o1}" -lt "1" ] ||
+        [ "${o1}" -gt "255" ] ||
+        [ "${o2}" -gt "255" ] ||
+        [ "${o3}" -gt "255" ] ||
         [ "${o4}" -gt "255" ]; then
         # Error
         return 1
@@ -79,7 +78,6 @@ _ishostname() {
     return 0
 }
 
-
 ############################################################
 # Functions
 ############################################################
@@ -96,7 +94,7 @@ port_forward_get_lines() {
         # Transform into newline separated forwards:
         #   local-port:host:remote-port\n
         #   local-port:host:remote-port\n
-        forwards="$( env_get "${1}"  | sed 's/[[:space:]]*//g' | sed 's/,/\n/g' )"
+        forwards="$(env_get "${1}" | sed 's/[[:space:]]*//g' | sed 's/,/\n/g')"
 
         # loop over them line by line
         IFS='
@@ -120,8 +118,6 @@ port_forward_get_rport() {
     echo "${1}" | awk -F':' '{print $3}'
 }
 
-
-
 port_forward_validate() {
     local env_varname="${1}"
     local debug="${2}"
@@ -137,13 +133,13 @@ port_forward_validate() {
     else
 
         # Loop over forwards in order to validate them
-        for line in $( port_forward_get_lines "${env_varname}" ); do
-            lport="$( port_forward_get_lport "${line}" )"
-            rhost="$( port_forward_get_rhost "${line}" )"
-            rport="$( port_forward_get_rport "${line}" )"
+        for line in $(port_forward_get_lines "${env_varname}"); do
+            lport="$(port_forward_get_lport "${line}")"
+            rhost="$(port_forward_get_rhost "${line}")"
+            rport="$(port_forward_get_rport "${line}")"
 
             # Wrong number of ':' separators
-            if [ "$( echo "${line}" | grep -o ':' | wc -l )" -ne "2" ]; then
+            if [ "$(echo "${line}" | grep -o ':' | wc -l)" -ne "2" ]; then
                 log "err" "Port forwarding error: invalid number of ':' separators" "${debug}"
                 log "err" "Line: ${line}" "${debug}"
                 exit
@@ -171,7 +167,6 @@ port_forward_validate() {
         done
     fi
 }
-
 
 ############################################################
 # Sanity Checks

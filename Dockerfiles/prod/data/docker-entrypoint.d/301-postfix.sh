@@ -4,7 +4,6 @@ set -e
 set -u
 set -o pipefail
 
-
 ############################################################
 # Functions
 ############################################################
@@ -28,12 +27,12 @@ set_postfix() {
     if ! env_set "${env_varname}"; then
         log "info" "\$${env_varname} not set." "${debug}"
         log "info" "Postfix will not be started." "${debug}"
-        echo "" > "${php_ini_file}"
+        echo "" >"${php_ini_file}"
         return
     fi
 
     # Retrieve env value
-    enable_mail="$( env_get "${env_varname}" )"
+    enable_mail="$(env_get "${env_varname}")"
 
     # Enable postfix
     if [ "${enable_mail}" = "1" ] || [ "${enable_mail}" = "2" ]; then
@@ -46,23 +45,23 @@ set_postfix() {
 
         # Configure PHP
         {
-            echo "[mail function]";
-            echo "sendmail_path = $( command -v sendmail ) -t -i";
-            echo ";mail.force_extra_parameters =";
-            echo "mail.add_x_header = On";
-            echo "mail.log = ${php_mail_log}";
-        } > "${php_ini_file}"
+            echo "[mail function]"
+            echo "sendmail_path = $(command -v sendmail) -t -i"
+            echo ";mail.force_extra_parameters ="
+            echo "mail.add_x_header = On"
+            echo "mail.log = ${php_mail_log}"
+        } >"${php_ini_file}"
 
         # PHP mail function logs to file
         if [ "${docker_logs}" != "1" ]; then
             # Fix PHP mail log file dir/file and permissions
-            if [ ! -d "$( dirname "${php_mail_log}" )" ]; then
-                run "mkdir -p $( dirname "${php_mail_log}" )" "${debug}"
+            if [ ! -d "$(dirname "${php_mail_log}")" ]; then
+                run "mkdir -p $(dirname "${php_mail_log}")" "${debug}"
             fi
             if [ ! -f "${php_mail_log}" ]; then
                 run "touch ${php_mail_log}" "${debug}"
             fi
-            run "chown ${username}:${groupname} $( dirname "${php_mail_log}" )" "${debug}"
+            run "chown ${username}:${groupname} $(dirname "${php_mail_log}")" "${debug}"
             run "chown ${username}:${groupname} ${php_mail_log}" "${debug}"
             run "chmod 0644 ${php_mail_log}" "${debug}"
         fi
@@ -101,7 +100,6 @@ set_postfix() {
         exit 1
     fi
 }
-
 
 ############################################################
 # Sanity Checks
