@@ -41,7 +41,7 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 
 Here, we decide to download the latest [Phar](https://www.php.net/manual/en/book.phar.php) version available.
 This is done with `phar-download` specialized command.
-See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/PharDownloadCommand.php
+See <https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/PharDownloadCommand.php>
 
 By default, tools are installed in the `/usr/local/bin` directory.
 To perform an installation in another location, don't forget to add the `%target-dir%` placeholder, to be able to replace it at runtime.

@@ -50,8 +50,8 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 
 Here, we decide to install **mhsendmail** by downloading corresponding OS asset of your platform.
 This is done with `file-download` and `sh` specialized commands.
-See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/FileDownloadCommand.php
-and https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php
+See <https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/FileDownloadCommand.php>
+and <https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php>
 
 Don't forget to add the `%os%`, `%arch%` and `%target-dir%` placeholders, that will be replaced at runtime.
 (i.e: `%os%` => linux, `%arch%` => 386, `%target-dir%` => /usr/local/bin)

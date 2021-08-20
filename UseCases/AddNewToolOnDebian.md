@@ -41,7 +41,7 @@ The **tools/command** is mandatory and define how you'll grab a copy of the tool
 
 Here, we decide to install the **tig** package with [APT](https://en.wikipedia.org/wiki/APT_(software))
 This is done with `sh` specialized command.
-See https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php
+See <https://github.com/llaville/docker-php-toolbox/blob/master/src/Command/ShellCommand.php>
 
 ## Step 2 - (re)build the work Dockerfile
 
