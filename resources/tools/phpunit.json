@@ -12,9 +12,16 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-9",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
-                "exclude-php:7.0", "exclude-php:7.1", "exclude-php:7.2"
+                "phpunit",
+                "phpunit-9",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2"
             ]
         },
         {
@@ -29,9 +36,15 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-8",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
-                "exclude-php:7.0", "exclude-php:7.1"
+                "phpunit",
+                "phpunit-8",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1"
             ]
         },
         {
@@ -46,10 +59,17 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-7",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
-                "exclude-php:7.0", "exclude-php:7.4",
-                "exclude-php:8.0", "exclude-php:8.1"
+                "phpunit",
+                "phpunit-7",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
             ]
         },
         {
@@ -64,10 +84,17 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-6",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
-                "exclude-php:7.3", "exclude-php:7.4",
-                "exclude-php:8.0", "exclude-php:8.1"
+                "phpunit",
+                "phpunit-6",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
             ]
         },
         {
@@ -82,10 +109,17 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-5",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5",
-                "exclude-php:7.2", "exclude-php:7.3", "exclude-php:7.4",
-                "exclude-php:8.0", "exclude-php:8.1"
+                "phpunit",
+                "phpunit-5",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
             ]
         },
         {
@@ -100,10 +134,16 @@
             },
             "test": "",
             "tags": [
-                "phpunit", "phpunit-4",
+                "phpunit",
+                "phpunit-4",
                 "exclude-php:5.2",
-                "exclude-php:7.0", "exclude-php:7.1", "exclude-php:7.2", "exclude-php:7.3", "exclude-php:7.4",
-                "exclude-php:8.0", "exclude-php:8.1"
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
             ]
         }
     ]

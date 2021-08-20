@@ -11,7 +11,9 @@
                 }
             },
             "test": "composer list",
-            "tags": ["composer"]
+            "tags": [
+                "composer"
+            ]
         }
     ]
 }

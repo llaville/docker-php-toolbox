@@ -9,7 +9,7 @@
                     "url": "https://github.com/devilbox/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
                     "target": "/tmp/mhsendmail_%os%_%arch%"
                 },
-                "shell" : {
+                "shell": {
                     "cmd": "chmod +x /tmp/mhsendmail_%os%_%arch% && mv /tmp/mhsendmail_%os%_%arch% %target-dir%/mhsendmail"
                 }
             },

@@ -13,7 +13,11 @@
             "test": "",
             "tags": [
                 "psalm",
-                "exclude-php:5.2", "exclude-php:5.3", "exclude-php:5.4", "exclude-php:5.5", "exclude-php:5.6",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
                 "exclude-php:7.0",
                 "exclude-php:8.1"
             ]
