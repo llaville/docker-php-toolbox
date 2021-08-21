@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # Docker PHP Toolbox
 
 Easily install PHP extensions and tools in Docker containers.
