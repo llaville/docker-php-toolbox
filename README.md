@@ -455,6 +455,7 @@ Please consider it as a running prototype rather than a full filled application.
 Any kind of contribution is welcome.
 
 Visit the forums
+
 * for [announcements](https://github.com/llaville/docker-php-toolbox/discussions/categories/announcements) of new versions
 * if you want to [ask a question or help others](https://github.com/llaville/docker-php-toolbox/discussions/categories/q-a)
 * [learn](https://github.com/llaville/docker-php-toolbox/discussions/categories/show-and-tell) more about any features
@@ -464,5 +465,6 @@ Visit the forums
 ## Credits
 
 Thanks to :
+
 * cytopia for its Devilbox's [PHP-FPM Docker](https://github.com/devilbox/docker-php-fpm) Images
 * jakzal PHP [Toolbox](https://github.com/jakzal/toolbox/) project that help me to build this architecture.
