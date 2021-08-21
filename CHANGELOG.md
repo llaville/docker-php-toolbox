@@ -9,6 +9,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - new specialized command (`git-install`) to install source code from a GIT repository
 - new specialized command (`pip-install`) to install pip (python) package
+- [a79031d](https://github.com/llaville/docker-php-toolbox/commit/a79031d99ba29987335e7aa528a994bae92f06c6)
+: PHP_CodeSniffer custom standard
 
 **Tools**
 
