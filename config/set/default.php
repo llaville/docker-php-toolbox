@@ -4,8 +4,7 @@ use Bartlett\PHPToolbox\Console\Command\CommandInterface;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
-return static function (ContainerConfigurator $containerConfigurator): void
-{
+return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/common.php');
 
     $services = $containerConfigurator->services();

@@ -26,8 +26,7 @@ use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_it
  * @return void
  * @since 1.0.0
  */
-return static function (ContainerConfigurator $containerConfigurator): void
-{
+return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();
 
     $services->defaults()
