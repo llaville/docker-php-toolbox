@@ -12,3 +12,4 @@ Dockerfiles/base/Dockerfile-*.*
 Dockerfiles/mods/Dockerfile.*
 Dockerfiles/prod/Dockerfile.*
 Dockerfiles/work/Dockerfile.*
+report/
