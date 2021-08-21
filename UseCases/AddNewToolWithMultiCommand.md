@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # How to add a new tool with multiple command lines
 
 ## What you'll learn ?

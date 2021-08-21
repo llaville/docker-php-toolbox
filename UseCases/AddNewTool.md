@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # How to add a new tool
 
 ## What you'll learn ?

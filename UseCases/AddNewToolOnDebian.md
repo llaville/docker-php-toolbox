@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # How to add a new tool on Debian
 
 ## What you'll learn ?
