@@ -15,13 +15,13 @@ final class Factory
 {
     public static function create(array $command): ?CommandInterface
     {
-        $makeCommand = function(string $type, array $properties): ?CommandInterface {
+        $makeCommand = function (string $type, array $properties): ?CommandInterface {
             switch ($type) {
                 case 'composer-install':
                     return new ComposerInstallCommand($properties);
                 case 'file-download':
                     return new FileDownloadCommand($properties);
-                case 'git-install';
+                case 'git-install':
                     return new GitInstallCommand($properties);
                 case 'pecl-install':
                     return new PeclInstallCommand($properties);

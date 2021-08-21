@@ -168,10 +168,10 @@ final class BuildDockerfile extends Command implements CommandInterface
 
     private function getChangeOnModsDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $buildVersion): ?string
     {
-        $extensionsList = $tools->filter(function(Tool $tool) use($phpVersion) {
+        $extensionsList = $tools->filter(function (Tool $tool) use ($phpVersion) {
             return
                 in_array('pecl-extensions', $tool->getTags(), true) &&
-                !in_array('exclude-php:'.$phpVersion, $tool->getTags(), true)
+                !in_array('exclude-php:' . $phpVersion, $tool->getTags(), true)
                 ;
         });
 
@@ -193,10 +193,10 @@ final class BuildDockerfile extends Command implements CommandInterface
 
     private function getChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $targetDir, array $tags): ?string
     {
-        $toolsList = $tools->filter(function(Tool $tool) use($phpVersion, $tags) {
+        $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion, $tags) {
             $preFilter =
                 !in_array('pecl-extensions', $tool->getTags(), true) &&
-                !in_array('exclude-php:'.$phpVersion, $tool->getTags(), true)
+                !in_array('exclude-php:' . $phpVersion, $tool->getTags(), true)
             ;
             if (!$preFilter) {
                 return false;

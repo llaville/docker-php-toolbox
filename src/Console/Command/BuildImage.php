@@ -148,7 +148,6 @@ final class BuildImage extends Command implements CommandInterface
                 '--file=' . $dockerfilePath,
                 '--build-arg=PHP_VERSION=' . $phpVersion,
             ];
-
         } elseif ('mods' === $suffix) {
             $tag = $commonTag . '-mods';
 
@@ -160,7 +159,6 @@ final class BuildImage extends Command implements CommandInterface
                 '--build-arg=PHP_VERSION=' . $phpVersion,
                 '--build-arg=BUILD_VERSION=' . $buildVersion,
             ];
-
         } elseif ('prod' === $suffix) {
             $tag = $commonTag . '-prod';
 
@@ -173,7 +171,6 @@ final class BuildImage extends Command implements CommandInterface
             if (!$noCache) {
                 $command[] = '--cache-from=' . $commonTag . '-mods';
             }
-
         } elseif ('work' === $suffix) {
             $tag = $commonTag . '-work';
 
@@ -186,7 +183,6 @@ final class BuildImage extends Command implements CommandInterface
             if (!$noCache) {
                 $command[] = '--cache-from=' . $commonTag . '-prod';
             }
-
         } else {
             throw new LogicException(
                 sprintf('Invalid Dockerfile sub-folder "%s" found.', $suffix)

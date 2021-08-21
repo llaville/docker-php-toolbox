@@ -31,5 +31,4 @@ final class MultiCommand implements CommandInterface
     {
         return implode($this->glue, $this->commands->toArray());
     }
-
 }

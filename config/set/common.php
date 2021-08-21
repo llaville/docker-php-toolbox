@@ -38,7 +38,7 @@ return static function (ContainerConfigurator $containerConfigurator): void
 
     $services->set(Stopwatch::class);
 
-    $services->set(EventSubscriberInterface::class,  ProfileEventSubscriber::class);
+    $services->set(EventSubscriberInterface::class, ProfileEventSubscriber::class);
     $services->set(EventDispatcherInterface::class, EventDispatcher::class);
 
     // @link https://symfony.com/doc/current/console/lazy_commands.html#factorycommandloader

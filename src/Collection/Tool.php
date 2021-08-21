@@ -16,8 +16,14 @@ final class Tool
     private $testCommand;
     private $tags;
 
-    public function __construct(string $name, string $summary, string $website, array $tags, ?CommandInterface $command, $testCommand)
-    {
+    public function __construct(
+        string $name,
+        string $summary,
+        string $website,
+        array $tags,
+        ?CommandInterface $command,
+        $testCommand
+    ) {
         $this->name = $name;
         $this->summary = $summary;
         $this->website = $website;

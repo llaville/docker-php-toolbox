@@ -61,26 +61,27 @@ final class UpdateReadme extends Command implements CommandInterface
         $tools = (new Tools())->load($toolsPath)->sortByName();
 
         $formatSection = function (Tool $tool) {
-            return sprintf('| %s | [%s](%s) | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |',
+            return sprintf(
+                '| %s | [%s](%s) | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |',
                 $tool->getName(),
                 $tool->getSummary(),
                 $tool->getWebsite(),
-                in_array('exclude-php:5.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:5.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:5.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:5.5', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:5.6', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:7.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:7.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:7.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:7.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
-                in_array('exclude-php:7.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;' ,
+                in_array('exclude-php:5.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:5.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:5.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:5.5', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:5.6', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:7.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:7.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:7.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:7.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:7.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
             );
         };
 
-        $extensionsList = $tools->filter(function(Tool $tool) {
+        $extensionsList = $tools->filter(function (Tool $tool) {
             return in_array('pecl-extensions', $tool->getTags(), true);
         });
 
@@ -88,8 +89,8 @@ final class UpdateReadme extends Command implements CommandInterface
         $phpVersions = ['5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'];
 
         foreach ($phpVersions as $phpVersion) {
-            $totalAvailable[] = count($extensionsList->filter(function(Tool $tool) use($phpVersion) {
-                return !in_array('exclude-php:'. $phpVersion, $tool->getTags());
+            $totalAvailable[] = count($extensionsList->filter(function (Tool $tool) use ($phpVersion) {
+                return !in_array('exclude-php:' . $phpVersion, $tool->getTags());
             }));
         }
 
@@ -102,14 +103,14 @@ final class UpdateReadme extends Command implements CommandInterface
         $extensionsTable .= implode(PHP_EOL, $extensionsList->toArray());
         $extensionsTable .= PHP_EOL;
 
-        $toolsList = $tools->filter(function(Tool $tool) {
+        $toolsList = $tools->filter(function (Tool $tool) {
             return !in_array('pecl-extensions', $tool->getTags(), true);
         });
 
         $totalAvailable = [$toolsList->count()];
         foreach ($phpVersions as $phpVersion) {
-            $totalAvailable[] = count($toolsList->filter(function(Tool $tool) use($phpVersion) {
-                return !in_array('exclude-php:'. $phpVersion, $tool->getTags());
+            $totalAvailable[] = count($toolsList->filter(function (Tool $tool) use ($phpVersion) {
+                return !in_array('exclude-php:' . $phpVersion, $tool->getTags());
             }));
         }
 
