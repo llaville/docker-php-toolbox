@@ -9,7 +9,7 @@
 
 Developers, DevOps engineers, and Contributors with PHP/JSON (and Docker) skill.
 
-**Steps to complete this course: 3**
+> Steps to complete this course: 3
 
 To follow this course, we will add the [box](https://github.com/box-project/box) project as new tool into your PHP container.
 
@@ -65,7 +65,7 @@ don't forget to pass the `--target-dir` option.
 **NOTE** if your `resources` directory is located in another location than the one bundle with this project,
 don't forget to pass the `--resources` option.
 
-**Example**
+### Example
 
 ```bash
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile --resources /home/me/my-project/Dockerfiles/work/Dockerfile 7.4

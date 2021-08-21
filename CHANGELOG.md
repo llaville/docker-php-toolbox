@@ -13,7 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [a79031d](https://github.com/llaville/docker-php-toolbox/commit/a79031d99ba29987335e7aa528a994bae92f06c6)
 : PHP_CodeSniffer custom standard
 
-**Tools**
+#### Tools
 
 - [support to cachetool](https://github.com/llaville/docker-php-toolbox/commit/0e610c0565dc68838522bdd05222f8135e1d8d12)
 - [support to nvm](https://github.com/llaville/docker-php-toolbox/commit/c4707a0ec259b856445c89fb5404efb16275a624)
@@ -53,7 +53,7 @@ Second prototype version with following contents (+40 extensions, +5 tools):
 - [c5cb09b](https://github.com/llaville/docker-php-toolbox/commit/c5cb09b87455c0c36644fa11afd2703375d1f2d6)
 : Display timing and memory usage information with `profile` option on `build:image` command
 
-**Extensions**
+#### Extensions
 
 - [support to bcmath extension](https://github.com/llaville/docker-php-toolbox/commit/c814392e5705b1752bd4de0ee144ed30948a3942)
 - [support to bz2 extension](https://github.com/llaville/docker-php-toolbox/commit/0c39ea2c42145769f8c98530306424827fcae963)
@@ -96,7 +96,7 @@ Second prototype version with following contents (+40 extensions, +5 tools):
 - [support to xsl extension](https://github.com/llaville/docker-php-toolbox/commit/c2aa2f87b7016300ae98486dc7b0c64abd6d0a9f)
 - [support to yar extension](https://github.com/llaville/docker-php-toolbox/commit/c9a2220f9cb7fcad5e4c5fecd8aaaa8d2f14a66c)
 
-**Tools**
+#### Tools
 
 - [support to deployer](https://github.com/llaville/docker-php-toolbox/commit/83e2e8810766d7b0822057906350d38f83b5f165)
 - [support to PHP_CodeSniffer](https://github.com/llaville/docker-php-toolbox/commit/53e532e1f1d89cc42380662e5d131e0a1d5ebd85)

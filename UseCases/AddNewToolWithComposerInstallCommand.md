@@ -9,7 +9,7 @@
 
 Developers, DevOps engineers, and Contributors with PHP/JSON (and Docker) skill.
 
-**Steps to complete this course: 3**
+> Steps to complete this course: 3
 
 To follow this course, we will add the [phplint](https://github.com/overtrue/phplint) project as new tool into your PHP container.
 
@@ -94,7 +94,7 @@ Replace `<php_version>` by either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7
 **NOTE** if your `resources` directory is located in another location than the one bundle with this project,
 don't forget to pass the `--resources` option.
 
-**Example**
+### Example
 
 ```bash
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile --resources /home/me/my-project/Dockerfiles/work/Dockerfile 7.4
