@@ -40,6 +40,7 @@ add a new JSON file (i.e: `mhsendmail.json`, but you are free to use whatever yo
     ]
 }
 ```
+
 **CAUTION** We will use this [fork](https://github.com/BlueBambooStudios/mhsendmail) and not the official project, or even the devilbox's fork.
 
 Reason is that this fork provides the new version [0.3.0](https://github.com/BlueBambooStudios/mhsendmail/releases/tag/v0.3.0)
@@ -84,6 +85,7 @@ of your Dockerfiles with the `f` or `dockerfile` option.
 ## Step 3 - (re)build the work Docker image
 
 You are now ready to build the Docker work corresponding image with the following command:
+
 ```bash
 bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile <php_version>
 ```

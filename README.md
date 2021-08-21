@@ -86,11 +86,15 @@ contents of Dockerfile generated.
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 7.4
 ```
+
 Or with specialized dockerfile:
+
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-81 -B 8100 8.1
 ```
@@ -100,7 +104,9 @@ bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-81 -B 8100 8.1
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/mods/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
 ```
@@ -110,7 +116,9 @@ bin/toolkit.php build:dockerfile -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/prod/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/prod/Dockerfile -B 8100 8.1
 ```
@@ -125,7 +133,9 @@ To limit some tools to the generated Dockerfile, multiple `--tag` options can be
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile -B 7329 --target-dir /usr/bin --tag composer --tag tig 7.3
 ```
@@ -141,11 +151,15 @@ Proceed with the same build identification as used in the `build:dockerfile` com
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile -B 7422 -vvv 7.4
 ```
+
 Or with specialized dockerfile:
+
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile-81 -B 8100 -vvv 8.1
 ```
@@ -155,7 +169,9 @@ bin/toolkit.php build:image -f ./Dockerfiles/base/Dockerfile-81 -B 8100 -vvv 8.1
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/mods/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
 ```
@@ -165,7 +181,9 @@ bin/toolkit.php build:image -f ./Dockerfiles/mods/Dockerfile -B 8009 8.0
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/prod/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/prod/Dockerfile -B 8100 8.1
 ```
@@ -175,7 +193,9 @@ bin/toolkit.php build:image -f ./Dockerfiles/prod/Dockerfile -B 8100 8.1
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B <build_version> <php_version>
 ```
+
 For example:
+
 ```shell
 bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv 7.3
 ```
@@ -185,8 +205,11 @@ bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile -B 7329 -vvv 7.3
 ```shell
 bin/toolkit.php list:extensions <php_version>
 ```
+
 To get list of compatible extensions for a PHP platform.
+
 For example:
+
 ```shell
 bin/toolkit.php list:extensions 8.1
 
@@ -263,12 +286,15 @@ List available extensions for PHP 8.1
 ```shell
 bin/toolkit.php list:tools <php_version>
 ```
+
 To get list of compatible tools for a PHP platform.
 
 #### Filter tools by tags
 
 To limit some tools from the listing, multiple `--tag` options can be added.
+
 For example:
+
 ```shell
 bin/toolkit.php list:tools 7.4 --tag composer --tag phpunit
 

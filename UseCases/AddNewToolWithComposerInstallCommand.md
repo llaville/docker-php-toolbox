@@ -68,6 +68,7 @@ add a new JSON file (i.e: `phplint.json`, but you are free to use whatever you w
     ]
 }
 ```
+
 The **tools/command** is mandatory and define how you'll grab a copy of the tool.
 
 Here, we decide to install **phplint** with composer
@@ -106,6 +107,7 @@ of your Dockerfiles with the `f` or `dockerfile` option.
 ## Step 3 - (re)build the work Docker image
 
 You are now ready to build the Docker work corresponding image with the following command:
+
 ```bash
 bin/toolkit.php build:image -f ./Dockerfiles/work/Dockerfile <php_version>
 ```
