@@ -30,6 +30,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
 - [Mega-linter](https://github.com/nvuillam/mega-linter) helps us to fix few errors
+- Dockerfile `Dockerfiles/base/Dockerfile-81` support now PHP 8.1.0beta3
 
 ## [1.0.0alpha2] - 2021-08-14
 
