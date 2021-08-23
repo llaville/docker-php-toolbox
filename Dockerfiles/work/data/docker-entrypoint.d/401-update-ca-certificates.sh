@@ -16,7 +16,8 @@ update_ca_certificates() {
     local debug="${2}"
 
     if [ -d "${dir}" ]; then
-        for cert in $(find "${dir}" -name \*.crt); do
+        shopt -s globstar nullglob
+        for cert in "$dir"/**/*/crt; do
             name="$(basename "${cert}")"
             run "cp ${cert} /usr/local/share/ca-certificates/devilbox-${name}" "${debug}"
         done
