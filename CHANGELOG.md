@@ -13,6 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - new specialized command (`pip-install`) to install pip (python) package
 - [a79031d](https://github.com/llaville/docker-php-toolbox/commit/a79031d99ba29987335e7aa528a994bae92f06c6)
 : PHP_CodeSniffer custom standard
+- [Mega-Linter](https://github.com/nvuillam/mega-linter) support as QA tool to avoid technical debt
 
 #### Tools
 
@@ -29,7 +30,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
-- [Mega-linter](https://github.com/nvuillam/mega-linter) helps us to fix few errors
 - Dockerfile `Dockerfiles/base/Dockerfile-81` support now PHP 8.1.0beta3
 
 ## [1.0.0alpha2] - 2021-08-14
