@@ -14,6 +14,7 @@ use function sprintf;
  */
 final class ShellCommand implements CommandInterface
 {
+    /** @var string[]|string  */
     private $command;
 
     /**

@@ -9,7 +9,9 @@ use function sprintf;
  */
 final class PipInstallCommand implements CommandInterface
 {
+    /** @var int  */
     private $pipVersion;
+    /** @var string  */
     private $requirement;
 
     /**

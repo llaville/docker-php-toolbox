@@ -9,7 +9,9 @@ use function sprintf;
  */
 final class PharDownloadCommand implements CommandInterface
 {
+    /** @var string  */
     private $phar;
+    /** @var string  */
     private $bin;
 
     /**

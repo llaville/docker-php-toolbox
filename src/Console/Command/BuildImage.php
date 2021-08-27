@@ -2,25 +2,21 @@
 
 namespace Bartlett\PHPToolbox\Console\Command;
 
+use Generator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Style\StyleInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 
 use LogicException;
-use Symfony\Component\Stopwatch\Stopwatch;
 use function basename;
 use function dirname;
 use function file_get_contents;
 use function implode;
-use function ob_get_clean;
-use function ob_start;
-use function phpinfo;
 use function preg_match_all;
 use function sprintf;
 
@@ -34,7 +30,7 @@ final class BuildImage extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Build an image from a Dockerfile by specified version')
@@ -82,7 +78,7 @@ final class BuildImage extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
 
@@ -214,7 +210,12 @@ final class BuildImage extends Command implements CommandInterface
         return $status;
     }
 
-    private function runProcess(Process $process, StyleInterface $io): int
+    /**
+     * @param Process<Generator> $process
+     * @param SymfonyStyle $io
+     * @return int
+     */
+    private function runProcess(Process $process, SymfonyStyle $io): int
     {
         $command = $process->getCommandLine();
         $io->comment(sprintf('<info>[RUN]</info> %s', $command));
@@ -229,38 +230,6 @@ final class BuildImage extends Command implements CommandInterface
             $process->wait();
         }
 
-        /*
-        try {
-            if ($io->isDebug()) {
-                $process->mustRun(function ($type, $buffer) {
-                    echo $buffer;
-                });
-            } else {
-                $process->mustRun();
-            }
-        } catch (ProcessFailedException $exception) {
-            $io->error(
-                sprintf(
-                    'The %s process run in trouble %s.',
-                    $command,
-                    $exception->getMessage()
-                )
-            );
-            return self::FAILURE;
-        }
-        */
-
         return self::SUCCESS;
-    }
-
-    //$extraIniDir = $this->getPhpIniDir() . '/conf.d/';
-    private function getPhpIniDir(): ?string
-    {
-        ob_start();
-        phpinfo(INFO_GENERAL);
-        $phpInfo = ob_get_clean();
-
-        $result = preg_match_all('/Configuration File .* => (.*)/', $phpInfo, $matches);
-        return $result ? $matches[1] : null;
     }
 }

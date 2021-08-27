@@ -29,7 +29,7 @@ final class ListTools extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('List tools available for a specified version')

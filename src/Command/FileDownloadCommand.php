@@ -7,7 +7,9 @@ namespace Bartlett\PHPToolbox\Command;
  */
 final class FileDownloadCommand implements CommandInterface
 {
+    /** @var string  */
     private $url;
+    /** @var string  */
     private $target;
 
     /**

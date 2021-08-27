@@ -9,7 +9,9 @@ use function sprintf;
  */
 final class PeclInstallCommand implements CommandInterface
 {
+    /** @var string  */
     private $name;
+    /** @var string|null  */
     private $version;
 
     /**

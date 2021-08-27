@@ -5,12 +5,11 @@ namespace Bartlett\PHPToolbox\Collection;
 use Bartlett\PHPToolbox\Command\Factory;
 use Doctrine\Common\Collections\AbstractLazyCollection;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-use Exception;
+use ArrayIterator;
 use RuntimeException;
 use function is_array;
 use function iterator_to_array;
@@ -19,17 +18,15 @@ use function sprintf;
 use function strcasecmp;
 
 /**
- * @phpstan-extends AbstractLazyCollection<string, array>
+ * @phpstan-extends AbstractLazyCollection<int, Tool>
  * @since Release 1.0.0alpha1
  */
-final class Tools extends AbstractLazyCollection
+final class Tools extends AbstractLazyCollection implements ToolCollectionInterface
 {
     /**
-     * @param string $dirs
-     * @return Collection
-     * @throws Exception
+     * {@inheritDoc}
      */
-    public function load(string $dirs): Collection
+    public function load(string $dirs): ToolCollectionInterface
     {
         $exclude = [];
 
@@ -53,7 +50,7 @@ final class Tools extends AbstractLazyCollection
                         $definition['website'],
                         $definition['tags'] ?? [],
                         Factory::create($definition['command']),
-                        $definition['test']
+                        null  // feature temporary disabled
                     )
                 );
             }
@@ -63,12 +60,14 @@ final class Tools extends AbstractLazyCollection
     }
 
     /**
-     * @return Collection
-     * @throws Exception
+     * {@inheritDoc}
      */
-    public function sortByName(): Collection
+    public function sortByName(): ToolCollectionInterface
     {
-        // https://coderwall.com/p/mfsssa/sorting-doctrine-arraycollection
+        /**
+         * @see https://coderwall.com/p/mfsssa/sorting-doctrine-arraycollection
+         * @var ArrayIterator<int, Tool> $iterator
+         */
         $iterator = $this->getIterator();
 
         // define ordering closure
@@ -89,6 +88,10 @@ final class Tools extends AbstractLazyCollection
         $this->collection = new ArrayCollection();
     }
 
+    /**
+     * @param SplFileInfo $resource
+     * @return array<string, array>
+     */
     private function loadJson(SplFileInfo $resource): array
     {
         $json = json_decode($resource->getContents(), true);

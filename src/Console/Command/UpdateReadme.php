@@ -10,6 +10,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+use Exception;
 use function count;
 use function file_get_contents;
 use function file_put_contents;
@@ -29,7 +30,7 @@ final class UpdateReadme extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Updates README.md with latest list of available tools and extensions')
@@ -52,6 +53,7 @@ final class UpdateReadme extends Command implements CommandInterface
 
     /**
      * {@inheritDoc}
+     * @throws Exception
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {

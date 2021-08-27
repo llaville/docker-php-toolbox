@@ -7,6 +7,7 @@ namespace Bartlett\PHPToolbox\Command;
  */
 final class ComposerInstallCommand implements CommandInterface
 {
+    /** @var bool|null  */
     private $scripts;
 
     /**

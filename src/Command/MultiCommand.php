@@ -12,10 +12,16 @@ use function implode;
  */
 final class MultiCommand implements CommandInterface
 {
+    /** @var Collection<int, CommandInterface>  */
     private $commands;
+    /** @var string  */
     private $glue;
 
-    public function __construct(Collection $commands, $glue = ' && ')
+    /**
+     * @param Collection<int, CommandInterface> $commands
+     * @param string $glue
+     */
+    public function __construct(Collection $commands, string $glue = ' && ')
     {
         if ($commands->isEmpty()) {
             throw new InvalidArgumentException('Collection of commands cannot be empty.');

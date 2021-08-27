@@ -13,6 +13,10 @@ use function key;
  */
 final class Factory
 {
+    /**
+     * @param array<string, array> $command
+     * @return CommandInterface|null
+     */
     public static function create(array $command): ?CommandInterface
     {
         $makeCommand = function (string $type, array $properties): ?CommandInterface {

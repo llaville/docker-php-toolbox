@@ -3,9 +3,8 @@
 namespace Bartlett\PHPToolbox\Console\Command;
 
 use Bartlett\PHPToolbox\Collection\Tool;
+use Bartlett\PHPToolbox\Collection\ToolCollectionInterface;
 use Bartlett\PHPToolbox\Collection\Tools;
-
-use Doctrine\Common\Collections\Collection;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -39,7 +38,7 @@ final class BuildDockerfile extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Build a Dockerfile by specified version')
@@ -88,7 +87,7 @@ final class BuildDockerfile extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
 
@@ -166,7 +165,7 @@ final class BuildDockerfile extends Command implements CommandInterface
         return self::SUCCESS;
     }
 
-    private function getChangeOnModsDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $buildVersion): ?string
+    private function getChangeOnModsDockerfile(string $dockerfilePath, ToolCollectionInterface $tools, string $phpVersion, string $buildVersion): ?string
     {
         $extensionsList = $tools->filter(function (Tool $tool) use ($phpVersion) {
             return
@@ -191,7 +190,15 @@ final class BuildDockerfile extends Command implements CommandInterface
         );
     }
 
-    private function getChangeOnWorkDockerfile(string $dockerfilePath, Collection $tools, string $phpVersion, string $targetDir, array $tags): ?string
+    /**
+     * @param string $dockerfilePath
+     * @param ToolCollectionInterface $tools
+     * @param string $phpVersion
+     * @param string $targetDir
+     * @param string[] $tags
+     * @return string|null
+     */
+    private function getChangeOnWorkDockerfile(string $dockerfilePath, ToolCollectionInterface $tools, string $phpVersion, string $targetDir, array $tags): ?string
     {
         $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion, $tags) {
             $preFilter =

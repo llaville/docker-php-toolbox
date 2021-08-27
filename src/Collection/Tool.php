@@ -9,20 +9,36 @@ use Bartlett\PHPToolbox\Command\CommandInterface;
  */
 final class Tool
 {
+    /** @var string  */
     private $name;
+    /** @var string  */
     private $summary;
+    /** @var string  */
     private $website;
+    /** @var CommandInterface|null  */
     private $command;
+    /** @var CommandInterface|null */
     private $testCommand;
+    /** @var string[]  */
     private $tags;
 
+    /**
+     * Class constructor
+     *
+     * @param string $name
+     * @param string $summary
+     * @param string $website
+     * @param string[] $tags
+     * @param CommandInterface|null $command
+     * @param CommandInterface|null $testCommand
+     */
     public function __construct(
         string $name,
         string $summary,
         string $website,
         array $tags,
         ?CommandInterface $command,
-        $testCommand
+        ?CommandInterface $testCommand
     ) {
         $this->name = $name;
         $this->summary = $summary;
@@ -52,7 +68,7 @@ final class Tool
         return $this->command;
     }
 
-    public function getTestCommand()
+    public function getTestCommand(): ?CommandInterface
     {
         return $this->testCommand;
     }

@@ -43,7 +43,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
     /**
      * @param ConsoleCommandEvent $event
      */
-    public function onConsoleCommand(ConsoleCommandEvent $event)
+    public function onConsoleCommand(ConsoleCommandEvent $event): void
     {
         $this->stopwatch->reset();
         // Just before executing any command
@@ -53,7 +53,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
     /**
      * @param ConsoleTerminateEvent $event
      */
-    public function onConsoleTerminate(ConsoleTerminateEvent $event)
+    public function onConsoleTerminate(ConsoleTerminateEvent $event): void
     {
         // Just after executing any command
         $stopwatchEvent = $this->stopwatch->stop($event->getCommand()->getName());

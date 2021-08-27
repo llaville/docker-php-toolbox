@@ -9,10 +9,15 @@ use function sprintf;
  */
 final class GitInstallCommand implements CommandInterface
 {
+    /** @var string|null  */
     private $repository;
+    /** @var string  */
     private $targetDir;
+    /** @var string|null  */
     private $version;
+    /** @var int|null  */
     private $abbreviate;
+    /** @var string|null  */
     private $matchPattern;
 
     /**

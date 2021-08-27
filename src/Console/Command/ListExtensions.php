@@ -28,7 +28,7 @@ final class ListExtensions extends Command implements CommandInterface
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('List extensions available for a specified version')
