@@ -31,6 +31,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
 - Dockerfile `Dockerfiles/base/Dockerfile-81` support now PHP 8.1.0beta3
+- Dockerfiles `Dockerfiles/base/Dockerfile*` are based on buster (Debian 10)
+because recent distribution with bullseye (Debian 11) does not support yet a microsoft odbc driver
 
 ## [1.0.0alpha2] - 2021-08-14
 

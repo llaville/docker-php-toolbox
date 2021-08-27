@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 ARG PHP_VERSION=8.0
 
-FROM php:${PHP_VERSION}-fpm
+FROM php:${PHP_VERSION}-fpm-buster
 
 ###
 ### Labels
