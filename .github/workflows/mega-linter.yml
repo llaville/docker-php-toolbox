@@ -45,3 +45,4 @@ jobs:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                     # ADD YOUR CUSTOM ENV VARIABLES HERE OR DEFINE THEM IN A FILE .mega-linter.yml AT THE ROOT OF YOUR REPOSITORY
                     # DISABLE: COPYPASTE,SPELL # Uncomment to disable copy-paste and spell checks
+                    DOCKERFILE_DOCKERFILELINT_ARGUMENTS: "-c /github/workflow/.github/linters"
