@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "yarn",
+            "summary": "Yarn is a package manager that doubles down as project manager",
+            "website": "https://github.com/yarnpkg/berry",
+            "command": {
+                "npm-install": {
+                    "requirement": "yarn",
+                    "flags": ["-g"]
+                }
+            },
+            "test": ""
+        }
+    ]
+}

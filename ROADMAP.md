@@ -192,4 +192,5 @@ Current status reflect the contents of the master branch of this repository.
 | wp-cli | [WP-CLI framework](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x274C; |
 | wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
 | yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x2705; |
+| yarn | [Yarn](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
