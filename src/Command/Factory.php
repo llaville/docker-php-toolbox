@@ -27,6 +27,8 @@ final class Factory
                     return new FileDownloadCommand($properties);
                 case 'git-install':
                     return new GitInstallCommand($properties);
+                case 'npm-install':
+                    return new NpmInstallCommand($properties);
                 case 'pecl-install':
                     return new PeclInstallCommand($properties);
                 case 'phar-download':
