@@ -12,7 +12,6 @@
             },
             "test": "",
             "tags": [
-                "deployer",
                 "deployer-6",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
@@ -35,7 +34,6 @@
             },
             "test": "",
             "tags": [
-                "deployer",
                 "deployer-5",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
@@ -62,7 +60,6 @@
             },
             "test": "",
             "tags": [
-                "deployer",
                 "deployer-4",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
@@ -82,7 +79,6 @@
             },
             "test": "",
             "tags": [
-                "deployer",
                 "deployer-3",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
@@ -101,7 +97,6 @@
             },
             "test": "",
             "tags": [
-                "deployer",
                 "deployer-2",
                 "exclude-php:5.2",
                 "exclude-php:5.3"

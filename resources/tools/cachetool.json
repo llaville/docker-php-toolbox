@@ -12,7 +12,6 @@
             },
             "test": "",
             "tags": [
-                "cachetool",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
                 "exclude-php:5.4",

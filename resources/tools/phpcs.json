@@ -11,7 +11,7 @@
                 }
             },
             "test": "",
-            "tags": ["phpcs", "exclude-php:5.2", "exclude-php:5.3"]
+            "tags": ["exclude-php:5.2", "exclude-php:5.3"]
         },
         {
             "name": "phpcs 2",
@@ -23,8 +23,7 @@
                     "bin": "%target-dir%/phpcs"
                 }
             },
-            "test": "",
-            "tags": ["phpcs"]
+            "test": ""
         }
     ]
 }

@@ -11,7 +11,7 @@
                 }
             },
             "test": "",
-            "tags": ["pip", "python3"]
+            "tags": ["python3-pip"]
         },
         {
             "name": "pip v2",
@@ -24,7 +24,7 @@
                 }
             },
             "test": "",
-            "tags": ["pip", "python2"]
+            "tags": ["python2-pip"]
         }
     ]
 }

@@ -10,10 +10,7 @@
                     "bin": "%target-dir%/composer"
                 }
             },
-            "test": "composer list",
-            "tags": [
-                "composer"
-            ]
+            "test": "composer list"
         }
     ]
 }

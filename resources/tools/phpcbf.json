@@ -11,7 +11,7 @@
                 }
             },
             "test": "",
-            "tags": ["phpcbf", "exclude-php:5.2", "exclude-php:5.3"]
+            "tags": ["exclude-php:5.2", "exclude-php:5.3"]
         },
         {
             "name": "phpcbf 2",
@@ -23,8 +23,7 @@
                     "bin": "%target-dir%/phpcbf"
                 }
             },
-            "test": "",
-            "tags": ["phpcbf"]
+            "test": ""
         }
     ]
 }

@@ -10,8 +10,7 @@
                     "bin": "%target-dir%/pickle"
                 }
             },
-            "test": "pickle list",
-            "tags": ["pickle"]
+            "test": "pickle list"
         }
     ]
 }

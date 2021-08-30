@@ -9,8 +9,7 @@
                     "requirement": "yamllint"
                 }
             },
-            "test": "",
-            "tags": ["yamllint"]
+            "test": ""
         }
     ]
 }

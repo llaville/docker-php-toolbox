@@ -10,8 +10,7 @@
                     "bin": "%target-dir%/box"
                 }
             },
-            "test": "",
-            "tags": ["box"]
+            "test": ""
         }
     ]
 }

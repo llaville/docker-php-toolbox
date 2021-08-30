@@ -10,8 +10,7 @@
                     "package_manager": "apt"
                 }
             },
-            "test": "",
-            "tags": ["git"]
+            "test": ""
         }
     ]
 }

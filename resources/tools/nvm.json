@@ -24,8 +24,7 @@
                     ]
                 }
             },
-            "test": "command -v nvm",
-            "tags": ["nvm"]
+            "test": "command -v nvm"
         }
     ]
 }
