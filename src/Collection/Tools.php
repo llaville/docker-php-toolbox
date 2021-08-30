@@ -43,12 +43,14 @@ final class Tools extends AbstractLazyCollection implements ToolCollectionInterf
         foreach ($finder as $resource) {
             $definitions = $this->loadJson($resource);
             foreach ($definitions as $definition) {
+                $tags = $definition['tags'] ?? [];
+                $tags[] = $definition['name'];
                 $this->add(
                     new Tool(
                         $definition['name'],
                         $definition['summary'],
                         $definition['website'],
-                        $definition['tags'] ?? [],
+                        $tags,
                         Factory::create($definition['command']),
                         null  // feature temporary disabled
                     )
