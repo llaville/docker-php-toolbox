@@ -7,12 +7,21 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.0.0-alpha.3] - 2021-08-30
+
+Third prototype version with following contents (+9 tools):
+[new ROADMAP](https://github.com/llaville/docker-php-toolbox/blob/c4707a0ec259b856445c89fb5404efb16275a624/ROADMAP.md)
+
+The next release will be the first beta (beta.1), planned for 9 September 2021.
+
 ### Added
 
 - new specialized command (`git-install`) to install source code from a GIT repository
 - new specialized command (`pip-install`) to install pip (python) package
 - [a79031d](https://github.com/llaville/docker-php-toolbox/commit/a79031d99ba29987335e7aa528a994bae92f06c6)
 : PHP_CodeSniffer custom standard
+- [fbdf1b8](https://github.com/llaville/docker-php-toolbox/commit/fbdf1b8131c794423b3166d1bbbc48f3c2dd1025)
+: `exclude-tag` option and new class `Bartlett\PHPToolbox\Collection\Filter` to filter extensions and tools more easily
 - [Mega-Linter](https://github.com/nvuillam/mega-linter) support as QA tool to avoid technical debt
 
 #### Tools
@@ -29,6 +38,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- [cf22cf8](https://github.com/llaville/docker-php-toolbox/commit/cf22cf805c953b626e685cd65d26af3f3df50d33) : auto tagging by name each extension and tool in resources path
 - [429a524](https://github.com/llaville/docker-php-toolbox/commit/429a524a80b6f6b9197cdad51df84ba9abfac5a0) : specialized `sh` command is replaced by `shell` command
 - Dockerfile `Dockerfiles/base/Dockerfile-81` support now PHP 8.1.0beta3
 - Dockerfiles `Dockerfiles/base/Dockerfile*` are based on buster (Debian 10)
