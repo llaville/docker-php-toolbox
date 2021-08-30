@@ -2,6 +2,7 @@
 
 namespace Bartlett\PHPToolbox\Console\Command;
 
+use Bartlett\PHPToolbox\Collection\Filter;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
@@ -84,7 +85,7 @@ final class UpdateReadme extends Command implements CommandInterface
         };
 
         $extensionsList = $tools->filter(function (Tool $tool) {
-            return in_array('pecl-extensions', $tool->getTags(), true);
+            return (new Filter([], ['pecl-extensions']))($tool);
         });
 
         $totalAvailable = [$extensionsList->count()];
@@ -106,7 +107,7 @@ final class UpdateReadme extends Command implements CommandInterface
         $extensionsTable .= PHP_EOL;
 
         $toolsList = $tools->filter(function (Tool $tool) {
-            return !in_array('pecl-extensions', $tool->getTags(), true);
+            return (new Filter(['pecl-extensions'], []))($tool);
         });
 
         $totalAvailable = [$toolsList->count()];

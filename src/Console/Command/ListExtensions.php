@@ -2,6 +2,7 @@
 
 namespace Bartlett\PHPToolbox\Console\Command;
 
+use Bartlett\PHPToolbox\Collection\Filter;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
@@ -12,6 +13,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+use Exception;
 use function count;
 use function in_array;
 use function is_dir;
@@ -44,11 +46,19 @@ final class ListExtensions extends Command implements CommandInterface
                 'Path(s) to the list of tools and extensions.',
                 './resources'
             )
+            ->addOption(
+                'exclude-tag',
+                'e',
+                InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
+                'Exclude some extensions by tags',
+                []
+            )
         ;
     }
 
     /**
      * {@inheritDoc}
+     * @throws Exception
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -80,11 +90,12 @@ final class ListExtensions extends Command implements CommandInterface
             ];
         };
 
-        $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion) {
-            return
-                in_array('pecl-extensions', $tool->getTags(), true) &&
-                !in_array('exclude-php:' . $phpVersion, $tool->getTags(), true)
-            ;
+        $ignored = $input->getOption('exclude-tag');
+
+        $ignored[] = 'exclude-php:' . $phpVersion;
+
+        $toolsList = $tools->filter(function (Tool $tool) use ($ignored) {
+            return (new Filter($ignored, ['pecl-extensions']))($tool);
         });
 
         $headers = ['Name', 'Description', 'Website'];

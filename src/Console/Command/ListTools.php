@@ -2,6 +2,7 @@
 
 namespace Bartlett\PHPToolbox\Console\Command;
 
+use Bartlett\PHPToolbox\Collection\Filter;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\Tools;
 
@@ -12,7 +13,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-use function array_intersect;
+use Exception;
 use function count;
 use function in_array;
 use function is_dir;
@@ -51,11 +52,19 @@ final class ListTools extends Command implements CommandInterface
                 InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
                 'Filter tools by tags'
             )
+            ->addOption(
+                'exclude-tag',
+                'e',
+                InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
+                'Exclude some tools by tags',
+                []
+            )
         ;
     }
 
     /**
      * {@inheritDoc}
+     * @throws Exception
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -80,6 +89,10 @@ final class ListTools extends Command implements CommandInterface
         $tools = (new Tools())->load($toolsPath)->sortByName();
 
         $tags = $input->getOption('tag');
+        $ignored = $input->getOption('exclude-tag');
+
+        $ignored[] = 'pecl-extensions';
+        $ignored[] = 'exclude-php:' . $phpVersion;
 
         $transform = function (Tool $tool) {
             return [
@@ -89,19 +102,8 @@ final class ListTools extends Command implements CommandInterface
             ];
         };
 
-        $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion, $tags) {
-            $preFilter =
-                !in_array('pecl-extensions', $tool->getTags(), true) &&
-                !in_array('exclude-php:' . $phpVersion, $tool->getTags(), true)
-            ;
-            if (!$preFilter) {
-                return false;
-            }
-            if (!empty($tags)) {
-                $byTags = array_intersect($tool->getTags(), $tags);
-                return !empty($byTags);
-            }
-            return true;
+        $toolsList = $tools->filter(function (Tool $tool) use ($tags, $ignored) {
+            return (new Filter($ignored, $tags))($tool);
         });
 
         $headers = ['Name', 'Description', 'Website'];
