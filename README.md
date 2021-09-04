@@ -281,7 +281,7 @@ List available extensions for PHP 8.1
  ! [NOTE] 57 extensions available. The pre-installed PHP extensions are excluded from this list.
  ```
 
-### List available extensions
+### List available tools
 
 ```shell
 bin/toolkit.php list:tools <php_version>
