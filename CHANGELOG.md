@@ -13,6 +13,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [support to yarn](https://github.com/llaville/docker-php-toolbox/commit/6b72a1841f72677b5e8b8cb848dccd3c594be833)
 
+### Fixed
+
+- file download url of `mhsendmail` tool
+
 ## [1.0.0-alpha.3] - 2021-08-30
 
 Third prototype version with following contents (+9 tools):

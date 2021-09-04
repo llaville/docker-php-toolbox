@@ -6,7 +6,7 @@
             "website": "https://github.com/BlueBambooStudios/mhsendmail",
             "command": {
                 "file-download": {
-                    "url": "https://github.com/devilbox/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
+                    "url": "https://github.com/BlueBambooStudios/mhsendmail/releases/download/v0.3.0/mhsendmail_%os%_%arch%",
                     "target": "/tmp/mhsendmail_%os%_%arch%"
                 },
                 "shell": {
