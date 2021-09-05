@@ -1,0 +1,29 @@
+{
+    "tools": [
+        {
+            "name": "phpmnd",
+            "summary": "PHP Magic Number Detector",
+            "website": "https://github.com/povils/phpmnd",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/povils/phpmnd.git",
+                    "target-dir": "/usr/local/src/phpmnd",
+                    "version": "v2.4.0"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/phpmnd/bin/phpmnd %target-dir%/phpmnd"
+                }
+            },
+            "test": "",
+            "tags": [
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0"
+            ]
+        }
+    ]
+}

@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 33 |
+| | Total available | 39 | 34 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -174,6 +174,7 @@ Current status reflect the contents of the master branch of this repository.
 | phplint v2 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phplint v3 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; |
 | phpmd | [Find problems in PHP code](https://github.com/phpmd/phpmd) | &#x2705; | &#x274C; |
+| phpmnd | [PHP Magic Number Detector](https://github.com/povils/phpmnd) | &#x274C; | &#x2705; |
 | phpstan | [PHP Static Analysis Tool](https://github.com/phpstan/phpstan) | &#x274C; | &#x2705; |
 | phpunit 4 | [The PHP Unit Testing framework (4.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; |
 | phpunit 5 | [The PHP Unit Testing framework (5.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; |
