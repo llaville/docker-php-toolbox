@@ -5,6 +5,7 @@ namespace Bartlett\PHPToolbox\Console\Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader as SymfonyFactoryCommandLoader;
 
+use Phar;
 use function get_class;
 use function in_array;
 
@@ -20,7 +21,12 @@ class FactoryCommandLoader extends SymfonyFactoryCommandLoader
      */
     public function __construct(iterable $commands)
     {
-        $blacklist = [];
+        if (Phar::running()) {
+            // these commands are disallowed in PHAR distribution
+            $blacklist = [UpdateReadme::class];
+        } else {
+            $blacklist = [];
+        }
         $factories = [];
 
         foreach ($commands as $command) {
