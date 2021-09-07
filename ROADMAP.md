@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 35 |
+| | Total available | 39 | 36 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -156,6 +156,7 @@ Current status reflect the contents of the master branch of this repository.
 | homebrew | [The missing package manager for macOS or Linux](https://github.com/Homebrew/brew) | &#x2705; | &#x274C; |
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; |
 | httpie | [Httpie](https://github.com/httpie/httpie) | &#x274C; | &#x2705; |
+| http-prompt | [Httpie](https://github.com/httpie/http-prompt) | &#x274C; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; |
 | jsonlint | [A JSON parser and validator for CLI](https://github.com/zaach/jsonlint) | &#x2705; | &#x274C; |
 | laravel | [The Laravel application installer](https://github.com/laravel/installer) | &#x2705; | &#x274C; |

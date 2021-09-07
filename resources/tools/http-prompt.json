@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "HTTP Prompt",
+            "summary": "An interactive command-line HTTP and API testing client built on top of HTTPie",
+            "website": "https://github.com/httpie/http-prompt",
+            "command": {
+                "pip-install": {
+                    "requirement": "http-prompt"
+                }
+            },
+            "test": "",
+            "tags": ["http-prompt"]
+        }
+    ]
+}
