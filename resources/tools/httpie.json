@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "httpie",
+            "summary": "A modern user-friendly command-line HTTP client for the API era",
+            "website": "https://github.com/httpie/httpie",
+            "command": {
+                "pip-install": {
+                    "requirement": "setuptools httpie"
+                }
+            },
+            "test": ""
+        }
+    ]
+}
