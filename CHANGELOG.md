@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 #### Tools
 
 - [support to phpmnd](https://github.com/llaville/docker-php-toolbox/commit/25d71938a408d9cb7291b6176e1b6278d2cf243c)
+- [support to httpie](https://github.com/llaville/docker-php-toolbox/commit/5d62927793d0289ee2188535df4fd9efec28fab9)
 - [support to yarn](https://github.com/llaville/docker-php-toolbox/commit/6b72a1841f72677b5e8b8cb848dccd3c594be833)
 
 ### Fixed
