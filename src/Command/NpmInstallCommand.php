@@ -13,6 +13,7 @@ final class NpmInstallCommand implements CommandInterface
     /** @var string  */
     private $requirement;
 
+    /** @var string[] */
     private $flags;
 
     /**
