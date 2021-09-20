@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- [build-version option is now insensitive and may contain any character](https://github.com/llaville/docker-php-toolbox/commit/544a7998ca3db6cc9ff6f7167c6d8fb894de2108)
+
 ## [1.0.0-beta.1] - 2021-09-09
 
 ### Added

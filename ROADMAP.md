@@ -197,3 +197,7 @@ Current status reflect the contents of the master branch of this repository.
 | yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x2705; |
 | yarn | [Yarn](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
+
+**WARNING**
+
+- `linkcheck` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
