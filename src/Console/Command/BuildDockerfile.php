@@ -65,7 +65,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Build version to identify the final Dockerfile from template',
+                'Build version to identify the final Dockerfile from template (case insensitive)',
                 '2',
             )
             ->addOption(
@@ -107,7 +107,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $buildVersion = (string) $input->getOption('build-version');
+        $buildVersion = strtolower($input->getOption('build-version'));
 
         $dockerfilePath = $input->getOption('dockerfile');
 

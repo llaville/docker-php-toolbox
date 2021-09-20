@@ -19,6 +19,7 @@ use function file_get_contents;
 use function implode;
 use function preg_match_all;
 use function sprintf;
+use function strtolower;
 
 /**
  * @since Release 1.0.0alpha1
@@ -50,7 +51,7 @@ final class BuildImage extends Command implements CommandInterface
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Build version to identify the final Dockerfile from template',
+                'Build version to identify the final Dockerfile from template (case insensitive)',
                 '1'
             )
             ->addOption(
@@ -99,7 +100,7 @@ final class BuildImage extends Command implements CommandInterface
 
         $dockerfilePath = $input->getOption('dockerfile');
 
-        $buildVersion = (string) $input->getOption('build-version');
+        $buildVersion = strtolower($input->getOption('build-version'));
 
         // checks Dockerfile specialized version
         $dockerfilePath .= '.' . $buildVersion;
@@ -115,7 +116,7 @@ final class BuildImage extends Command implements CommandInterface
         $suffix = basename(dirname($dockerfilePath));
 
         if ('mods' === $suffix) {
-            $result = preg_match_all('/FROM builder as build-version-(\d*)/', file_get_contents($dockerfilePath), $matches);
+            $result = preg_match_all('/FROM builder as build-version-(.*)/', file_get_contents($dockerfilePath), $matches);
             if (0 == $result) {
                 $io->error('Your Dockerfile is invalid. Please build a fresh copy with `build:dockerfile` command');
                 return self::FAILURE;
