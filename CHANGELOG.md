@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- `yarn` tool is no more installed by default
+
 ### Fixed
 
 - [build-version option is now insensitive and may contain any character](https://github.com/llaville/docker-php-toolbox/commit/544a7998ca3db6cc9ff6f7167c6d8fb894de2108)

@@ -90,7 +90,6 @@ RUN set -eux \
         wget \
         whois \
         xz-utils \
-        yarn \
         zip \
         zlib1g-dev \
         zsh \
