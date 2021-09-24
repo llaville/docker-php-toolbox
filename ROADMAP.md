@@ -12,7 +12,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 103 | 114 |
+| | Total available | 103 | 113 |
 | amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; |
 | apc | [The apc PHP Extension](https://pecl.php.net/package/APC) | &#x2705; | &#x274C; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; |
@@ -112,7 +112,6 @@ Current status reflect the contents of the master branch of this repository.
 | sysvshm | [The sysvshm PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvshm) | &#x2705; | &#x2705; |
 | tidy | [The tidy PHP Extension](https://github.com/php/php-src/tree/master/ext/tidy) | &#x2705; | &#x2705; |
 | tokenizer | [The tokenizer PHP Extension](https://github.com/php/php-src/tree/master/ext/tokenizer) | &#x2714; | &#x2714; |
-| uopz | [The uopz PHP Extension](https://pecl.php.net/package/uopz) | &#x274C; | &#x2705; |
 | uploadprogress | [The uploadprogress PHP Extension](https://pecl.php.net/package/uploadprogress) | &#x2705; | &#x2705; |
 | uuid | [The uuid PHP Extension](https://pecl.php.net/package/uuid) | &#x274C; | &#x2705; |
 | vips | [The vips PHP Extension](https://pecl.php.net/package/vips) | &#x2705; | &#x2705; |

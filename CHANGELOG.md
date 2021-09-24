@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [build-version option is now insensitive and may contain any character](https://github.com/llaville/docker-php-toolbox/commit/544a7998ca3db6cc9ff6f7167c6d8fb894de2108)
 
+### Removed
+
+- drop support of `uopz` extension (too much trouble (segmentation fault) with others extensions)
+
 ## [1.0.0-beta.1] - 2021-09-09
 
 ### Added
