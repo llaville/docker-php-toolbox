@@ -9,7 +9,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- upgrade docker-php-extension-installer to version 1.2.65
 - `yarn` tool is no more installed by default
+- `uploadprogress` extension support now PHP 8.0
 
 ### Fixed
 
