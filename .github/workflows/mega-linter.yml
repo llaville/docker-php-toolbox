@@ -48,3 +48,4 @@ jobs:
                     # DISABLE: COPYPASTE,SPELL # Uncomment to disable copy-paste and spell checks
                     DOCKERFILE_DOCKERFILELINT_ARGUMENTS: "-c /github/workspace/.github/linters"
                     LOG_LEVEL: "info"
+                    TEXT_REPORTER: false
