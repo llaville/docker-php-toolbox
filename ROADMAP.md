@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD036 -->
 # Roadmap
 
 Current status reflect the contents of the master branch of this repository.
@@ -199,4 +200,4 @@ Current status reflect the contents of the master branch of this repository.
 
 **WARNING**
 
-- `linkcheck` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
+*`linkcheck` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
