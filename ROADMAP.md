@@ -200,7 +200,7 @@ Current status reflect the contents of the master branch of this repository.
 
 **WARNING**
 
-* `jsonlint` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
-* `linkcheck` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
-* `stylelint` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
-* `yamllint` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
+* `jsonlint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `linkcheck` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `stylelint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `yamllint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
