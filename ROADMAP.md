@@ -194,10 +194,12 @@ Current status reflect the contents of the master branch of this repository.
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; |
 | wp-cli | [WP-CLI framework](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x274C; |
 | wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
-| yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x2705; |
+| yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x274C; |
 | yarn | [Yarn](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; |
 
 **WARNING**
 
 *`linkcheck` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
+*`stylelint` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)
+*`yamllint` will not be included because it can be replaced by [markdown-link-check](https://github.com/tcort/markdown-link-check)

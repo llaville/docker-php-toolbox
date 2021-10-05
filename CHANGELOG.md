@@ -20,6 +20,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - drop support of `uopz` extension (too much trouble (segmentation fault) with others extensions)
+- drop support of `yamllint` tool, because it can be replaced by Mega-Linter
 
 ## [1.0.0-beta.1] - 2021-09-09
 
