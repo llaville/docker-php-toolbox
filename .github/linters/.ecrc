@@ -1,11 +1,11 @@
 {
     "Version": "2.3.5",
-    "Verbose": false,
+    "Verbose": true,
     "Debug": false,
     "IgnoreDefaults": false,
     "SpacesAftertabs": false,
     "NoColor": false,
-    "Exclude": ["\\.idea", "\\.editorconfig", "\\.github", "\\.gitignore", "LICENSE", "README\\.md"],
+    "Exclude": ["\\.editorconfig", "\\.github", "\\.gitignore", "LICENSE", "^README\\.md"],
     "AllowedContentTypes": [],
     "PassedFiles": [],
     "Disable": {
