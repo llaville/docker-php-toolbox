@@ -38,6 +38,10 @@ report/
 *.zip
 *.phar
 
+###### git ######
+.gitignore
+.github
+.git
 
 ######################################
 # Operating Systems
