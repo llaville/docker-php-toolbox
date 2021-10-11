@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.0.0-beta.2] - 2021-10-11
+
 ### Added
 
 - new specialized command (`phive-install`) to install PHP Application from a PHAR archive
