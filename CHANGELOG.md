@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- new specialized command (`phive-install`) to install PHP Application from a PHAR archive
+
 ### Changed
 
 - upgrade docker-php-extension-installer to version 1.2.65

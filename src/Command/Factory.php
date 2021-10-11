@@ -33,6 +33,8 @@ final class Factory
                     return new PeclInstallCommand($properties);
                 case 'phar-download':
                     return new PharDownloadCommand($properties);
+                case 'phive-install':
+                    return new PhiveInstallCommand($properties);
                 case 'pip-install':
                     return new PipInstallCommand($properties);
                 case 'shell':
