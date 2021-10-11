@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 36 |
+| | Total available | 39 | 37 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -168,6 +168,7 @@ Current status reflect the contents of the master branch of this repository.
 | photon-installer | [Photon CMS Installer](https://github.com/photoncms/installer) | &#x2705; | &#x274C; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x274C; | &#x2705; |
 | php-cs-fixer | [PHP Coding Standards Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; |
+| phpbu | [PHP Backup Utility](https://github.com/sebastianfeldmann/phpbu) | &#x274C; | &#x2705; |
 | phpbench | [PHP Benchmarking framework](https://github.com/phpbench/phpbench) | &#x274C; | &#x2705; |
 | phpcbf | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; |
 | phpcs | [Detects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; |
@@ -202,5 +203,6 @@ Current status reflect the contents of the master branch of this repository.
 
 * `jsonlint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
 * `linkcheck` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `mysqldumpsecure` will not be included because it can be replaced by [phpbu](https://github.com/sebastianfeldmann/phpbu)
 * `stylelint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
 * `yamllint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
