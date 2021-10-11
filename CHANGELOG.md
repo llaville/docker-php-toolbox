@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - new specialized command (`phive-install`) to install PHP Application from a PHAR archive
 
+#### Tools
+
+- [support to phpbu](https://github.com/llaville/docker-php-toolbox/commit/fbd7933598cf6dcbc0c6d619841c3d2b71c8e69d)
+
 ### Changed
 
 - upgrade docker-php-extension-installer to version 1.2.65
