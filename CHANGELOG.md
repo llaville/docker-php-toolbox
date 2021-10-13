@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- url of `composer` PHAR distribution in `resources/tools/composer.json`
+
 ## [1.0.0-beta.2] - 2021-10-11
 
 ### Added

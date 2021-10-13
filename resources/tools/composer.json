@@ -6,7 +6,7 @@
             "website": "https://github.com/composer/composer",
             "command": {
                 "phar-download": {
-                    "phar": "https://getcomposer.org/composer-2.phar",
+                    "phar": "https://github.com/composer/composer/releases/latest/download/composer.phar",
                     "bin": "%target-dir%/composer"
                 }
             },
