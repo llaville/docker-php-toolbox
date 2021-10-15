@@ -40,7 +40,7 @@ report/
 
 ###### git ######
 .gitignore
-.github
+# cannot ignore .github folder because Mega-Linter ACTION_ACTIONLINT be check
 .git
 
 ######################################
