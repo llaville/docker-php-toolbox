@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- upgrade docker-php-extension-installer to version 1.4.0
 - url of `composer` PHAR distribution in `resources/tools/composer.json`
 - `yaml` extension 2.2.2 add support to PHP 8.1
 
