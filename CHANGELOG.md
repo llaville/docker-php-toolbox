@@ -11,7 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - upgrade docker-php-extension-installer to version 1.4.0
 - url of `composer` PHAR distribution in `resources/tools/composer.json`
-- support to PHP 8.1.0 RC4
+- support to PHP 8.1.0 RC6
 - `yaml` extension 2.2.2 add support to PHP 8.1
 
 ## [1.0.0-beta.2] - 2021-10-11
