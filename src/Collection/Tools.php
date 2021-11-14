@@ -92,7 +92,7 @@ final class Tools extends AbstractLazyCollection implements ToolCollectionInterf
 
     /**
      * @param SplFileInfo $resource
-     * @return array<string, array>
+     * @return array<string, mixed>
      */
     private function loadJson(SplFileInfo $resource): array
     {

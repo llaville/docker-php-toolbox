@@ -14,7 +14,7 @@ use function key;
 final class Factory
 {
     /**
-     * @param array<string, array> $command
+     * @param array<string, mixed> $command
      * @return CommandInterface|null
      */
     public static function create(array $command): ?CommandInterface
