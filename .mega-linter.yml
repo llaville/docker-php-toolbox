@@ -27,7 +27,6 @@ MARKDOWN_MARKDOWNLINT_CONFIG_FILE: ".markdown-lint.json"
 PHP_PHPCS_CONFIG_FILE: ".phpcs.xml.dist"
 PHP_PHPCS_ARGUMENTS: "-n"
 PHP_PHPSTAN_CLI_LINT_MODE: project
-PHP_PHPSTAN_CONFIG_FILE: "phpstan.neon.dist"
 YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github)" # As it cannot be added in .gitignore for ML actionlint linter
 YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github)" # As it cannot be added in .gitignore for ML actionlint linter
 CONFIG_REPORTER: false
@@ -35,3 +34,4 @@ UPDATED_SOURCES_REPORTER: false
 #TEXT_REPORTER: true # cannot be set to true, and should use default value (true), otherwise TAP REPORTER is also generated. See https://github.com/nvuillam/mega-linter/issues/744
 CONSOLE_REPORTER: true
 LOG_LEVEL: INFO
+PRINT_ALL_FILES: false
