@@ -22,11 +22,11 @@ use function vsprintf;
 use const PHP_EOL;
 
 /**
- * @since Release 1.0.0alpha1
+ * @since Release 1.0.0-rc.1
  */
-final class UpdateReadme extends Command implements CommandInterface
+final class UpdateTools extends Command implements CommandInterface
 {
-    public const NAME = 'update:readme';
+    public const NAME = 'update:tools';
 
     /**
      * {@inheritDoc}
@@ -34,20 +34,20 @@ final class UpdateReadme extends Command implements CommandInterface
     protected function configure(): void
     {
         $this->setName(self::NAME)
-            ->setDescription('Updates README.md with latest list of available tools and extensions')
+            ->setDescription('Updates appendix documentation with latest list of available tools')
             ->addOption(
-                'tools',
-                null,
+                'input-dir',
+                'i',
                 InputOption::VALUE_REQUIRED,
-                'Path(s) to the list of tools and extensions.',
+                'Path(s) to the list of tools.',
                 './resources'
             )
             ->addOption(
-                'readme',
-                null,
+                'output-file',
+                'o',
                 InputOption::VALUE_REQUIRED,
-                'Path to the readme file',
-                './README.md'
+                'Path to the appendix markdown file',
+                './docs/appendix/tools.md'
             )
         ;
     }
@@ -58,10 +58,10 @@ final class UpdateReadme extends Command implements CommandInterface
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $toolsPath = $input->getOption('tools');
-        $readmePath = $input->getOption('readme');
+        $inputDir = $input->getOption('input-dir');
+        $outputFile = $input->getOption('output-file');
 
-        $tools = (new Tools())->load($toolsPath)->sortByName();
+        $tools = (new Tools())->load($inputDir)->sortByName();
 
         $formatSection = function (Tool $tool) {
             return sprintf(
@@ -84,31 +84,17 @@ final class UpdateReadme extends Command implements CommandInterface
             );
         };
 
-        $extensionsList = $tools->filter(function (Tool $tool) {
-            return (new Filter([], ['pecl-extensions']))($tool);
-        });
-
-        $totalAvailable = [$extensionsList->count()];
-        $phpVersions = ['5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'];
-
-        foreach ($phpVersions as $phpVersion) {
-            $totalAvailable[] = count($extensionsList->filter(function (Tool $tool) use ($phpVersion) {
-                return !in_array('exclude-php:' . $phpVersion, $tool->getTags());
-            }));
-        }
-
-        $extensionsList = $extensionsList->map($formatSection);
-
-        $extensionsTable  = '| Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |' . PHP_EOL;
-        $extensionsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
-        $extensionsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
-        $extensionsTable .= PHP_EOL;
-        $extensionsTable .= implode(PHP_EOL, $extensionsList->toArray());
-        $extensionsTable .= PHP_EOL;
-
         $toolsList = $tools->filter(function (Tool $tool) {
             return (new Filter(['pecl-extensions'], []))($tool);
         });
+
+        $phpVersions = ['5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'];
+
+        foreach ($phpVersions as $phpVersion) {
+            $totalAvailable[] = count($toolsList->filter(function (Tool $tool) use ($phpVersion) {
+                return !in_array('exclude-php:' . $phpVersion, $tool->getTags());
+            }));
+        }
 
         $totalAvailable = [$toolsList->count()];
         foreach ($phpVersions as $phpVersion) {
@@ -126,17 +112,16 @@ final class UpdateReadme extends Command implements CommandInterface
         $toolsTable .= implode(PHP_EOL, $toolsList->toArray());
         $toolsTable .= PHP_EOL;
 
-        $readme = file_get_contents($readmePath);
-        $readme = preg_replace('/(## Available extensions\n\n).*?(\n#+ )/smi', '$1' . $extensionsTable . '$2', $readme);
-        $readme = preg_replace('/(## Available tools\n\n).*?(\n#+ )/smi', '$1' . $toolsTable . '$2', $readme);
+        $markdown = file_get_contents($outputFile);
+        $markdown = preg_replace('/(.*)(<!-- MARKDOWN-TABLE:START -->\n).*?(<!-- MARKDOWN-TABLE:END -->\n)(.*)/smi', '$1$2' . $toolsTable . '$3$4', $markdown);
 
-        file_put_contents($readmePath, $readme);
+        file_put_contents($outputFile, $markdown);
 
         $output->writeln(
             sprintf(
                 'The <info>%s</info> was updated with latest tools found in <info>%s</info>.',
-                $readmePath,
-                $toolsPath
+                $outputFile,
+                $inputDir
             )
         );
 
