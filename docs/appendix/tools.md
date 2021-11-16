@@ -1,6 +1,12 @@
 <!-- markdownlint-disable MD013 MD033 -->
 # Available tools
 
+**Legend**:
+
+* &#x2705; available with PHP version
+* &#x274C; not available with PHP version
+
+<!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |
 | | Total available: 43 | 18 | 19 | 23 | 25 | 28 | 29 | 32 | 36 | 38 | 37 | 37 | 30 |
@@ -47,3 +53,4 @@
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yarn | [Yarn is a package manager that doubles down as project manager](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yq | [Command-line YAML processor](https://github.com/mikefarah/yq) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+<!-- MARKDOWN-TABLE:END -->

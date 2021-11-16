@@ -1,9 +1,15 @@
 <!-- markdownlint-disable MD013 MD033 -->
 # Available extensions
 
+**Legend**:
+
+* &#x2705; available with PHP version
+* &#x274C; not available with PHP version
+
+<!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 5.2</sup> | <sup>PHP 5.3</sup> | <sup>PHP 5.4</sup> | <sup>PHP 5.5</sup> | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 76 | 59 | 69 | 69 | 70 | 70 | 74 | 74 | 74 | 74 | 71 | 67 | 58 |
+| | Total available: 76 | 59 | 69 | 69 | 70 | 70 | 74 | 74 | 74 | 74 | 71 | 67 | 59 |
 | amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | ast | [The ast PHP Extension](https://pecl.php.net/package/ast) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -77,6 +83,7 @@
 | xmldiff | [The xmldiff PHP Extension](https://pecl.php.net/package/xmldiff) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xmlrpc | [The xmlrpc PHP Extension](https://pecl.php.net/package/xmlrpc) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| yaml | [The yaml PHP Extension](https://pecl.php.net/package/yaml) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| yaml | [The yaml PHP Extension](https://pecl.php.net/package/yaml) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yar | [The yar PHP Extension](https://pecl.php.net/package/yar) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | zip | [The zip PHP Extension](https://pecl.php.net/package/zip) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+<!-- MARKDOWN-TABLE:END -->
