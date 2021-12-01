@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 interface ApplicationInterface extends ContainerAwareInterface
 {
     public const NAME = 'Helper to discover and install PHP extensions and/or tools';
-    public const VERSION = '1.0.x-dev';
+    public const VERSION = '1.0.0';
 
     /**
      * @param CommandLoaderInterface $commandLoader
