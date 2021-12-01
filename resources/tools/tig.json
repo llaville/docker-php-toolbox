@@ -9,8 +9,7 @@
                     "cmd": "tig",
                     "package_manager": "apt"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

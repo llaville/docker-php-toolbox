@@ -12,8 +12,7 @@
                 "shell": {
                     "cmd": "chmod +x /tmp/yq_%os%_%arch% && mv /tmp/yq_%os%_%arch% %target-dir%/yq"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

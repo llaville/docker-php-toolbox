@@ -9,8 +9,7 @@
                     "phar": "https://github.com/composer/composer/releases/latest/download/composer.phar",
                     "bin": "%target-dir%/composer"
                 }
-            },
-            "test": "composer list"
+            }
         }
     ]
 }

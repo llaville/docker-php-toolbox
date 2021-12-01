@@ -10,7 +10,6 @@
                     "version": ""
                 }
             },
-            "test": "",
             "tags": ["pecl-extensions"]
         }
     ]

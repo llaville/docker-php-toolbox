@@ -9,8 +9,7 @@
                     "cmd": "jq",
                     "package_manager": "apt"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

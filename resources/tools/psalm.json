@@ -10,7 +10,6 @@
                     "bin": "%target-dir%/psalm"
                 }
             },
-            "test": "",
             "tags": [
                 "exclude-php:5.2",
                 "exclude-php:5.3",

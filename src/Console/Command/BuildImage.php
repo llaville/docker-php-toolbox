@@ -212,7 +212,7 @@ final class BuildImage extends Command implements CommandInterface
     }
 
     /**
-     * @param Process<Generator> $process
+     * @param Process $process
      * @param SymfonyStyle $io
      * @return int
      */

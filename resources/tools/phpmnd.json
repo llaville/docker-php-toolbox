@@ -15,7 +15,6 @@
                     "cmd": "ln -sf /usr/local/src/phpmnd/bin/phpmnd %target-dir%/phpmnd"
                 }
             },
-            "test": "",
             "tags": [
                 "exclude-php:5.2",
                 "exclude-php:5.3",

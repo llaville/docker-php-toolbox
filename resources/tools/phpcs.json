@@ -10,7 +10,6 @@
                     "bin": "%target-dir%/phpcs"
                 }
             },
-            "test": "",
             "tags": ["exclude-php:5.2", "exclude-php:5.3"]
         },
         {
@@ -22,8 +21,7 @@
                     "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.9.0/phpcs.phar",
                     "bin": "%target-dir%/phpcs"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

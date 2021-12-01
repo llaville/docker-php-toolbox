@@ -10,7 +10,6 @@
                     "bin": "%target-dir%/phpcbf"
                 }
             },
-            "test": "",
             "tags": ["exclude-php:5.2", "exclude-php:5.3"]
         },
         {
@@ -22,8 +21,7 @@
                     "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.9.0/phpcbf.phar",
                     "bin": "%target-dir%/phpcbf"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

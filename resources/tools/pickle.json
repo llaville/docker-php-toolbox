@@ -9,8 +9,7 @@
                     "phar": "https://github.com/FriendsOfPHP/pickle/releases/latest/download/pickle.phar",
                     "bin": "%target-dir%/pickle"
                 }
-            },
-            "test": "pickle list"
+            }
         }
     ]
 }

@@ -15,7 +15,6 @@
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },
-            "test": "",
             "tags": [
                 "phplint-3",
                 "exclude-php:5.2",
@@ -45,7 +44,6 @@
                     "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
                 }
             },
-            "test": "",
             "tags": [
                 "phplint-2",
                 "exclude-php:5.2",

@@ -9,8 +9,7 @@
                     "requirement": "yarn",
                     "flags": ["-g"]
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

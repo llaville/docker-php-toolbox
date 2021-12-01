@@ -9,8 +9,7 @@
                     "cmd": "htop",
                     "package_manager": "apt"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

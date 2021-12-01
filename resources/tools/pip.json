@@ -10,7 +10,6 @@
                     "package_manager": "apt"
                 }
             },
-            "test": "",
             "tags": ["python3-pip"]
         },
         {
@@ -23,7 +22,6 @@
                     "package_manager": "apt"
                 }
             },
-            "test": "",
             "tags": ["python2-pip"]
         }
     ]

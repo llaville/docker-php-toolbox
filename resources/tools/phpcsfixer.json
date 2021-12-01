@@ -13,7 +13,6 @@
                     "cmd": "ln -sf %target-dir%/php-cs-fixer-3 %target-dir%/php-cs-fixer"
                 }
             },
-            "test": "",
             "tags": [
                 "php-cs-fixer-3",
                 "exclude-php:5.2",
@@ -35,7 +34,6 @@
                     "bin": "%target-dir%/php-cs-fixer-2"
                 }
             },
-            "test": "",
             "tags": [
                 "php-cs-fixer-2",
                 "exclude-php:5.2",

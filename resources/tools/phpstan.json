@@ -9,8 +9,7 @@
                     "phar": "https://github.com/phpstan/phpstan/releases/latest/download/phpstan.phar",
                     "bin": "%target-dir%/phpstan"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

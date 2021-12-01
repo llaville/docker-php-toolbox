@@ -9,8 +9,7 @@
                     "phar": "https://github.com/box-project/box/releases/latest/download/box.phar",
                     "bin": "%target-dir%/box"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

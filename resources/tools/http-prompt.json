@@ -9,7 +9,6 @@
                     "requirement": "http-prompt"
                 }
             },
-            "test": "",
             "tags": ["http-prompt"]
         }
     ]

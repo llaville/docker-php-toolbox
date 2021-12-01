@@ -9,8 +9,7 @@
                     "cmd": "graphviz",
                     "package_manager": "apt"
                 }
-            },
-            "test": ""
+            }
         }
     ]
 }

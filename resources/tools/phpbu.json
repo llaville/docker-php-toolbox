@@ -10,7 +10,6 @@
                     "signature": "24CF04DD7016F97D"
                 }
             },
-            "test": "",
             "tags": [
                 "phpbu-6",
                 "exclude-php:5.2",

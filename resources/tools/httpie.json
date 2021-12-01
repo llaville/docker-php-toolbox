@@ -9,7 +9,6 @@
                     "requirement": "setuptools httpie"
                 }
             },
-            "test": "",
             "tags": ["httpie"]
         }
     ]
