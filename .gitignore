@@ -12,6 +12,9 @@ Dockerfiles/work/Dockerfile.*
 ###### Composer dependencies ######
 vendor/
 
+###### PHPLint ######
+.phplint-cache
+
 ###### PHPUnit ######
 .phpunit.result.cache
 

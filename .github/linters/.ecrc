@@ -1,11 +1,11 @@
 {
     "Version": "2.3.5",
-    "Verbose": true,
+    "Verbose": false,
     "Debug": false,
     "IgnoreDefaults": false,
     "SpacesAftertabs": false,
     "NoColor": false,
-    "Exclude": ["\\.editorconfig", "\\.github", "\\.gitignore", "LICENSE", "^README\\.md", "vendor"],
+    "Exclude": ["\\.editorconfig", "\\.github", "\\.gitignore", "LICENSE", "^README\\.md", "vendor", "\\.phplint-cache"],
     "AllowedContentTypes": [],
     "PassedFiles": [],
     "Disable": {
