@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "laravel",
+            "summary": "https://laravel.com/docs/8.x/installation#the-laravel-installer",
+            "website": "https://laravel.com",
+            "command": {
+                "shell": {
+                    "cmd": [
+                        "composer global require laravel"
+                    ]
+                }
+            }
+        }
+    ]
+}
