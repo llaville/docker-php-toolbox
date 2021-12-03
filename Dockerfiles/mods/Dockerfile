@@ -1,8 +1,9 @@
 # syntax=docker/dockerfile:1
 ARG PHP_VERSION=8.0
 ARG BUILD_VERSION=1
+ARG VENDOR=local
 
-FROM local/php-fpm:${PHP_VERSION}-base as base
+FROM ${VENDOR}/php-fpm:${PHP_VERSION}-base as base
 
 FROM base as builder
 

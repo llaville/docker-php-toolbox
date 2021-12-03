@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 ARG PHP_VERSION=8.0
+ARG VENDOR=local
 
-FROM local/php-fpm:${PHP_VERSION}-prod
+FROM ${VENDOR}/php-fpm:${PHP_VERSION}-prod
 
 ###
 ### Labels

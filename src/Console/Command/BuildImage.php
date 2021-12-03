@@ -134,7 +134,8 @@ final class BuildImage extends Command implements CommandInterface
             }
         }
 
-        $commonTag = $input->getOption('vendor') . '/php-fpm:' . $phpVersion;
+        $vendor = $input->getOption('vendor');
+        $commonTag = $vendor . '/php-fpm:' . $phpVersion;
 
         if ('base' === $suffix) {
             $tag = $commonTag . '-base';
@@ -155,6 +156,7 @@ final class BuildImage extends Command implements CommandInterface
                 '--file=' . $dockerfilePath,
                 '--build-arg=PHP_VERSION=' . $phpVersion,
                 '--build-arg=BUILD_VERSION=' . $buildVersion,
+                '--build-arg=VENDOR=' . $vendor,
             ];
         } elseif ('prod' === $suffix) {
             $tag = $commonTag . '-prod';
@@ -164,6 +166,7 @@ final class BuildImage extends Command implements CommandInterface
                 '--tag=' . $tag,
                 '--file=' . $dockerfilePath,
                 '--build-arg=PHP_VERSION=' . $phpVersion,
+                '--build-arg=VENDOR=' . $vendor,
             ];
             if (!$noCache) {
                 $command[] = '--cache-from=' . $commonTag . '-mods';
@@ -176,6 +179,7 @@ final class BuildImage extends Command implements CommandInterface
                 '--tag=' . $tag,
                 '--file=' . $dockerfilePath,
                 '--build-arg=PHP_VERSION=' . $phpVersion,
+                '--build-arg=VENDOR=' . $vendor,
             ];
             if (!$noCache) {
                 $command[] = '--cache-from=' . $commonTag . '-prod';
