@@ -210,6 +210,15 @@ final class BuildImage extends Command implements CommandInterface
                     $dockerfilePath
                 )
             );
+        } elseif (self::FAILURE === $status) {
+            $io->writeln($process->getErrorOutput());
+            $io->error(
+                sprintf(
+                    'The %s image had an error when building with the Dockerfile found in %s',
+                    $tag,
+                    $dockerfilePath
+                )
+            );
         }
 
         return $status;
@@ -235,6 +244,10 @@ final class BuildImage extends Command implements CommandInterface
             $process->wait();
         }
 
-        return self::SUCCESS;
+        if ($process->isSuccessful()) {
+            return self::SUCCESS;
+        }
+
+        return self::FAILURE;
     }
 }
