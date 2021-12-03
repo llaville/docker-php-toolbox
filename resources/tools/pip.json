@@ -10,6 +10,7 @@
                     "package_manager": "apt"
                 }
             },
+            "priority": 110,
             "tags": ["python3-pip"]
         },
         {
@@ -22,6 +23,7 @@
                     "package_manager": "apt"
                 }
             },
+            "priority": 100,
             "tags": ["python2-pip"]
         }
     ]

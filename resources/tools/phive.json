@@ -10,6 +10,7 @@
                     "bin": "%target-dir%/phive"
                 }
             },
+            "priority": 100,
             "tags": [
                 "exclude-php:5.2",
                 "exclude-php:5.3",
