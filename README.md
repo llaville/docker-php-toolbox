@@ -5,7 +5,8 @@
 |:------:|
 | [![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/docker-php-toolbox)](https://packagist.org/packages/bartlett/docker-php-toolbox) |
 | [![Minimum PHP Version](https://img.shields.io/packagist/php-v/bartlett/docker-php-toolbox/dev-master)](https://php.net/) |
-| ![License](https://img.shields.io/github/license/llaville/docker-php-toolbox) |
+| [![License](https://img.shields.io/github/license/llaville/docker-php-toolbox)](https://github.com/llaville/docker-php-toolbox/blob/master/LICENSE) |
+| [![GitHub Discussions](https://img.shields.io/github/discussions/llaville/docker-php-toolbox)](https://github.com/llaville/docker-php-toolbox/discussions) |
 | [![Mega-Linter](https://github.com/llaville/docker-php-toolbox/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/llaville/docker-php-toolbox/actions/workflows/mega-linter.yml) |
 | [![GitHub-Pages](https://github.com/llaville/docker-php-toolbox/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/llaville/docker-php-toolbox/actions/workflows/gh-pages.yml) |
 

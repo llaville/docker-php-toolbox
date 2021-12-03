@@ -21,6 +21,8 @@ final class Tool
     private $testCommand;
     /** @var string[]  */
     private $tags;
+    /** @var int */
+    private $priority;
 
     /**
      * Class constructor
@@ -31,6 +33,7 @@ final class Tool
      * @param string[] $tags
      * @param CommandInterface|null $command
      * @param CommandInterface|null $testCommand
+     * @param int $priority
      */
     public function __construct(
         string $name,
@@ -38,7 +41,8 @@ final class Tool
         string $website,
         array $tags,
         ?CommandInterface $command,
-        ?CommandInterface $testCommand
+        ?CommandInterface $testCommand,
+        int $priority
     ) {
         $this->name = $name;
         $this->summary = $summary;
@@ -46,6 +50,7 @@ final class Tool
         $this->tags = $tags;
         $this->command = $command;
         $this->testCommand = $testCommand;
+        $this->priority = $priority;
     }
 
     public function getName(): string
@@ -79,5 +84,10 @@ final class Tool
     public function getTags(): array
     {
         return $this->tags;
+    }
+
+    public function getPriority(): int
+    {
+        return $this->priority;
     }
 }

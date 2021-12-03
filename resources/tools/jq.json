@@ -9,7 +9,8 @@
                     "cmd": "jq",
                     "package_manager": "apt"
                 }
-            }
+            },
+            "priority": -1
         }
     ]
 }

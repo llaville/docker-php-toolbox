@@ -10,6 +10,7 @@
                     "bin": "%target-dir%/dep"
                 }
             },
+            "priority": 56,
             "tags": [
                 "deployer-6",
                 "exclude-php:5.2",
@@ -31,6 +32,7 @@
                     "bin": "%target-dir%/dep"
                 }
             },
+            "priority": 55,
             "tags": [
                 "deployer-5",
                 "exclude-php:5.2",
@@ -56,6 +58,7 @@
                     "bin": "%target-dir%/dep"
                 }
             },
+            "priority": 54,
             "tags": [
                 "deployer-4",
                 "exclude-php:5.2",
@@ -74,6 +77,7 @@
                     "bin": "%target-dir%/dep"
                 }
             },
+            "priority": 53,
             "tags": [
                 "deployer-3",
                 "exclude-php:5.2",
@@ -91,6 +95,7 @@
                     "bin": "%target-dir%/dep"
                 }
             },
+            "priority": 52,
             "tags": ["deployer-2", "exclude-php:5.2", "exclude-php:5.3"]
         }
     ]

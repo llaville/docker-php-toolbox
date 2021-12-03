@@ -23,4 +23,9 @@ interface ToolCollectionInterface extends Collection
      * @throws Exception
      */
     public function sortByName(): ToolCollectionInterface;
+
+    /**
+     * @return ToolCollectionInterface
+     */
+    public function sortByPriority(): ToolCollectionInterface;
 }

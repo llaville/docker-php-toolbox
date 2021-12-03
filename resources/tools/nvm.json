@@ -23,7 +23,8 @@
                         "ln -sf /opt/nvm/nvm.sh /usr/local/bin/nvm"
                     ]
                 }
-            }
+            },
+            "priority": 100
         }
     ]
 }

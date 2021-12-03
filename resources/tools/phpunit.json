@@ -10,6 +10,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 89,
             "tags": [
                 "phpunit-9",
                 "exclude-php:5.2",
@@ -32,6 +33,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 88,
             "tags": [
                 "phpunit-8",
                 "exclude-php:5.2",
@@ -53,6 +55,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 87,
             "tags": [
                 "phpunit-7",
                 "exclude-php:5.2",
@@ -76,6 +79,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 86,
             "tags": [
                 "phpunit-6",
                 "exclude-php:5.2",
@@ -99,6 +103,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 85,
             "tags": [
                 "phpunit-5",
                 "exclude-php:5.2",
@@ -122,6 +127,7 @@
                     "bin": "%target-dir%/phpunit"
                 }
             },
+            "priority": 84,
             "tags": [
                 "phpunit-4",
                 "exclude-php:5.2",

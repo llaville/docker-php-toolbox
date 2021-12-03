@@ -37,7 +37,6 @@ final class Tools extends AbstractLazyCollection implements ToolCollectionInterf
             ->exclude($exclude)
             ->name('*.json')
             ->depth('== 1')
-            ->sortByModifiedTime()
         ;
 
         foreach ($finder as $resource) {
@@ -52,7 +51,8 @@ final class Tools extends AbstractLazyCollection implements ToolCollectionInterf
                         $definition['website'],
                         $tags,
                         Factory::create($definition['command']),
-                        null  // feature temporary disabled
+                        null,  // feature temporary disabled
+                        $definition['priority'] ?? 0
                     )
                 );
             }
@@ -75,6 +75,27 @@ final class Tools extends AbstractLazyCollection implements ToolCollectionInterf
         // define ordering closure
         $iterator->uasort(function ($first, $second) {
             return strcasecmp($first->getName(), $second->getName());
+        });
+
+        $this->collection = new ArrayCollection(iterator_to_array($iterator));
+
+        return $this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function sortByPriority(): ToolCollectionInterface
+    {
+        /**
+         * @see https://coderwall.com/p/mfsssa/sorting-doctrine-arraycollection
+         * @var ArrayIterator<int, Tool> $iterator
+         */
+        $iterator = $this->getIterator();
+
+        // define ordering closure
+        $iterator->uasort(function ($first, $second) {
+            return $first->getPriority() < $second->getPriority() ? 1 : -1;
         });
 
         $this->collection = new ArrayCollection(iterator_to_array($iterator));
