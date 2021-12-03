@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- PR [#16](https://github.com/llaville/docker-php-toolbox/pull/16) : Sorts tools by priority so dependencies can be installed in the correct order.
+
 ## [1.0.0] - 2021-12-01
 
 ### Added
