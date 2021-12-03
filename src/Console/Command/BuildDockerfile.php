@@ -200,6 +200,8 @@ final class BuildDockerfile extends Command implements CommandInterface
      */
     private function getChangeOnWorkDockerfile(string $dockerfilePath, ToolCollectionInterface $tools, string $phpVersion, string $targetDir, array $tags): ?string
     {
+        $tools->sortByPriority();
+
         $toolsList = $tools->filter(function (Tool $tool) use ($phpVersion, $tags) {
             $preFilter =
                 !in_array('pecl-extensions', $tool->getTags(), true) &&
