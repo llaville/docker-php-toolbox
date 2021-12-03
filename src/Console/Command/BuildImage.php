@@ -214,7 +214,7 @@ final class BuildImage extends Command implements CommandInterface
             $io->writeln($process->getErrorOutput());
             $io->error(
                 sprintf(
-                    'The %s tagged image had an error when building with the Dockerfile found in %s',
+                    'The %s image had an error when building with the Dockerfile found in %s',
                     $tag,
                     $dockerfilePath
                 )
