@@ -1,7 +1,7 @@
 <?php
 gc_disable(); // performance boost
 
-if (\Phar::running()) {
+if (Phar::running()) {
     $possibleAutoloadPaths = [
         'phar://toolkit.phar/vendor/autoload.php'
     ];
