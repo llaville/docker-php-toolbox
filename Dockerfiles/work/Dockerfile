@@ -111,7 +111,7 @@ RUN set -eux \
 ###
 RUN \
     { \
-        echo 'PATH="${PATH}:${HOME}/.composer/vendor/bin'; \
+        echo 'PATH="${PATH}:${HOME}/.composer/vendor/bin"'; \
         echo 'PATH="${PATH}:/usr/local/bin:/usr/local/sbin"'; \
         echo 'PATH="${PATH}:/opt/nvm/versions/node/$(nvm version default)/bin"'; \
         echo "export PATH"; \
