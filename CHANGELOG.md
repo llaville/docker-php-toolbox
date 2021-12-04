@@ -14,6 +14,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - PR [#17](https://github.com/llaville/docker-php-toolbox/pull/17) : Allows building other vendor prefixed docker images.
+- PR [#18](https://github.com/llaville/docker-php-toolbox/pull/18) : Display success status message only if the process ran successfully (thanks to @ericp-mrel)
+- PR [#21](https://github.com/llaville/docker-php-toolbox/pull/21) : PATH variables being substituted instead of being output literally (thanks to @ericp-mrel)
+- PR [#22](https://github.com/llaville/docker-php-toolbox/pull/22) : NVM installation and NpmInstallCommand (thanks also to @ericp-mrel for his participation)
 
 ## [1.0.0] - 2021-12-01
 
