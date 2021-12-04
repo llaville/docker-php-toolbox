@@ -10,6 +10,23 @@
                     "bin": "%target-dir%/box"
                 }
             }
+        },
+        {
+            "name": "box-bootstrapped",
+            "summary": "Fork of box-project/box with bootstrapping option",
+            "website": "https://github.com/llaville/box",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/llaville/box.git",
+                    "target-dir": "/usr/local/src/box",
+                    "version": "show_metadata"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-bootstrapped"
+                }
+            },
+            "priority": -100
         }
     ]
 }

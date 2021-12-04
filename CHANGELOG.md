@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- [#24](https://github.com/llaville/docker-php-toolbox/issues/24) : Add `box` bootstrapped version.
+
 ## [1.0.1] - 2021-12-04
 
 ### Changed
