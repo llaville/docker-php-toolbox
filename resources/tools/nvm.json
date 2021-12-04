@@ -19,8 +19,7 @@
                         "chown -R ${MY_USER}:${MY_GROUP} /opt/nvm",
                         "su -c '. /opt/nvm/nvm.sh; nvm install node' ${MY_USER}",
                         "su -c '. /opt/nvm/nvm.sh; nvm install --lts' ${MY_USER}",
-                        "su -c '. /opt/nvm/nvm.sh; nvm use node' ${MY_USER}",
-                        "ln -sf /opt/nvm/nvm.sh /usr/local/bin/nvm"
+                        "su -c '. /opt/nvm/nvm.sh; nvm use node' ${MY_USER}"
                     ]
                 }
             },

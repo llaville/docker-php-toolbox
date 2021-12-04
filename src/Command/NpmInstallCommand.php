@@ -27,6 +27,10 @@ final class NpmInstallCommand implements CommandInterface
 
     public function __toString(): string
     {
-        return sprintf('npm install %s %s', $this->requirement, implode(' ', $this->flags));
+        return sprintf(
+            'su -c \'. /opt/nvm/nvm.sh; npm install %s %s\' ${MY_USER}',
+            $this->requirement,
+            implode(' ', $this->flags)
+        );
     }
 }
