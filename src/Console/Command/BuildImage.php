@@ -44,7 +44,7 @@ final class BuildImage extends Command implements CommandInterface
             ->addArgument(
                 'version',
                 InputArgument::REQUIRED,
-                'PHP version. Should be either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1'
+                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1'
             )
             ->addOption(
                 'dockerfile',
@@ -97,7 +97,7 @@ final class BuildImage extends Command implements CommandInterface
         }
 
         $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'])) {
+        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'])) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );

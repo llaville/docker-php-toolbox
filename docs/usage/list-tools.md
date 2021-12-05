@@ -5,6 +5,8 @@
 bin/toolkit.php list:tools <php_version>
 ```
 
+Replace `<php_version>` by either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
+
 To get list of compatible tools for a PHP platform.
 
 ## Filter tools by tags
