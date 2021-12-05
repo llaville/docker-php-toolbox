@@ -10,6 +10,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - [#24](https://github.com/llaville/docker-php-toolbox/issues/24) : Add `box` bootstrapped version.
+- PR [#26](https://github.com/llaville/docker-php-toolbox/pull/26) : Add `laravel/installer` (thanks to @ericp-mrel for first contribution)
+
+### Changed
+
+- `ComposerInstallCommand` may now install dev dependencies if needed (false by default), and allow global installation.
 
 ## [1.0.1] - 2021-12-04
 
