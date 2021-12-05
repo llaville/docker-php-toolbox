@@ -20,10 +20,11 @@ For example:
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile -B 7422 7.4
 ```
 
-Or with specialized dockerfile:
+Or with specialized dockerfile for PHP 5.6 or PHP 7.0:
 
 ```shell
-bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-81 -B 8100 8.1
+bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-56 -B 5640 5.6
+bin/toolkit.php build:dockerfile -f ./Dockerfiles/base/Dockerfile-70 -B 7033 7.0
 ```
 
 ## Mods images
