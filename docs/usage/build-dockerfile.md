@@ -6,7 +6,7 @@ For all builds we suggest passing the `--build-version` (`-B`) option to choose 
 **TIP** Even if argument is free, we suggest using a build version that allow to identify quickly
 contents of Dockerfile generated.
 
-In each following commands, replace `<php_version>` by either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
+In each following commands, replace `<php_version>` by either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
 
 ## Base images
 
