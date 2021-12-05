@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "Laravel Installer",
+            "summary": "The PHP Framework for Web Artisans",
+            "website": "https://github.com/laravel/installer",
+            "command": {
+                "composer-install": {
+                    "packages": ["laravel/installer"],
+                    "global": true
+                }
+            }
+        }
+    ]
+}
