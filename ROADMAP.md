@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 37 |
+| | Total available | 39 | 38 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -159,7 +159,7 @@ Current status reflect the contents of the master branch of this repository.
 | http-prompt | [Httpie](https://github.com/httpie/http-prompt) | &#x274C; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; |
 | jsonlint | [A JSON parser and validator for CLI](https://github.com/zaach/jsonlint) | &#x2705; | &#x274C; |
-| laravel | [The Laravel application installer](https://github.com/laravel/installer) | &#x2705; | &#x274C; |
+| laravel | [The Laravel application installer](https://github.com/laravel/installer) | &#x2705; | &#x2705; |
 | linkcheck | [URLs checker](https://github.com/cytopia/linkcheck) | &#x2705; | &#x274C; |
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; |
 | mysqldumpsecure | [Encrypted mysqldump script with compression](https://github.com/cytopia/mysqldump-secure) | &#x2705; | &#x274C; |
