@@ -11,6 +11,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#24](https://github.com/llaville/docker-php-toolbox/issues/24) : Add `box` bootstrapped version.
 - PR [#26](https://github.com/llaville/docker-php-toolbox/pull/26) : Add `laravel/installer` (thanks to @ericp-mrel for first contribution)
+- `Dockerfiles/base/Dockerfile-56` : Specialized Docker image for PHP 5.6
+- `Dockerfiles/base/Dockerfile-70` : Specialized Docker image for PHP 7.0
 
 ### Changed
 
