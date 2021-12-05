@@ -16,6 +16,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - `ComposerInstallCommand` may now install dev dependencies if needed (false by default), and allow global installation.
 
+### Removed
+
+- drop support of PHP 5.2, 5.3, 5.4 and 5.5
+
 ## [1.0.1] - 2021-12-04
 
 ### Changed
