@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#24](https://github.com/llaville/docker-php-toolbox/issues/24) : Add `box` bootstrapped version.
 
+### Changed
+
+- `ComposerInstallCommand` may now install dev dependencies if needed (false by default), and allow global installation.
+
 ## [1.0.1] - 2021-12-04
 
 ### Changed
