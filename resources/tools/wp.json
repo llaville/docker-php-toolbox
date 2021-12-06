@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "WordPress CLI",
+            "summary": "WP-CLI is the command-line interface for WordPress.",
+            "website": "https://github.com/wp-cli/wp-cli",
+            "command": {
+                "phar-download": {
+                    "phar": "https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
+                    "bin": "%target-dir%/wp"
+                }
+            }
+        }
+    ]
+}
