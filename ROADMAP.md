@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 38 |
+| | Total available | 39 | 39 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
 | cachetool | [CLI application and library to manage apc and opcache](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; |
@@ -193,7 +193,7 @@ Current status reflect the contents of the master branch of this repository.
 | symfony-cli | [Symfony CLI](https://github.com/symfony/cli) | &#x2705; | &#x274C; |
 | symfony-installer | [The Symfony Installer](https://github.com/symfony/symfony-installer) | &#x2705; | &#x274C; |
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; |
-| wp-cli | [WP-CLI framework](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x274C; |
+| wp-cli | [WP-CLI framework](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x2705; |
 | wkhtmltopdf | [Convert HTML to PDF using Webkit](https://github.com/wkhtmltopdf/wkhtmltopdf) | &#x2705; | &#x274C; |
 | yamllint | [A linter for YAML files](https://github.com/adrienverge/yamllint) | &#x2705; | &#x274C; |
 | yarn | [Yarn](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; |
