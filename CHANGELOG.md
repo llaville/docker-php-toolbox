@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-12-06
+
 ### Added
 
 - [#24](https://github.com/llaville/docker-php-toolbox/issues/24) : Add `box` bootstrapped version.
@@ -204,7 +206,8 @@ Second prototype version with following contents (+40 extensions, +5 tools):
 First prototype version with following contents:
 [ROADMAP](https://github.com/llaville/docker-php-toolbox/blob/e3159c67983107b525270f4770ef8483dd065312/ROADMAP.md)
 
-[unreleased]: https://github.com/llaville/docker-php-toolbox/compare/1.0.1...HEAD
+[unreleased]: https://github.com/llaville/docker-php-toolbox/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/llaville/docker-php-toolbox/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/llaville/docker-php-toolbox/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/llaville/docker-php-toolbox/compare/1.0.0-beta.3...1.0.0
 [1.0.0-beta.3]: https://github.com/llaville/docker-php-toolbox/compare/1.0.0-beta.2...1.0.0-beta.3
