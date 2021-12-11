@@ -1,8 +1,8 @@
 {
     "tools": [
         {
-            "name": "cachetool",
-            "summary": "CLI application and library to manage apc and opcache",
+            "name": "cachetool 8",
+            "summary": "CLI application and library to manage apc and opcache (8.x version)",
             "website": "https://github.com/gordalina/cachetool",
             "command": {
                 "phar-download": {
@@ -19,7 +19,50 @@
                 "exclude-php:7.0",
                 "exclude-php:7.1",
                 "exclude-php:7.2",
-                "exclude-php:8.1"
+                "exclude-php:7.3",
+                "exclude-php:7.4"
+            ]
+        },
+        {
+            "name": "cachetool 7",
+            "summary": "CLI application and library to manage apc and opcache (7.x version)",
+            "website": "https://github.com/gordalina/cachetool",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/gordalina/cachetool/releases/latest/download/cachetool.phar",
+                    "bin": "%target-dir%/cachetool"
+                }
+            },
+            "tags": [
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2"
+            ]
+        },
+        {
+            "name": "cachetool 6",
+            "summary": "CLI application and library to manage apc and opcache (6.x version)",
+            "website": "https://github.com/gordalina/cachetool",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/gordalina/cachetool/releases/latest/download/cachetool.phar",
+                    "bin": "%target-dir%/cachetool"
+                }
+            },
+            "tags": [
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2"
             ]
         }
     ]

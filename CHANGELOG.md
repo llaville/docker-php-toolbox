@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- `cachetool` is available in 3 major version (6.x, 7.x, and 8.x)
+
 ## [1.1.0] - 2021-12-06
 
 ### Added
