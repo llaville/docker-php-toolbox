@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - `cachetool` is available in 3 major version (6.x, 7.x, and 8.x)
 - upgrade docker-php-extension-installer to version 1.4.6
+- update `oci8` extension reference for install on PHP 5.6, PHP 7.x, PHP 8.0 and PHP 8.1
 
 ## [1.1.0] - 2021-12-06
 
