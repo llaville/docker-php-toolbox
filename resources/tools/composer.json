@@ -2,14 +2,31 @@
     "tools": [
         {
             "name": "composer",
-            "summary": "Dependency Manager for PHP",
+            "summary": "Dependency Manager for PHP (2.x version)",
             "website": "https://github.com/composer/composer",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/composer/composer/releases/latest/download/composer.phar",
-                    "bin": "%target-dir%/composer"
+                    "phar": "https://getcomposer.org/composer-2.phar",
+                    "bin": "%target-dir%/composer-2"
+                },
+                "shell": {
+                    "cmd": "ln -sf %target-dir%/composer-2 %target-dir%/composer"
                 }
             },
+            "tags": ["composer-2"],
+            "priority": 100
+        },
+        {
+            "name": "composer",
+            "summary": "Dependency Manager for PHP (1.x version)",
+            "website": "https://github.com/composer/composer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://getcomposer.org/composer-1.phar",
+                    "bin": "%target-dir%/composer-1"
+                }
+            },
+            "tags": ["composer-1"],
             "priority": 100
         }
     ]

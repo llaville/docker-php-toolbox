@@ -13,6 +13,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - upgrade docker-php-extension-installer to version 1.4.6
 - update `oci8` extension reference for install on PHP 5.6, PHP 7.x, PHP 8.0 and PHP 8.1
 
+### Fixed
+
+- [#32](https://github.com/llaville/docker-php-toolbox/issues/32) : Composer install not v2 but v1
+
 ## [1.1.0] - 2021-12-06
 
 ### Added
