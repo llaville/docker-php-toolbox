@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 76 | 70 | 74 | 74 | 74 | 74 | 71 | 67 | 59 |
+| | Total available: 79 | 70 | 74 | 74 | 74 | 74 | 71 | 67 | 59 |
 | amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | ast | [The ast PHP Extension](https://pecl.php.net/package/ast) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -44,7 +44,10 @@
 | mysql | [The mysql PHP Extension](https://pecl.php.net/package/mysql) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | mysqli | [The mysqli PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | oauth | [The oauth PHP Extension](https://pecl.php.net/package/oauth) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| oci8 | [The oci8 PHP Extension](https://pecl.php.net/package/oci8) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| oci8 | [The oci8 PHP Extension (for PHP 8.1)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
+| oci8 | [The oci8 PHP Extension (for PHP 8.0)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x274C; |
+| oci8 | [The oci8 PHP Extension (for PHP 7.x)](https://pecl.php.net/package/oci8) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; |
+| oci8 | [The oci8 PHP Extension (for PHP 5.6)](https://pecl.php.net/package/oci8) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | opcache | [The opcache PHP Extension](https://github.com/php/php-src/tree/master/Zend) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pcntl | [The pcntl PHP Extension](https://github.com/php/php-src/tree/master/ext/pcntl) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pdo_dblib | [The pdo_dblib PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_dblib) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
