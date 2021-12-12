@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - `cachetool` is available in 3 major version (6.x, 7.x, and 8.x)
+- upgrade docker-php-extension-installer to version 1.4.6
 
 ## [1.1.0] - 2021-12-06
 
