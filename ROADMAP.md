@@ -202,8 +202,8 @@ Current status reflect the contents of the master branch of this repository.
 
 **WARNING**
 
-* `jsonlint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
-* `linkcheck` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `jsonlint` will not be included because it can be replaced by [mega-linter](https://github.com/megalinter/megalinter)
+* `linkcheck` will not be included because it can be replaced by [mega-linter](https://github.com/megalinter/megalinter)
 * `mysqldumpsecure` will not be included because it can be replaced by [phpbu](https://github.com/sebastianfeldmann/phpbu)
-* `stylelint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
-* `yamllint` will not be included because it can be replaced by [mega-linter](https://github.com/nvuillam/mega-linter)
+* `stylelint` will not be included because it can be replaced by [mega-linter](https://github.com/megalinter/megalinter)
+* `yamllint` will not be included because it can be replaced by [mega-linter](https://github.com/megalinter/megalinter)
