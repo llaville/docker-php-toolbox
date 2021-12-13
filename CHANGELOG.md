@@ -7,6 +7,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+#### Tools
+
+- [support to asciinema](https://github.com/llaville/docker-php-toolbox/commit/73db7d115ee910ebd58016d47fe108ad2d9b7327)
+
 ## [1.1.1] - 2021-12-12
 
 ### Changed
