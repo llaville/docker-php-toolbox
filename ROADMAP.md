@@ -140,7 +140,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 39 | 40 |
+| | Total available | 39 | 41 |
 | awesome-ci | [Awesome Continuous Integration](https://github.com/cytopia/awesome-ci) | &#x2705; | &#x274C; |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x274C; | &#x2705; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; |
@@ -165,6 +165,7 @@ Current status reflect the contents of the master branch of this repository.
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; |
 | mysqldumpsecure | [Encrypted mysqldump script with compression](https://github.com/cytopia/mysqldump-secure) | &#x2705; | &#x274C; |
 | nvm | [Node Version Manager](https://github.com/nvm-sh/nvm) | &#x2705; | &#x2705; |
+| openJDK | [OpenJDK Java runtime](https://openjdk.java.net/projects/jdk/) | &#x274C; | &#x2705; |
 | phalcon-devtools | [Phalcon Developer Tools](https://github.com/phalcon/phalcon-devtools) | &#x2705; | &#x274C; |
 | photon-installer | [Photon CMS Installer](https://github.com/photoncms/installer) | &#x2705; | &#x274C; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x274C; | &#x2705; |
