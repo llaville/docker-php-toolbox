@@ -1,0 +1,14 @@
+{
+    "tools": [
+        {
+            "name": "asciinema",
+            "summary": "Terminal session recorder",
+            "website": "https://github.com/asciinema/asciinema",
+            "command": {
+                "pip-install": {
+                    "requirement": "asciinema"
+                }
+            }
+        }
+    ]
+}
