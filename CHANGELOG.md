@@ -14,6 +14,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [support to asciinema](https://github.com/llaville/docker-php-toolbox/commit/73db7d115ee910ebd58016d47fe108ad2d9b7327)
 - [support to OpenJDK](https://github.com/llaville/docker-php-toolbox/commit/292d502aef71e4b6971b16e52a2225c0f7247d52)
 
+### Changed
+
+- upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.8
+
 ## [1.1.1] - 2021-12-12
 
 ### Changed
