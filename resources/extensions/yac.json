@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "yac",
+            "summary": "The yac PHP Extension",
+            "website": "https://pecl.php.net/package/yac",
+            "command": {
+                "pecl-install": {
+                    "module_name": "yac",
+                    "version": ""
+                }
+            },
+            "tags": ["pecl-extensions", "exclude-php:5.6"]
+        }
+    ]
+}

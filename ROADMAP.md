@@ -13,7 +13,7 @@ Current status reflect the contents of the master branch of this repository.
 
 | Name | Description | Devilbox | this project |
 | :--- | :---------- | :------- | :----------- |
-| | Total available | 103 | 113 |
+| | Total available | 103 | 114 |
 | amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; |
 | apc | [The apc PHP Extension](https://pecl.php.net/package/APC) | &#x2705; | &#x274C; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; |
@@ -126,6 +126,7 @@ Current status reflect the contents of the master branch of this repository.
 | xmlrpc | [The xmlrpc PHP Extension](https://pecl.php.net/package/xmlrpc) | &#x2705; | &#x2705; |
 | xmlwriter | [The xmlwriter PHP Extension](https://github.com/php/php-src/tree/master/ext/xmlwriter) | &#x2714; | &#x2714; |
 | yaml | [The yaml PHP Extension](https://pecl.php.net/package/yaml) | &#x2705; | &#x2705; |
+| yac | [The yac PHP Extension](https://pecl.php.net/package/yac) | &#x274C; | &#x2705; |
 | yar | [The yar PHP Extension](https://pecl.php.net/package/yar) | &#x274C; | &#x2705; |
 | xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; |
 | zip | [The zip PHP Extension](https://pecl.php.net/package/zip) | &#x2705; | &#x2705; |
