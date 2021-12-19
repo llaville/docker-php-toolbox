@@ -10,7 +10,7 @@
                     "version": ""
                 }
             },
-            "tags": ["pecl-extensions", "exclude-php:5.2"]
+            "tags": ["pecl-extensions"]
         }
     ]
 }
