@@ -7,6 +7,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+#### Extensions
+
+- [support to yac extension](https://github.com/llaville/docker-php-toolbox/commit/e10f52e3e61028ab58d45708b917564bb86b4659)
+
 ## [1.2.0] - 2021-12-18
 
 ### Added
