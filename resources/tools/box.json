@@ -12,18 +12,18 @@
             }
         },
         {
-            "name": "box-bootstrapped",
-            "summary": "Fork of box-project/box with bootstrapping option",
+            "name": "box-metadata",
+            "summary": "Fork of box-project/box to solve metadata build process",
             "website": "https://github.com/llaville/box",
             "command": {
                 "git-install": {
                     "repository": "https://github.com/llaville/box.git",
                     "target-dir": "/usr/local/src/box",
-                    "version": "show_metadata"
+                    "version": "build-metadata"
                 },
                 "composer-install": {},
                 "shell": {
-                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-bootstrapped"
+                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-metadata"
                 }
             },
             "priority": -100

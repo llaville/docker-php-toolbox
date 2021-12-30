@@ -13,6 +13,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [support to yac extension](https://github.com/llaville/docker-php-toolbox/commit/e10f52e3e61028ab58d45708b917564bb86b4659)
 
+### Changed
+
+- `box-bootstrapped` (introduced in v1.1.0) is now replaced by `box-metadata` (a simple patch to official box-project)
+
 ## [1.2.0] - 2021-12-18
 
 ### Added
