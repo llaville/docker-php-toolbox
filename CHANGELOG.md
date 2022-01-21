@@ -13,6 +13,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `rdfkafka` extension is now supported by PHP 8.1
 - `bin/devkit.php` is made available into the Composer `bin-dir`
 
+### Removed
+
+- drop support for PHP 7.3 has ended 6th December 2021.
+
 ## [1.3.0] - 2022-01-09
 
 ### Added

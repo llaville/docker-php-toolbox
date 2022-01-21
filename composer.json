@@ -4,7 +4,7 @@
     "keywords": ["php", "pecl-extensions", "tools"],
     "type": "project",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "ext-json": "*",
         "doctrine/collections": "^1.6.5",
         "symfony/config": "^4.4|^5.0",
