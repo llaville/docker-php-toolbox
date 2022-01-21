@@ -15,10 +15,8 @@ use function sprintf;
  */
 final class PeclInstallCommand implements CommandInterface
 {
-    /** @var string  */
-    private $name;
-    /** @var string|null  */
-    private $version;
+    private string $name;
+    private ?string $version;
 
     /**
      * @param array<string, mixed> $properties

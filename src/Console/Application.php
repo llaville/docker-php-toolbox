@@ -16,8 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 final class Application extends SymfonyApplication implements ApplicationInterface
 {
-    /** @var ContainerInterface  */
-    private $container;
+    private ContainerInterface $container;
 
     /**
      * Application class constructor.

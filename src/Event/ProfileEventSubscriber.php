@@ -22,8 +22,7 @@ use function sprintf;
  */
 final class ProfileEventSubscriber implements EventSubscriberInterface
 {
-    /** @var Stopwatch */
-    private $stopwatch;
+    private Stopwatch $stopwatch;
 
     /**
      * ProfileEventSubscriber constructor.

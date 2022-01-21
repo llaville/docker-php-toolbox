@@ -13,6 +13,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `rdfkafka` extension is now supported by PHP 8.1
 - `bin/devkit.php` is made available into the Composer `bin-dir`
 - Add [platform](https://getcomposer.org/doc/06-config.md#platform) to `composer.json`
+- Support **Typed properties** features, now minimum PHP requirement is 7.4
+
+  Read more about this feature at :
+
+    - <https://stitcher.io/blog/typed-properties-in-php-74>
+    - <https://php.watch/versions/7.4/typed-properties>
 
 ### Removed
 

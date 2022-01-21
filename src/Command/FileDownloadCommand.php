@@ -7,16 +7,16 @@
  */
 namespace Bartlett\PHPToolbox\Command;
 
+use function sprintf;
+
 /**
  * @since Release 1.0.0alpha1
  * @author Laurent Laville
  */
 final class FileDownloadCommand implements CommandInterface
 {
-    /** @var string  */
-    private $url;
-    /** @var string  */
-    private $target;
+    private string $url;
+    private string $target;
 
     /**
      * @param array<string, mixed> $properties

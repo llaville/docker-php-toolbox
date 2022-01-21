@@ -16,11 +16,9 @@ use function sprintf;
  */
 final class NpmInstallCommand implements CommandInterface
 {
-    /** @var string  */
-    private $requirement;
-
+    private string $requirement;
     /** @var string[] */
-    private $flags;
+    private array $flags;
 
     /**
      * @param array<string, mixed> $properties

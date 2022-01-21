@@ -17,10 +17,10 @@ use function array_intersect;
 final class Filter
 {
     /** @var string[]  */
-    private $excludedTags;
+    private array $excludedTags;
 
     /** @var string[]  */
-    private $tags;
+    private array $tags;
 
     /**
      * @param string[] $excludedTags

@@ -15,16 +15,11 @@ use function sprintf;
  */
 final class GitInstallCommand implements CommandInterface
 {
-    /** @var string|null  */
-    private $repository;
-    /** @var string  */
-    private $targetDir;
-    /** @var string|null  */
-    private $version;
-    /** @var int|null  */
-    private $abbreviate;
-    /** @var string|null  */
-    private $matchPattern;
+    private ?string $repository;
+    private string $targetDir;
+    private ?string $version;
+    private ?string $abbreviate;
+    private ?string $matchPattern;
 
     /**
      * @param array<string, mixed> $properties
@@ -44,7 +39,7 @@ final class GitInstallCommand implements CommandInterface
 
         $version = sprintf(
             '$(git describe %s %s --tags $(git rev-list --tags --max-count=1) 2>/dev/null)',
-            $this->abbreviate ? sprintf('--abbrev=%d', $this->abbreviate) : '',
+            $this->abbreviate ? sprintf('--abbrev=%d', (int) $this->abbreviate) : '',
             $this->matchPattern ? '--match "' . $this->matchPattern . '"' : ''
         );
 

@@ -20,8 +20,7 @@ final class MultiCommand implements CommandInterface
 {
     /** @var Collection<int, CommandInterface>  */
     private $commands;
-    /** @var string  */
-    private $glue;
+    private string $glue;
 
     /**
      * @param Collection<int, CommandInterface> $commands

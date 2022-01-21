@@ -15,20 +15,14 @@ use Bartlett\PHPToolbox\Command\CommandInterface;
  */
 final class Tool
 {
-    /** @var string  */
-    private $name;
-    /** @var string  */
-    private $summary;
-    /** @var string  */
-    private $website;
-    /** @var CommandInterface|null  */
-    private $command;
-    /** @var CommandInterface|null */
-    private $testCommand;
+    private string $name;
+    private string $summary;
+    private string $website;
+    private ?CommandInterface $command;
+    private ?CommandInterface $testCommand;
     /** @var string[]  */
-    private $tags;
-    /** @var int */
-    private $priority;
+    private array $tags;
+    private int $priority;
 
     /**
      * Class constructor

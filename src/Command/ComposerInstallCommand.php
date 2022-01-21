@@ -16,17 +16,11 @@ use function sprintf;
  */
 final class ComposerInstallCommand implements CommandInterface
 {
-    /** @var bool  */
-    private $scripts;
-
-    /** @var bool */
-    private $devDependencies;
-
-    /** @var bool */
-    private $global;
-
+    private bool $scripts;
+    private bool $devDependencies;
+    private bool $global;
     /** @var string[] */
-    private $packages;
+    private array $packages;
 
     /**
      * @param array<string, mixed> $properties

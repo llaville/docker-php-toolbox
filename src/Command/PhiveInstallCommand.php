@@ -15,10 +15,8 @@ use function sprintf;
  */
 final class PhiveInstallCommand implements CommandInterface
 {
-    /** @var string */
-    private $alias;
-    /** @var string */
-    private $sig;
+    private string $alias;
+    private string $sig;
 
     /**
      * @param array<string, mixed> $properties
