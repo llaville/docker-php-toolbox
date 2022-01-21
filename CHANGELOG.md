@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.12
+- `rdfkafka` extension is now supported by PHP 8.1
 
 ## [1.3.0] - 2022-01-09
 
