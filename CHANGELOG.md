@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.12
 - `rdfkafka` extension is now supported by PHP 8.1
 - `bin/devkit.php` is made available into the Composer `bin-dir`
+- Add [platform](https://getcomposer.org/doc/06-config.md#platform) to `composer.json`
 
 ### Removed
 
