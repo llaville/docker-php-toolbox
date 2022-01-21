@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - drop support for PHP 7.3 has ended 6th December 2021.
+- drop support for Composer v1
 
 ## [1.3.0] - 2022-01-09
 
