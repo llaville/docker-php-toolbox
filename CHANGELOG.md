@@ -22,8 +22,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
   Read more about this feature at :
 
-    - <https://stitcher.io/blog/typed-properties-in-php-74>
-    - <https://php.watch/versions/7.4/typed-properties>
+  - <https://stitcher.io/blog/typed-properties-in-php-74>
+  - <https://php.watch/versions/7.4/typed-properties>
 
 ### Removed
 
