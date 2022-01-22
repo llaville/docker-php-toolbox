@@ -21,7 +21,7 @@ final class ContainerFactory
     public function create(string $set = 'default'): ContainerInterface
     {
         $containerBuilder = new ContainerBuilder();
-        $loader = new PhpFileLoader($containerBuilder, new FileLocator(__DIR__ . '/../../config/set'));
+        $loader = new PhpFileLoader($containerBuilder, new FileLocator(dirname(__DIR__, 2) . '/config/set'));
         $loader->load($set . '.php');
         $containerBuilder->compile();
         return $containerBuilder;
