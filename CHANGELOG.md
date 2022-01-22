@@ -7,8 +7,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- `about` command to display current long version and more information about this package.
+
 ### Changed
 
+- option `--version` display now only long version without application description.
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.12
 - `rdfkafka` extension is now supported by PHP 8.1
 - `bin/devkit.php` is made available into the Composer `bin-dir`
@@ -24,6 +29,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - drop support for PHP 7.3 has ended 6th December 2021.
 - drop support for Composer v1
+- `Bartlett\PHPToolbox\Console\ApplicationInterface::VERSION` constant to define current version (replaced by Composer Runtime API v2)
 
 ## [1.3.0] - 2022-01-09
 

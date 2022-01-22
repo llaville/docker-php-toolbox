@@ -17,11 +17,22 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 interface ApplicationInterface extends ContainerAwareInterface
 {
     public const NAME = 'Helper to discover and install PHP extensions and/or tools';
-    public const VERSION = '1.2.0';
 
     /**
      * @param CommandLoaderInterface $commandLoader
      * @return void
      */
     public function setCommandLoader(CommandLoaderInterface $commandLoader);
+
+    /**
+     * Gets the name of the application.
+     *
+     * @return string
+     */
+    public function getName();
+
+    /**
+     * Gets the current version installed of the application.
+     */
+    public function getInstalledVersion(bool $withRef = true): string;
 }
