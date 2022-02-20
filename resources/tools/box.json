@@ -12,21 +12,19 @@
             }
         },
         {
-            "name": "box-metadata",
-            "summary": "Fork of box-project/box to solve metadata build process",
-            "website": "https://github.com/llaville/box",
+            "name": "box-manifest",
+            "summary": "Create a manifest to a PHP Archive (PHAR) for the BOX project",
+            "website": "https://github.com/llaville/box-manifest",
             "command": {
                 "git-install": {
-                    "repository": "https://github.com/llaville/box.git",
-                    "target-dir": "/usr/local/src/box",
-                    "version": "build-metadata"
+                    "repository": "https://github.com/llaville/box-manifest.git",
+                    "target-dir": "/usr/local/src/box"
                 },
                 "composer-install": {},
                 "shell": {
-                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-metadata"
+                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-manifest"
                 }
-            },
-            "priority": -100
+            }
         }
     ]
 }

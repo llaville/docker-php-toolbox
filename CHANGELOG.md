@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.16
 - `httpie` tool is now installed with **A**dvanced **P**ackaging **T**ool (as recommended)
+- my fork of `humbug/box` (`box-metadata` tool) is now replaced by official `bartlett/box-manifest` project
 
 ## [1.4.0] - 2022-01-22
 
