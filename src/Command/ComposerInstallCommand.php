@@ -52,7 +52,7 @@ final class ComposerInstallCommand implements CommandInterface
 
         if ($this->global) {
             /**
-             * Do not run Composer as root/super user, and avoid installation in `/root/.composer` directory
+             * Do not run Composer as root/superuser, and avoid installation in `/root/.composer` directory
              * @link https://getcomposer.org/root
              */
             $commandLine = sprintf('su -c \'%s\' ${MY_USER}', $commandLine);
