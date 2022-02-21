@@ -15,5 +15,3 @@ jobs:
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
             destination-dir: 1.x
-        secrets:
-            gh-token: ${{ secrets.GITHUB_TOKEN }}
