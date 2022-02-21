@@ -16,5 +16,4 @@ on:
 
 jobs:
     lint_files:
-        name: ML
         uses: llaville/.github/.github/workflows/mega-linter.yml@master
