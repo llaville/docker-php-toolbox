@@ -17,3 +17,5 @@ on:
 jobs:
     lint_files:
         uses: llaville/.github/.github/workflows/mega-linter.yml@master
+        with:
+            repository: ${{ github.repository }}
