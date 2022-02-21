@@ -12,7 +12,6 @@ on:
 
 jobs:
     deploy:
-        name: Documentation
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
             destination-dir: 1.x
