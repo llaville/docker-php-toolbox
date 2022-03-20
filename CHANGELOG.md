@@ -7,6 +7,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Changed
+
+- upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.4.18
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [1.5.0] - 2022-02-20
 
 ### Changed
