@@ -14,7 +14,8 @@
                 "pecl-extensions",
                 "exclude-php:7.4",
                 "exclude-php:8.0",
-                "exclude-php:8.1"
+                "exclude-php:8.1",
+                "exclude-php:8.2"
             ]
         }
     ]

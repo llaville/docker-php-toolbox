@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- basic support for PHP 8.2.0RC1
+
 ### Changed
 
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.5.37
