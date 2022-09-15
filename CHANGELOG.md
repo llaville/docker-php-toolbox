@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.6.0] - 2022-09-15
+
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
