@@ -7,8 +7,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-<!-- MARKDOWN-RELEASE:START -->
+## [1.7.0] - 2022-10-03
 
+<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - support to Deployer 7
@@ -299,7 +300,9 @@ Second prototype version with following contents (+40 extensions, +5 tools):
 First prototype version with following contents:
 [ROADMAP](https://github.com/llaville/docker-php-toolbox/blob/e3159c67983107b525270f4770ef8483dd065312/ROADMAP.md)
 
-[unreleased]: https://github.com/llaville/docker-php-toolbox/compare/1.5.0...HEAD
+[unreleased]: https://github.com/llaville/docker-php-toolbox/compare/1.7.0...HEAD
+[1.7.0]: https://github.com/llaville/docker-php-toolbox/compare/1.6.0...1.7.0
+[1.6.0]: https://github.com/llaville/docker-php-toolbox/compare/1.5.0...1.6.0
 [1.5.0]: https://github.com/llaville/docker-php-toolbox/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/llaville/docker-php-toolbox/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/llaville/docker-php-toolbox/compare/1.2.0...1.3.0
