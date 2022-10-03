@@ -104,10 +104,6 @@ final class BuildDockerfile extends Command implements CommandInterface
             );
             return self::FAILURE;
         }
-        if ($phpVersion == '8.2') {
-            // add experimental support to PHP 8.2 still under development
-            $phpVersion .= '.0RC1';
-        }
 
         $resourcesPath = $input->getOption('resources');
         if (!is_dir($resourcesPath) || !is_readable($resourcesPath)) {

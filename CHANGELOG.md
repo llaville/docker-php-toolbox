@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- upgrade basic support for PHP 8.2
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.5.42
 <!-- MARKDOWN-RELEASE:END -->
 

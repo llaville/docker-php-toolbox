@@ -43,7 +43,7 @@ final class ListTools extends Command implements CommandInterface
             ->addArgument(
                 'version',
                 InputArgument::REQUIRED,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1'
+                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1 or 8.2'
             )
             ->addOption(
                 'tools',
@@ -77,7 +77,7 @@ final class ListTools extends Command implements CommandInterface
         $io = new SymfonyStyle($input, $output);
 
         $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1'])) {
+        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2'])) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );

@@ -71,7 +71,7 @@ final class ListExtensions extends Command implements CommandInterface
         $io = new SymfonyStyle($input, $output);
 
         $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2.0RC1'])) {
+        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2'])) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );

@@ -144,11 +144,7 @@ copy_ini_files "${DVL_PHP_CUST_INI_DIR}" "${DVL_PHP_INI_DIR}" "${DEBUG_LEVEL}"
 ###
 ### Copy custom PHP-FPM *.conf files
 ###
-if [ "${PHP_VERSION}" = "5.2" ]; then
-    copy_fpm_5_2_conf_file "${DVL_PHP_CUST_FPM_DIR}/php-fpm.xml" "${DEBUG_LEVEL}"
-else
-    copy_fpm_files "${DVL_PHP_CUST_FPM_DIR}" "${DVL_PHP_FPM_DIR}" "${DEBUG_LEVEL}"
-fi
+copy_fpm_files "${DVL_PHP_CUST_FPM_DIR}" "${DVL_PHP_FPM_DIR}" "${DEBUG_LEVEL}"
 
 ###
 ### Enable PHP Modules

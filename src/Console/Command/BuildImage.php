@@ -103,10 +103,6 @@ final class BuildImage extends Command implements CommandInterface
             );
             return self::FAILURE;
         }
-        if ($phpVersion == '8.2') {
-            // add experimental support to PHP 8.2 still under development
-            $phpVersion .= '.0RC1';
-        }
 
         $dockerfilePath = $input->getOption('dockerfile');
 
