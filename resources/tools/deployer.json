@@ -1,12 +1,35 @@
 {
     "tools": [
         {
+            "name": "deployer 7",
+            "summary": "A deployment tool for PHP (7.x versions)",
+            "website": "https://github.com/deployphp/deployer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://deployer.org/releases/v7.0.2/deployer.phar",
+                    "bin": "%target-dir%/dep"
+                }
+            },
+            "priority": 57,
+            "tags": [
+                "deployer-7",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2"
+            ]
+        },
+        {
             "name": "deployer 6",
             "summary": "A deployment tool for PHP (6.x versions)",
             "website": "https://github.com/deployphp/deployer",
             "command": {
                 "phar-download": {
-                    "phar": "https://deployer.org/deployer.phar",
+                    "phar": "https://deployer.org/releases/v6.9.0/deployer.phar",
                     "bin": "%target-dir%/dep"
                 }
             },

@@ -8,6 +8,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+
+### Added
+
+- support to Deployer 7
+
 ### Changed
 
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.5.42
