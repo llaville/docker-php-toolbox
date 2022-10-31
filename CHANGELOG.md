@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Changed
+
+- upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.5.44
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [1.7.0] - 2022-10-03
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - support to Deployer 7
@@ -18,7 +23,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - upgrade basic support for PHP 8.2
 - upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer) to version 1.5.42
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [1.6.0] - 2022-09-15
 
