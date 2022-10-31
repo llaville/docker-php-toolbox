@@ -25,5 +25,4 @@ Uses the `Dockerfiles/base/Dockerfile-82` template for which no official version
 
 Actually based on `devilbox/php-fpm-8.2:latest` instead of `php:8.2-fpm-buster`
 
-**CAUTION** if you used `devilbox/php-fpm-8.2:latest`. Please read issue report https://github.com/devilbox/docker-php-fpm-8.2/issues/11
-
+**CAUTION** if you used `devilbox/php-fpm-8.2:latest`. Please read issue report <https://github.com/devilbox/docker-php-fpm-8.2/issues/11>
