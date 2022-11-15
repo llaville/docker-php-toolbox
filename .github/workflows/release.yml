@@ -17,3 +17,4 @@ jobs:
             box-output: ''
             release-draft: true
             legacy: false
+            release-prerelease: ${{ github.ref_type == 'branch' }}
