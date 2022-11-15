@@ -14,7 +14,7 @@ jobs:
         uses: llaville/.github/.github/workflows/release.yml@master
         with:
             repository: ${{ github.repository }}
-            box-output: ''
+            box-output: ""
             release-draft: true
             release-prerelease: ${{ github.ref_type == 'branch' }}
             legacy: false
