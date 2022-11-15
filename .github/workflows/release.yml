@@ -3,6 +3,8 @@ name: Release
 
 on:
     push:
+        branches:
+            - "[0-9]+.[0-9]+"
         tags:
             - "[0-9]+.[0-9]+.[0-9]+"
     workflow_dispatch:
@@ -14,3 +16,4 @@ jobs:
             repository: ${{ github.repository }}
             box-output: ''
             release-draft: true
+            legacy: false
