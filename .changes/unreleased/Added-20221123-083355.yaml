@@ -1,4 +1,0 @@
-kind: Added
-body: 'add new `--work-tag-suffix` option to overwrite default "work" suffix (i.e:
-  "work-820RC7") in docker image'
-time: 2022-11-23T08:33:55.7159726Z
