@@ -79,6 +79,13 @@ final class BuildImage extends Command implements CommandInterface
                 InputOption::VALUE_NONE,
                 'Display timing and memory usage information'
             )
+            ->addOption(
+                'work-tag-suffix',
+                null,
+                InputOption::VALUE_REQUIRED,
+                'Tag for work Docker image',
+                'work'
+            )
         ;
     }
 
@@ -178,7 +185,7 @@ final class BuildImage extends Command implements CommandInterface
                 $command[] = '--cache-from=' . $commonTag . '-mods';
             }
         } elseif ('work' === $suffix) {
-            $tag = $commonTag . '-work';
+            $tag = $commonTag . '-' . $input->getOption('work-tag-suffix');
 
             $command = [
                 $dockerBin, 'build',
