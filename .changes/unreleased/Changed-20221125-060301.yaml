@@ -1,0 +1,4 @@
+kind: Changed
+body: Upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer)
+  to version 1.5.49
+time: 2022-11-25T06:03:01.777448Z
