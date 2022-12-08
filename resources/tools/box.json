@@ -12,7 +12,7 @@
             }
         },
         {
-            "name": "box-manifest",
+            "name": "box-manifest v2",
             "summary": "Create a manifest to a PHP Archive (PHAR) for the BOX project",
             "website": "https://github.com/llaville/box-manifest",
             "command": {
@@ -24,7 +24,20 @@
                 "shell": {
                     "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-manifest"
                 }
-            }
+            },
+            "tags": [
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
         }
     ]
 }
