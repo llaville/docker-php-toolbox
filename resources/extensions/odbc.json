@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "odbc",
+            "summary": "The odbc PHP Extension",
+            "website": "https://github.com/php/php-src/tree/master/ext/odbc",
+            "command": {
+                "pecl-install": {
+                    "module_name": "odbc",
+                    "version": ""
+                }
+            },
+            "tags": ["pecl-extensions"]
+        }
+    ]
+}
