@@ -11,7 +11,7 @@
                     "7.3": "1.0.2"
                 }
             },
-            "tags": ["pecl-extensions"]
+            "tags": ["pecl-extensions", "exclude-php:8.2"]
         }
     ]
 }
