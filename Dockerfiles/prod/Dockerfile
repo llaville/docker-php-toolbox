@@ -28,7 +28,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN set -eux \
     && DEBIAN_FRONTEND=noninteractive apt-get update -qq \
     && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests apt-utils \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests \
         locales-all \
         postfix \
         postfix-pcre \
