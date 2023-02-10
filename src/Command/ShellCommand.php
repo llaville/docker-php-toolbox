@@ -40,7 +40,8 @@ final class ShellCommand implements CommandInterface
         } elseif ('' === $packageManager) {
             $this->command = $command;
         } elseif ('apt' === $packageManager) {
-            $this->command = "DEBIAN_FRONTEND=noninteractive apt-get update -qq "
+            $this->command = "DEBIAN_FRONTEND=noninteractive apt-get clean"
+                . " && DEBIAN_FRONTEND=noninteractive apt-get update -qq"
                 . " && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y --no-install-recommends --no-install-suggests"
                 . " " . $command;
         } else {
