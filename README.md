@@ -18,11 +18,3 @@ All the documentation is available on [website](https://llaville.github.io/docke
 generated from the [docs](https://github.com/llaville/docker-php-toolbox/tree/master/docs) folder.
 
 - [Getting Started](https://llaville.github.io/docker-php-toolbox/1.x/getting-started/).
-
-## About experimental support to PHP 8.2
-
-Uses the `Dockerfiles/base/Dockerfile-82` template for which no official versions exist yet.
-
-Actually based on `devilbox/php-fpm-8.2:latest` instead of `php:8.2-fpm-buster`
-
-**CAUTION** if you used `devilbox/php-fpm-8.2:latest`. Please read issue report <https://github.com/devilbox/docker-php-fpm-8.2/issues/11>
