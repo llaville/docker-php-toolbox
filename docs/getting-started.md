@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* PHP 7.4 or greater
+* PHP 8.0 or greater
 * ext-json
 
 ## Installation
