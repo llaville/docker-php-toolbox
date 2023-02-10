@@ -1,4 +1,6 @@
 {
     "alias": "toolkit.phar",
-    "directories": ["bin", "config", "src", "vendor"]
+    "directories": ["bin", "config", "src", "vendor"],
+    "compression": "GZ",
+    "metadata": "Bartlett\\BoxManifest\\Composer\\ManifestFactory::toHighlight"
 }
