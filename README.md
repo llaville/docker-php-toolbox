@@ -7,7 +7,7 @@
 | [![Minimum PHP Version](https://img.shields.io/packagist/php-v/bartlett/docker-php-toolbox/dev-master)](https://www.php.net/supported-versions.php) |
 | [![License](https://img.shields.io/github/license/llaville/docker-php-toolbox)](https://github.com/llaville/docker-php-toolbox/blob/master/LICENSE) |
 | [![GitHub Discussions](https://img.shields.io/github/discussions/llaville/docker-php-toolbox)](https://github.com/llaville/docker-php-toolbox/discussions) |
-| [![Mega-Linter](https://github.com/llaville/docker-php-toolbox/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/llaville/docker-php-toolbox/actions/workflows/mega-linter.yml) |
+| [![Release](https://github.com/llaville/docker-php-toolbox/actions/workflows/release.yml/badge.svg)](https://github.com/llaville/docker-php-toolbox/actions/workflows/release.yml) |
 | [![GitHub-Pages](https://github.com/llaville/docker-php-toolbox/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/llaville/docker-php-toolbox/actions/workflows/gh-pages.yml) |
 
 Easily install PHP extensions and tools in Docker containers.
