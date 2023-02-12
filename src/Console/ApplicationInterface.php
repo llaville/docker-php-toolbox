@@ -19,17 +19,14 @@ interface ApplicationInterface extends ContainerAwareInterface
     public const NAME = 'Helper to discover and install PHP extensions and/or tools';
 
     /**
-     * @param CommandLoaderInterface $commandLoader
      * @return void
      */
     public function setCommandLoader(CommandLoaderInterface $commandLoader);
 
     /**
      * Gets the name of the application.
-     *
-     * @return string
      */
-    public function getName();
+    public function getName(): string;
 
     /**
      * Gets the current version installed of the application.

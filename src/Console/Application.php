@@ -23,9 +23,6 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
 {
     private ContainerInterface $container;
 
-    /**
-     * Application class constructor.
-     */
     public function __construct()
     {
         parent::__construct(

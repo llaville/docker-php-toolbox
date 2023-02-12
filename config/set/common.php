@@ -11,6 +11,7 @@ use Bartlett\PHPToolbox\Event\ProfileEventSubscriber;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -44,6 +45,8 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(CommandLoaderInterface::class, FactoryCommandLoader::class)
         ->arg('$commands', tagged_iterator('console.command'))
     ;
+
+    $services->set(ContainerInterface::class, Container::class);
 
     $services->set(ApplicationInterface::class, Application::class)
         ->call('setContainer', [service(ContainerInterface::class)])
