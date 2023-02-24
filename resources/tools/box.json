@@ -1,7 +1,7 @@
 {
     "tools": [
         {
-            "name": "box",
+            "name": "box v4",
             "summary": "Fast, zero config application bundler with PHARs",
             "website": "https://github.com/box-project/box",
             "command": {
@@ -9,7 +9,21 @@
                     "phar": "https://github.com/box-project/box/releases/latest/download/box.phar",
                     "bin": "%target-dir%/box"
                 }
-            }
+            },
+            "tags": [
+                "box-4",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
         },
         {
             "name": "box-manifest v2",
@@ -22,6 +36,7 @@
                 }
             },
             "tags": [
+                "box-manifest-2",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
                 "exclude-php:5.4",
