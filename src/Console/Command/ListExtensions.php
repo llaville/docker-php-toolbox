@@ -24,6 +24,8 @@ use function in_array;
 use function is_dir;
 use function is_readable;
 use function sprintf;
+use function wordwrap;
+use const PHP_EOL;
 
 /**
  * @since Release 1.0.0alpha1
@@ -91,7 +93,7 @@ final class ListExtensions extends Command implements CommandInterface
         $transform = function (Tool $tool) {
             return [
                 $tool->getName(),
-                $tool->getSummary(),
+                wordwrap($tool->getSummary(), 40, PHP_EOL, false),
                 $tool->getWebsite(),
             ];
         };
