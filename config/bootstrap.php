@@ -3,7 +3,7 @@ gc_disable(); // performance boost
 
 if (Phar::running()) {
     $possibleAutoloadPaths = [
-        'phar://toolkit.phar/vendor/autoload.php'
+        dirname(__FILE__, 2) . '/vendor/autoload.php'
     ];
 } else {
     $possibleAutoloadPaths = [

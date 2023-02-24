@@ -1,0 +1,7 @@
+{
+    "main": "bin/devkit.php",
+    "alias": "devkit.phar",
+    "directories": ["bin", "config", "src", "vendor"],
+    "compression": "GZ",
+    "metadata": "Bartlett\\BoxManifest\\Composer\\ManifestFactory::toHighlight"
+}

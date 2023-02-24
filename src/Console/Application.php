@@ -10,8 +10,13 @@ namespace Bartlett\PHPToolbox\Console;
 use Composer\InstalledVersions;
 
 use Symfony\Component\Console\Application as SymfonyApplication;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+use Phar;
 use function sprintf;
 use function substr;
 
@@ -70,5 +75,32 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
         }
         $commitHash = InstalledVersions::getReference($packageName);
         return sprintf('%s@%s', $version, substr($commitHash, 0, 7));
+    }
+
+    public function doRun(InputInterface $input, OutputInterface $output)
+    {
+        if (true === $input->hasParameterOption(['--manifest'], true)) {
+            $phar = new Phar($_SERVER['argv'][0]);
+            $manifest = $phar->getMetadata();
+            $output->writeln($manifest);
+            return Command::SUCCESS;
+        }
+        return parent::doRun($input, $output);
+    }
+
+    protected function configureIO(InputInterface $input, OutputInterface $output)
+    {
+        if (Phar::running()) {
+            $inputDefinition = $this->getDefinition();
+            $inputDefinition->addOption(
+                new InputOption(
+                    'manifest',
+                    null,
+                    InputOption::VALUE_NONE,
+                    'Show which versions of dependencies are bundled'
+                )
+            );
+        }
+        parent::configureIO($input, $output);
     }
 }
