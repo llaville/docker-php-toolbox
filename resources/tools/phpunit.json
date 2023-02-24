@@ -1,6 +1,32 @@
 {
     "tools": [
         {
+            "name": "phpunit 10",
+            "summary": "The PHP Unit Testing framework (10.x version)",
+            "website": "https://github.com/sebastianbergmann/phpunit",
+            "command": {
+                "phar-download": {
+                    "phar": "https://phar.phpunit.de/phpunit-10.phar",
+                    "bin": "%target-dir%/phpunit"
+                }
+            },
+            "priority": 90,
+            "tags": [
+                "phpunit-10",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
+        },
+        {
             "name": "phpunit 9",
             "summary": "The PHP Unit Testing framework (9.x version)",
             "website": "https://github.com/sebastianbergmann/phpunit",

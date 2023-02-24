@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 54 | 35 | 36 | 39 | 43 | 47 | 46 | 47 | 44 | 46 |
+| | Total available: 55 | 35 | 36 | 39 | 43 | 47 | 46 | 47 | 45 | 47 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v2 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
@@ -50,6 +50,7 @@
 | phplint v3 | [Checks PHP file syntax](https://github.com/overtrue/phplint) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | phpmnd | [PHP Magic Number Detector](https://github.com/povils/phpmnd) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpstan | [PHP Static Analysis Tool](https://github.com/phpstan/phpstan) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phpunit 10 | [The PHP Unit Testing framework (10.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
 | phpunit 4 | [The PHP Unit Testing framework (4.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | phpunit 5 | [The PHP Unit Testing framework (5.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | phpunit 6 | [The PHP Unit Testing framework (6.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
