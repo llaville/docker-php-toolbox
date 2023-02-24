@@ -1,12 +1,36 @@
 {
     "tools": [
         {
+            "name": "cachetool 9",
+            "summary": "CLI application and library to manage apc and opcache (9.x version)",
+            "website": "https://github.com/gordalina/cachetool",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/gordalina/cachetool/releases/latest/download/cachetool.phar",
+                    "bin": "%target-dir%/cachetool"
+                }
+            },
+            "tags": [
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
+        },
+        {
             "name": "cachetool 8",
             "summary": "CLI application and library to manage apc and opcache (8.x version)",
             "website": "https://github.com/gordalina/cachetool",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/gordalina/cachetool/releases/latest/download/cachetool.phar",
+                    "phar": "https://github.com/gordalina/cachetool/releases/download/8.5.0/cachetool.phar",
                     "bin": "%target-dir%/cachetool"
                 }
             },
