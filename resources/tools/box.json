@@ -16,13 +16,9 @@
             "summary": "Create a manifest to a PHP Archive (PHAR) for the BOX project",
             "website": "https://github.com/llaville/box-manifest",
             "command": {
-                "git-install": {
-                    "repository": "https://github.com/llaville/box-manifest.git",
-                    "target-dir": "/usr/local/src/box"
-                },
-                "composer-install": {},
-                "shell": {
-                    "cmd": "ln -sf /usr/local/src/box/bin/box %target-dir%/box-manifest"
+                "phar-download": {
+                    "phar": "https://github.com/llaville/box-manifest/releases/latest/download/box-manifest.phar",
+                    "bin": "%target-dir%/box-manifest"
                 }
             },
             "tags": [
