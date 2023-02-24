@@ -88,7 +88,7 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
         return parent::doRun($input, $output);
     }
 
-    protected function configureIO(InputInterface $input, OutputInterface $output)
+    protected function configureIO(InputInterface $input, OutputInterface $output): void
     {
         if (Phar::running()) {
             $inputDefinition = $this->getDefinition();
