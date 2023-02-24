@@ -9,15 +9,15 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 55 | 35 | 36 | 39 | 43 | 47 | 46 | 47 | 45 | 47 |
+| | Total available: 55 | 34 | 35 | 38 | 42 | 46 | 45 | 46 | 45 | 47 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v2 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
 | cachetool 6 | [CLI application and library to manage apc and opcache (6.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 7 | [CLI application and library to manage apc and opcache (7.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 8 | [CLI application and library to manage apc and opcache (8.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
+| cachetool 9 | [CLI application and library to manage apc and opcache (9.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
 | composer | [Dependency Manager for PHP (2.x version)](https://github.com/composer/composer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| composer | [Dependency Manager for PHP (1.x version)](https://github.com/composer/composer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | deployer 2 | [A deployment tool for PHP (2.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | deployer 3 | [A deployment tool for PHP (3.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | deployer 4 | [A deployment tool for PHP (4.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

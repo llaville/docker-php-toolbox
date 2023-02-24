@@ -15,19 +15,6 @@
             },
             "tags": ["composer-2"],
             "priority": 100
-        },
-        {
-            "name": "composer",
-            "summary": "Dependency Manager for PHP (1.x version)",
-            "website": "https://github.com/composer/composer",
-            "command": {
-                "phar-download": {
-                    "phar": "https://getcomposer.org/composer-1.phar",
-                    "bin": "%target-dir%/composer-1"
-                }
-            },
-            "tags": ["composer-1"],
-            "priority": 100
         }
     ]
 }
