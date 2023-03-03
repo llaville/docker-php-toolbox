@@ -1,0 +1,3 @@
+kind: Changed
+body: enable xlswriter extension for PHP 8.1+
+time: 2023-03-03T14:32:34.909188744Z
