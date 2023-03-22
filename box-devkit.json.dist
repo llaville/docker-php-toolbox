@@ -3,12 +3,7 @@
     "alias": "devkit.phar",
     "stub": "stub.php",
     "directories": ["bin", "config", "src", "vendor"],
-    "files-bin": [
-        "sbom.xml",
-        "manifest.txt"
-    ],
-    "blacklist": [
-        "bin/toolkit.phar"
-    ],
+    "files-bin": ["sbom.xml", "manifest.txt"],
+    "blacklist": ["bin/toolkit.phar"],
     "compression": "GZ"
 }

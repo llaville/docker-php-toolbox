@@ -2,8 +2,6 @@
     "main": "bin/toolkit.php",
     "alias": "toolkit.phar",
     "directories": ["bin", "config", "src", "vendor"],
-    "blacklist": [
-        "bin/devkit.phar"
-    ],
+    "blacklist": ["bin/devkit.phar"],
     "compression": "GZ"
 }
