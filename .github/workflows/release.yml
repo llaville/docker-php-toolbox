@@ -15,6 +15,7 @@ jobs:
         uses: llaville/.github/.github/workflows/mega-linter.yml@master
         with:
             repository: ${{ github.repository }}
+            php-version: "8.1"
 
     build:
         needs: lint_files
