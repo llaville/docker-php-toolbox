@@ -8,6 +8,7 @@
 namespace Bartlett\PHPToolbox\Collection;
 
 use Bartlett\PHPToolbox\Command\Factory;
+
 use Doctrine\Common\Collections\AbstractLazyCollection;
 use Doctrine\Common\Collections\ArrayCollection;
 
