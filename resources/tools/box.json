@@ -36,7 +36,7 @@
                 }
             },
             "tags": [
-                "box-manifest-2",
+                "box-manifest-3",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
                 "exclude-php:5.4",
