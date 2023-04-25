@@ -9,6 +9,13 @@ Dockerfiles/mods/Dockerfile.*
 Dockerfiles/prod/Dockerfile.*
 Dockerfiles/work/Dockerfile.*
 
+###### BOX Manifest ######
+sbom.json
+sbom.xml
+console.txt
+manifest.txt
+stub.php
+
 ###### Composer dependencies ######
 vendor/
 
