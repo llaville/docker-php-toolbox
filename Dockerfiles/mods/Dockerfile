@@ -42,7 +42,7 @@ COPY --from=base /docker-entrypoint.d /docker-entrypoint.d
 ###
 # https://github.com/opencontainers/image-spec/blob/main/annotations.md
 LABEL "org.opencontainers.image.created"=""
-LABEL "org.opencontainers.image.authors"="llaville <pear@laurent-laville.org>"
+LABEL "org.opencontainers.image.authors"="llaville"
 LABEL "org.opencontainers.image.url"="https://github.com/llaville/docker-php-toolbox"
 LABEL "org.opencontainers.image.documentation"="https://github.com/llaville/docker-php-toolbox"
 LABEL "org.opencontainers.image.source"="https://github.com/llaville/docker-php-toolbox"
