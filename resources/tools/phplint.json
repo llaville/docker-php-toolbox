@@ -1,8 +1,97 @@
 {
     "tools": [
         {
-            "name": "phplint v3",
-            "summary": "Checks PHP file syntax",
+            "name": "phplint v9",
+            "summary": "Checks PHP file syntax (9.x version)",
+            "website": "https://github.com/overtrue/phplint",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/overtrue/phplint.git",
+                    "target-dir": "/usr/local/src/phplint"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
+                }
+            },
+            "tags": [
+                "phplint-9",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4"
+            ]
+        },
+        {
+            "name": "phplint v6",
+            "summary": "Checks PHP file syntax (6.x version)",
+            "website": "https://github.com/overtrue/phplint",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/overtrue/phplint.git",
+                    "target-dir": "/usr/local/src/phplint",
+                    "version": "8.2"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
+                }
+            },
+            "tags": [
+                "phplint-6",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
+            ]
+        },
+        {
+            "name": "phplint v5",
+            "summary": "Checks PHP file syntax (5.x version)",
+            "website": "https://github.com/overtrue/phplint",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/overtrue/phplint.git",
+                    "target-dir": "/usr/local/src/phplint",
+                    "version": "8.1"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
+                }
+            },
+            "tags": [
+                "phplint-5",
+                "exclude-php:5.2",
+                "exclude-php:5.3",
+                "exclude-php:5.4",
+                "exclude-php:5.5",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
+        },
+        {
+            "name": "phplint v4",
+            "summary": "Checks PHP file syntax (4.x version)",
             "website": "https://github.com/overtrue/phplint",
             "command": {
                 "git-install": {
@@ -16,7 +105,7 @@
                 }
             },
             "tags": [
-                "phplint-3",
+                "phplint-4",
                 "exclude-php:5.2",
                 "exclude-php:5.3",
                 "exclude-php:5.4",
