@@ -71,19 +71,14 @@ final class UpdateTools extends Command implements CommandInterface
 
         $formatSection = function (Tool $tool) {
             return sprintf(
-                '| %s | [%s](%s) | %s | %s | %s | %s | %s | %s | %s | %s | %s |',
+                '| %s | [%s](%s) | %s | %s | %s | %s |',
                 $tool->getName(),
                 $tool->getSummary(),
                 $tool->getWebsite(),
-                in_array('exclude-php:5.6', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:7.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:7.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:7.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:7.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:7.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:8.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
+                in_array('exclude-php:8.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
             );
         };
 
@@ -91,7 +86,7 @@ final class UpdateTools extends Command implements CommandInterface
             return (new Filter(['pecl-extensions'], []))($tool);
         });
 
-        $phpVersions = ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2'];
+        $phpVersions = ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3'];
 
         foreach ($phpVersions as $phpVersion) {
             $totalAvailable[] = count($toolsList->filter(function (Tool $tool) use ($phpVersion) {
@@ -108,9 +103,9 @@ final class UpdateTools extends Command implements CommandInterface
 
         $toolsList = $toolsList->map($formatSection);
 
-        $toolsTable  = '| Name | Description | <sup>PHP 5.6</sup> | <sup>PHP 7.0</sup> | <sup>PHP 7.1</sup> | <sup>PHP 7.2</sup> | <sup>PHP 7.3</sup> | <sup>PHP 7.4</sup> | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> |' . PHP_EOL;
-        $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
-        $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $toolsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> |' . PHP_EOL;
+        $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d |', $totalAvailable);
         $toolsTable .= PHP_EOL;
         $toolsTable .= implode(PHP_EOL, $toolsList->toArray());
         $toolsTable .= PHP_EOL;

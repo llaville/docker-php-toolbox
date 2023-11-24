@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "ds",
+            "summary": "The ds PHP Extension",
+            "website": "https://github.com/php-ds/ext-ds",
+            "command": {
+                "pecl-install": {
+                    "module_name": "ds",
+                    "version": ""
+                }
+            },
+            "tags": ["pecl-extensions", "exclude-php:5.6", "exclude-php:8.3"]
+        }
+    ]
+}

@@ -17,8 +17,7 @@
                 "exclude-php:5.5",
                 "exclude-php:5.6",
                 "exclude-php:7.0",
-                "exclude-php:7.1",
-                "exclude-php:8.1"
+                "exclude-php:7.1"
             ]
         }
     ]
