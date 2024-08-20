@@ -5,8 +5,9 @@
             "summary": "Terminal session recorder",
             "website": "https://github.com/asciinema/asciinema",
             "command": {
-                "pip-install": {
-                    "requirement": "asciinema"
+                "shell": {
+                    "cmd": "asciinema",
+                    "package_manager": "apt"
                 }
             }
         }
