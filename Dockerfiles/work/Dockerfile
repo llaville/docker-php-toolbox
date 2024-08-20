@@ -73,7 +73,7 @@ RUN set -eux \
         mupdf-tools \
         nano \
         net-tools \
-        netcat \
+        #netcat \
         openssh-client \
         patch \
         patchelf \
@@ -82,7 +82,7 @@ RUN set -eux \
         rsync \
         shellcheck \
         silversearcher-ag \
-        subversion \
+        #subversion \
         sudo \
         tree \
         unzip \
