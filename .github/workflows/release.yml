@@ -28,53 +28,61 @@ jobs:
                 os:
                     - ubuntu-22.04
                 php:
-                    - 8.1
+                    - 8.2
+                tools:
+                    - box:4.6  # available since https://github.com/shivammathur/setup-php/releases/tag/2.27.0
 
         steps:
-            -   # Git Checkout
+            -   # https://github.com/actions/checkout
                 name: Checkout
-                uses: actions/checkout@v3
+                uses: actions/checkout@v4
 
-            -   # Setup PHP runtime
+            -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
+                    coverage: "none"
+                    tools: ${{ matrix.tools }}
 
-            -   # Install Composer dependencies
+            -   # https://getcomposer.org/doc/06-config.md#platform
+                name: Setup Composer Platform
+                run: |
+                    composer config platform.php 8.1
+
+            -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
-                uses: ramsey/composer-install@v2
+                uses: ramsey/composer-install@v3
                 with:
                     composer-options: "--prefer-dist"
 
-            -   # Prepare binaries BOX Manifest commands
-                name: Download BOX Manifest Artifacts
+            -   # https://github.com/llaville/box-manifest
+                name: Download BOX Manifest Artifact
+                env:
+                    BOX_MANIFEST_VERSION: "4.0.2"
                 run: |
-                    curl -Ls https://github.com/llaville/box-manifest/releases/latest/download/box-manifest.phar -o /usr/local/bin/box-manifest
+                    curl -Ls "https://github.com/llaville/box-manifest/releases/download/$BOX_MANIFEST_VERSION/box-manifest.phar" -o /usr/local/bin/box-manifest
                     chmod +x /usr/local/bin/box-manifest
 
-            -   # Build the current release with artifacts (php archive)
+            -   # https://github.com/llaville/box-manifest
                 name: Build Release Artifact for Toolkit Application
                 run: |
-                    box-manifest manifest:build --ansi -vv -c box.json --output-file=sbom.json
-                    box-manifest manifest:build --ansi -vv -c box.json --output-file=console.txt --format console
-                    box-manifest manifest:stub  --ansi -vv -c box.json --output-file=stub.php --resource console.txt --resource sbom.json
-                    box-manifest box:compile    --ansi -vv -c box.json.dist
-            -
+                    box-manifest make build stub configure -r console-table.txt -r plain.txt -r sbom.json --output-stub stub.php --output-conf box.json.dist -vvv --ansi -c box.json
+                    box compile -c box.json.dist -vvv --ansi
+
+            -   # https://github.com/llaville/box-manifest
                 name: Build Release Artifact for Devkit Application
                 run: |
-                    box-manifest manifest:build --ansi -vv -c box-devkit.json --output-file=sbom.json
-                    box-manifest manifest:build --ansi -vv -c box-devkit.json --output-file=console.txt --format console
-                    box-manifest manifest:stub  --ansi -vv -c box-devkit.json --output-file=stub.php --resource console.txt --resource sbom.json
-                    box-manifest box:compile    --ansi -vv -c box-devkit.json.dist
+                    box-manifest make build stub configure -r console-table.txt -r plain.txt -r sbom.json --output-stub stub.php --output-conf box-devkit.json.dist -vvv --ansi -c box-devkit.json
+                    box compile -c box-devkit.json.dist -vvv --ansi
 
-            -   # Create a new Release (from a tag)
+            -   # https://github.com/softprops/action-gh-release
                 name: Create Release from current tag
                 if: github.ref_type == 'tag'
-                uses: softprops/action-gh-release@v1
-                with:  # https://github.com/softprops/action-gh-release#-customizing
+                uses: softprops/action-gh-release@v2
+                with: # https://github.com/softprops/action-gh-release#-customizing
                     prerelease: false
-                    draft: true
+                    draft: false
                     body_path: ${{ github.workspace }}/.changes/${{ github.ref_name }}.md
                     # https://github.com/softprops/action-gh-release#%EF%B8%8F-uploading-release-assets
                     files: |
