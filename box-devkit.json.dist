@@ -1,13 +1,33 @@
 {
     "main": "bin/devkit.php",
     "alias": "devkit.phar",
-    "stub": "stub.php",
-    "directories": ["bin", "config", "src", "vendor"],
-    "files-bin": ["sbom.json", "console.txt"],
-    "map": [
-        { "console.txt": ".box.manifests/console.txt" },
-        { "sbom.json": ".box.manifests/sbom.json" }
+    "directories": [
+        "bin",
+        "config",
+        "src",
+        "vendor"
     ],
-    "blacklist": ["bin/toolkit.phar"],
-    "compression": "GZ"
+    "blacklist": [
+        "bin/toolkit.phar"
+    ],
+    "compression": "GZ",
+    "dump-autoload": false,
+    "files-bin": [
+        "console-table.txt",
+        "plain.txt",
+        "sbom.json",
+        ".box.manifests.bin"
+    ],
+    "map": [
+        {
+            "console-table.txt": ".box.manifests/console-table.txt"
+        },
+        {
+            "plain.txt": ".box.manifests/plain.txt"
+        },
+        {
+            "sbom.json": ".box.manifests/sbom.json"
+        }
+    ],
+    "stub": "stub.php"
 }
