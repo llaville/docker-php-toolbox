@@ -5,6 +5,7 @@ on:
     push:
         branches:
             - master
+            - "2.0"
         paths:
             - docs/**
     pull_request:
@@ -14,5 +15,4 @@ jobs:
     deploy:
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
-            destination-dir: 1.x
-            php-version: "8.0"
+            destination-dir: "2.0"
