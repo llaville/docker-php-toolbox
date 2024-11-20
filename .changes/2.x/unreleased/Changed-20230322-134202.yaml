@@ -1,4 +1,0 @@
-kind: Changed
-body: Upgrade [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer)
-  to version 2.1.10
-time: 2023-03-22T13:42:02.242646542Z
