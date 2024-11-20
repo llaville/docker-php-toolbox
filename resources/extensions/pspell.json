@@ -9,7 +9,8 @@
                     "module_name": "pspell",
                     "8.1": "1.0.1",
                     "8.2": "1.0.1",
-                    "8.3": "1.0.1"
+                    "8.3": "1.0.1",
+                    "8.4": "1.0.1"
                 }
             },
             "tags": [
@@ -38,7 +39,8 @@
                 "exclude-php:8.0",
                 "exclude-php:8.1",
                 "exclude-php:8.2",
-                "exclude-php:8.3"
+                "exclude-php:8.3",
+                "exclude-php:8.4"
             ]
         }
     ]
