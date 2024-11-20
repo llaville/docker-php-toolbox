@@ -12,21 +12,21 @@ Dockerfiles/work/Dockerfile.*
 ###### BOX Manifest ######
 sbom.json
 sbom.xml
-console.txt
-manifest.txt
+console-table.txt
+plain.txt
 stub.php
 
 ###### Composer dependencies ######
 vendor/
 
 ###### PHPLint ######
-.phplint-cache
+.phplint.cache/
 
 ###### PHPUnit ######
 .phpunit.result.cache
+.phpunit.cache/
 
 ###### Mega-Linter ######
-report/
 megalinter-reports/
 
 ######################################
