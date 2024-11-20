@@ -2,12 +2,12 @@
     "tools": [
         {
             "name": "oci8",
-            "summary": "The oci8 PHP Extension (for PHP 8.2)",
+            "summary": "The oci8 PHP Extension (for PHP 8.2 and more)",
             "website": "https://pecl.php.net/package/oci8",
             "command": {
                 "pecl-install": {
                     "module_name": "oci8",
-                    "version": "^3.3"
+                    "version": ""
                 }
             },
             "tags": [
@@ -42,7 +42,8 @@
                 "exclude-php:7.4",
                 "exclude-php:8.0",
                 "exclude-php:8.2",
-                "exclude-php:8.3"
+                "exclude-php:8.3",
+                "exclude-php:8.4"
             ]
         },
         {
@@ -65,7 +66,8 @@
                 "exclude-php:7.4",
                 "exclude-php:8.1",
                 "exclude-php:8.2",
-                "exclude-php:8.3"
+                "exclude-php:8.3",
+                "exclude-php:8.4"
             ]
         },
         {
@@ -88,7 +90,8 @@
                 "exclude-php:8.0",
                 "exclude-php:8.1",
                 "exclude-php:8.2",
-                "exclude-php:8.3"
+                "exclude-php:8.3",
+                "exclude-php:8.4"
             ]
         },
         {
@@ -111,7 +114,8 @@
                 "exclude-php:8.0",
                 "exclude-php:8.1",
                 "exclude-php:8.2",
-                "exclude-php:8.3"
+                "exclude-php:8.3",
+                "exclude-php:8.4"
             ]
         }
     ]
