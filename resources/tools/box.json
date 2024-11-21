@@ -24,6 +24,28 @@
             ]
         },
         {
+            "name": "box-manifest v4",
+            "summary": "Create a manifest to a PHP Archive (PHAR) for the BOX project",
+            "website": "https://github.com/llaville/box-manifest",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/llaville/box-manifest/releases/download/4.0.2/box-manifest.phar",
+                    "bin": "%target-dir%/box-manifest"
+                }
+            },
+            "tags": [
+                "box-manifest-4",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
+            ]
+        },
+        {
             "name": "box-manifest v3",
             "summary": "Create a manifest to a PHP Archive (PHAR) for the BOX project",
             "website": "https://github.com/llaville/box-manifest",
