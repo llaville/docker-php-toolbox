@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD013 -->
 # Contributing
 
-This project is still a young project with an existing [roadmap](../ROADMAP.md),
+This project is a project with an existing [roadmap](../ROADMAP.md),
 and is positioned as a real compatible [Devilbox](https://github.com/cytopia/devilbox) alternative.
 
 Any kind of contribution is welcome.

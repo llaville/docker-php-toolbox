@@ -5,7 +5,7 @@ Proceed with the same build identification as used in the `build:dockerfile` com
 
 **NOTE** If you want to see real-time docker long process running, don't forget to activate verbose level 3 (`-vvv`) on each command.
 
-In each following commands, replace `<php_version>` by either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
+In each following commands, replace `<php_version>` by either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4
 
 ## Base images
 
