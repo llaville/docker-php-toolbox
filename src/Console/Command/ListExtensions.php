@@ -45,7 +45,7 @@ final class ListExtensions extends Command implements CommandInterface
             ->addArgument(
                 'version',
                 InputArgument::REQUIRED,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1 or 8.2'
+                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4'
             )
             ->addOption(
                 'tools',
