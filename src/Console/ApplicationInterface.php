@@ -8,20 +8,14 @@
 namespace Bartlett\PHPToolbox\Console;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
  * @since Release 1.0.0alpha1
  * @author Laurent Laville
  */
-interface ApplicationInterface extends ContainerAwareInterface
+interface ApplicationInterface
 {
     public const NAME = 'Helper to discover and install PHP extensions and/or tools';
-
-    /**
-     * @return void
-     */
-    public function setCommandLoader(CommandLoaderInterface $commandLoader);
 
     /**
      * Gets the name of the application.

@@ -10,7 +10,8 @@ namespace Bartlett\PHPToolbox\Console;
 use Composer\InstalledVersions;
 
 use Symfony\Component\Console\Application as SymfonyApplication;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 use function sprintf;
 use function substr;
@@ -21,10 +22,13 @@ use function substr;
  */
 final class Application extends SymfonyApplication implements ApplicationInterface
 {
-    private ContainerInterface $container;
+    public function __construct(
+        CommandLoaderInterface $commandLoader,
+        EventDispatcherInterface $eventDispatcher
+    ) {
+        $this->setCommandLoader($commandLoader);
+        $this->setDispatcher($eventDispatcher);
 
-    public function __construct()
-    {
         parent::__construct(
             self::NAME,
             $this->getInstalledVersion(false)
@@ -32,16 +36,7 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
     }
 
     /**
-     * {@inheritDoc}
-     * @return void
-     */
-    public function setContainer(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-
-    /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getHelp(): string
     {
@@ -53,7 +48,7 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getLongVersion(): string
     {

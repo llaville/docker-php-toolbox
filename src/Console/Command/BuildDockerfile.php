@@ -10,6 +10,9 @@ namespace Bartlett\PHPToolbox\Console\Command;
 use Bartlett\PHPToolbox\Collection\Tool;
 use Bartlett\PHPToolbox\Collection\ToolCollectionInterface;
 use Bartlett\PHPToolbox\Collection\Tools;
+use Bartlett\PHPToolbox\Configuration\ConsoleOptionsResolver;
+use Bartlett\PHPToolbox\Configuration\FileOptionsResolver;
+use Bartlett\PHPToolbox\Configuration\OptionDefinition;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -18,6 +21,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+use Exception;
 use function array_intersect;
 use function file_get_contents;
 use function file_put_contents;
@@ -28,8 +32,8 @@ use function is_readable;
 use function php_uname;
 use function preg_replace;
 use function sprintf;
+use function str_contains;
 use function str_replace;
-use function strpos;
 use function strtolower;
 use const PHP_EOL;
 
@@ -42,7 +46,7 @@ final class BuildDockerfile extends Command implements CommandInterface
     public const NAME = 'build:dockerfile';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -50,36 +54,32 @@ final class BuildDockerfile extends Command implements CommandInterface
             ->setDescription('Build a Dockerfile by specified version')
             ->addArgument(
                 'version',
-                InputArgument::REQUIRED,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1 or 8.2'
+                InputArgument::OPTIONAL,
+                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4'
             )
             ->addOption(
                 'resources',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Path(s) to the list of tools and extensions',
-                './resources'
+                'Path(s) to the list of tools and extensions (<comment>default: ' . OptionDefinition::DEFAULT_RESOURCES_PATH . '</comment>)'
             )
             ->addOption(
                 'dockerfile',
                 'f',
                 InputOption::VALUE_REQUIRED,
-                'Path to the Dockerfile template',
-                './Dockerfiles/mods/Dockerfile'
+                'Path to the Dockerfile template (<comment>default: ' . OptionDefinition::DEFAULT_DOCKERFILE_PATH . '</comment>)'
             )
             ->addOption(
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Build version to identify the final Dockerfile from template (case insensitive)',
-                '2',
+                'Build version to identify the final Dockerfile from template (case insensitive)'
             )
             ->addOption(
                 'target-dir',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'To perform tools installation in other location than default directory',
-                '/usr/local/bin'
+                'To perform tools installation in other location than default directory (<comment>default: ' . OptionDefinition::DEFAULT_TARGET_DIR . '</comment>)'
             )
             ->addOption(
                 'tag',
@@ -87,25 +87,44 @@ final class BuildDockerfile extends Command implements CommandInterface
                 InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
                 'Filter tools by tags'
             )
+            ->addOption(
+                'configuration',
+                'c',
+                InputOption::VALUE_REQUIRED,
+                'Read configuration from config file',
+                OptionDefinition::DEFAULT_CONFIG_FILE
+            )
+            ->addOption(
+                'no-configuration',
+                null,
+                InputOption::VALUE_NONE,
+                'Ignore default configuration file (<comment>' . OptionDefinition::DEFAULT_CONFIG_FILE . '</comment>)'
+            )
         ;
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
 
-        $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2'])) {
+        if (true === $input->hasParameterOption(['--no-configuration'], true)) {
+            $configResolver = new ConsoleOptionsResolver($input);
+        } else {
+            $configResolver = new FileOptionsResolver($input);
+        }
+
+        $phpVersion = $configResolver->getOption(OptionDefinition::PHP_VERSION);
+        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3', '8.4'])) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );
             return self::FAILURE;
         }
 
-        $resourcesPath = $input->getOption('resources');
+        $resourcesPath = $configResolver->getOption(OptionDefinition::RESOURCES_PATH);
         if (!is_dir($resourcesPath) || !is_readable($resourcesPath)) {
             $io->error(
                 sprintf('Resources path specified "%s" does not exists or is not readable.', $resourcesPath)
@@ -113,9 +132,9 @@ final class BuildDockerfile extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $buildVersion = strtolower($input->getOption('build-version'));
+        $buildVersion = strtolower($configResolver->getOption(OptionDefinition::BUILD_VERSION));
 
-        $dockerfilePath = $input->getOption('dockerfile');
+        $dockerfilePath = $configResolver->getOption(OptionDefinition::DOCKERFILE_PATH);
 
         // checks Dockerfile template
         if (!is_file($dockerfilePath) || !is_readable($dockerfilePath)) {
@@ -143,8 +162,8 @@ final class BuildDockerfile extends Command implements CommandInterface
                 $dockerfile = $this->getChangeOnModsDockerfile($dockerfilePath, $tools, $phpVersion, $buildVersion);
                 break;
             case 'work':
-                $targetDir = $input->getOption('target-dir');
-                $tags = $input->getOption('tag');
+                $targetDir = $configResolver->getOption(OptionDefinition::TARGET_DIR);
+                $tags = $configResolver->getOption(OptionDefinition::TAGS);
                 $dockerfile = $this->getChangeOnWorkDockerfile($dockerfilePath, $tools, $phpVersion, $targetDir, $tags);
                 break;
             case 'base':
@@ -171,8 +190,13 @@ final class BuildDockerfile extends Command implements CommandInterface
         return self::SUCCESS;
     }
 
+    /**
+     * @throws Exception
+     */
     private function getChangeOnModsDockerfile(string $dockerfilePath, ToolCollectionInterface $tools, string $phpVersion, string $buildVersion): ?string
     {
+        $tools->sortByName();
+
         $extensionsList = $tools->filter(function (Tool $tool) use ($phpVersion) {
             return
                 in_array('pecl-extensions', $tool->getTags(), true) &&
@@ -230,7 +254,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             $os = php_uname('s');
             $arch = php_uname('m');
             $os = strtolower($os);
-            $arch = strpos($arch, 'x86') === false ? $arch : '386';
+            $arch = str_contains($arch, 'x86') ? '386' : $arch;
             $commandLine = str_replace(['%os%', '%arch%'], [$os, $arch], $commandLine);
             $commandLine = str_replace('%target-dir%', $targetDir, $commandLine);
             $softwareInstallation[] = 'RUN set -eux && ' . $commandLine;

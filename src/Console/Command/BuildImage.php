@@ -7,7 +7,10 @@
  */
 namespace Bartlett\PHPToolbox\Console\Command;
 
-use Generator;
+use Bartlett\PHPToolbox\Configuration\ConsoleOptionsResolver;
+use Bartlett\PHPToolbox\Configuration\FileOptionsResolver;
+use Bartlett\PHPToolbox\Configuration\OptionDefinition;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -35,7 +38,7 @@ final class BuildImage extends Command implements CommandInterface
     public const NAME = 'build:image';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -43,22 +46,20 @@ final class BuildImage extends Command implements CommandInterface
             ->setDescription('Build an image from a Dockerfile by specified version')
             ->addArgument(
                 'version',
-                InputArgument::REQUIRED,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1 or 8.2'
+                InputArgument::OPTIONAL,
+                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4'
             )
             ->addOption(
                 'dockerfile',
                 'f',
                 InputOption::VALUE_REQUIRED,
-                'Path to the Dockerfile template',
-                './Dockerfiles/mods/Dockerfile'
+                'Path to the Dockerfile template (<comment>default: ' . OptionDefinition::DEFAULT_DOCKERFILE_PATH . '</comment>)'
             )
             ->addOption(
                 'build-version',
                 'B',
                 InputOption::VALUE_REQUIRED,
-                'Build version to identify the final Dockerfile from template (case insensitive)',
-                '1'
+                'Build version to identify the final Dockerfile from template (case insensitive)'
             )
             ->addOption(
                 'no-cache',
@@ -70,8 +71,7 @@ final class BuildImage extends Command implements CommandInterface
                 'vendor',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Vendor name to prefix Docker images',
-                'local'
+                'Vendor name to prefix Docker images (<comment>default: ' . OptionDefinition::DEFAULT_VENDOR_NAME . '</comment>)'
             )
             ->addOption(
                 'profile',
@@ -83,14 +83,26 @@ final class BuildImage extends Command implements CommandInterface
                 'work-tag-suffix',
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Tag for work Docker image',
-                'work'
+                'Tag for work Docker image'
+            )
+            ->addOption(
+                'configuration',
+                'c',
+                InputOption::VALUE_REQUIRED,
+                'Read configuration from config file',
+                OptionDefinition::DEFAULT_CONFIG_FILE
+            )
+            ->addOption(
+                'no-configuration',
+                null,
+                InputOption::VALUE_NONE,
+                'Ignore default configuration file (<comment>' . OptionDefinition::DEFAULT_CONFIG_FILE . '</comment>)'
             )
         ;
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -103,17 +115,23 @@ final class BuildImage extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2'])) {
+        if (true === $input->hasParameterOption(['--no-configuration'], true)) {
+            $configResolver = new ConsoleOptionsResolver($input);
+        } else {
+            $configResolver = new FileOptionsResolver($input);
+        }
+
+        $phpVersion = $configResolver->getOption(OptionDefinition::PHP_VERSION);
+        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3', '8.4'])) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );
             return self::FAILURE;
         }
 
-        $dockerfilePath = $input->getOption('dockerfile');
+        $dockerfilePath = $configResolver->getOption(OptionDefinition::DOCKERFILE_PATH);
 
-        $buildVersion = strtolower($input->getOption('build-version'));
+        $buildVersion = strtolower($configResolver->getOption(OptionDefinition::BUILD_VERSION));
 
         // checks Dockerfile specialized version
         $dockerfilePath .= '.' . $buildVersion;
@@ -124,7 +142,7 @@ final class BuildImage extends Command implements CommandInterface
             return self::FAILURE;
         }
 
-        $noCache = $input->getOption('no-cache');
+        $noCache = $configResolver->getOption(OptionDefinition::NO_CACHE);
 
         $suffix = basename(dirname($dockerfilePath));
 
@@ -147,7 +165,7 @@ final class BuildImage extends Command implements CommandInterface
             }
         }
 
-        $vendor = $input->getOption('vendor');
+        $vendor = $configResolver->getOption(OptionDefinition::VENDOR_NAME);
         $commonTag = $vendor . '/php-fpm:' . $phpVersion;
 
         if ('base' === $suffix) {
@@ -185,7 +203,7 @@ final class BuildImage extends Command implements CommandInterface
                 $command[] = '--cache-from=' . $commonTag . '-mods';
             }
         } elseif ('work' === $suffix) {
-            $tag = $commonTag . '-' . $input->getOption('work-tag-suffix');
+            $tag = $commonTag . '-' . $configResolver->getOption(OptionDefinition::WORK_TAG_SUFFIX);
 
             $command = [
                 $dockerBin, 'build',
@@ -209,6 +227,7 @@ final class BuildImage extends Command implements CommandInterface
             $command[] = '--build-arg=BUILDKIT_INLINE_CACHE=1';
             $command[] = '--cache-from=' . $tag;
         }
+        $command[] = '--progress=auto';
         $command[] = './' . dirname($dockerfilePath);
 
         $process = new Process($command, null, ['DOCKER_BUILDKIT' => '1']);
