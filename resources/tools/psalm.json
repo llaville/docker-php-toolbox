@@ -1,8 +1,8 @@
 {
     "tools": [
         {
-            "name": "psalm",
-            "summary": "Finds errors in PHP applications",
+            "name": "psalm 5",
+            "summary": "Finds errors in PHP applications (5.x version)",
             "website": "https://github.com/vimeo/psalm",
             "command": {
                 "phar-download": {
@@ -10,6 +10,7 @@
                     "bin": "%target-dir%/psalm"
                 }
             },
+            "priority": 52,
             "tags": [
                 "exclude-php:5.2",
                 "exclude-php:5.3",
@@ -19,7 +20,8 @@
                 "exclude-php:7.0",
                 "exclude-php:7.1",
                 "exclude-php:7.2",
-                "exclude-php:7.3"
+                "exclude-php:7.3",
+                "exclude-php:8.4"
             ]
         }
     ]
