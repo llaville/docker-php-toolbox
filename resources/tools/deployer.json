@@ -72,11 +72,7 @@
             },
             "priority": 54,
             "tags": [
-                "deployer-4",
-                "exclude-php:5.2",
-                "exclude-php:5.3",
-                "exclude-php:5.4",
-                "exclude-php:5.5"
+                "deployer-4"
             ]
         },
         {
@@ -91,10 +87,7 @@
             },
             "priority": 53,
             "tags": [
-                "deployer-3",
-                "exclude-php:5.2",
-                "exclude-php:5.3",
-                "exclude-php:5.4"
+                "deployer-3"
             ]
         },
         {
@@ -108,7 +101,9 @@
                 }
             },
             "priority": 52,
-            "tags": ["deployer-2", "exclude-php:5.2", "exclude-php:5.3"]
+            "tags": [
+                "deployer-2"
+            ]
         }
     ]
 }
