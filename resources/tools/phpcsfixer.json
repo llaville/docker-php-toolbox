@@ -15,10 +15,6 @@
             },
             "tags": [
                 "php-cs-fixer-3",
-                "exclude-php:5.2",
-                "exclude-php:5.3",
-                "exclude-php:5.4",
-                "exclude-php:5.5",
                 "exclude-php:5.6",
                 "exclude-php:7.0"
             ]
@@ -34,11 +30,7 @@
                 }
             },
             "tags": [
-                "php-cs-fixer-2",
-                "exclude-php:5.2",
-                "exclude-php:5.3",
-                "exclude-php:5.4",
-                "exclude-php:5.5"
+                "php-cs-fixer-2"
             ]
         }
     ]

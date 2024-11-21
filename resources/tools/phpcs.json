@@ -9,8 +9,7 @@
                     "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/latest/download/phpcs.phar",
                     "bin": "%target-dir%/phpcs"
                 }
-            },
-            "tags": ["exclude-php:5.2", "exclude-php:5.3"]
+            }
         },
         {
             "name": "phpcs 2",

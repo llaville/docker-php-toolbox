@@ -9,8 +9,7 @@
                     "phar": "https://github.com/wapmorgan/PhpDeprecationDetector/releases/download/2.0.25/phpdd-2.0.25.phar",
                     "bin": "%target-dir%/phpdd"
                 }
-            },
-            "tags": ["exclude-php:5.2", "exclude-php:5.3"]
+            }
         }
     ]
 }

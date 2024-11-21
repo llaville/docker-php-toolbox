@@ -10,8 +10,7 @@
                     "bin": "%target-dir%/phpcbf"
                 }
             },
-            "priority": 73,
-            "tags": ["exclude-php:5.2", "exclude-php:5.3"]
+            "priority": 73
         },
         {
             "name": "phpcbf 2",
