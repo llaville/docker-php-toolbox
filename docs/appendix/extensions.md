@@ -27,7 +27,7 @@
 | gmp | [The gmp PHP Extension](https://github.com/php/php-src/tree/master/ext/gmp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | http | [The http PHP Extension](https://pecl.php.net/package/pecl_http) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | igbinary | [The igbinary PHP Extension](https://pecl.php.net/package/igbinary) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
+| imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
 | imap | [The imap PHP Extension](https://github.com/php/php-src/tree/master/ext/imap) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | interbase | [The interbase PHP Extension](https://github.com/php/php-src/tree/PHP-7.3/ext/interbase) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | intl | [The intl PHP Extension](https://github.com/php/php-src/tree/master/ext/intl) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
