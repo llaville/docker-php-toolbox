@@ -6,7 +6,7 @@
             "website": "https://github.com/deployphp/deployer",
             "command": {
                 "phar-download": {
-                    "phar": "https://deployer.org/releases/v7.0.2/deployer.phar",
+                    "phar": "https://deployer.org/releases/v7.5.5/deployer.phar",
                     "bin": "%target-dir%/dep"
                 }
             },
