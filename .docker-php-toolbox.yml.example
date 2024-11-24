@@ -1,0 +1,30 @@
+#php-version: "8.1"
+#build-version: 8131
+#php-version: "8.2"
+#build-version: 8226
+#php-version: "8.3"
+#build-version: 8314
+php-version: "8.4"
+build-version: 8401
+resources: ./resources
+dockerfile: ./Dockerfiles/base/Dockerfile
+target-dir: /usr/local/bin
+tags:
+#    - python3-pip
+    - composer-2
+    - phive
+    - openjdk-17
+#    - openjdk-21
+    - httpie
+    - graphviz
+    - phpunit-11
+    - box-manifest-4
+    - asciinema
+    - yq
+    - htop
+    - "cachetool 9"
+    - tig
+    - mhsendmail
+#no-cache: false
+#vendor: bartlett
+profile: true
