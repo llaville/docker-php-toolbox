@@ -2,6 +2,9 @@
 # CUSTOM
 ######################################
 
+###### custom ToolKit YAML config file ######
+.docker-php-toolbox.yml
+
 ###### Dockerfiles ######
 Dockerfiles/base/Dockerfile.*
 Dockerfiles/base/Dockerfile-*.*
