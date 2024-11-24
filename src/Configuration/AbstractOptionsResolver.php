@@ -19,9 +19,56 @@ use function sprintf;
  */
 abstract class AbstractOptionsResolver implements Resolver
 {
+    /**
+     * @var array{
+     *     configuration: string,
+     *     no-configuration: bool,
+     *     php-version: string,
+     *     build-version: string,
+     *     resources: string,
+     *     dockerfile: string,
+     *     target-dir: string,
+     *     tags: string,
+     *     no-cache: bool,
+     *     vendor: string,
+     *     profile: bool,
+     *     work-tag-suffix: string
+     * } $defaults
+     */
     protected array $defaults;
+
+    /**
+     * @var array{
+     *     configuration: string,
+     *     no-configuration: bool,
+     *     php-version: string,
+     *     build-version: string,
+     *     resources: string,
+     *     dockerfile: string,
+     *     target-dir: string,
+     *     tags: string,
+     *     no-cache: bool,
+     *     vendor: string,
+     *     profile: bool,
+     *     work-tag-suffix: string
+     * } $options
+     */
     protected array $options;
 
+    /**
+     * @param array{
+     *     php-version?: string,
+     *     build-version?: string,
+     *     resources?: string,
+     *     dockerfile?: string,
+     *     target-dir?: string,
+     *     tags?: string,
+     *     no-cache?: bool,
+     *     vendor?: string,
+     *     profile?: bool,
+     *     work-tag-suffix?: string
+     * } $configuration
+     */
     public function __construct(InputInterface $input, array $configuration = [])
     {
         $arguments = $input->getArguments();

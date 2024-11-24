@@ -15,6 +15,22 @@ interface Resolver
 {
     public function factory(): Options;
 
+    /**
+     * @return array{
+     *     configuration: string,
+     *     no-configuration: bool,
+     *     php-version:string,
+     *     build-version: string,
+     *     resources: string,
+     *     dockerfile: string,
+     *     target-dir: string,
+     *     tags: string,
+     *     no-cache: bool,
+     *     vendor: string,
+     *     profile: bool,
+     *     work-tag-suffix: string
+     * }
+     */
     public function getOptions(): array;
 
     public function getOption(string $name): mixed;
