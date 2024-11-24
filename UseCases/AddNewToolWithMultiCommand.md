@@ -16,7 +16,7 @@ To follow this course, we will add the [mhsendmail](https://github.com/mailhog/m
 
 ## Step 1 - define the new tool
 
-In your favorite `resources` directory that should have at least two sub-directories (`extensions` and `tools`),
+In your favorite `resources` directory that should have at least two subdirectories (`extensions` and `tools`),
 add a new JSON file (i.e: `mhsendmail.json`, but you are free to use whatever you want as filename), with following contents:
 
 ```json
@@ -67,7 +67,7 @@ It can be done by running the following command:
 bin/toolkit.php build:dockerfile -f ./Dockerfiles/work/Dockerfile <php_version>
 ```
 
-Replace `<php_version>` by either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 or 8.1
+Replace `<php_version>` by either 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4
 
 **CAUTION** identify the right work Dockerfile with the `dockerfile` (or `f`) option. Default is for **mods** file.
 
