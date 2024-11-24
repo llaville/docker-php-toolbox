@@ -50,7 +50,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(ContainerInterface::class, Container::class);
 
     $services->set(ApplicationInterface::class, Application::class)
-        // for bin files (devkit.php, toolkit.php)
+        // for bin file (toolkit.php)
         ->public()
     ;
 };

@@ -7,9 +7,6 @@
         "src",
         "vendor"
     ],
-    "blacklist": [
-        "bin/devkit.phar"
-    ],
     "compression": "GZ",
     "dump-autoload": false,
     "files-bin": [

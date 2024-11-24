@@ -7,6 +7,5 @@
         "src",
         "vendor"
     ],
-    "blacklist": ["bin/devkit.phar"],
     "compression": "GZ"
 }
