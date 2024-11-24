@@ -19,11 +19,11 @@ use function implode;
 final class MultiCommand implements CommandInterface
 {
     /** @var Collection<int, CommandInterface>  */
-    private $commands;
+    private Collection $commands;
     private string $glue;
 
     /**
-     * @param Collection<int, CommandInterface> $commands
+     * @param Collection<int, mixed> $commands
      * @param string $glue
      */
     public function __construct(Collection $commands, string $glue = ' && ')
