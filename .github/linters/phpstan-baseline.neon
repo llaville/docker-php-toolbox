@@ -1,7 +1,0 @@
-parameters:
-	ignoreErrors:
-		-
-			message: "#^Property Bartlett\\\\PHPToolbox\\\\Console\\\\Application\\:\\:\\$container is never read, only written\\.$#"
-			count: 1
-			path: ../../src/Console/Application.php
-
