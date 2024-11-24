@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 60 | 33 | 34 | 36 | 39 | 43 |
+| | Total available: 57 | 33 | 34 | 36 | 39 | 43 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
@@ -48,10 +48,7 @@
 | phpdd | [Finds usage of deprecated features](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.3 | [Documentation Generator for PHP 7](https://github.com/phpdocumentor/phpdocumentor) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.5 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phplint v4 | [Checks PHP file syntax (4.x version)](https://github.com/overtrue/phplint) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phplint v5 | [Checks PHP file syntax (5.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phplint v6 | [Checks PHP file syntax (6.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
-| phplint v9 | [Checks PHP file syntax (9.x version)](https://github.com/overtrue/phplint) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phplint v9.5 | [Checks PHP file syntax (9.5.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | phpmnd | [PHP Magic Number Detector](https://github.com/povils/phpmnd) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpstan | [PHP Static Analysis Tool](https://github.com/phpstan/phpstan) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 10 | [The PHP Unit Testing framework (10.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
