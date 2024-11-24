@@ -11,8 +11,8 @@
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
 | | Total available: 59 | 33 | 34 | 36 | 40 | 44 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| box-manifest v3 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
+| box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 6 | [CLI application and library to manage apc and opcache (6.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 7 | [CLI application and library to manage apc and opcache (7.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 8 | [CLI application and library to manage apc and opcache (8.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -64,7 +64,7 @@
 | pickle | [PHP Extension installer](https://github.com/FriendsOfPHP/pickle) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pip v2 | [The Python package installer (2.x version)](https://github.com/pypa/pip) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pip v3 | [The Python package installer (3.x version)](https://github.com/pypa/pip) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| psalm | [Finds errors in PHP applications](https://github.com/vimeo/psalm) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| psalm 5 | [Finds errors in PHP applications (5.x version)](https://github.com/vimeo/psalm) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | WordPress CLI | [WP-CLI is the command-line interface for WordPress.](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yarn | [Yarn is a package manager that doubles down as project manager](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
