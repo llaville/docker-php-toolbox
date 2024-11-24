@@ -59,22 +59,16 @@ jobs:
             -   # https://github.com/llaville/box-manifest
                 name: Download BOX Manifest Artifact
                 env:
-                    BOX_MANIFEST_VERSION: "4.0.2"
+                    BOX_MANIFEST_VERSION: ${{ vars.BOX_MANIFEST_VERSION || '4.0.2' }}
                 run: |
                     curl -Ls "https://github.com/llaville/box-manifest/releases/download/$BOX_MANIFEST_VERSION/box-manifest.phar" -o /usr/local/bin/box-manifest
                     chmod +x /usr/local/bin/box-manifest
 
             -   # https://github.com/llaville/box-manifest
-                name: Build Release Artifact for Toolkit Application
+                name: Build Release Artifact
                 run: |
-                    box-manifest make build stub configure -r console-table.txt -r plain.txt -r sbom.json --output-stub stub.php --output-conf box.json.dist -vvv --ansi -c box.json
+                    box-manifest make build stub configure -r console-table.txt -r plain.txt -r sbom.json --output-stub stub.php --output-conf box.json.dist -vvv --ansi
                     box compile -c box.json.dist -vvv --ansi
-
-            -   # https://github.com/llaville/box-manifest
-                name: Build Release Artifact for Devkit Application
-                run: |
-                    box-manifest make build stub configure -r console-table.txt -r plain.txt -r sbom.json --output-stub stub.php --output-conf box-devkit.json.dist -vvv --ansi -c box-devkit.json
-                    box compile -c box-devkit.json.dist -vvv --ansi
 
             -   # https://github.com/softprops/action-gh-release
                 name: Create Release from current tag
@@ -83,10 +77,8 @@ jobs:
                 with: # https://github.com/softprops/action-gh-release#-customizing
                     prerelease: false
                     draft: false
-                    body_path: ${{ github.workspace }}/.changes/${{ github.ref_name }}.md
+                    body_path: ${{ github.workspace }}/.changes/2.x/${{ github.ref_name }}.md
                     # https://github.com/softprops/action-gh-release#%EF%B8%8F-uploading-release-assets
-                    files: |
-                        ${{ github.workspace }}/bin/toolkit.phar
-                        ${{ github.workspace }}/bin/devkit.phar
+                    files: ${{ github.workspace }}/bin/toolkit.phar
                     fail_on_unmatched_files: true
                     tag_name: ${{ github.ref_name }}
