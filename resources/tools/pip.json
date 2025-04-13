@@ -12,19 +12,6 @@
             },
             "priority": 110,
             "tags": ["python3-pip"]
-        },
-        {
-            "name": "pip v2",
-            "summary": "The Python package installer (2.x version)",
-            "website": "https://github.com/pypa/pip",
-            "command": {
-                "shell": {
-                    "cmd": "python-pip python-wheel",
-                    "package_manager": "apt"
-                }
-            },
-            "priority": 100,
-            "tags": ["python2-pip"]
         }
     ]
 }
