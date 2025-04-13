@@ -21,7 +21,6 @@ DISABLE_LINTERS:
     - PHP_PHPCSFIXER
     - YAML_V8R
 DOCKERFILE_HADOLINT_CONFIG_FILE: ".hadolint.yml"
-PHP_PHPSTAN_DISABLE_ERRORS: true # because this project is not yet compatible with PHPStan 2.0 embedded with MegaLinter 8.2.0 or greater
 YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml|\\.mega-linter\\.yml|\\.changie\\.yaml)"  # As it cannot be added in .gitignore for ML actionlint linter
 YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml)"  # As it cannot be added in .gitignore for ML actionlint linter
 PRINT_ALL_FILES: false
