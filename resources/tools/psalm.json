@@ -1,12 +1,33 @@
 {
     "tools": [
         {
+            "name": "psalm 6",
+            "summary": "Finds errors in PHP applications (6.x version)",
+            "website": "https://github.com/vimeo/psalm",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/vimeo/psalm/releases/latest/download/psalm.phar",
+                    "bin": "%target-dir%/psalm"
+                }
+            },
+            "priority": 60,
+            "tags": [
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
+        },
+        {
             "name": "psalm 5",
             "summary": "Finds errors in PHP applications (5.x version)",
             "website": "https://github.com/vimeo/psalm",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/vimeo/psalm/releases/latest/download/psalm.phar",
+                    "phar": "https://github.com/vimeo/psalm/releases/download/5.26.1/psalm.phar",
                     "bin": "%target-dir%/psalm"
                 }
             },
