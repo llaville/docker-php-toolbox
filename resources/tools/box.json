@@ -29,7 +29,7 @@
             "website": "https://github.com/llaville/box-manifest",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/llaville/box-manifest/releases/download/4.0.2/box-manifest.phar",
+                    "phar": "https://github.com/llaville/box-manifest/releases/download/4.1.3/box-manifest.phar",
                     "bin": "%target-dir%/box-manifest"
                 }
             },
