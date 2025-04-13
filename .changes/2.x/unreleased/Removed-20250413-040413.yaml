@@ -1,0 +1,3 @@
+kind: Removed
+body: drop support for PHPUnit 4.x, 5.x, 6.x, 7.x that reached end of life
+time: 2025-04-13T04:04:13.39233963Z
