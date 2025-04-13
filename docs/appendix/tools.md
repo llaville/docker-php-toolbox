@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 55 | 30 | 31 | 31 | 35 | 40 |
+| | Total available: 53 | 28 | 29 | 29 | 33 | 38 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
@@ -40,10 +40,8 @@
 | PHP-CS-Fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbench | [PHP Benchmarking framework](https://github.com/phpbench/phpbench) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbu 6 | [PHP Backup Utility (6.x version)](https://github.com/sebastianfeldmann/phpbu) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpcbf 2 | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpcbf 3 | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpcs 2 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpcs 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phpcbf 3 | [Automatically corrects coding standard violations](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phpcs 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdd | [Finds usage of deprecated features](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.3 | [Documentation Generator for PHP 7](https://github.com/phpdocumentor/phpdocumentor) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.7 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

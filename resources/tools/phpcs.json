@@ -3,21 +3,10 @@
         {
             "name": "phpcs 3",
             "summary": "PHP_CodeSniffer detects violations of a defined set of coding standards",
-            "website": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "website": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/latest/download/phpcs.phar",
-                    "bin": "%target-dir%/phpcs"
-                }
-            }
-        },
-        {
-            "name": "phpcs 2",
-            "summary": "PHP_CodeSniffer detects violations of a defined set of coding standards",
-            "website": "https://github.com/squizlabs/PHP_CodeSniffer",
-            "command": {
-                "phar-download": {
-                    "phar": "https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.9.0/phpcs.phar",
+                    "phar": "https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/latest/download/phpcs.phar",
                     "bin": "%target-dir%/phpcs"
                 }
             }
