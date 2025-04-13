@@ -9,12 +9,10 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 47 | 24 | 24 | 24 | 26 | 30 |
+| | Total available: 45 | 24 | 24 | 24 | 26 | 28 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
-| cachetool 6 | [CLI application and library to manage apc and opcache (6.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| cachetool 7 | [CLI application and library to manage apc and opcache (7.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 8 | [CLI application and library to manage apc and opcache (8.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 9 | [CLI application and library to manage apc and opcache (9.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | composer | [Dependency Manager for PHP (2.x version)](https://github.com/composer/composer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
