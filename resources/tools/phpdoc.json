@@ -1,7 +1,7 @@
 {
     "tools": [
         {
-            "name": "phpdoc 3.5",
+            "name": "phpdoc 3.7",
             "summary": "Documentation Generator for PHP 8",
             "website": "https://github.com/phpdocumentor/phpdocumentor",
             "command": {

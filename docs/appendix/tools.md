@@ -47,7 +47,7 @@
 | phpcs 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdd | [Finds usage of deprecated features](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.3 | [Documentation Generator for PHP 7](https://github.com/phpdocumentor/phpdocumentor) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpdoc 3.5 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phpdoc 3.7 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phplint v9.5 | [Checks PHP file syntax (9.5.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | phpmnd v2 | [PHP Magic Number Detector (2.x version)](https://github.com/povils/phpmnd) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpmnd v3 | [PHP Magic Number Detector (3.x version)](https://github.com/povils/phpmnd) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
