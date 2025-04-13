@@ -6,7 +6,7 @@
             "website": "https://github.com/wapmorgan/PhpDeprecationDetector",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/wapmorgan/PhpDeprecationDetector/releases/download/2.0.25/phpdd-2.0.25.phar",
+                    "phar": "https://github.com/wapmorgan/PhpDeprecationDetector/releases/download/2.0.33/phpdd-2.0.33.phar",
                     "bin": "%target-dir%/phpdd"
                 }
             }
