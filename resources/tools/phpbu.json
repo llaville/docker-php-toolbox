@@ -14,7 +14,10 @@
                 "phpbu-6",
                 "exclude-php:5.6",
                 "exclude-php:7.0",
-                "exclude-php:7.1"
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4"
             ]
         }
     ]
