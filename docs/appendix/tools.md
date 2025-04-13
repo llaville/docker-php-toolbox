@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 51 | 27 | 28 | 27 | 29 | 34 |
+| | Total available: 47 | 24 | 24 | 24 | 26 | 30 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
@@ -18,12 +18,8 @@
 | cachetool 8 | [CLI application and library to manage apc and opcache (8.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 9 | [CLI application and library to manage apc and opcache (9.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | composer | [Dependency Manager for PHP (2.x version)](https://github.com/composer/composer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| deployer 2 | [A deployment tool for PHP (2.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| deployer 3 | [A deployment tool for PHP (3.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| deployer 4 | [A deployment tool for PHP (4.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| deployer 5 | [A deployment tool for PHP (5.x versions)](https://github.com/deployphp/deployer) | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
 | deployer 6 | [A deployment tool for PHP (6.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| deployer 7 | [A deployment tool for PHP (7.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| deployer 7 | [A deployment tool for PHP (7.x versions)](https://github.com/deployphp/deployer) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | graphviz | [Graph Visualization Tools](https://graphviz.org/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | HTTP Prompt | [An interactive command-line HTTP and API testing client built on top of HTTPie](https://github.com/httpie/http-prompt) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
