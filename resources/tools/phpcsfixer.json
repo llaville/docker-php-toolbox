@@ -1,7 +1,7 @@
 {
     "tools": [
         {
-            "name": "php-cs-fixer 3",
+            "name": "PHP-CS-Fixer 3",
             "summary": "PHP Coding Standards Fixer (3.x versions)",
             "website": "https://github.com/FriendsOfPHP/PHP-CS-Fixer",
             "command": {
@@ -16,21 +16,10 @@
             "tags": [
                 "php-cs-fixer-3",
                 "exclude-php:5.6",
-                "exclude-php:7.0"
-            ]
-        },
-        {
-            "name": "php-cs-fixer 2",
-            "summary": "PHP Coding Standards Fixer (2.x versions)",
-            "website": "https://github.com/FriendsOfPHP/PHP-CS-Fixer",
-            "command": {
-                "phar-download": {
-                    "phar": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.19.1/php-cs-fixer.phar",
-                    "bin": "%target-dir%/php-cs-fixer-2"
-                }
-            },
-            "tags": [
-                "php-cs-fixer-2"
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3"
             ]
         }
     ]

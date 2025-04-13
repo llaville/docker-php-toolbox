@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 56 | 31 | 32 | 33 | 37 | 42 |
+| | Total available: 55 | 30 | 31 | 31 | 35 | 40 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
@@ -37,8 +37,7 @@
 | OpenJDK | [OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 17 LTS)](https://openjdk.java.net/projects/jdk/17) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | OpenJDK | [OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 11 LTS)](https://openjdk.java.net/projects/jdk/11) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| php-cs-fixer 2 | [PHP Coding Standards Fixer (2.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| php-cs-fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| PHP-CS-Fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbench | [PHP Benchmarking framework](https://github.com/phpbench/phpbench) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbu 6 | [PHP Backup Utility (6.x version)](https://github.com/sebastianfeldmann/phpbu) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpcbf 2 | [Automatically corrects coding standard violations](https://github.com/squizlabs/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
