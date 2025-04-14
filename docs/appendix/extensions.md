@@ -85,7 +85,7 @@
 | uuid | [The uuid PHP Extension](https://pecl.php.net/package/uuid) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | vips | [The vips PHP Extension](https://pecl.php.net/package/vips) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | wddx | [The wddx PHP Extension](https://pecl.php.net/package/wddx) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
-| xdebug | [The xdebug PHP Extension](https://pecl.php.net/package/xdebug) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| xdebug | [The xdebug PHP Extension](https://pecl.php.net/package/xdebug) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xhprof | [The xhprof PHP Extension](https://pecl.php.net/package/xhprof) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xlswriter | [The xlswriter PHP Extension](https://pecl.php.net/package/xlswriter) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xmldiff | [The xmldiff PHP Extension](https://pecl.php.net/package/xmldiff) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
