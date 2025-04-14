@@ -22,9 +22,9 @@
 
 [Branch_21x-img]: https://img.shields.io/badge/branch-2.1-orange
 [Branch_21x]: https://github.com/llaville/docker-php-toolbox/tree/2.1
-[PHPVersion_21x-img]: https://img.shields.io/packagist/php-v/bartlett/docker-php-toolbox/2.1.0
+[PHPVersion_21x-img]: https://img.shields.io/packagist/php-v/bartlett/docker-php-toolbox/2.1.1
 [PHPVersion_21x]: https://www.php.net/supported-versions.php
-[Packagist_21x-img]: https://img.shields.io/badge/packagist-v2.1.0-blue
+[Packagist_21x-img]: https://img.shields.io/badge/packagist-v2.1.1-blue
 [Packagist_21x]: https://packagist.org/packages/bartlett/docker-php-toolbox
 [License_21x-img]: https://img.shields.io/packagist/l/bartlett/docker-php-toolbox
 [License_21x]: https://github.com/llaville/docker-php-toolbox/blob/2.1/LICENSE
