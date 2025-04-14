@@ -72,7 +72,7 @@
 | snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sockets | [The sockets PHP Extension](https://github.com/php/php-src/tree/master/ext/sockets) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sqlsrv | [The sqlsrv PHP Extension](https://pecl.php.net/package/sqlsrv) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | ssh2 | [The ssh2 PHP Extension](https://pecl.php.net/package/ssh2) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | stomp | [The stomp PHP Extension](https://pecl.php.net/package/stomp) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
