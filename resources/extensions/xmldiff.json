@@ -11,8 +11,7 @@
                 }
             },
             "tags": [
-                "pecl-extensions",
-                "exclude-php:8.4"
+                "pecl-extensions"
             ]
         }
     ]

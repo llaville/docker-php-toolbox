@@ -88,7 +88,7 @@
 | xdebug | [The xdebug PHP Extension](https://pecl.php.net/package/xdebug) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xhprof | [The xhprof PHP Extension](https://pecl.php.net/package/xhprof) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xlswriter | [The xlswriter PHP Extension](https://pecl.php.net/package/xlswriter) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| xmldiff | [The xmldiff PHP Extension](https://pecl.php.net/package/xmldiff) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| xmldiff | [The xmldiff PHP Extension](https://pecl.php.net/package/xmldiff) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xmlrpc | [The xmlrpc PHP Extension](https://pecl.php.net/package/xmlrpc) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xsl | [The xsl PHP Extension](https://github.com/php/php-src/tree/master/ext/xsl) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yac | [The yac PHP Extension](https://pecl.php.net/package/yac) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
