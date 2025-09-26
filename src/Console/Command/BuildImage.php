@@ -23,6 +23,7 @@ use Symfony\Component\Process\Process;
 use LogicException;
 use function basename;
 use function dirname;
+use function explode;
 use function file_get_contents;
 use function implode;
 use function preg_match_all;
@@ -47,7 +48,7 @@ final class BuildImage extends Command implements CommandInterface
             ->addArgument(
                 'version',
                 InputArgument::OPTIONAL,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4'
+                'PHP version. Should be either ' . self::PHP_VERSIONS_ALLOWED
             )
             ->addOption(
                 'dockerfile',
@@ -122,7 +123,7 @@ final class BuildImage extends Command implements CommandInterface
         }
 
         $phpVersion = $configResolver->getOption(OptionDefinition::PHP_VERSION);
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3', '8.4'])) {
+        if (!in_array($phpVersion, explode(', ', self::PHP_VERSIONS_ALLOWED))) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );

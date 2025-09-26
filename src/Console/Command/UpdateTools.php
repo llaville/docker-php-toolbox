@@ -18,6 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 use Exception;
 use function count;
+use function explode;
 use function file_get_contents;
 use function file_put_contents;
 use function implode;
@@ -87,7 +88,7 @@ final class UpdateTools extends Command implements CommandInterface
             return (new Filter(['pecl-extensions'], []))($tool);
         });
 
-        $phpVersions = ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3', '8.4'];
+        $phpVersions = explode(', ', self::PHP_VERSIONS_ALLOWED);
 
         foreach ($phpVersions as $phpVersion) {
             $totalAvailable[] = count($toolsList->filter(function (Tool $tool) use ($phpVersion) {

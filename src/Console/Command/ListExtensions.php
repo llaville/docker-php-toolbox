@@ -20,6 +20,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 use Exception;
 use function count;
+use function explode;
 use function in_array;
 use function is_dir;
 use function is_readable;
@@ -45,7 +46,7 @@ final class ListExtensions extends Command implements CommandInterface
             ->addArgument(
                 'version',
                 InputArgument::REQUIRED,
-                'PHP version. Should be either 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 or 8.4'
+                'PHP version. Should be either ' . self::PHP_VERSIONS_ALLOWED
             )
             ->addOption(
                 'tools',
@@ -73,7 +74,7 @@ final class ListExtensions extends Command implements CommandInterface
         $io = new SymfonyStyle($input, $output);
 
         $phpVersion = $input->getArgument('version');
-        if (!in_array($phpVersion, ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2', '8.3', '8.4'])) {
+        if (!in_array($phpVersion, explode(', ', self::PHP_VERSIONS_ALLOWED))) {
             $io->error(
                 sprintf('PHP version specified "%s" is not allowed.', $phpVersion)
             );
