@@ -25,32 +25,6 @@
             },
             "priority": 95,
             "tags": ["openjdk-21"]
-        },
-        {
-            "name": "OpenJDK",
-            "summary": "OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 17 LTS)",
-            "website": "https://openjdk.java.net/projects/jdk/17",
-            "command": {
-                "shell": {
-                    "cmd": "openjdk-17-jre-headless",
-                    "package_manager": "apt"
-                }
-            },
-            "priority": 95,
-            "tags": ["openjdk-17"]
-        },
-        {
-            "name": "OpenJDK",
-            "summary": "OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 11 LTS)",
-            "website": "https://openjdk.java.net/projects/jdk/11",
-            "command": {
-                "shell": {
-                    "cmd": "openjdk-11-jre-headless",
-                    "package_manager": "apt"
-                }
-            },
-            "priority": 95,
-            "tags": ["openjdk-11"]
         }
     ]
 }
