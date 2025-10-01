@@ -72,7 +72,7 @@ final class UpdateExtensions extends Command implements CommandInterface
 
         $formatSection = function (Tool $tool) {
             return sprintf(
-                '| %s | [%s](%s) | %s | %s | %s | %s | %s |',
+                '| %s | [%s](%s) | %s | %s | %s | %s | %s | %s |',
                 $tool->getName(),
                 $tool->getSummary(),
                 $tool->getWebsite(),
@@ -80,7 +80,8 @@ final class UpdateExtensions extends Command implements CommandInterface
                 in_array('exclude-php:8.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:8.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
+                in_array('exclude-php:8.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.5', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
             );
         };
 
@@ -99,9 +100,9 @@ final class UpdateExtensions extends Command implements CommandInterface
 
         $extensionsList = $extensionsList->map($formatSection);
 
-        $extensionsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |' . PHP_EOL;
-        $extensionsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
-        $extensionsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $extensionsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |' . PHP_EOL;
+        $extensionsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $extensionsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
         $extensionsTable .= PHP_EOL;
         $extensionsTable .= implode(PHP_EOL, $extensionsList->toArray());
         $extensionsTable .= PHP_EOL;

@@ -72,7 +72,7 @@ final class UpdateTools extends Command implements CommandInterface
 
         $formatSection = function (Tool $tool) {
             return sprintf(
-                '| %s | [%s](%s) | %s | %s | %s | %s | %s |',
+                '| %s | [%s](%s) | %s | %s | %s | %s | %s | %s |',
                 $tool->getName(),
                 $tool->getSummary(),
                 $tool->getWebsite(),
@@ -80,7 +80,8 @@ final class UpdateTools extends Command implements CommandInterface
                 in_array('exclude-php:8.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
                 in_array('exclude-php:8.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
-                in_array('exclude-php:8.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
+                in_array('exclude-php:8.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.5', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
             );
         };
 
@@ -105,9 +106,9 @@ final class UpdateTools extends Command implements CommandInterface
 
         $toolsList = $toolsList->map($formatSection);
 
-        $toolsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> |' . PHP_EOL;
+        $toolsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |' . PHP_EOL;
         $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
-        $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
         $toolsTable .= PHP_EOL;
         $toolsTable .= implode(PHP_EOL, $toolsList->toArray());
         $toolsTable .= PHP_EOL;
