@@ -12,7 +12,7 @@
             },
             "tags": [
                 "pecl-extensions",
-                "exclude-php:8.4"
+                "exclude-php:8.5"
             ]
         }
     ]
