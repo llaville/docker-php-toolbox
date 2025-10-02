@@ -40,7 +40,7 @@
 | memcache | [The memcache PHP Extension](https://pecl.php.net/package/memcache) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | memcached | [The memcached PHP Extension](https://pecl.php.net/package/memcached) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | mongo | [The mongo PHP Extension](https://pecl.php.net/package/mongo) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
-| mongodb | [The mongodb PHP Extension](https://pecl.php.net/package/mongodb) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| mongodb | [The mongodb PHP Extension](https://pecl.php.net/package/mongodb) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | msgpack | [The msgpack PHP Extension](https://pecl.php.net/package/msgpack) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | mysql | [The mysql PHP Extension](https://pecl.php.net/package/mysql) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | mysqli | [The mysqli PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
