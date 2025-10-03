@@ -46,10 +46,10 @@
 | mysqli | [The mysqli PHP Extension](https://github.com/php/php-src/tree/master/ext/mysqli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | oauth | [The oauth PHP Extension](https://pecl.php.net/package/oauth) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | oci8 | [The oci8 PHP Extension (for PHP 8.2 and more)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| oci8 | [The oci8 PHP Extension (for PHP 8.1)](https://pecl.php.net/package/oci8) | &#x274C; | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
-| oci8 | [The oci8 PHP Extension (for PHP 8.0)](https://pecl.php.net/package/oci8) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
-| oci8 | [The oci8 PHP Extension (for PHP 7.x)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
-| oci8 | [The oci8 PHP Extension (for PHP 5.6)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
+| oci8 | [The oci8 PHP Extension (for PHP 8.1)](https://pecl.php.net/package/oci8) | &#x274C; | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
+| oci8 | [The oci8 PHP Extension (for PHP 8.0)](https://pecl.php.net/package/oci8) | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
+| oci8 | [The oci8 PHP Extension (for PHP 7.x)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
+| oci8 | [The oci8 PHP Extension (for PHP 5.6)](https://pecl.php.net/package/oci8) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | odbc | [The odbc PHP Extension](https://github.com/php/php-src/tree/master/ext/odbc) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | opcache | [The opcache PHP Extension](https://github.com/php/php-src/tree/master/Zend) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | opentelemetry | [The opentelemetry PHP Extension](https://github.com/open-telemetry/opentelemetry-php-instrumentation) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -62,7 +62,7 @@
 | pdo_pgsql | [The pdo_pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pdo_pgsql) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pdo_sqlsrv | [The pdo_sqlsrv PHP Extension](https://pecl.php.net/package/pdo_sqlsrv) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | pgsql | [The pgsql PHP Extension](https://github.com/php/php-src/tree/master/ext/pgsql) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| pspell (for PHP 5 and 7) | [The pspell PHP Extension](https://github.com/php/php-src/tree/master/ext/pspell) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; |
+| pspell (for PHP 5 and 7) | [The pspell PHP Extension](https://github.com/php/php-src/tree/master/ext/pspell) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | pspell (for PHP 8) | [The pspell PHP Extension](https://github.com/php/pecl-text-pspell) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | raphf | [The raphf PHP Extension](https://pecl.php.net/package/raphf) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | rdkafka | [The rdkafka PHP Extension](https://pecl.php.net/package/rdkafka) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

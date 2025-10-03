@@ -9,9 +9,9 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 44 | 22 | 22 | 22 | 24 | 26 | 30 |
+| | Total available: 45 | 22 | 22 | 22 | 25 | 27 | 31 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x274C; | &#x2705; |
+| box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 8 | [CLI application and library to manage apc and opcache (8.x version)](https://github.com/gordalina/cachetool) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 9 | [CLI application and library to manage apc and opcache (9.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -30,10 +30,11 @@
 | OpenJDK | [OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 21 LTS)](https://openjdk.org/projects/jdk/21/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | PHP-CS-Fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| PHP_CodeSniffer 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| PHP_CodeSniffer 4 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbench | [PHP Benchmarking framework](https://github.com/phpbench/phpbench) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbu 6 | [PHP Backup Utility (6.x version)](https://github.com/sebastianfeldmann/phpbu) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpcbf 3 | [Automatically corrects coding standard violations](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phpcs 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdd | [Finds usage of deprecated features](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.3 | [Documentation Generator for PHP 7](https://github.com/phpdocumentor/phpdocumentor) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.7 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

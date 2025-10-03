@@ -1,7 +1,7 @@
 {
     "tools": [
         {
-            "name": "phpcs 3",
+            "name": "PHP_CodeSniffer 4",
             "summary": "PHP_CodeSniffer detects violations of a defined set of coding standards",
             "website": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
             "command": {
@@ -9,7 +9,29 @@
                     "phar": "https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/latest/download/phpcs.phar",
                     "bin": "%target-dir%/phpcs"
                 }
-            }
+            },
+            "priority": 54,
+            "tags": [
+                "phpcs-4",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1"
+            ]
+        },
+        {
+            "name": "PHP_CodeSniffer 3",
+            "summary": "PHP_CodeSniffer detects violations of a defined set of coding standards",
+            "website": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/download/3.13.4/phpcs.phar",
+                    "bin": "%target-dir%/phpcs"
+                }
+            },
+            "priority": 53,
+            "tags": [
+                "phpcs-3"
+            ]
         }
     ]
 }
