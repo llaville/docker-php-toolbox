@@ -107,7 +107,7 @@ final class UpdateTools extends Command implements CommandInterface
         $toolsList = $toolsList->map($formatSection);
 
         $toolsTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |' . PHP_EOL;
-        $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $toolsTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
         $toolsTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
         $toolsTable .= PHP_EOL;
         $toolsTable .= implode(PHP_EOL, $toolsList->toArray());
