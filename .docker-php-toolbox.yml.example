@@ -1,11 +1,13 @@
 #php-version: "8.1"
-#build-version: 8131
+#build-version: 8133
 #php-version: "8.2"
-#build-version: 8226
-#php-version: "8.3"
-#build-version: 8314
-php-version: "8.4"
-build-version: 8401
+#build-version: 8229
+php-version: "8.3"
+build-version: 8326
+#php-version: "8.4"
+#build-version: 8413
+#php-version: "8.5"
+#build-version: 8500
 resources: ./resources
 dockerfile: ./Dockerfiles/base/Dockerfile
 target-dir: /usr/local/bin
@@ -17,12 +19,12 @@ tags:
 #    - openjdk-21
     - httpie
     - graphviz
-    - phpunit-11
+    - phpunit-12
     - box-manifest-4
     - asciinema
     - yq
     - htop
-    - "cachetool 9"
+    - cachetool-10
     - tig
     - mhsendmail
 #no-cache: false
