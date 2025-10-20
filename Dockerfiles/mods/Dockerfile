@@ -3,12 +3,13 @@ ARG PHP_VERSION=8.0
 ARG BUILD_VERSION=1
 ARG VENDOR=local
 
-FROM ${VENDOR}/php-fpm:${PHP_VERSION}-base as base
+FROM ${VENDOR}/php-fpm:${PHP_VERSION}-base AS base
 
-FROM base as builder
+FROM base AS builder
 
 ### Add PHP 8.5 support since https://github.com/mlocati/docker-php-extension-installer/releases/tag/2.9.11
-ARG DOCKER_PHP_EXTENSION_INSTALLER=2.9.11
+### Add support for oauth on PHP 8.5 since https://github.com/mlocati/docker-php-extension-installer/releases/tag/2.9.13
+ARG DOCKER_PHP_EXTENSION_INSTALLER=2.9.13
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/download/${DOCKER_PHP_EXTENSION_INSTALLER}/install-php-extensions /usr/local/bin/
 RUN chmod uga+x /usr/local/bin/install-php-extensions
 
@@ -20,13 +21,13 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions
 ### Change 8.0 to reflect the PHP version you are interested in.
 ### "build-version-X" where X is 2 or greater may be used for other preset modules installation.
 ###
-FROM builder as build-version-1
+FROM builder AS build-version-1
 
 
 ###
 ### Build final mods image
 ###
-FROM build-version-${BUILD_VERSION} as after-condition
+FROM build-version-${BUILD_VERSION} AS after-condition
 
 FROM after-condition
 
