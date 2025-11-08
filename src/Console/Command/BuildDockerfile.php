@@ -106,6 +106,7 @@ final class BuildDockerfile extends Command implements CommandInterface
 
     /**
      * @inheritDoc
+     * @throws Exception
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -205,7 +206,7 @@ final class BuildDockerfile extends Command implements CommandInterface
                 ;
         });
 
-        $modulesInstallation = ['FROM builder as build-version-' . $buildVersion];
+        $modulesInstallation = ['FROM builder AS build-version-' . $buildVersion];
         foreach ($extensionsList as $extension) {
             $command = $extension->getCommand();
             $modulesInstallation[] = (string) $command;
@@ -215,7 +216,7 @@ final class BuildDockerfile extends Command implements CommandInterface
         $dockerfile = file_get_contents($dockerfilePath);
 
         return preg_replace(
-            '/(FROM builder as build-version-1\n\n)(.*?)/smi',
+            '/(FROM builder AS build-version-1\n\n)(.*?)/smi',
             '$1' . $modulesInstallation . PHP_EOL . '$2',
             $dockerfile
         );
