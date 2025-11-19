@@ -148,7 +148,7 @@ final class BuildImage extends Command implements CommandInterface
         $suffix = basename(dirname($dockerfilePath));
 
         if ('mods' === $suffix) {
-            $result = preg_match_all('/FROM builder as build-version-(.*)/', file_get_contents($dockerfilePath), $matches);
+            $result = preg_match_all('/FROM builder AS build-version-(.*)/', file_get_contents($dockerfilePath), $matches);
             if (0 == $result) {
                 $io->error('Your Dockerfile is invalid. Please build a fresh copy with `build:dockerfile` command');
                 return self::FAILURE;
