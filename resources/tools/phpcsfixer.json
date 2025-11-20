@@ -3,10 +3,10 @@
         {
             "name": "PHP-CS-Fixer 3",
             "summary": "PHP Coding Standards Fixer (3.x versions)",
-            "website": "https://github.com/FriendsOfPHP/PHP-CS-Fixer",
+            "website": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/latest/download/php-cs-fixer.phar",
+                    "phar": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/latest/download/php-cs-fixer.phar",
                     "bin": "%target-dir%/php-cs-fixer-3"
                 },
                 "shell": {
