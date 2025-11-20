@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "starship",
+            "summary": "The minimal, blazing-fast, and infinitely customizable prompt for any shell",
+            "website": "https://github.com/starship/starship",
+            "command": {
+                "shell": {
+                    "cmd": "curl -sS https://starship.rs/install.sh | sh -s -- --force"
+                }
+            },
+            "tags": ["starship"]
+        }
+    ]
+}
