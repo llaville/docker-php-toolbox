@@ -1,0 +1,19 @@
+ENABLE:
+    - ACTION
+    - EDITORCONFIG
+    - JSON
+    - MARKDOWN
+    - PHP
+    - YAML
+DISABLE_LINTERS:
+    - JSON_PRETTIER
+    - JSON_V8R
+    - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+    - MARKDOWN_MARKDOWN_LINK_CHECK
+    - PHP_BUILTIN
+    - PHP_PSALM
+    - PHP_PHPCSFIXER
+    - YAML_V8R
+PRINT_ALL_FILES: false
+YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml|\\.mega-linter\\.yml||\\.mega-linter-base\\.yml|\\.changie\\.yaml)"  # As it cannot be added in .gitignore for ML actionlint linter
+YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml)"  # As it cannot be added in .gitignore for ML actionlint linter
