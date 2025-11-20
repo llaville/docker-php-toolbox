@@ -1,0 +1,24 @@
+{
+    "tools": [
+        {
+            "name": "pie",
+            "summary": "PIE - the PHP Installer for Extensions",
+            "website": "https://github.com/php/pie",
+            "command": {
+                "phar-download": {
+                    "phar": "https://github.com/php/pie/releases/download/1.2.1/pie.phar",
+                    "bin": "%target-dir%/pie"
+                }
+            },
+            "tags": [
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0"
+            ]
+        }
+    ]
+}
