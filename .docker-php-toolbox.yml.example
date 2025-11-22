@@ -2,12 +2,12 @@
 #build-version: 8133
 #php-version: "8.2"
 #build-version: 8229
-php-version: "8.3"
-build-version: 8326
+#php-version: "8.3"
+#build-version: 8328
 #php-version: "8.4"
-#build-version: 8413
-#php-version: "8.5"
-#build-version: 8500
+#build-version: 8415
+php-version: "8.5"
+build-version: 8500
 resources: ./resources
 dockerfile: ./Dockerfiles/base/Dockerfile
 target-dir: /usr/local/bin
@@ -17,7 +17,7 @@ tags:
     - phive
     - openjdk-17
 #    - openjdk-21
-    - httpie
+    - httpie-cli
     - graphviz
     - phpunit-12
     - box-manifest-4
@@ -27,6 +27,7 @@ tags:
     - cachetool-10
     - tig
     - mhsendmail
+    - starship
 #no-cache: false
 #vendor: bartlett
 profile: true

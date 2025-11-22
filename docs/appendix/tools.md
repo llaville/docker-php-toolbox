@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 46 | 22 | 22 | 22 | 25 | 27 | 31 |
+| | Total available: 47 | 22 | 22 | 22 | 25 | 27 | 31 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -22,7 +22,7 @@
 | graphviz | [Graph Visualization Tools](https://graphviz.org/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | HTTP Prompt | [An interactive command-line HTTP and API testing client built on top of HTTPie](https://github.com/httpie/http-prompt) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| HTTPie | [A modern user-friendly command-line HTTP client for the API era](https://github.com/httpie/httpie) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| HTTPie for Terminal | [A modern user-friendly command-line HTTP client for the API era](https://github.com/httpie/cli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | Laravel Installer | [The PHP Framework for Web Artisans](https://github.com/laravel/installer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -30,7 +30,7 @@
 | OpenJDK | [Standard Java or Java compatible Runtime (headless)](https://openjdk.java.net/projects/jdk/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | OpenJDK | [OpenJDK Java runtime, using Hotspot JIT (headless) (JDK 21 LTS)](https://openjdk.org/projects/jdk/21/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phive | [The PHAR Installation and Verification Environment](https://github.com/phar-io/phive) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| PHP-CS-Fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| PHP-CS-Fixer 3 | [PHP Coding Standards Fixer (3.x versions)](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | PHP_CodeSniffer 3 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | PHP_CodeSniffer 4 | [PHP_CodeSniffer detects violations of a defined set of coding standards](https://github.com/PHPCSStandards/PHP_CodeSniffer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpbench | [PHP Benchmarking framework](https://github.com/phpbench/phpbench) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -48,10 +48,11 @@
 | phpunit 12 | [The PHP Unit Testing framework (12.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 8 | [The PHP Unit Testing framework (8.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 9 | [The PHP Unit Testing framework (9.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| pickle | [PHP Extension installer](https://github.com/FriendsOfPHP/pickle) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| pie | [PIE - the PHP Installer for Extensions](https://github.com/php/pie) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pip v3 | [The Python package installer (3.x version)](https://github.com/pypa/pip) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | psalm 5 | [Finds errors in PHP applications (5.x version)](https://github.com/vimeo/psalm) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; | &#x2705; |
 | psalm 6 | [Finds errors in PHP applications (6.x version)](https://github.com/vimeo/psalm) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| starship | [The minimal, blazing-fast, and infinitely customizable prompt for any shell](https://github.com/starship/starship) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | tig | [Text-mode interface for git](https://github.com/jonas/tig) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | WordPress CLI | [WP-CLI is the command-line interface for WordPress.](https://github.com/wp-cli/wp-cli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | yarn | [Yarn is a package manager that doubles down as project manager](https://github.com/yarnpkg/berry) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

@@ -1,6 +1,6 @@
 ---
 site_name: Docker PHP toolbox
-site_url: https://llaville.github.io/docker-php-toolbox/2.2
+site_url: https://llaville.github.io/docker-php-toolbox/2.3
 repo_url: https://github.com/llaville/docker-php-toolbox  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository
 site_author: Laurent Laville
 edit_uri: ""  # hide edit button -- https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#edit-button

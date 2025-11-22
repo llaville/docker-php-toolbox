@@ -54,12 +54,6 @@ jobs:
                     php-version: ${{ matrix.php }}
                     coverage: "none"
 
-            -   # https://getcomposer.org/doc/06-config.md#platform
-                # https://github.com/bamarni/composer-bin-plugin?tab=readme-ov-file#forward-command-forward-command
-                name: Setup Composer Platform
-                run: |
-                    composer config --json extra.bamarni-bin.forward-command true
-
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
                 uses: ramsey/composer-install@3.1.1
@@ -83,4 +77,3 @@ jobs:
                     # DISABLE: COPYPASTE,SPELL # Uncomment to disable copy-paste and spell checks
                     #LOG_LEVEL: INFO
                     #TEXT_REPORTER: false
-                    PHP_PHPSTAN_CLI_EXECUTABLE: ${{ github.workspace }}/vendor/bin/phpstan
