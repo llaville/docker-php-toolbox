@@ -10,7 +10,7 @@
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
 | | Total available: 85 | 71 | 77 | 77 | 77 | 77 | 74 |
-| amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| amqp | [The amqp PHP Extension](https://pecl.php.net/package/amqp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | apcu | [The apcu PHP Extension](https://pecl.php.net/package/APCu) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | ast | [The ast PHP Extension](https://pecl.php.net/package/ast) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | bcmath | [The bcmath PHP Extension](https://github.com/php/php-src/tree/master/ext/bcmath) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -27,7 +27,7 @@
 | gmp | [The gmp PHP Extension](https://github.com/php/php-src/tree/master/ext/gmp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | http | [The http PHP Extension](https://pecl.php.net/package/pecl_http) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | igbinary | [The igbinary PHP Extension](https://pecl.php.net/package/igbinary) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
-| imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| imagick | [The imagick PHP Extension](https://pecl.php.net/package/imagick) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | imap | [The imap PHP Extension](https://github.com/php/php-src/tree/master/ext/imap) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | interbase | [The interbase PHP Extension](https://github.com/php/php-src/tree/PHP-7.3/ext/interbase) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | intl | [The intl PHP Extension](https://github.com/php/php-src/tree/master/ext/intl) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -72,7 +72,7 @@
 | snmp | [The snmp PHP Extension](https://github.com/php/php-src/tree/master/ext/snmp) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | soap | [The soap PHP Extension](https://github.com/php/php-src/tree/master/ext/soap) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sockets | [The sockets PHP Extension](https://github.com/php/php-src/tree/master/ext/sockets) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| solr | [The solr PHP Extension](https://pecl.php.net/package/solr) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sqlsrv | [The sqlsrv PHP Extension](https://pecl.php.net/package/sqlsrv) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | ssh2 | [The ssh2 PHP Extension](https://pecl.php.net/package/ssh2) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | stomp | [The stomp PHP Extension](https://pecl.php.net/package/stomp) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
@@ -85,7 +85,7 @@
 | uuid | [The uuid PHP Extension](https://pecl.php.net/package/uuid) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | vips | [The vips PHP Extension](https://pecl.php.net/package/vips) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | wddx | [The wddx PHP Extension](https://pecl.php.net/package/wddx) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
-| xdebug | [The xdebug PHP Extension](https://pecl.php.net/package/xdebug) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| xdebug | [The xdebug PHP Extension](https://pecl.php.net/package/xdebug) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xhprof | [The xhprof PHP Extension](https://pecl.php.net/package/xhprof) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xlswriter | [The xlswriter PHP Extension](https://pecl.php.net/package/xlswriter) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | xmldiff | [The xmldiff PHP Extension](https://pecl.php.net/package/xmldiff) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
