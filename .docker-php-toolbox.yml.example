@@ -1,13 +1,13 @@
 #php-version: "8.1"
-#build-version: 8133
+#build-version: 8134
 #php-version: "8.2"
-#build-version: 8229
-#php-version: "8.3"
-#build-version: 8328
+#build-version: 8230
+php-version: "8.3"
+build-version: 8330
 #php-version: "8.4"
-#build-version: 8415
-php-version: "8.5"
-build-version: 8500
+#build-version: 8417
+#php-version: "8.5"
+#build-version: 8502
 resources: ./resources
 dockerfile: ./Dockerfiles/base/Dockerfile
 target-dir: /usr/local/bin
@@ -19,6 +19,7 @@ tags:
 #    - openjdk-21
     - httpie-cli
     - graphviz
+    # v10 => PHP 8.1, v11 => PHP 8.2, v12 => PHP 8.3
     - phpunit-12
     - box-manifest-4
     - asciinema
