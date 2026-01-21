@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 47 | 22 | 22 | 22 | 25 | 27 | 31 |
+| | Total available: 48 | 22 | 22 | 22 | 25 | 27 | 31 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -25,6 +25,7 @@
 | HTTPie for Terminal | [A modern user-friendly command-line HTTP client for the API era](https://github.com/httpie/cli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | Laravel Installer | [The PHP Framework for Web Artisans](https://github.com/laravel/installer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| mago | [Mago is a toolchain for PHP that aims to provide a set of tools to help developers write better code](https://github.com/carthage-software/mago) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | mhsendmail | [sendmail for MailHog](https://github.com/BlueBambooStudios/mhsendmail) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | nvm | [Node Version Manager](https://github.com/nvm-sh/nvm) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | OpenJDK | [Standard Java or Java compatible Runtime (headless)](https://openjdk.java.net/projects/jdk/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
