@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "bat",
+            "summary": "A cat(1) clone with wings",
+            "website": "https://github.com/sharkdp/bat",
+            "command": {
+                "shell": {
+                    "cmd": "bat",
+                    "package_manager": "apt"
+                }
+            }
+        }
+    ]
+}
