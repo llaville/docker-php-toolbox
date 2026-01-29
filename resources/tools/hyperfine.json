@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "name": "hyperfine",
+            "summary": "A command-line benchmarking tool",
+            "website": "https://github.com/sharkdp/hyperfine",
+            "command": {
+                "shell": {
+                    "cmd": "hyperfine",
+                    "package_manager": "apt"
+                }
+            }
+        }
+    ]
+}
