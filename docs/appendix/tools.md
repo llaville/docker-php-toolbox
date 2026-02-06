@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 50 | 24 | 24 | 24 | 27 | 29 | 33 |
+| | Total available: 51 | 24 | 24 | 24 | 27 | 29 | 33 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | bat | [A cat(1) clone with wings](https://github.com/sharkdp/bat) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -49,6 +49,7 @@
 | phpunit 10 | [The PHP Unit Testing framework (10.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 11 | [The PHP Unit Testing framework (11.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 12 | [The PHP Unit Testing framework (12.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
+| phpunit 13 | [The PHP Unit Testing framework (13.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; |
 | phpunit 8 | [The PHP Unit Testing framework (8.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 9 | [The PHP Unit Testing framework (9.x version)](https://github.com/sebastianbergmann/phpunit) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | pie | [PIE - the PHP Installer for Extensions](https://github.com/php/pie) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

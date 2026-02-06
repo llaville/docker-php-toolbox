@@ -19,7 +19,7 @@ tags:
 #    - openjdk-21
     - httpie-cli
     - graphviz
-    # v10 => PHP 8.1, v11 => PHP 8.2, v12 => PHP 8.3
+    # v10 => PHP 8.1, v11 => PHP 8.2, v12 => PHP 8.3, v13 => PHP 8.4
     - phpunit-12
     - box-manifest-4
     - asciinema
