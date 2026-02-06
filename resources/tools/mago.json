@@ -6,7 +6,7 @@
             "website": "https://github.com/carthage-software/mago",
             "command": {
                 "shell": {
-                    "cmd": "curl --proto '=https' --tlsv1.2 -sSf https://carthage.software/mago.sh | bash -s -- --version=1.3.0"
+                    "cmd": "curl --proto '=https' --tlsv1.2 -sSf https://carthage.software/mago.sh | bash -s -- --version=1.5.0"
                 }
             },
             "tags": [
