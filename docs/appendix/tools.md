@@ -9,8 +9,9 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 48 | 22 | 22 | 22 | 25 | 27 | 31 |
+| | Total available: 50 | 24 | 24 | 24 | 27 | 29 | 33 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| bat | [A cat(1) clone with wings](https://github.com/sharkdp/bat) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box-manifest v4 | [Create a manifest to a PHP Archive (PHAR) for the BOX project](https://github.com/llaville/box-manifest) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | cachetool 10 | [CLI application and library to manage apc and opcache (10.x version)](https://github.com/gordalina/cachetool) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -23,6 +24,7 @@
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | HTTP Prompt | [An interactive command-line HTTP and API testing client built on top of HTTPie](https://github.com/httpie/http-prompt) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | HTTPie for Terminal | [A modern user-friendly command-line HTTP client for the API era](https://github.com/httpie/cli) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| hyperfine | [A command-line benchmarking tool](https://github.com/sharkdp/hyperfine) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | jq | [Command-line JSON processor](https://github.com/stedolan/jq) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | Laravel Installer | [The PHP Framework for Web Artisans](https://github.com/laravel/installer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | mago | [Mago is a toolchain for PHP that aims to provide a set of tools to help developers write better code](https://github.com/carthage-software/mago) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
