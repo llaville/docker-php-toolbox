@@ -6,7 +6,7 @@
             "website": "https://github.com/phar-io/phive",
             "command": {
                 "phar-download": {
-                    "phar": "https://phar.io/releases/phive.phar",
+                    "phar": "https://github.com/phar-io/phive/releases/download/0.16.0/phive-0.16.0.phar",
                     "bin": "%target-dir%/phive"
                 }
             },
