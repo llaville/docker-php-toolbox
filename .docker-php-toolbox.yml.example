@@ -1,13 +1,13 @@
 #php-version: "8.1"
 #build-version: 8134
 #php-version: "8.2"
-#build-version: 8230
-php-version: "8.3"
-build-version: 8330
+#build-version: 8231
+#php-version: "8.3"
+#build-version: 8331
 #php-version: "8.4"
-#build-version: 8417
-#php-version: "8.5"
-#build-version: 8502
+#build-version: 8421
+php-version: "8.5"
+build-version: 8506
 resources: ./resources
 dockerfile: ./Dockerfiles/base/Dockerfile
 target-dir: /usr/local/bin
@@ -20,7 +20,8 @@ tags:
     - httpie-cli
     - graphviz
     # v10 => PHP 8.1, v11 => PHP 8.2, v12 => PHP 8.3, v13 => PHP 8.4
-    - phpunit-12
+    - phpunit-13
+    - box-4
     - box-manifest-4
     - asciinema
     - yq
@@ -29,6 +30,8 @@ tags:
     - tig
     - mhsendmail
     - starship
+    - hyperfine
+    - bat
 #no-cache: false
 #vendor: bartlett
 profile: true
