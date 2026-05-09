@@ -9,7 +9,7 @@ FROM base AS builder
 
 ### Add PHP 8.5 support since https://github.com/mlocati/docker-php-extension-installer/releases/tag/2.9.11
 ### Add support for oauth on PHP 8.5 since https://github.com/mlocati/docker-php-extension-installer/releases/tag/2.9.13
-ARG DOCKER_PHP_EXTENSION_INSTALLER=2.9.27
+ARG DOCKER_PHP_EXTENSION_INSTALLER=2.11.1
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/download/${DOCKER_PHP_EXTENSION_INSTALLER}/install-php-extensions /usr/local/bin/
 RUN chmod uga+x /usr/local/bin/install-php-extensions
 
