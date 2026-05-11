@@ -76,7 +76,7 @@
 | sqlsrv | [The sqlsrv PHP Extension](https://pecl.php.net/package/sqlsrv) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
 | ssh2 | [The ssh2 PHP Extension](https://pecl.php.net/package/ssh2) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | stomp | [The stomp PHP Extension](https://pecl.php.net/package/stomp) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
-| swoole | [The swoole PHP Extension](https://pecl.php.net/package/swoole) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x274C; |
+| swoole | [The swoole PHP Extension](https://pecl.php.net/package/swoole) | &#x2705; | &#x2705; | &#x274C; | &#x274C; | &#x274C; | &#x274C; |
 | sysvmsg | [The sysvmsg PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvmsg) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sysvsem | [The sysvsem PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvsem) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | sysvshm | [The sysvshm PHP Extension](https://github.com/php/php-src/tree/master/ext/sysvshm) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |

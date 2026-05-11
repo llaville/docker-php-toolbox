@@ -1,6 +1,6 @@
 ---
 site_name: Docker PHP toolbox
-site_url: https://llaville.github.io/docker-php-toolbox/2.3
+site_url: https://llaville.github.io/docker-php-toolbox/2.4
 repo_url: https://github.com/llaville/docker-php-toolbox  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository
 site_author: Laurent Laville
 edit_uri: ""  # hide edit button -- https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#edit-button
@@ -19,6 +19,7 @@ theme:
               name: Switch to light mode
     # editorconfig-checker-enable
     features:
+        - navigation.footer  # Navigation -- https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#navigation
         - navigation.instant  # Instant loading -- https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
         - navigation.tabs  # Navigation tabs -- https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
         - navigation.indexes  # Section index pages -- https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
