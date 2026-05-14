@@ -1,0 +1,116 @@
+<?php declare(strict_types=1);
+/**
+ * This file is part of the Docker-PHP-Toolbox package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace Bartlett\PHPToolbox\Console\Command;
+
+use Bartlett\PHPToolbox\Collection\Filter;
+use Bartlett\PHPToolbox\Collection\Tool;
+use Bartlett\PHPToolbox\Collection\Tools;
+
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+
+use Exception;
+use Symfony\Component\Console\Output\OutputInterface;
+use function count;
+use function explode;
+use function file_get_contents;
+use function file_put_contents;
+use function implode;
+use function in_array;
+use function preg_replace;
+use function sprintf;
+use function vsprintf;
+use const PHP_EOL;
+
+/**
+ * @since Release 2.5.0
+ * @author Laurent Laville
+ */
+abstract class BaseUpdate extends Command
+{
+    /**
+     * @throws Exception
+     */
+    protected function execute(InputInterface $input, OutputInterface $output): int
+    {
+        $inputDir = $input->getOption('input-dir');
+        $outputFile = $input->getOption('output-file');
+
+        $tools = (new Tools())->load($inputDir)->sortByName();
+
+        $formatSection = function (Tool $tool) {
+            return sprintf(
+                '| %s | [%s](%s) | %s | %s | %s | %s | %s | %s |',
+                $tool->getName(),
+                $tool->getSummary(),
+                $tool->getWebsite(),
+                in_array('exclude-php:8.0', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.1', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.2', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.3', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.4', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;',
+                in_array('exclude-php:8.5', $tool->getTags(), true) ? '&#x274C;' : '&#x2705;'
+            );
+        };
+
+        if ($this instanceof UpdateExtensions) {
+            $excludedTags = [];
+            $tags = ['pecl-extensions'];
+            $latest = 'extensions';
+        } else {
+            $excludedTags = ['pecl-extensions'];
+            $tags = [];
+            $latest = 'tools';
+        }
+
+        $collection = $tools->filter(function (Tool $tool) use($excludedTags, $tags) {
+            return (new Filter($excludedTags, $tags))($tool);
+        });
+
+        $phpVersions = explode(', ', CommandInterface::PHP_VERSIONS_ALLOWED);
+
+        $totalAvailable = [$collection->count()];
+
+        foreach ($phpVersions as $phpVersion) {
+            $totalAvailable[] = count($collection->filter(function (Tool $tool) use ($phpVersion) {
+                return !in_array('exclude-php:' . $phpVersion, $tool->getTags());
+            }));
+        }
+
+        $collection = $collection->map($formatSection);
+
+        $collectionTable  = '| Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |' . PHP_EOL;
+        $collectionTable .= '| :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |' . PHP_EOL;
+        $collectionTable .= vsprintf('| | Total available: %d | %d | %d | %d | %d | %d | %d |', $totalAvailable);
+        $collectionTable .= PHP_EOL;
+        $collectionTable .= implode(PHP_EOL, $collection->toArray());
+        $collectionTable .= PHP_EOL;
+
+        $markdown = file_get_contents($outputFile);
+        $markdown = preg_replace('/(.*)(<!-- MARKDOWN-TABLE:START -->\n).*?(<!-- MARKDOWN-TABLE:END -->\n)(.*)/smi', '$1$2' . $collectionTable . '$3$4', $markdown);
+
+        $bytes = file_put_contents($outputFile, $markdown);
+
+        if (!$bytes) {
+            $output->writeln(
+                sprintf('<error>Unable to write to file: %s</error>', $outputFile)
+            );
+            return self::FAILURE;
+        }
+
+        $output->writeln(
+            sprintf(
+                'The <info>%s</info> was updated with latest %s found in <info>%s</info>.',
+                $outputFile,
+                $latest,
+                $inputDir
+            )
+        );
+        return self::SUCCESS;
+    }
+}
