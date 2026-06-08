@@ -17,3 +17,5 @@ DISABLE_LINTERS:
 PRINT_ALL_FILES: false
 YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml|\\.mega-linter\\.yml||\\.mega-linter-base\\.yml|\\.changie\\.yaml)"  # As it cannot be added in .gitignore for ML actionlint linter
 YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github|mkdocs\\.yml)"  # As it cannot be added in .gitignore for ML actionlint linter
+ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
+    - GITHUB_TOKEN
