@@ -68,7 +68,7 @@ abstract class BaseUpdate extends Command
             $latest = 'tools';
         }
 
-        $collection = $tools->filter(function (Tool $tool) use($excludedTags, $tags) {
+        $collection = $tools->filter(function (Tool $tool) use ($excludedTags, $tags) {
             return (new Filter($excludedTags, $tags))($tool);
         });
 
