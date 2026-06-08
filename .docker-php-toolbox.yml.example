@@ -5,9 +5,9 @@
 #php-version: "8.3"
 #build-version: 8331
 #php-version: "8.4"
-#build-version: 8421
+#build-version: 8422
 php-version: "8.5"
-build-version: 8506
+build-version: 8507
 resources: ./resources
 dockerfile: ./Dockerfiles/base/Dockerfile
 target-dir: /usr/local/bin

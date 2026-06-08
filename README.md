@@ -11,6 +11,7 @@
 | Stable v2.2.x | [![Branch 2.2][Branch_22x-img]][Branch_22x] | [![Minimum PHP Version)][PHPVersion_22x-img]][PHPVersion_22x] | [![Stable Version 2.2][Packagist_22x-img]][Packagist_22x] | [![License 2.2][License_22x-img]][License_22x] | [![Documentation 2.2][Documentation_22x-img]][Documentation_22x] |
 | Stable v2.3.x | [![Branch 2.3][Branch_23x-img]][Branch_23x] | [![Minimum PHP Version)][PHPVersion_23x-img]][PHPVersion_23x] | [![Stable Version 2.3][Packagist_23x-img]][Packagist_23x] | [![License 2.3][License_23x-img]][License_23x] | [![Documentation 2.3][Documentation_23x-img]][Documentation_23x] |
 | Stable v2.4.x | [![Branch 2.4][Branch_24x-img]][Branch_24x] | [![Minimum PHP Version)][PHPVersion_24x-img]][PHPVersion_24x] | [![Stable Version 2.4][Packagist_24x-img]][Packagist_24x] | [![License 2.4][License_24x-img]][License_24x] | [![Documentation 2.4][Documentation_24x-img]][Documentation_24x] |
+| Stable v2.5.x | [![Branch 2.5][Branch_25x-img]][Branch_25x] | [![Minimum PHP Version)][PHPVersion_25x-img]][PHPVersion_25x] | [![Stable Version 2.5][Packagist_25x-img]][Packagist_25x] | [![License 2.5][License_25x-img]][License_25x] | [![Documentation 2.5][Documentation_25x-img]][Documentation_25x] |
 
 [Branch_20x-img]: https://img.shields.io/badge/branch-2.0-orange
 [Branch_20x]: https://github.com/llaville/docker-php-toolbox/tree/2.0
@@ -67,9 +68,20 @@
 [Documentation_24x-img]: https://img.shields.io/badge/documentation-v2.4-green
 [Documentation_24x]: https://github.com/llaville/docker-php-toolbox/tree/2.4/docs
 
+[Branch_25x-img]: https://img.shields.io/badge/branch-2.5-orange
+[Branch_25x]: https://github.com/llaville/docker-php-toolbox/tree/2.5
+[PHPVersion_25x-img]: https://img.shields.io/packagist/php-v/bartlett/docker-php-toolbox/2.5.0
+[PHPVersion_25x]: https://www.php.net/supported-versions.php
+[Packagist_25x-img]: https://img.shields.io/badge/packagist-v2.5.0-blue
+[Packagist_25x]: https://packagist.org/packages/bartlett/docker-php-toolbox
+[License_25x-img]: https://img.shields.io/packagist/l/bartlett/docker-php-toolbox
+[License_25x]: https://github.com/llaville/docker-php-toolbox/blob/2.5/LICENSE
+[Documentation_25x-img]: https://img.shields.io/badge/documentation-v2.5-green
+[Documentation_25x]: https://github.com/llaville/docker-php-toolbox/tree/2.5/docs
+
 Easily install PHP extensions and tools in Docker containers.
 
 ## Documentation
 
-All the documentation is available on [website](https://llaville.github.io/docker-php-toolbox/2.4/),
-generated from the [docs](https://github.com/llaville/docker-php-toolbox/tree/2.4/docs) folder.
+All the documentation is available on [website](https://llaville.github.io/docker-php-toolbox/2.5/),
+generated from the [docs](https://github.com/llaville/docker-php-toolbox/tree/2.5/docs) folder.
