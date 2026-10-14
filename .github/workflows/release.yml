@@ -114,7 +114,7 @@ jobs:
                     # https://github.com/softprops/action-gh-release#-customizing
                     prerelease: false
                     draft: false
-                    body_path: ${{ github.workspace }}/.changes/2.x/${{ inputs.tag-name }}.md
+                    body_path: ${{ github.workspace }}/.changes/3.x/${{ inputs.tag-name }}.md
                     # https://github.com/softprops/action-gh-release#%EF%B8%8F-uploading-release-assets
                     files: ${{ github.workspace }}/${{ inputs.box-output }}
                     fail_on_unmatched_files: true
