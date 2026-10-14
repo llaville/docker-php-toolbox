@@ -12,7 +12,9 @@
 use Bartlett\PHPToolbox\Console\ApplicationInterface;
 use Bartlett\PHPToolbox\DependencyInjection\ContainerFactory;
 
-require_once dirname(__DIR__) . '/config/bootstrap.php';
+gc_disable(); // performance boost
+
+require_once dirname(__DIR__) . '/autoload.php';
 
 $container = (new ContainerFactory())->create();
 $application = $container->get(ApplicationInterface::class);
