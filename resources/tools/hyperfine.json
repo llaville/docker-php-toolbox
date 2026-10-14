@@ -5,9 +5,12 @@
             "summary": "A command-line benchmarking tool",
             "website": "https://github.com/sharkdp/hyperfine",
             "command": {
+                "file-download": {
+                    "url": "https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine_2.0.0_amd64.deb",
+                    "target": "hyperfine_2.0.0_amd64.deb"
+                },
                 "shell": {
-                    "cmd": "hyperfine",
-                    "package_manager": "apt"
+                    "cmd": "sudo dpkg -i hyperfine_2.0.0_amd64.deb"
                 }
             }
         }
