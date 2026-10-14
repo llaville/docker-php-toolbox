@@ -42,8 +42,8 @@
 | phpdd | [Finds usage of deprecated features](https://github.com/wapmorgan/PhpDeprecationDetector) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.3 | [Documentation Generator for PHP 7](https://github.com/phpdocumentor/phpdocumentor) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpdoc 3.7 | [Documentation Generator for PHP 8](https://github.com/phpdocumentor/phpdocumentor) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
-| phplint v9.5 | [Checks PHP file syntax (9.5.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phplint v9.6 | [Checks PHP file syntax (9.6.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| phplint v9.7 | [Checks PHP file syntax (9.7.x version)](https://github.com/overtrue/phplint) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpmnd v3 | [PHP Magic Number Detector (3.x version)](https://github.com/povils/phpmnd) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpstan | [PHP Static Analysis Tool](https://github.com/phpstan/phpstan) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | phpunit 10 | [The PHP Unit Testing framework (10.x version)](https://github.com/sebastianbergmann/phpunit) | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
