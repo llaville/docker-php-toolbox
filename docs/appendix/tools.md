@@ -9,7 +9,7 @@
 <!-- MARKDOWN-TABLE:START -->
 | Name | Description | <sup>PHP 8.0</sup> | <sup>PHP 8.1</sup> | <sup>PHP 8.2</sup> | <sup>PHP 8.3</sup> | <sup>PHP 8.4</sup> | <sup>PHP 8.5</sup> |
 | :--- | :---------- | :------ | :------ | :------ | :------ | :------ | :------ |
-| | Total available: 51 | 24 | 24 | 24 | 27 | 29 | 33 |
+| | Total available: 52 | 24 | 24 | 24 | 27 | 29 | 33 |
 | asciinema | [Terminal session recorder](https://github.com/asciinema/asciinema) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | bat | [A cat(1) clone with wings](https://github.com/sharkdp/bat) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | box v4 | [Fast, zero config application bundler with PHARs](https://github.com/box-project/box) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
@@ -20,6 +20,7 @@
 | composer | [Dependency Manager for PHP (2.x version)](https://github.com/composer/composer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | deployer 6 | [A deployment tool for PHP (6.x versions)](https://github.com/deployphp/deployer) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | deployer 7 | [A deployment tool for PHP (7.x versions)](https://github.com/deployphp/deployer) | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
+| deployer 8 | [A deployment tool for PHP (8.x versions)](https://github.com/deployphp/deployer) | &#x274C; | &#x274C; | &#x274C; | &#x2705; | &#x2705; | &#x2705; |
 | graphviz | [Graph Visualization Tools](https://graphviz.org/) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | htop | [Interactive process viewer](https://github.com/htop-dev/htop) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
 | HTTP Prompt | [An interactive command-line HTTP and API testing client built on top of HTTPie](https://github.com/httpie/http-prompt) | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; | &#x2705; |
