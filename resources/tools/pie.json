@@ -6,7 +6,7 @@
             "website": "https://github.com/php/pie",
             "command": {
                 "phar-download": {
-                    "phar": "https://github.com/php/pie/releases/download/1.2.1/pie.phar",
+                    "phar": "https://github.com/php/pie/releases/download/1.5.2/pie.phar",
                     "bin": "%target-dir%/pie"
                 }
             },
