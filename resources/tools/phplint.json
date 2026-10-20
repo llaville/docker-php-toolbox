@@ -1,6 +1,33 @@
 {
     "tools": [
         {
+            "name": "phplint v9.8",
+            "summary": "Checks PHP file syntax (9.8.x version)",
+            "website": "https://github.com/overtrue/phplint",
+            "command": {
+                "git-install": {
+                    "repository": "https://github.com/overtrue/phplint.git",
+                    "target-dir": "/usr/local/src/phplint",
+                    "version": "9.8"
+                },
+                "composer-install": {},
+                "shell": {
+                    "cmd": "ln -sf /usr/local/src/phplint/bin/phplint %target-dir%/phplint"
+                }
+            },
+            "tags": [
+                "phplint-98",
+                "exclude-php:5.6",
+                "exclude-php:7.0",
+                "exclude-php:7.1",
+                "exclude-php:7.2",
+                "exclude-php:7.3",
+                "exclude-php:7.4",
+                "exclude-php:8.0",
+                "exclude-php:8.1"
+            ]
+        },
+        {
             "name": "phplint v9.7",
             "summary": "Checks PHP file syntax (9.7.x version)",
             "website": "https://github.com/overtrue/phplint",
