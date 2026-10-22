@@ -7,8 +7,12 @@
         "src",
         "vendor"
     ],
+    "files": [
+        "autoload.php"
+    ],
     "compression": "GZ",
     "dump-autoload": false,
+    "check-requirements": false,
     "files-bin": [
         "console-table.txt",
         "plain.txt",

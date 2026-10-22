@@ -7,5 +7,10 @@
         "src",
         "vendor"
     ],
-    "compression": "GZ"
+    "files": [
+        "autoload.php"
+    ],
+    "compression": "GZ",
+    "dump-autoload": false,
+    "check-requirements": false
 }
