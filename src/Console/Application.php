@@ -16,9 +16,13 @@ use Composer\InstalledVersions;
 use Symfony\Component\Console\Application as SymfonyApplication;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\Process\Process;
 
+use function dirname;
+use function file_exists;
 use function sprintf;
 use function substr;
+use function trim;
 
 /**
  * @since Release 1.0.0alpha1
@@ -26,6 +30,8 @@ use function substr;
  */
 final class Application extends SymfonyApplication implements ApplicationInterface
 {
+    private const UNKNOWN_VERSION = 'UNKNOWN';
+
     public function __construct(
         CommandLoaderInterface $commandLoader,
         EventDispatcherInterface $eventDispatcher
@@ -35,7 +41,7 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
 
         parent::__construct(
             self::NAME,
-            $this->getInstalledVersion(false)
+            $this->getInstalledVersion()
         );
     }
 
@@ -63,11 +69,38 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
     {
         $packageName = 'bartlett/docker-php-toolbox';
 
-        $version = InstalledVersions::getPrettyVersion($packageName);
+        $installed = InstalledVersions::getAllRawData()[0];
+
+        $prettyVersion = $this->getPrettyVersion(
+            $installed['versions'][$packageName]['pretty_version'] ?? self::UNKNOWN_VERSION
+        );
+
         if (!$withRef) {
-            return $version;
+            return $prettyVersion;
         }
         $commitHash = InstalledVersions::getReference($packageName);
-        return sprintf('%s@%s', $version, substr($commitHash, 0, 7));
+        return sprintf('%s (%s)', $prettyVersion, substr($commitHash, 0, 7));
+    }
+
+    /**
+     * Provide same information, as `sebastian/version` package will do, but without adding extra dependency.
+     *
+     * @link https://github.com/sebastianbergmann/version
+     * @link https://git-scm.com/docs/git-describe
+     */
+    private function getPrettyVersion(string $fallback): string
+    {
+        if (!file_exists(dirname(__DIR__, 2) . '/.git')) {
+            return $fallback;
+        }
+
+        $process = new Process(['git', 'describe', '--tags', '--exact-match']);
+        $process->run();
+
+        if (!$process->isSuccessful()) {
+            return $fallback;
+        }
+
+        return trim($process->getOutput());
     }
 }
