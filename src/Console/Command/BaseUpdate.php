@@ -1,10 +1,14 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 /**
  * This file is part of the Docker-PHP-Toolbox package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Bartlett\PHPToolbox\Console\Command;
 
 use Bartlett\PHPToolbox\Collection\Filter;
@@ -16,6 +20,7 @@ use Symfony\Component\Console\Input\InputInterface;
 
 use Exception;
 use Symfony\Component\Console\Output\OutputInterface;
+
 use function count;
 use function explode;
 use function file_get_contents;
@@ -25,6 +30,7 @@ use function in_array;
 use function preg_replace;
 use function sprintf;
 use function vsprintf;
+
 use const PHP_EOL;
 
 /**

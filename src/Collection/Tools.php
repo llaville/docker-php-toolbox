@@ -1,10 +1,14 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 /**
  * This file is part of the Docker-PHP-Toolbox package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Bartlett\PHPToolbox\Collection;
 
 use Bartlett\PHPToolbox\Command\Factory;
@@ -17,6 +21,7 @@ use Symfony\Component\Finder\SplFileInfo;
 
 use ArrayIterator;
 use RuntimeException;
+
 use function is_array;
 use function iterator_to_array;
 use function json_decode;

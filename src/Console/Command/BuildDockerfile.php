@@ -1,10 +1,14 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 /**
  * This file is part of the Docker-PHP-Toolbox package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Bartlett\PHPToolbox\Console\Command;
 
 use Bartlett\PHPToolbox\Collection\Tool;
@@ -22,6 +26,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 use Exception;
+
 use function array_intersect;
 use function explode;
 use function file_get_contents;
@@ -36,6 +41,7 @@ use function sprintf;
 use function str_contains;
 use function str_replace;
 use function strtolower;
+
 use const PHP_EOL;
 
 /**
@@ -203,7 +209,7 @@ final class BuildDockerfile extends Command implements CommandInterface
             return
                 in_array('pecl-extensions', $tool->getTags(), true) &&
                 !in_array('exclude-php:' . $phpVersion, $tool->getTags(), true)
-                ;
+            ;
         });
 
         $modulesInstallation = ['FROM builder AS build-version-' . $buildVersion];
@@ -268,7 +274,7 @@ final class BuildDockerfile extends Command implements CommandInterface
 
         return preg_replace(
             '/(### Install custom software\n###\n\n)(.*?)/smi',
-            '$1' . $softwareInstallation  . PHP_EOL . '$2',
+            '$1' . $softwareInstallation . PHP_EOL . '$2',
             $dockerfile
         );
     }

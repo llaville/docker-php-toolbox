@@ -1,10 +1,14 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 /**
  * This file is part of the Docker-PHP-Toolbox package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Bartlett\PHPToolbox\Console\Command;
 
 use Bartlett\PHPToolbox\Collection\Filter;
@@ -24,6 +28,7 @@ use function is_readable;
 use function sprintf;
 use function ucfirst;
 use function wordwrap;
+
 use const PHP_EOL;
 
 /**
