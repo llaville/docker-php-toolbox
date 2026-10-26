@@ -33,4 +33,4 @@ If you want to send a Pull Request, have these steps in mind :
   - See `resources/tools/yq.json` for a **file download + shell installation** example
 
 - To add a new tool, you must have to include an up-to-date documentation page
-  - [docs/appendix/tools.md](appendix/tools.md); please use `bin/devkit.php update:tools` command
+  - [docs/appendix/tools.md](appendix/tools.md); please use `bin/toolkit.php update:tools` command
