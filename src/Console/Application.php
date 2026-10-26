@@ -28,8 +28,10 @@ use function trim;
  * @since Release 1.0.0alpha1
  * @author Laurent Laville
  */
-final class Application extends SymfonyApplication implements ApplicationInterface
+final class Application extends SymfonyApplication
 {
+    private const NAME = 'Helper to discover and install PHP extensions and/or tools';
+
     private const UNKNOWN_VERSION = 'UNKNOWN';
 
     public function __construct(
@@ -65,21 +67,16 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
         return $this->getInstalledVersion();
     }
 
-    public function getInstalledVersion(bool $withRef = true): string
+    private function getInstalledVersion(): string
     {
         $packageName = 'bartlett/docker-php-toolbox';
 
         $installed = InstalledVersions::getAllRawData()[0];
 
-        $prettyVersion = $this->getPrettyVersion(
-            $installed['versions'][$packageName]['pretty_version'] ?? self::UNKNOWN_VERSION
+        return $this->getPrettyVersion(
+            $installed['versions'][$packageName]['pretty_version'] ?? self::UNKNOWN_VERSION,
+            InstalledVersions::getReference($packageName)
         );
-
-        if (!$withRef) {
-            return $prettyVersion;
-        }
-        $commitHash = InstalledVersions::getReference($packageName);
-        return sprintf('%s (%s)', $prettyVersion, substr($commitHash, 0, 7));
     }
 
     /**
@@ -88,19 +85,25 @@ final class Application extends SymfonyApplication implements ApplicationInterfa
      * @link https://github.com/sebastianbergmann/version
      * @link https://git-scm.com/docs/git-describe
      */
-    private function getPrettyVersion(string $fallback): string
+    private function getPrettyVersion(string $tagVersion, ?string $commitHash = null): string
     {
         if (!file_exists(dirname(__DIR__, 2) . '/.git')) {
-            return $fallback;
+            if (null === $commitHash) {
+                return $tagVersion;
+            }
+            return sprintf('%s (%s)', $tagVersion, substr($commitHash, 0, 7));
         }
 
         $process = new Process(['git', 'describe', '--tags', '--exact-match']);
         $process->run();
 
-        if (!$process->isSuccessful()) {
-            return $fallback;
-        }
+        $version = $process->isSuccessful() ? trim($process->getOutput()) : $tagVersion;
 
-        return trim($process->getOutput());
+        $process = new Process(['git', 'log', '-1', '--no-decorate', '--oneline']);
+        $process->run();
+
+        $commitHash = $process->isSuccessful() ? trim($process->getOutput()) : $commitHash;
+
+        return sprintf('%s (%s)', $version, substr($commitHash, 0, 7));
     }
 }
