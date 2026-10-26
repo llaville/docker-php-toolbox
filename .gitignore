@@ -2,6 +2,9 @@
 # CUSTOM
 ######################################
 
+site/
+resources/box-manifest
+
 ###### custom ToolKit YAML config file ######
 .docker-php-toolbox.yml
 
@@ -12,12 +15,13 @@ Dockerfiles/mods/Dockerfile.*
 Dockerfiles/prod/Dockerfile.*
 Dockerfiles/work/Dockerfile.*
 
-###### BOX Manifest ######
-sbom.json
-sbom.xml
-console-table.txt
-plain.txt
+###### BOX-Manifest ######
+.box.manifests.bin
 stub.php
+sbom.json
+plain.txt
+console-table.txt
+pkg.composer.txt
 
 ###### Composer dependencies ######
 vendor/
@@ -28,6 +32,9 @@ vendor/
 ###### PHPUnit ######
 .phpunit.result.cache
 .phpunit.cache/
+
+###### PHP-CS-Fixer ######
+.php-cs-fixer.cache
 
 ###### Mega-Linter ######
 megalinter-reports/
